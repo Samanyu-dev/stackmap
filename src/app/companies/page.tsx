@@ -14,6 +14,7 @@ import { Search, Building2, Briefcase, Award, ArrowRight } from "lucide-react";
 export default function CompaniesCatalog() {
   const [search, setSearch] = useState("");
   const [difficulty, setDifficulty] = useState("ALL");
+  const [sector, setSector] = useState("ALL");
 
   const list = Object.values(companyRoadmaps);
 
@@ -21,7 +22,8 @@ export default function CompaniesCatalog() {
     const matchesSearch = c.name.toLowerCase().includes(search.toLowerCase()) ||
                           c.overview.toLowerCase().includes(search.toLowerCase());
     const matchesDiff = difficulty === "ALL" || c.difficulty === difficulty;
-    return matchesSearch && matchesDiff;
+    const matchesSector = sector === "ALL" || c.sector === sector;
+    return matchesSearch && matchesDiff && matchesSector;
   });
 
   return (
@@ -40,18 +42,31 @@ export default function CompaniesCatalog() {
           <div className="relative w-full md:max-w-xs">
             <Search className="absolute left-3 top-3.5 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="Search Google, Microsoft..."
+              placeholder="Search companies..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="pl-9 h-11"
             />
           </div>
 
-          <Select value={difficulty} onChange={(e) => setDifficulty(e.target.value)} className="h-11 w-44 text-xs">
-            <option value="ALL">All Interview Tiers</option>
-            <option value="INTERMEDIATE">Medium Difficulty</option>
-            <option value="ADVANCED">Hard Difficulty</option>
-          </Select>
+          <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+            <Select value={sector} onChange={(e) => setSector(e.target.value)} className="h-11 w-full sm:w-56 text-xs">
+              <option value="ALL">All Sectors</option>
+              <option value="IT Services">IT Services & Consulting</option>
+              <option value="Product MNCs">Product MNCs & SaaS</option>
+              <option value="Indian Startups">Indian Startups & Unicorns</option>
+              <option value="Finance & Banking">Finance & Fintech</option>
+              <option value="Hardware & Chips">Hardware & Semiconductors</option>
+              <option value="Cloud & DevTools">Cloud, DevTools & Security</option>
+            </Select>
+
+            <Select value={difficulty} onChange={(e) => setDifficulty(e.target.value)} className="h-11 w-full sm:w-44 text-xs">
+              <option value="ALL">All Interview Tiers</option>
+              <option value="BEGINNER">Easy Difficulty</option>
+              <option value="INTERMEDIATE">Medium Difficulty</option>
+              <option value="ADVANCED">Hard Difficulty</option>
+            </Select>
+          </div>
         </div>
 
         {/* Company Grid */}
@@ -64,18 +79,23 @@ export default function CompaniesCatalog() {
                     <div className="h-9 w-9 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                       <Building2 className="h-5 w-5" />
                     </div>
-                    <Badge
-                      variant={
-                        c.difficulty === "BEGINNER"
-                          ? "info"
-                          : c.difficulty === "INTERMEDIATE"
-                          ? "warning"
-                          : "destructive"
-                      }
-                      className="text-[9px] uppercase font-bold"
-                    >
-                      {c.difficulty}
-                    </Badge>
+                    <div className="flex gap-1.5 items-center">
+                      <Badge variant="outline" className="text-[9px] font-semibold tracking-wider text-muted-foreground uppercase border-border/60">
+                        {c.sector}
+                      </Badge>
+                      <Badge
+                        variant={
+                          c.difficulty === "BEGINNER"
+                            ? "info"
+                            : c.difficulty === "INTERMEDIATE"
+                            ? "warning"
+                            : "destructive"
+                        }
+                        className="text-[9px] uppercase font-bold"
+                      >
+                        {c.difficulty}
+                      </Badge>
+                    </div>
                   </div>
                   <div>
                     <CardTitle className="text-lg font-bold text-foreground">{c.name}</CardTitle>

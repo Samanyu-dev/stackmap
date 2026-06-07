@@ -29,6 +29,9 @@ import productManager from "./blueprints/product-manager.json";
 import engineeringManager from "./blueprints/engineering-manager.json";
 import technicalWriter from "./blueprints/technical-writer.json";
 import dsa from "./blueprints/dsa.json";
+import embeddedSystems from "./blueprints/embedded-systems.json";
+import quantitativeFinance from "./blueprints/quantitative-finance.json";
+import managementConsulting from "./blueprints/management-consulting.json";
 
 export interface RoadmapMetaData {
   id: string;
@@ -78,5 +81,8 @@ export const roadmaps: Record<string, RoadmapData> = {
   "product-manager": productManager as unknown as RoadmapData,
   "engineering-manager": engineeringManager as unknown as RoadmapData,
   "technical-writer": technicalWriter as unknown as RoadmapData,
-  "dsa": dsa as unknown as RoadmapData
+  "dsa": dsa as unknown as RoadmapData,
+  "embedded-systems": embeddedSystems as unknown as RoadmapData,
+  "quantitative-finance": quantitativeFinance as unknown as RoadmapData,
+  "management-consulting": managementConsulting as unknown as RoadmapData
 };

@@ -618,6 +618,69 @@ const roadmapsMeta = {
       "What is the Docs-as-Code philosophy and what tools are used to implement it?",
       "How do you translate a highly complex system architecture feature into an accessible user guide?"
     ]
+  },
+  "embedded-systems": {
+    id: "roadmap-embedded-systems",
+    title: "Embedded Systems & Firmware Engineer",
+    slug: "embedded-systems",
+    category: "SYSTEMS",
+    difficulty: "ADVANCED",
+    estimatedDuration: "5 Months",
+    prerequisites: [],
+    languages: ["C", "C++", "ARM Assembly"],
+    tools: ["GDB", "Ozone", "Logic Analyzer", "Oscilloscope", "CMake / Make"],
+    frameworks: ["FreeRTOS", "CMSIS RTOS", "Bare-metal drivers"],
+    databases: ["None (Flash Storage sectors)", "EEPROM wear-leveling"],
+    testing: ["Unity Test Framework", "Ceedling", "Hardware-in-the-Loop (HIL)"],
+    deployment: ["J-Link Flasher", "OpenOCD bootloader updates"],
+    advancedConcepts: ["Preemptive task scheduling", "DMA transfers", "Watchdog timers", "Memory-mapped I/O registers"],
+    projects: ["Embedded RTOS Task Scheduler", "Firmware bootloader updater"],
+    interviewQuestions: [
+      "What is the difference between preemptive and cooperative task scheduling?",
+      "Explain how interrupts handle priority and what registers are saved during context switches."
+    ]
+  },
+  "quantitative-finance": {
+    id: "roadmap-quantitative-finance",
+    title: "Quantitative Financial Analyst",
+    slug: "quantitative-finance",
+    category: "DATA_SCIENCE",
+    difficulty: "ADVANCED",
+    estimatedDuration: "6 Months",
+    prerequisites: [],
+    languages: ["Python", "C++", "SQL", "R"],
+    tools: ["Jupyter Notebooks", "Git & GitHub", "KDB+ database", "Docker"],
+    frameworks: ["NumPy / Pandas", "SciPy Optimization", "Statsmodels", "Backtrader"],
+    databases: ["KDB+ (Time-series)", "PostgreSQL", "Redis cache"],
+    testing: ["PyTest", "Backtesting validation metrics", "Unit testing stats formulas"],
+    deployment: ["Linux Servers", "Docker Containers", "Airflow schedulers"],
+    advancedConcepts: ["Modern Portfolio Theory (MPT)", "Black-Scholes pricing model", "Stochastic calculus", "Monte Carlo VaR simulations"],
+    projects: ["Quantitative Portfolio Risk & Math Engine", "Historical Trade Backtesting Framework"],
+    interviewQuestions: [
+      "What is the Black-Scholes formula and what are the five Greeks?",
+      "Explain the difference between parametric and historical Value-at-Risk (VaR)."
+    ]
+  },
+  "management-consulting": {
+    id: "roadmap-management-consulting",
+    title: "Management Consultant",
+    slug: "management-consulting",
+    category: "PREPARATION",
+    difficulty: "INTERMEDIATE",
+    estimatedDuration: "3 Months",
+    prerequisites: [],
+    languages: ["Excel modeling formulas", "PowerPoint VBA", "SQL basics"],
+    tools: ["Microsoft Excel", "Microsoft PowerPoint", "Tableau", "Miro mapping boards"],
+    frameworks: ["MECE framework", "Porter's Five Forces", "BCG Growth-Share Matrix", "DCF Financial modeling"],
+    databases: ["Airtable (CRM tracking)", "Relational database basics"],
+    testing: ["Case interview validation", "Sensitivity checking tables"],
+    deployment: ["Client pitch decks", "Strategic recommendation briefs"],
+    advancedConcepts: ["Total Addressable Market (TAM) sizing", "Net Present Value (NPV) & IRR projections", "Hypothesis-driven problem solving", "Profitability diagnosis metrics"],
+    projects: ["Market Entry Strategy Model", "Sensitivity analysis dashboard model"],
+    interviewQuestions: [
+      "How do you calculate a company's Weighted Average Cost of Capital (WACC)?",
+      "Structure a market entry case for a premium EV manufacturer entering India."
+    ]
   }
 };
 

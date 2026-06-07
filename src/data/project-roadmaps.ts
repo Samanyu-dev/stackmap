@@ -453,5 +453,214 @@ export const projectRoadmaps: Record<string, ProjectRoadmapData> = {
       "Explain Snell's law role in glass refractions.",
       "How do Bounding Volume Hierarchies (BVH) speed up triangle rendering intersection checks?"
     ]
+  },
+  "embedded-rtos-scheduler": {
+    slug: "embedded-rtos-scheduler",
+    title: "Embedded RTOS Task Scheduler",
+    description: "Build a preemptive multitasking kernel for an ARM Cortex-M microcontroller, implementing context switching, priority scheduling, and semaphores.",
+    difficulty: "ADVANCED",
+    duration: "2-3 Weeks",
+    techStack: ["C / Assembly", "ARM Cortex-M", "QEMU Emulator", "GDB Debugger", "Make"],
+    prerequisites: ["C Pointers & Ptr Arithmetic", "ARM Register Sets & CPU Interrupts"],
+    steps: [
+      {
+        task: "ARM Thread Context Setup",
+        resources: [{ name: "ARM Context Switching Guides", url: "https://developer.arm.com" }],
+        expectedOutput: "Initializing task stack frames matching ARM Cortex-M thread register layouts.",
+        debuggingTips: "Verify stack pointer align matches 8-byte boundaries."
+      },
+      {
+        task: "Preemptive Timer & Systick ISR",
+        resources: [{ name: "SysTick Registers Guide", url: "https://wikipedia.org" }],
+        expectedOutput: "A timer interrupt triggers context switch branches.",
+        debuggingTips: "Use GDB to monitor register states during switch operations."
+      }
+    ],
+    roadmapSteps: [
+      {
+        task: "ARM Thread Context Setup",
+        resources: [{ name: "ARM Context Switching Guides", url: "https://developer.arm.com" }],
+        expectedOutput: "Initializing task stack frames matching ARM Cortex-M thread register layouts.",
+        debuggingTips: "Verify stack pointer align matches 8-byte boundaries."
+      },
+      {
+        task: "Preemptive Timer & Systick ISR",
+        resources: [{ name: "SysTick Registers Guide", url: "https://wikipedia.org" }],
+        expectedOutput: "A timer interrupt triggers context switch branches.",
+        debuggingTips: "Use GDB to monitor register states during switch operations."
+      }
+    ],
+    outcomes: ["Low-level scheduler design", "CPU register manipulation", "Embedded RTOS multitasking kernel"],
+    readmeChecklist: ["Provide context switch logic logs", "Include QEMU execution screenshots"],
+    deploymentGuide: ["Execute compiled firmware inside QEMU emulator, or flash onto STM32 development board."],
+    resumeBullets: [
+      "Designed and built a custom preemptive RTOS kernel for ARM Cortex-M processors in C and Assembly.",
+      "Reduced context-switch overhead to under 1.5 microseconds by writing optimized assembly context routines."
+    ],
+    interviewPoints: [
+      "Explain how a preemptive context switch saves registers on the stack.",
+      "What is priority inversion and how does priority inheritance mitigate it?"
+    ],
+    interviewTalkingPoints: [
+      "Explain how a preemptive context switch saves registers on the stack.",
+      "What is priority inversion and how does priority inheritance mitigate it?"
+    ]
+  },
+  "quant-portfolio-optimizer": {
+    slug: "quant-portfolio-optimizer",
+    title: "Quantitative Portfolio Risk & Math Engine",
+    description: "Build a mathematical engine executing Modern Portfolio Theory (MPT), Monte Carlo risk simulations, and asset returns covariance matrices.",
+    difficulty: "INTERMEDIATE",
+    duration: "1-2 Weeks",
+    techStack: ["Python", "NumPy / Pandas", "SciPy Optimization", "Yahoo Finance API"],
+    prerequisites: ["Linear Algebra (Matrix operations)", "Statistics & Probability"],
+    steps: [
+      {
+        task: "Market Data Extraction & Returns Covariance",
+        resources: [{ name: "Pandas Data Extraction", url: "https://pandas.pydata.org" }],
+        expectedOutput: "Historical asset prices returns calculated and covariance matrices built.",
+        debuggingTips: "Handle non-trading day gaps in pricing columns."
+      },
+      {
+        task: "Efficient Frontier Optimizer",
+        resources: [{ name: "SciPy Minimizers", url: "https://scipy.org" }],
+        expectedOutput: "Sharpe Ratio weights resolved under boundary constraints.",
+        debuggingTips: "Assert that weights sum to exactly 1.0."
+      }
+    ],
+    roadmapSteps: [
+      {
+        task: "Market Data Extraction & Returns Covariance",
+        resources: [{ name: "Pandas Data Extraction", url: "https://pandas.pydata.org" }],
+        expectedOutput: "Historical asset prices returns calculated and covariance matrices built.",
+        debuggingTips: "Handle non-trading day gaps in pricing columns."
+      },
+      {
+        task: "Efficient Frontier Optimizer",
+        resources: [{ name: "SciPy Minimizers", url: "https://scipy.org" }],
+        expectedOutput: "Sharpe Ratio weights resolved under boundary constraints.",
+        debuggingTips: "Assert that weights sum to exactly 1.0."
+      }
+    ],
+    outcomes: ["Quantitative portfolio analysis", "Returns covariance modeling", "Value-at-Risk predictions"],
+    readmeChecklist: ["Provide optimal weights distribution charts", "List covariance tables"],
+    deploymentGuide: ["Expose model calculations via a FastAPI server, or run as a standalone CLI tool."],
+    resumeBullets: [
+      "Developed a high-performance quantitative portfolio optimizer in Python implementing Modern Portfolio Theory.",
+      "Optimized risk simulation runtimes by 10x using vectorized NumPy matrices and SciPy solvers."
+    ],
+    interviewPoints: [
+      "Explain the difference between historical VaR and parametric VaR.",
+      "What is the Sharpe Ratio and how do constraints alter optimization boundaries?"
+    ],
+    interviewTalkingPoints: [
+      "Explain the difference between historical VaR and parametric VaR.",
+      "What is the Sharpe Ratio and how do constraints alter optimization boundaries?"
+    ]
+  },
+  "consulting-case-dashboard": {
+    slug: "consulting-case-dashboard",
+    title: "Market Entry & Feasibility Model",
+    description: "Build an interactive strategy planning dashboard containing financial projection models, NPV calculations, and sensitivity analysis tables.",
+    difficulty: "BEGINNER",
+    duration: "4-6 Days",
+    techStack: ["Next.js", "React", "Recharts", "Tailwind CSS", "Vercel"],
+    prerequisites: ["Financial Modeling basics (DCF, NPV)", "React state flows"],
+    steps: [
+      {
+        task: "Financial Forecasting Matrix",
+        resources: [{ name: "Corporate Finance forecasting rules", url: "https://investopedia.com" }],
+        expectedOutput: "IRR/NPV dynamic formulas updating based on variable input configurations.",
+        debuggingTips: "Wrap calculation hooks in useMemo hooks to optimize render performance."
+      },
+      {
+        task: "Sensitivity Heatmap Grid",
+        resources: [{ name: "Sensitivity analysis charts", url: "https://wikipedia.org" }],
+        expectedOutput: "Multi-variable tables displaying NPV output grids.",
+        debuggingTips: "Verify matrix index bounds to prevent React layout crashes."
+      }
+    ],
+    roadmapSteps: [
+      {
+        task: "Financial Forecasting Matrix",
+        resources: [{ name: "Corporate Finance forecasting rules", url: "https://investopedia.com" }],
+        expectedOutput: "IRR/NPV dynamic formulas updating based on variable input configurations.",
+        debuggingTips: "Wrap calculation hooks in useMemo hooks to optimize render performance."
+      },
+      {
+        task: "Sensitivity Heatmap Grid",
+        resources: [{ name: "Sensitivity analysis charts", url: "https://wikipedia.org" }],
+        expectedOutput: "Multi-variable tables displaying NPV output grids.",
+        debuggingTips: "Verify matrix index bounds to prevent React layout crashes."
+      }
+    ],
+    outcomes: ["Financial model designs", "Sensitivity analysis tables", "Corporate executive dashboard layout"],
+    readmeChecklist: ["Provide break-even chart snapshots", "Show feasibility NPV summaries"],
+    deploymentGuide: ["Deploy static web client directly to Vercel or GitHub Pages."],
+    resumeBullets: [
+      "Designed and built an interactive market feasibility dashboard in Next.js, integrating real-time NPV projections.",
+      "Exposed multi-variable sensitivity tables displaying financial NPV ranges across customizable margins."
+    ],
+    interviewPoints: [
+      "Explain how Net Present Value (NPV) changes as the discount rate increases.",
+      "How do you estimate Total Addressable Market (TAM) using top-down vs bottom-up approaches?"
+    ],
+    interviewTalkingPoints: [
+      "Explain how Net Present Value (NPV) changes as the discount rate increases.",
+      "How do you estimate Total Addressable Market (TAM) using top-down vs bottom-up approaches?"
+    ]
+  },
+  "ml-model-deployment": {
+    slug: "ml-model-deployment",
+    title: "Distributed ML Inference Pipeline",
+    description: "Deploy a deep learning image classification model (ResNet) inside a containerized queue pipeline using FastAPI, Celery, Redis, and Docker.",
+    difficulty: "ADVANCED",
+    duration: "1-2 Weeks",
+    techStack: ["Python", "PyTorch / ONNX", "FastAPI", "Redis / Celery", "Docker"],
+    prerequisites: ["Deep Learning systems", "Asynchronous messaging brokers"],
+    steps: [
+      {
+        task: "Model Optimization & FastAPI Server",
+        resources: [{ name: "ONNX Runtime optimization", url: "https://onnxruntime.ai" }],
+        expectedOutput: "Exposes HTTP endpoints accepting image uploads and returning model classifications.",
+        debuggingTips: "Convert PyTorch model weights to ONNX format to double prediction speeds."
+      },
+      {
+        task: "Asynchronous Queue Pipeline",
+        resources: [{ name: "Celery task orchestration", url: "https://docs.celeryq.dev" }],
+        expectedOutput: "Task requests pushed to Redis queues, executing inference on Celery worker instances.",
+        debuggingTips: "Initialize ML weights once during Celery worker startup."
+      }
+    ],
+    roadmapSteps: [
+      {
+        task: "Model Optimization & FastAPI Server",
+        resources: [{ name: "ONNX Runtime optimization", url: "https://onnxruntime.ai" }],
+        expectedOutput: "Exposes HTTP endpoints accepting image uploads and returning model classifications.",
+        debuggingTips: "Convert PyTorch model weights to ONNX format to double prediction speeds."
+      },
+      {
+        task: "Asynchronous Queue Pipeline",
+        resources: [{ name: "Celery task orchestration", url: "https://docs.celeryq.dev" }],
+        expectedOutput: "Task requests pushed to Redis queues, executing inference on Celery worker instances.",
+        debuggingTips: "Initialize ML weights once during Celery worker startup."
+      }
+    ],
+    outcomes: ["Model performance optimization", "Asynchronous task queue designs", "Multi-container compose configurations"],
+    readmeChecklist: ["List inference latency benchmarks", "Include queue worker logs"],
+    deploymentGuide: ["Compose multi-container clusters using docker-compose up, caching weights configurations."],
+    resumeBullets: [
+      "Engineered a distributed deep learning model inference pipeline executing 100+ frames per second.",
+      "Decoupled API endpoints from heavy models using Redis/Celery queue systems, reducing endpoint latency by 85%."
+    ],
+    interviewPoints: [
+      "Why do we run deep learning models inside asynchronous worker processes instead of HTTP threads?",
+      "What is ONNX and how does compiling model weights improve prediction speeds?"
+    ],
+    interviewTalkingPoints: [
+      "Why do we run deep learning models inside asynchronous worker processes instead of HTTP threads?",
+      "What is ONNX and how does compiling model weights improve prediction speeds?"
+    ]
   }
 };
+

@@ -39,7 +39,8 @@ export default function RoadmapsCatalog() {
     { label: "All Pathways", value: "ALL" },
     { label: "Software Development", value: "DEVELOPMENT" },
     { label: "Systems & Infrastructure", value: "SYSTEMS" },
-    { label: "Interview Prep & DSA", value: "PREPARATION" }
+    { label: "Data Science & Finance", value: "DATA_SCIENCE" },
+    { label: "Interview Prep & Business", value: "PREPARATION" }
   ];
 
   // Reset page when switching categories or typing search

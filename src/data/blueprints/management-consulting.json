@@ -1,0 +1,1487 @@
+{
+  "id": "roadmap-management-consulting",
+  "title": "Management Consultant",
+  "slug": "management-consulting",
+  "description": "Master Management Consultant skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
+  "category": "PREPARATION",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "3 Months",
+  "estimatedDuration": "3 Months",
+  "prerequisites": [],
+  "nodes": [
+    {
+      "id": "roadmap-management-consulting-node-1",
+      "slug": "fundamentals",
+      "title": "1. Core Management Consultant Fundamentals",
+      "description": "Understand the foundational principles of Management Consultant, primary operational architectures, and basic lifecycle concepts.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-management-consulting-1-1",
+          "title": "1. Core Management Consultant Fundamentals Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating fundamentals core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Core Management Consultant Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating fundamentals core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-2",
+      "slug": "cs-fundamentals",
+      "title": "2. Computer Science & Systems Theory",
+      "description": "Master operating systems process cycles, memory segment layers, and data structure constraints relevant to engineering.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-management-consulting-2-1",
+          "title": "2. Computer Science & Systems Theory Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating cs-fundamentals core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the cs-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Science & Systems Theory Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating cs-fundamentals core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Microsoft Excel & CLI Environment",
+      "description": "Configure version control using Git & GitHub, and prepare local workspace instances using: Microsoft Excel, Microsoft PowerPoint, Tableau.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "cs-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-management-consulting-3-1",
+          "title": "3. Standard Tools: Microsoft Excel & CLI Environment Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating tools core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Microsoft Excel & CLI Environment Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating tools core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-4",
+      "slug": "languages",
+      "title": "4. Programming Languages: Excel modeling formulas / PowerPoint VBA / SQL basics",
+      "description": "Write typesafe, concurrent, and asynchronous code scripts using the target programming languages: Excel modeling formulas, PowerPoint VBA, SQL basics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-management-consulting-4-1",
+          "title": "4. Programming Languages: Excel modeling formulas / PowerPoint VBA / SQL basics Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating languages core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Programming Languages: Excel modeling formulas / PowerPoint VBA / SQL basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating languages core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-5",
+      "slug": "syntax-adv",
+      "title": "5. Advanced Syntax: Concurrency & Threads",
+      "description": "Master asynchronous code execution blocks, thread management, typesafety models, and error handling grids.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-management-consulting-5-1",
+          "title": "5. Advanced Syntax: Concurrency & Threads Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating syntax-adv core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the syntax-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Advanced Syntax: Concurrency & Threads Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating syntax-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-6",
+      "slug": "frameworks",
+      "title": "6. Core Frameworks: MECE framework & Porter's Five Forces",
+      "description": "Build routing layouts, custom controller components, and unified data flow structures using: MECE framework, Porter's Five Forces, BCG Growth-Share Matrix, DCF Financial modeling.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "syntax-adv"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-management-consulting-6-1",
+          "title": "6. Core Frameworks: MECE framework & Porter's Five Forces Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating frameworks core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Core Frameworks: MECE framework & Porter's Five Forces Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating frameworks core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-7",
+      "slug": "databases",
+      "title": "7. Database Systems: Airtable (CRM tracking) & Relational database basics",
+      "description": "Configure structured schemas, queries indexing, transactional logs mapping, and storage layouts using: Airtable (CRM tracking), Relational database basics.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-management-consulting-7-1",
+          "title": "7. Database Systems: Airtable (CRM tracking) & Relational database basics Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating databases core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Database Systems: Airtable (CRM tracking) & Relational database basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating databases core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-8",
+      "slug": "db-queries-adv",
+      "title": "8. Advanced Queries & Index Optimization",
+      "description": "Write complex query joins, configure database replication clusters, read execution plans, and set up caching.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-management-consulting-8-1",
+          "title": "8. Advanced Queries & Index Optimization Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating db-queries-adv core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the db-queries-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Advanced Queries & Index Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating db-queries-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-9",
+      "slug": "apis-routing-core",
+      "title": "9. API Engineering & Inter-service Communication",
+      "description": "Build RESTful routes, map JSON inputs, validate request payloads, and handle gRPC/WebSocket streaming protocols.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "db-queries-adv"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-management-consulting-9-1",
+          "title": "9. API Engineering & Inter-service Communication Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the apis-routing-core milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. API Engineering & Inter-service Communication Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-10",
+      "slug": "testing",
+      "title": "10. Testing & Code Quality: Case interview validation",
+      "description": "Write automated validation logic, integration checking routes, and unit assertion conditions using: Case interview validation, Sensitivity checking tables.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "apis-routing-core"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-management-consulting-10-1",
+          "title": "10. Testing & Code Quality: Case interview validation Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating testing core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Testing & Code Quality: Case interview validation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating testing core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-11",
+      "slug": "security-patterns",
+      "title": "11. OWASP Threat Protections & Security Patterns",
+      "description": "Configure HTTPS protocols, sanitise input parameters, prevent SQL inject arrays, and design role-based policies.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "testing"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-management-consulting-11-1",
+          "title": "11. OWASP Threat Protections & Security Patterns Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the security-patterns milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. OWASP Threat Protections & Security Patterns Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-12",
+      "slug": "isolation-docker",
+      "title": "12. Containerization & Isolation using Docker",
+      "description": "Write functional Dockerfiles, configure multi-container compositions, and handle container networks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "security-patterns"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-management-consulting-12-1",
+          "title": "12. Containerization & Isolation using Docker Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the isolation-docker milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Containerization & Isolation using Docker Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-13",
+      "slug": "deployment",
+      "title": "13. Deployment & Hosting: Client pitch decks / Strategic recommendation briefs",
+      "description": "Package deployment bundles, map environment secret variables, and provision host execution instances on: Client pitch decks, Strategic recommendation briefs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "isolation-docker"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-management-consulting-13-1",
+          "title": "13. Deployment & Hosting: Client pitch decks / Strategic recommendation briefs Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating deployment core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Deployment & Hosting: Client pitch decks / Strategic recommendation briefs Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating deployment core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-14",
+      "slug": "advanced-concepts",
+      "title": "14. Advanced Architectural Paradigms",
+      "description": "Master high-concurrency systems scaling, security mitigations, and performance tuning: Total Addressable Market (TAM) sizing, Net Present Value (NPV) & IRR projections, Hypothesis-driven problem solving, Profitability diagnosis metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-management-consulting-14-1",
+          "title": "14. Advanced Architectural Paradigms Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating advanced-concepts core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. Advanced Architectural Paradigms Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating advanced-concepts core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-15",
+      "slug": "performance-profiling",
+      "title": "15. System Performance & Latency Benchmarks",
+      "description": "Profile execution bottlenecks, evaluate memory leaks, configure caching layers, and optimize bundle sizes.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-management-consulting-15-1",
+          "title": "15. System Performance & Latency Benchmarks Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating performance-profiling core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the performance-profiling milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. System Performance & Latency Benchmarks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating performance-profiling core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-16",
+      "slug": "automation-cicd",
+      "title": "16. Automated Pipelines (CI/CD) & Automation",
+      "description": "Implement automatic checking workflows, build testing hooks, and automate release distribution paths.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "performance-profiling"
+      ],
+      "parentNodeId": null,
+      "order": 16,
+      "resources": [
+        {
+          "id": "res-management-consulting-16-1",
+          "title": "16. Automated Pipelines (CI/CD) & Automation Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating automation-cicd core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the automation-cicd milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "16. Automated Pipelines (CI/CD) & Automation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating automation-cicd core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-17",
+      "slug": "resume-projects",
+      "title": "17. High Impact Portfolio Projects",
+      "description": "Design, deploy, and document production-ready projects in your portfolio: Market Entry Strategy Model or Sensitivity analysis dashboard model.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "automation-cicd"
+      ],
+      "parentNodeId": null,
+      "order": 17,
+      "resources": [
+        {
+          "id": "res-management-consulting-17-1",
+          "title": "17. High Impact Portfolio Projects Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Market Entry Strategy Model"
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "17. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Market Entry Strategy Model"
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-18",
+      "slug": "job-readiness",
+      "title": "18. Job Readiness & Placement Scan",
+      "description": "Conduct mock technical interviews, customize resume formatting metrics, optimize LinkedIn/GitHub profiles, and begin career applications.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 18,
+      "resources": [
+        {
+          "id": "res-management-consulting-18-1",
+          "title": "18. Job Readiness & Placement Scan Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "18. Job Readiness & Placement Scan Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
+      ]
+    }
+  ],
+  "roadmapNodes": [
+    {
+      "id": "roadmap-management-consulting-node-1",
+      "slug": "fundamentals",
+      "title": "1. Core Management Consultant Fundamentals",
+      "description": "Understand the foundational principles of Management Consultant, primary operational architectures, and basic lifecycle concepts.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-management-consulting-1-1",
+          "title": "1. Core Management Consultant Fundamentals Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating fundamentals core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Core Management Consultant Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating fundamentals core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-2",
+      "slug": "cs-fundamentals",
+      "title": "2. Computer Science & Systems Theory",
+      "description": "Master operating systems process cycles, memory segment layers, and data structure constraints relevant to engineering.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-management-consulting-2-1",
+          "title": "2. Computer Science & Systems Theory Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating cs-fundamentals core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the cs-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Science & Systems Theory Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating cs-fundamentals core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Microsoft Excel & CLI Environment",
+      "description": "Configure version control using Git & GitHub, and prepare local workspace instances using: Microsoft Excel, Microsoft PowerPoint, Tableau.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "cs-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-management-consulting-3-1",
+          "title": "3. Standard Tools: Microsoft Excel & CLI Environment Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating tools core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Microsoft Excel & CLI Environment Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating tools core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-4",
+      "slug": "languages",
+      "title": "4. Programming Languages: Excel modeling formulas / PowerPoint VBA / SQL basics",
+      "description": "Write typesafe, concurrent, and asynchronous code scripts using the target programming languages: Excel modeling formulas, PowerPoint VBA, SQL basics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-management-consulting-4-1",
+          "title": "4. Programming Languages: Excel modeling formulas / PowerPoint VBA / SQL basics Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating languages core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Programming Languages: Excel modeling formulas / PowerPoint VBA / SQL basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating languages core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-5",
+      "slug": "syntax-adv",
+      "title": "5. Advanced Syntax: Concurrency & Threads",
+      "description": "Master asynchronous code execution blocks, thread management, typesafety models, and error handling grids.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-management-consulting-5-1",
+          "title": "5. Advanced Syntax: Concurrency & Threads Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating syntax-adv core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the syntax-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Advanced Syntax: Concurrency & Threads Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating syntax-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-6",
+      "slug": "frameworks",
+      "title": "6. Core Frameworks: MECE framework & Porter's Five Forces",
+      "description": "Build routing layouts, custom controller components, and unified data flow structures using: MECE framework, Porter's Five Forces, BCG Growth-Share Matrix, DCF Financial modeling.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "syntax-adv"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-management-consulting-6-1",
+          "title": "6. Core Frameworks: MECE framework & Porter's Five Forces Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating frameworks core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Core Frameworks: MECE framework & Porter's Five Forces Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating frameworks core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-7",
+      "slug": "databases",
+      "title": "7. Database Systems: Airtable (CRM tracking) & Relational database basics",
+      "description": "Configure structured schemas, queries indexing, transactional logs mapping, and storage layouts using: Airtable (CRM tracking), Relational database basics.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-management-consulting-7-1",
+          "title": "7. Database Systems: Airtable (CRM tracking) & Relational database basics Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating databases core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Database Systems: Airtable (CRM tracking) & Relational database basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating databases core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-8",
+      "slug": "db-queries-adv",
+      "title": "8. Advanced Queries & Index Optimization",
+      "description": "Write complex query joins, configure database replication clusters, read execution plans, and set up caching.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-management-consulting-8-1",
+          "title": "8. Advanced Queries & Index Optimization Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating db-queries-adv core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the db-queries-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Advanced Queries & Index Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating db-queries-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-9",
+      "slug": "apis-routing-core",
+      "title": "9. API Engineering & Inter-service Communication",
+      "description": "Build RESTful routes, map JSON inputs, validate request payloads, and handle gRPC/WebSocket streaming protocols.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "db-queries-adv"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-management-consulting-9-1",
+          "title": "9. API Engineering & Inter-service Communication Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the apis-routing-core milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. API Engineering & Inter-service Communication Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-10",
+      "slug": "testing",
+      "title": "10. Testing & Code Quality: Case interview validation",
+      "description": "Write automated validation logic, integration checking routes, and unit assertion conditions using: Case interview validation, Sensitivity checking tables.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "apis-routing-core"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-management-consulting-10-1",
+          "title": "10. Testing & Code Quality: Case interview validation Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating testing core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Testing & Code Quality: Case interview validation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating testing core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-11",
+      "slug": "security-patterns",
+      "title": "11. OWASP Threat Protections & Security Patterns",
+      "description": "Configure HTTPS protocols, sanitise input parameters, prevent SQL inject arrays, and design role-based policies.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "testing"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-management-consulting-11-1",
+          "title": "11. OWASP Threat Protections & Security Patterns Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the security-patterns milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. OWASP Threat Protections & Security Patterns Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-12",
+      "slug": "isolation-docker",
+      "title": "12. Containerization & Isolation using Docker",
+      "description": "Write functional Dockerfiles, configure multi-container compositions, and handle container networks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "security-patterns"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-management-consulting-12-1",
+          "title": "12. Containerization & Isolation using Docker Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the isolation-docker milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Containerization & Isolation using Docker Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-13",
+      "slug": "deployment",
+      "title": "13. Deployment & Hosting: Client pitch decks / Strategic recommendation briefs",
+      "description": "Package deployment bundles, map environment secret variables, and provision host execution instances on: Client pitch decks, Strategic recommendation briefs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "isolation-docker"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-management-consulting-13-1",
+          "title": "13. Deployment & Hosting: Client pitch decks / Strategic recommendation briefs Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating deployment core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Deployment & Hosting: Client pitch decks / Strategic recommendation briefs Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating deployment core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-14",
+      "slug": "advanced-concepts",
+      "title": "14. Advanced Architectural Paradigms",
+      "description": "Master high-concurrency systems scaling, security mitigations, and performance tuning: Total Addressable Market (TAM) sizing, Net Present Value (NPV) & IRR projections, Hypothesis-driven problem solving, Profitability diagnosis metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-management-consulting-14-1",
+          "title": "14. Advanced Architectural Paradigms Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating advanced-concepts core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. Advanced Architectural Paradigms Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating advanced-concepts core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-15",
+      "slug": "performance-profiling",
+      "title": "15. System Performance & Latency Benchmarks",
+      "description": "Profile execution bottlenecks, evaluate memory leaks, configure caching layers, and optimize bundle sizes.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-management-consulting-15-1",
+          "title": "15. System Performance & Latency Benchmarks Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating performance-profiling core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the performance-profiling milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. System Performance & Latency Benchmarks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating performance-profiling core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-16",
+      "slug": "automation-cicd",
+      "title": "16. Automated Pipelines (CI/CD) & Automation",
+      "description": "Implement automatic checking workflows, build testing hooks, and automate release distribution paths.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "performance-profiling"
+      ],
+      "parentNodeId": null,
+      "order": 16,
+      "resources": [
+        {
+          "id": "res-management-consulting-16-1",
+          "title": "16. Automated Pipelines (CI/CD) & Automation Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating automation-cicd core concepts."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the automation-cicd milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "16. Automated Pipelines (CI/CD) & Automation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating automation-cicd core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-17",
+      "slug": "resume-projects",
+      "title": "17. High Impact Portfolio Projects",
+      "description": "Design, deploy, and document production-ready projects in your portfolio: Market Entry Strategy Model or Sensitivity analysis dashboard model.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "automation-cicd"
+      ],
+      "parentNodeId": null,
+      "order": 17,
+      "resources": [
+        {
+          "id": "res-management-consulting-17-1",
+          "title": "17. High Impact Portfolio Projects Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Market Entry Strategy Model"
+      ],
+      "interviewQuestions": [
+        "How do you calculate a company's Weighted Average Cost of Capital (WACC)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "17. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Market Entry Strategy Model"
+      ]
+    },
+    {
+      "id": "roadmap-management-consulting-node-18",
+      "slug": "job-readiness",
+      "title": "18. Job Readiness & Placement Scan",
+      "description": "Conduct mock technical interviews, customize resume formatting metrics, optimize LinkedIn/GitHub profiles, and begin career applications.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 18,
+      "resources": [
+        {
+          "id": "res-management-consulting-18-1",
+          "title": "18. Job Readiness & Placement Scan Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
+      ],
+      "interviewQuestions": [
+        "Structure a market entry case for a premium EV manufacturer entering India."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "18. Job Readiness & Placement Scan Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
+      ]
+    }
+  ]
+}
