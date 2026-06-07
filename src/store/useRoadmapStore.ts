@@ -27,8 +27,11 @@ export interface RoadmapData {
   description: string;
   difficulty: "BEGINNER" | "INTERMEDIATE" | "ADVANCED";
   estimatedTime: string;
+  estimatedDuration?: string;
+  prerequisites?: string[];
   category: "DEVELOPMENT" | "DATA_SCIENCE" | "SYSTEMS" | "PREPARATION";
   nodes: RoadmapNodeData[];
+  roadmapNodes?: RoadmapNodeData[];
 }
 
 interface UserProfile {

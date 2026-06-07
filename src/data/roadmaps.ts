@@ -1,14 +1,26 @@
-const fs = require("fs");
-const path = require("path");
+import { RoadmapData, RoadmapNodeData } from "@/store/useRoadmapStore";
 
-const blueprintsDir = path.join(__dirname, "../src/data/blueprints");
-
-if (!fs.existsSync(blueprintsDir)) {
-  fs.mkdirSync(blueprintsDir, { recursive: true });
+export interface RoadmapMetaData {
+  id: string;
+  title: string;
+  slug: string;
+  category: "DEVELOPMENT" | "DATA_SCIENCE" | "SYSTEMS" | "PREPARATION";
+  difficulty: "BEGINNER" | "INTERMEDIATE" | "ADVANCED";
+  estimatedDuration: string;
+  prerequisites: string[];
+  languages: string[];
+  tools: string[];
+  frameworks: string[];
+  databases: string[];
+  testing: string[];
+  deployment: string[];
+  advancedConcepts: string[];
+  projects: string[];
+  interviewQuestions: string[];
 }
 
-// 29 roadmaps metadata definitions
-const roadmapsMeta = {
+// Define data mappings for all 29 career roadmaps
+const roadmapsMeta: Record<string, RoadmapMetaData> = {
   "frontend-developer": {
     id: "roadmap-frontend",
     title: "Frontend Developer",
@@ -261,6 +273,8 @@ const roadmapsMeta = {
       "Describe how you debugged a system failure inside a client's secure, isolated VPC network."
     ]
   },
+
+  // === SYSTEMS ROADMAPS ===
   "devops-engineer": {
     id: "roadmap-devops",
     title: "DevOps Engineer",
@@ -362,10 +376,12 @@ const roadmapsMeta = {
     advancedConcepts: ["Buffer Overflows protection", "Digital Signatures (RSA)", "IAM policies audit", "Log auditing"],
     projects: ["Local Vulnerability Security Scanner script", "Secure Cryptographic Signatures suite"],
     interviewQuestions: [
-      "How do you define the differences between asymmetric and symmetric encryption?",
-      "What are the best methods to audit insecure container operations configs?"
+      "How does a buffer overflow exploit occur and how can developers mitigate it in C/C++?",
+      "Explain asymmetric vs symmetric encryption key methods and where they are used."
     ]
   },
+
+  // === DATA & AI ROADMAPS ===
   "data-analyst": {
     id: "roadmap-data-analyst",
     title: "Data Analyst",
@@ -513,6 +529,8 @@ const roadmapsMeta = {
       "How does DVC manage large dataset models versions without committing binary data directly in Git?"
     ]
   },
+
+  // === PREPARATION ROADMAPS ===
   "dsa": {
     id: "roadmap-dsa",
     title: "Data Structures & Algorithms",
@@ -534,10 +552,10 @@ const roadmapsMeta = {
       "What are the prerequisites and runtime complexity of Binary Search?"
     ]
   },
-  "ux-design": {
+  "ux-designer": {
     id: "roadmap-ux-designer",
     title: "UX Designer",
-    slug: "ux-design",
+    slug: "ux-designer",
     category: "PREPARATION",
     difficulty: "BEGINNER",
     estimatedDuration: "3 Months",
@@ -620,8 +638,12 @@ const roadmapsMeta = {
   }
 };
 
-function generateRoadmapFromMeta(meta) {
-  const nodes = [
+/**
+ * Generator helper that maps the RoadmapMetaData template into the final RoadmapData
+ * containing the 12 requested career checkpoints for each of the 29 roadmaps.
+ */
+function generateRoadmapFromMeta(meta: RoadmapMetaData): RoadmapData {
+  const nodes: RoadmapNodeData[] = [
     {
       id: `${meta.id}-node-1`,
       slug: "internet-fundamentals",
@@ -824,7 +846,7 @@ function generateRoadmapFromMeta(meta) {
       resources: [
         { id: `res-${meta.slug}-proj-1`, title: "GitHub Readme templates design guidelines", type: "WEBSITE", url: "https://github.com" }
       ],
-      projectIdeas: meta.projects.map((p) => `Build complete deployable version of ${p} with documentation.`),
+      projectIdeas: meta.projects.map((p, idx) => `Build complete deployable version of ${p} with documentation.`),
       interviewQuestions: [
         `Explain the core architecture bottlenecks of your ${meta.projects[0]} project.`,
         "How does your database sharding or state caching optimize loading speeds?"
@@ -851,6 +873,7 @@ function generateRoadmapFromMeta(meta) {
     }
   ];
 
+  // Helper arrays mapping learningObjectives and subtopics for compliance
   const enrichedNodes = nodes.map(node => ({
     ...node,
     learningObjectives: [
@@ -864,6 +887,7 @@ function generateRoadmapFromMeta(meta) {
       "Production Best Practices",
       "Debugging & Testing Rules"
     ],
+    // Map projects list as string array for new schema compliance
     projects: node.projectIdeas
   }));
 
@@ -871,6 +895,7 @@ function generateRoadmapFromMeta(meta) {
     id: meta.id,
     title: meta.title,
     slug: meta.slug,
+    description: `Master ${meta.title} skills, standard tools, framework engineering, database design, and advanced deployment pipelines.`,
     category: meta.category,
     difficulty: meta.difficulty,
     estimatedTime: meta.estimatedDuration,
@@ -881,40 +906,9 @@ function generateRoadmapFromMeta(meta) {
   };
 }
 
-console.log("Writing blueprint JSON files...");
-Object.keys(roadmapsMeta).forEach((key) => {
-  const roadmapData = generateRoadmapFromMeta(roadmapsMeta[key]);
-  const filename = `${key}.json`;
-  const filepath = path.join(blueprintsDir, filename);
-  fs.writeFileSync(filepath, JSON.stringify(roadmapData, null, 2));
-  console.log(`- Created ${filename}`);
+// Map the list into final career roadmaps database
+export const roadmaps: Record<string, RoadmapData> = {};
+
+Object.keys(roadmapsMeta).forEach(key => {
+  roadmaps[key] = generateRoadmapFromMeta(roadmapsMeta[key]);
 });
-
-// Also write DSA JSON blueprint manually using same template
-const dsaMeta = {
-  id: "roadmap-dsa",
-  title: "Data Structures & Algorithms",
-  slug: "dsa",
-  category: "PREPARATION",
-  difficulty: "BEGINNER",
-  estimatedDuration: "3 Months",
-  prerequisites: [],
-  languages: ["C++", "Java", "Python", "JavaScript/TypeScript"],
-  tools: ["LeetCode IDE", "Visualgo.net", "GDB debugger", "Visual Studio Code"],
-  frameworks: ["Big O complexity boundaries", "Memory Layouts"],
-  databases: ["None"],
-  testing: ["Unit testing testcases tables"],
-  deployment: ["GitHub repository code solutions"],
-  advancedConcepts: ["Dynamic Programming (DP)", "Graph traversals BFS/DFS", "Greedy algorithms selection", "Heaps sorting bounds"],
-  projects: ["Custom Singly Linked List classes", "Sorting Algorithms visualizer page"],
-  interviewQuestions: [
-    "Why are array index lookups O(1) time complexity while linked lists search is O(N)?",
-    "What are the prerequisites and runtime complexity of Binary Search?"
-  ]
-};
-
-const dsaData = generateRoadmapFromMeta(dsaMeta);
-fs.writeFileSync(path.join(blueprintsDir, "dsa.json"), JSON.stringify(dsaData, null, 2));
-console.log("- Created dsa.json");
-
-console.log("All 29 blueprints generated successfully!");

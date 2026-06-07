@@ -1,17 +1,20 @@
 {
   "id": "roadmap-backend",
-  "slug": "backend-developer",
   "title": "Backend Developer",
-  "description": "Learn server design, building APIs, relational and non-relational database management, authentication protocols, and system scaling.",
+  "slug": "backend-developer",
+  "category": "DEVELOPMENT",
   "difficulty": "INTERMEDIATE",
   "estimatedTime": "4 Months",
-  "category": "DEVELOPMENT",
+  "estimatedDuration": "4 Months",
+  "prerequisites": [
+    "frontend-developer"
+  ],
   "nodes": [
     {
-      "id": "be-node-1",
-      "slug": "nodejs-basics",
-      "title": "Node.js & Express Basics",
-      "description": "Learn server logic using Node.js, Express routers, middle-wares, error handling, and file system interfaces.",
+      "id": "roadmap-backend-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -19,228 +22,1030 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-be-1",
-          "title": "Node.js Guide (NodeJS)",
+          "id": "res-backend-developer-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://nodejs.org/en/docs/guides"
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
         },
         {
-          "id": "res-be-2",
-          "title": "Express.js Crash Course",
+          "id": "res-backend-developer-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=SccSCuHhOw0"
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
         }
       ],
       "projectIdeas": [
-        "Build a local CLI utility that interacts with text files and parses JSON logs."
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ],
       "interviewQuestions": [
-        "Explain the event loop in Node.js.",
-        "What is middleware in Express.js?"
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ]
     },
     {
-      "id": "be-node-2",
-      "slug": "databases-sql",
-      "title": "Databases (SQL & NoSQL)",
-      "description": "Explore PostgreSQL, MySQL, MongoDB, indexing, relations, ACID properties, queries, and migrations.",
-      "difficulty": "INTERMEDIATE",
+      "id": "roadmap-backend-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
       "estimatedTime": "12 hours",
       "prerequisites": [
-        "nodejs-basics"
+        "internet-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-be-3",
-          "title": "Learn PostgreSQL Basics",
+          "id": "res-backend-developer-cs-1",
+          "title": "Operating Systems Internals Guide",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://tldp.org"
         },
         {
-          "id": "res-be-4",
-          "title": "SQL vs NoSQL Databases",
+          "id": "res-backend-developer-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=ZS_kXvOe90o"
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
         }
       ],
       "projectIdeas": [
-        "Design a relational database schema for a shopping system with users, orders, items, and inventory."
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain the ACID properties in databases.Delta"
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ]
     },
     {
-      "id": "be-node-3",
-      "slug": "rest-apis",
-      "title": "REST APIs & Validation",
-      "description": "Design robust REST endpoints with proper HTTP methods, query status codes, request validators, and schemas.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "6 hours",
+      "id": "roadmap-backend-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Postman & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Postman, Docker, Git & GitHub, REST Client, SSH.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
       "prerequisites": [
-        "databases-sql"
+        "computer-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-be-5",
-          "title": "RESTful API Design Best Practices",
-          "type": "WEBSITE",
-          "url": "https://restfulapi.net/"
-        },
-        {
-          "id": "res-be-6",
-          "title": "API Validation with Zod or Joi",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=L8M_MskP8xU"
+          "id": "res-backend-developer-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
         }
       ],
       "projectIdeas": [
-        "Build a fully-validated REST API for a task management app using Express and Zod."
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
       ],
       "interviewQuestions": [
-        "What are the key constraints of a RESTful API?",
-        "What are the differences between GET, POST, PUT, and PATCH?"
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Postman & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
       ]
     },
     {
-      "id": "be-node-4",
-      "slug": "auth-security",
-      "title": "Auth, Sessions & Security",
-      "description": "Learn session management, JWT (JSON Web Tokens), hashing passwords with bcrypt, OAuth flows, and CORS configuration.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "10 hours",
+      "id": "roadmap-backend-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: Node.js (JavaScript/TypeScript) / Python / Go (Golang) / Java",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Node.js (JavaScript/TypeScript), Python, Go (Golang), Java.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
       "prerequisites": [
-        "rest-apis"
+        "tools"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-be-7",
-          "title": "OWASP Top 10 Security Risks",
+          "id": "res-backend-developer-lang-1",
+          "title": "Node.js (JavaScript/TypeScript) Official Guides",
           "type": "DOCUMENTATION",
-          "url": "https://owasp.org/www-project-top-ten/"
-        },
-        {
-          "id": "res-be-8",
-          "title": "JWT Auth Explained",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7Q17ubqL6gA"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build a backend API containing user signup, signin, token refresh, and private routes protected by JWT validation."
+        "Build a terminal console validator app using Node.js (JavaScript/TypeScript) handling variable arrays."
       ],
       "interviewQuestions": [
-        "What is the difference between Session-based and Token-based authentication?",
-        "How does bcrypt securely store passwords?"
+        "What are the reference types vs value types in Node.js (JavaScript/TypeScript)?",
+        "How does asynchronous logic work in Node.js (JavaScript/TypeScript)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: Node.js (JavaScript/TypeScript) / Python / Go (Golang) / Java Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using Node.js (JavaScript/TypeScript) handling variable arrays."
       ]
     },
     {
-      "id": "be-node-5",
-      "slug": "caching-redis",
-      "title": "Caching & Redis",
-      "description": "Improve performance by avoiding redundant computation. Master key-value stores, memory sizing, and cache invalidation strategies.",
+      "id": "roadmap-backend-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: Express.js & NestJS & FastAPI & Spring Boot",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Express.js, NestJS, FastAPI, Spring Boot.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "6 hours",
+      "estimatedTime": "40 hours",
       "prerequisites": [
-        "databases-sql"
+        "languages"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-be-cache-1",
-          "title": "Redis Crash Course",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=jgpVdJB2sKQ"
-        },
-        {
-          "id": "res-be-cache-2",
-          "title": "Caching Strategies",
+          "id": "res-backend-developer-fw-1",
+          "title": "Express.js Reference Docs",
           "type": "DOCUMENTATION",
-          "url": "https://redis.io/docs/manual/client-side-caching/"
+          "url": "https://react.dev"
         }
       ],
       "projectIdeas": [
-        "Integrate a Redis cache layer for fetching database records in an Express API, reducing load latency by 80%."
+        "Develop an interactive dashboard UI layout mapping components using Express.js."
       ],
       "interviewQuestions": [
-        "What is cache stampede and how do you prevent it?",
-        "Explain the difference between write-through and cache-aside patterns."
+        "When does a Express.js component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in Express.js."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: Express.js & NestJS & FastAPI & Spring Boot Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using Express.js."
       ]
     },
     {
-      "id": "be-node-6",
-      "slug": "message-brokers",
-      "title": "Message Brokers (Kafka/RabbitMQ)",
-      "description": "Build asynchronous event-driven pipelines. Master pub-sub systems, message delivery guarantees, and stream offsets.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "12 hours",
+      "id": "roadmap-backend-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: PostgreSQL (Relational) / MongoDB (NoSQL) / Redis (Caching)",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Relational), MongoDB (NoSQL), Redis (Caching).",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
       "prerequisites": [
-        "auth-security"
+        "frameworks"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-be-mb-1",
-          "title": "RabbitMQ Essentials",
-          "type": "DOCUMENTATION",
-          "url": "https://www.rabbitmq.com/getstarted.html"
-        },
-        {
-          "id": "res-be-mb-2",
-          "title": "Kafka Explained in 10 mins",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=Ch5vhJ0rkig"
+          "id": "res-backend-developer-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
         }
       ],
       "projectIdeas": [
-        "Build a decoupled transaction logging service that listens to events emitted to a RabbitMQ queue."
+        "Create database tables mapping models schema using PostgreSQL (Relational)."
       ],
       "interviewQuestions": [
-        "What is the difference between Kafka and RabbitMQ?",
-        "Explain how partitions enable horizontal scaling in Kafka."
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: PostgreSQL (Relational) / MongoDB (NoSQL) / Redis (Caching) Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using PostgreSQL (Relational)."
       ]
     },
     {
-      "id": "be-node-7",
-      "slug": "docker-deploy",
-      "title": "Docker Containerization",
-      "description": "Package your applications into Docker containers. Learn Dockerfile creation, port mapping, and volume management.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "8 hours",
+      "id": "roadmap-backend-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Supertest / Jest / PyTest / Mocha",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Supertest, Jest, PyTest, Mocha.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "auth-security"
+        "frameworks"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-be-9",
-          "title": "Docker Container Basics",
+          "id": "res-backend-developer-test-1",
+          "title": "Software testing methodologies",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com/get-started/"
-        },
-        {
-          "id": "res-be-10",
-          "title": "Docker Crash Course for Beginners",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=3c-iBn73dDE"
+          "url": "https://jestjs.io"
         }
       ],
       "projectIdeas": [
-        "Dockerize your Express and PostgreSQL server, starting both up seamlessly via Docker Compose."
+        "Write unit tests files mapping components logic asserting edge input values."
       ],
       "interviewQuestions": [
-        "What is the difference between a Docker image and a container?",
-        "Explain the difference between a Virtual Machine and a Docker container."
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Supertest / Jest / PyTest / Mocha Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: AWS (EC2/S3) / Render / Heroku / Docker Compose",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS (EC2/S3), Render, Heroku, Docker Compose.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-backend-developer-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: AWS (EC2/S3) / Render / Heroku / Docker Compose Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Message Queues (RabbitMQ/Kafka), Rate Limiting, WebSockets Concurrency, gRPC APIs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-backend-developer-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Message Queues (RabbitMQ/Kafka) to solve scalability bottlenecks.",
+        "What security vulnerabilities does gRPC APIs protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-backend-developer-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "Explain the event loop in Node.js and how it handles asynchronous operations.",
+        "What is database sharding and how does it differ from horizontal replication?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: Secure Task REST API Server or Distributed URL Shortener or Real-time Chat App Backend. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-backend-developer-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of Secure Task REST API Server with documentation.",
+        "Build complete deployable version of Distributed URL Shortener with documentation.",
+        "Build complete deployable version of Real-time Chat App Backend with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your Secure Task REST API Server project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of Secure Task REST API Server with documentation.",
+        "Build complete deployable version of Distributed URL Shortener with documentation.",
+        "Build complete deployable version of Real-time Chat App Backend with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-backend-developer-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ]
+    }
+  ],
+  "roadmapNodes": [
+    {
+      "id": "roadmap-backend-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-backend-developer-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-backend-developer-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ],
+      "interviewQuestions": [
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "internet-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-backend-developer-cs-1",
+          "title": "Operating Systems Internals Guide",
+          "type": "WEBSITE",
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-backend-developer-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+        }
+      ],
+      "projectIdeas": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ],
+      "interviewQuestions": [
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Postman & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Postman, Docker, Git & GitHub, REST Client, SSH.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-backend-developer-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Postman & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: Node.js (JavaScript/TypeScript) / Python / Go (Golang) / Java",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Node.js (JavaScript/TypeScript), Python, Go (Golang), Java.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-backend-developer-lang-1",
+          "title": "Node.js (JavaScript/TypeScript) Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using Node.js (JavaScript/TypeScript) handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in Node.js (JavaScript/TypeScript)?",
+        "How does asynchronous logic work in Node.js (JavaScript/TypeScript)?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: Node.js (JavaScript/TypeScript) / Python / Go (Golang) / Java Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using Node.js (JavaScript/TypeScript) handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: Express.js & NestJS & FastAPI & Spring Boot",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Express.js, NestJS, FastAPI, Spring Boot.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-backend-developer-fw-1",
+          "title": "Express.js Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using Express.js."
+      ],
+      "interviewQuestions": [
+        "When does a Express.js component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in Express.js."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: Express.js & NestJS & FastAPI & Spring Boot Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using Express.js."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: PostgreSQL (Relational) / MongoDB (NoSQL) / Redis (Caching)",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Relational), MongoDB (NoSQL), Redis (Caching).",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-backend-developer-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using PostgreSQL (Relational)."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: PostgreSQL (Relational) / MongoDB (NoSQL) / Redis (Caching) Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using PostgreSQL (Relational)."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Supertest / Jest / PyTest / Mocha",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Supertest, Jest, PyTest, Mocha.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-backend-developer-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Supertest / Jest / PyTest / Mocha Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: AWS (EC2/S3) / Render / Heroku / Docker Compose",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS (EC2/S3), Render, Heroku, Docker Compose.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-backend-developer-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: AWS (EC2/S3) / Render / Heroku / Docker Compose Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Message Queues (RabbitMQ/Kafka), Rate Limiting, WebSockets Concurrency, gRPC APIs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-backend-developer-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Message Queues (RabbitMQ/Kafka) to solve scalability bottlenecks.",
+        "What security vulnerabilities does gRPC APIs protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-backend-developer-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "Explain the event loop in Node.js and how it handles asynchronous operations.",
+        "What is database sharding and how does it differ from horizontal replication?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: Secure Task REST API Server or Distributed URL Shortener or Real-time Chat App Backend. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-backend-developer-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of Secure Task REST API Server with documentation.",
+        "Build complete deployable version of Distributed URL Shortener with documentation.",
+        "Build complete deployable version of Real-time Chat App Backend with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your Secure Task REST API Server project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of Secure Task REST API Server with documentation.",
+        "Build complete deployable version of Distributed URL Shortener with documentation.",
+        "Build complete deployable version of Real-time Chat App Backend with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-backend-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-backend-developer-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
       ]
     }
   ]

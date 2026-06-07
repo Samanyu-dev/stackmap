@@ -1,92 +1,1048 @@
 {
   "id": "roadmap-ai-engineer",
-  "slug": "ai-engineer",
   "title": "AI Engineer",
-  "description": "Build intelligent systems. Learn prompt configurations, vector datastores, retrieval augmented generation (RAG) structures, and LLM APIs.",
+  "slug": "ai-engineer",
+  "category": "DATA_SCIENCE",
   "difficulty": "ADVANCED",
   "estimatedTime": "4 Months",
-  "category": "DATA_SCIENCE",
+  "estimatedDuration": "4 Months",
+  "prerequisites": [
+    "backend-developer",
+    "machine-learning"
+  ],
   "nodes": [
     {
-      "id": "ai-node-1",
-      "slug": "llm-apis",
-      "title": "LLM APIs & Prompt Configuration",
-      "description": "Understand model parameters (temperature, top-p, system instructions) and construct chat prompts.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "6 hours",
+      "id": "roadmap-ai-engineer-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-ai-1",
-          "title": "Google Gemini API Docs",
+          "id": "res-ai-engineer-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://ai.google.dev/gemini-api/docs"
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-ai-engineer-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
         }
       ],
       "projectIdeas": [
-        "Build a CLI chatbot using the Gemini SDK that takes customizable system instructions and tracks chat context."
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ],
       "interviewQuestions": [
-        "What is the effect of raising the temperature parameter in LLM calls?",
-        "Explain few-shot prompting techniques."
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ]
     },
     {
-      "id": "ai-node-2",
-      "slug": "embeddings-vectors",
-      "title": "Embeddings & Vector Databases",
-      "description": "Transform text documents into token embeddings. Master vector indexing, cosine similarity checks, and database lookups.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "10 hours",
+      "id": "roadmap-ai-engineer-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
       "prerequisites": [
-        "llm-apis"
+        "internet-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-ai-2",
-          "title": "Vector Databases Explained",
+          "id": "res-ai-engineer-cs-1",
+          "title": "Operating Systems Internals Guide",
           "type": "WEBSITE",
-          "url": "https://www.pinecone.io/learn/vector-database/"
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-ai-engineer-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
         }
       ],
       "projectIdeas": [
-        "Build a semantic code scanner that searches files based on meaning matches rather than literal text matches."
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ],
       "interviewQuestions": [
-        "What is the difference between vector embeddings and keywords search?",
-        "Explain Cosine Similarity vs Dot Product distance metric calculations."
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ]
     },
     {
-      "id": "ai-node-3",
-      "slug": "rag-langchain",
-      "title": "RAG & LangChain Orchestration",
-      "description": "Build Retrieval-Augmented Generation (RAG) pipelines. Connect vector datastores with LLMs to provide real-time documentation checks.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "id": "roadmap-ai-engineer-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Pinecone Vector DB & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Pinecone Vector DB, ChromaDB, LangChain, OpenAI/Gemini SDKs.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
       "prerequisites": [
-        "embeddings-vectors"
+        "computer-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-ai-3",
-          "title": "LangChain Documentation",
+          "id": "res-ai-engineer-tools-1",
+          "title": "Git Handbook Guidelines",
           "type": "DOCUMENTATION",
-          "url": "https://python.langchain.com/docs/get_started/introduction"
+          "url": "https://guides.github.com/introduction/git-handbook/"
         }
       ],
       "projectIdeas": [
-        "Build a 'Chat with my PDF' web app that parses documents, slices paragraphs into vectors, and returns cited answers."
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
       ],
       "interviewQuestions": [
-        "Explain the architectural steps of a typical RAG system.",
-        "How do you mitigate LLM hallucinations inside prompts?"
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Pinecone Vector DB & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: Python / TypeScript / SQL",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, TypeScript, SQL.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-ai-engineer-lang-1",
+          "title": "Python Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in Python?",
+        "How does asynchronous logic work in Python?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: Python / TypeScript / SQL Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using FastAPI, Next.js App Router, LlamaIndex.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-ai-engineer-fw-1",
+          "title": "FastAPI Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using FastAPI."
+      ],
+      "interviewQuestions": [
+        "When does a FastAPI component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in FastAPI."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using FastAPI."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector)",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Pinecone, Milvus, PostgreSQL (pgvector).",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-ai-engineer-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using Pinecone."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector) Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using Pinecone."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Prompt evaluations frameworks, LLM validation tests.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-ai-engineer-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: Vercel / Render / Docker Compose",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, Render, Docker Compose.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-ai-engineer-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: Vercel / Render / Docker Compose Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Retrieval-Augmented Generation (RAG), Vector Embeddings Cosine similarity, Prompt Engineering few-shot, Agents & Tools loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-ai-engineer-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Retrieval-Augmented Generation (RAG) to solve scalability bottlenecks.",
+        "What security vulnerabilities does Agents & Tools loops protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-ai-engineer-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups.",
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: CLI Chatbot using Gemini SDK or RAG 'Chat with PDF' web application. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-ai-engineer-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
+        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your CLI Chatbot using Gemini SDK project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
+        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-ai-engineer-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ]
+    }
+  ],
+  "roadmapNodes": [
+    {
+      "id": "roadmap-ai-engineer-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ai-engineer-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-ai-engineer-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ],
+      "interviewQuestions": [
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "internet-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-ai-engineer-cs-1",
+          "title": "Operating Systems Internals Guide",
+          "type": "WEBSITE",
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-ai-engineer-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+        }
+      ],
+      "projectIdeas": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ],
+      "interviewQuestions": [
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Pinecone Vector DB & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Pinecone Vector DB, ChromaDB, LangChain, OpenAI/Gemini SDKs.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-ai-engineer-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Pinecone Vector DB & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: Python / TypeScript / SQL",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, TypeScript, SQL.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-ai-engineer-lang-1",
+          "title": "Python Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in Python?",
+        "How does asynchronous logic work in Python?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: Python / TypeScript / SQL Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using FastAPI, Next.js App Router, LlamaIndex.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-ai-engineer-fw-1",
+          "title": "FastAPI Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using FastAPI."
+      ],
+      "interviewQuestions": [
+        "When does a FastAPI component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in FastAPI."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using FastAPI."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector)",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Pinecone, Milvus, PostgreSQL (pgvector).",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-ai-engineer-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using Pinecone."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector) Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using Pinecone."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Prompt evaluations frameworks, LLM validation tests.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-ai-engineer-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: Vercel / Render / Docker Compose",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, Render, Docker Compose.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-ai-engineer-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: Vercel / Render / Docker Compose Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Retrieval-Augmented Generation (RAG), Vector Embeddings Cosine similarity, Prompt Engineering few-shot, Agents & Tools loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-ai-engineer-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Retrieval-Augmented Generation (RAG) to solve scalability bottlenecks.",
+        "What security vulnerabilities does Agents & Tools loops protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-ai-engineer-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups.",
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: CLI Chatbot using Gemini SDK or RAG 'Chat with PDF' web application. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-ai-engineer-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
+        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your CLI Chatbot using Gemini SDK project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
+        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-ai-engineer-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
       ]
     }
   ]

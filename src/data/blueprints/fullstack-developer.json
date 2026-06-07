@@ -1,90 +1,1052 @@
 {
   "id": "roadmap-fullstack",
-  "slug": "fullstack-developer",
   "title": "Full Stack Developer",
-  "description": "Combine Frontend visual engineering with Backend server and database infrastructure to build complete end-to-end applications.",
+  "slug": "fullstack-developer",
+  "category": "DEVELOPMENT",
   "difficulty": "INTERMEDIATE",
   "estimatedTime": "6 Months",
-  "category": "DEVELOPMENT",
+  "estimatedDuration": "6 Months",
+  "prerequisites": [
+    "frontend-developer",
+    "backend-developer"
+  ],
   "nodes": [
     {
-      "id": "fs-node-1",
-      "slug": "fs-frontend",
-      "title": "Frontend Foundations",
-      "description": "Master HTML, CSS, JavaScript, and React components to build views.",
+      "id": "roadmap-fullstack-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-fs-1",
-          "title": "React Docs",
+          "id": "res-fullstack-developer-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-fullstack-developer-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
         }
       ],
       "projectIdeas": [
-        "Build an interactive student visual page."
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ],
       "interviewQuestions": [
-        "Explain React state."
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ]
     },
     {
-      "id": "fs-node-2",
-      "slug": "fs-backend",
-      "title": "Backend Foundations",
-      "description": "Learn Express, Databases (SQL), schema creation, and server APIs.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "30 hours",
+      "id": "roadmap-fullstack-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
       "prerequisites": [
-        "fs-frontend"
+        "internet-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-fs-2",
-          "title": "PostgreSQL Guide",
+          "id": "res-fullstack-developer-cs-1",
+          "title": "Operating Systems Internals Guide",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-fullstack-developer-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
         }
       ],
       "projectIdeas": [
-        "Build a REST database server."
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ],
       "interviewQuestions": [
-        "What are SQL primary and foreign keys?"
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ]
     },
     {
-      "id": "fs-node-3",
-      "slug": "fs-integration",
-      "title": "API Integration & NextJS Full Stack",
-      "description": "Connect both layers: build API routes inside Next.js App Router, manage state, and authenticate user contexts.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "id": "roadmap-fullstack-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Git & GitHub & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Git & GitHub, Docker, Postman, Vite, ESLint.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
       "prerequisites": [
-        "fs-frontend",
-        "fs-backend"
+        "computer-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-fs-3",
-          "title": "Next.js Data Fetching",
+          "id": "res-fullstack-developer-tools-1",
+          "title": "Git Handbook Guidelines",
           "type": "DOCUMENTATION",
-          "url": "https://nextjs.org/docs/app/building-your-application/data-fetching"
+          "url": "https://guides.github.com/introduction/git-handbook/"
         }
       ],
       "projectIdeas": [
-        "Build a full-fledged ecommerce platform with dashboard analytics, admin controls, and database cache."
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
       ],
       "interviewQuestions": [
-        "What is Hydration mismatch in Next.js and how can you solve it?"
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Git & GitHub & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: JavaScript / TypeScript / SQL",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in JavaScript, TypeScript, SQL.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-lang-1",
+          "title": "JavaScript Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using JavaScript handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in JavaScript?",
+        "How does asynchronous logic work in JavaScript?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: JavaScript / TypeScript / SQL Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using JavaScript handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: React.js & Next.js & Express.js & Zustand",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using React.js, Next.js, Express.js, Zustand.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-fw-1",
+          "title": "React.js Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using React.js."
+      ],
+      "interviewQuestions": [
+        "When does a React.js component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in React.js."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: React.js & Next.js & Express.js & Zustand Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using React.js."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: PostgreSQL / MongoDB / Redis",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL, MongoDB, Redis.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using PostgreSQL."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: PostgreSQL / MongoDB / Redis Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using PostgreSQL."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Jest / Cypress / Supertest",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Jest, Cypress, Supertest.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Jest / Cypress / Supertest Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: Vercel / AWS / Render",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, AWS, Render.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: Vercel / AWS / Render Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: GraphQL APIs, Monorepo architectures, Serverless Functions, WebSockets sync.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement GraphQL APIs to solve scalability bottlenecks.",
+        "What security vulnerabilities does WebSockets sync protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "How do you handle user session state synchronization between Next.js SSR and Express JWT auth?",
+        "Explain database transactions ACID safety guidelines under concurrent API loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: E-Commerce System with Payments or Student Job Portal or E-Learning LMS Platform. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of E-Commerce System with Payments with documentation.",
+        "Build complete deployable version of Student Job Portal with documentation.",
+        "Build complete deployable version of E-Learning LMS Platform with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your E-Commerce System with Payments project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of E-Commerce System with Payments with documentation.",
+        "Build complete deployable version of Student Job Portal with documentation.",
+        "Build complete deployable version of E-Learning LMS Platform with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ]
+    }
+  ],
+  "roadmapNodes": [
+    {
+      "id": "roadmap-fullstack-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-fullstack-developer-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ],
+      "interviewQuestions": [
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "internet-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-cs-1",
+          "title": "Operating Systems Internals Guide",
+          "type": "WEBSITE",
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-fullstack-developer-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+        }
+      ],
+      "projectIdeas": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ],
+      "interviewQuestions": [
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Git & GitHub & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Git & GitHub, Docker, Postman, Vite, ESLint.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Git & GitHub & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: JavaScript / TypeScript / SQL",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in JavaScript, TypeScript, SQL.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-lang-1",
+          "title": "JavaScript Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using JavaScript handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in JavaScript?",
+        "How does asynchronous logic work in JavaScript?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: JavaScript / TypeScript / SQL Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using JavaScript handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: React.js & Next.js & Express.js & Zustand",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using React.js, Next.js, Express.js, Zustand.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-fw-1",
+          "title": "React.js Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using React.js."
+      ],
+      "interviewQuestions": [
+        "When does a React.js component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in React.js."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: React.js & Next.js & Express.js & Zustand Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using React.js."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: PostgreSQL / MongoDB / Redis",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL, MongoDB, Redis.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using PostgreSQL."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: PostgreSQL / MongoDB / Redis Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using PostgreSQL."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Jest / Cypress / Supertest",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Jest, Cypress, Supertest.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Jest / Cypress / Supertest Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: Vercel / AWS / Render",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, AWS, Render.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: Vercel / AWS / Render Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: GraphQL APIs, Monorepo architectures, Serverless Functions, WebSockets sync.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement GraphQL APIs to solve scalability bottlenecks.",
+        "What security vulnerabilities does WebSockets sync protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "How do you handle user session state synchronization between Next.js SSR and Express JWT auth?",
+        "Explain database transactions ACID safety guidelines under concurrent API loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: E-Commerce System with Payments or Student Job Portal or E-Learning LMS Platform. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of E-Commerce System with Payments with documentation.",
+        "Build complete deployable version of Student Job Portal with documentation.",
+        "Build complete deployable version of E-Learning LMS Platform with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your E-Commerce System with Payments project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of E-Commerce System with Payments with documentation.",
+        "Build complete deployable version of Student Job Portal with documentation.",
+        "Build complete deployable version of E-Learning LMS Platform with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-fullstack-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-fullstack-developer-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
       ]
     }
   ]

@@ -1,64 +1,1047 @@
 {
   "id": "roadmap-cyber-security",
+  "title": "Cyber Security Engineer",
   "slug": "cyber-security",
-  "title": "Cyber Security",
-  "description": "Protect digital infrastructure. Master threat modeling, network diagnostics, penetration testing, cryptography, and server hardening.",
-  "difficulty": "ADVANCED",
-  "estimatedTime": "5 Months",
   "category": "SYSTEMS",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "4 Months",
+  "estimatedDuration": "4 Months",
+  "prerequisites": [
+    "network-engineer"
+  ],
   "nodes": [
     {
-      "id": "cs-node-1",
-      "slug": "network-recon",
-      "title": "Network Reconnaissance (Nmap)",
-      "description": "Scan network IPs, verify open port statuses, trace running service revisions, and diagnostic firewalls settings.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "id": "roadmap-cyber-security-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-cs-1",
-          "title": "Nmap Scanning Guide",
+          "id": "res-cyber-security-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://nmap.org/book/man.html"
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-cyber-security-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
         }
       ],
       "projectIdeas": [
-        "Scan local test servers using Nmap, identifying open ports, and reporting potential access vulnerabilities."
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ],
       "interviewQuestions": [
-        "What is a SYN scan in Nmap and how does it operate?",
-        "Explain the difference between active and passive scanning methodologies."
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ]
     },
     {
-      "id": "cs-node-2",
-      "slug": "pentesting-owasp",
-      "title": "OWASP Vulnerabilities & Exploitation",
-      "description": "Audit vulnerabilities like SQL injection, XSS inputs, IDOR flaws, and access control bugs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "id": "roadmap-cyber-security-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
       "prerequisites": [
-        "network-recon"
+        "internet-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-cs-2",
-          "title": "OWASP Top 10 Web Risks",
+          "id": "res-cyber-security-cs-1",
+          "title": "Operating Systems Internals Guide",
           "type": "WEBSITE",
-          "url": "https://owasp.org/www-project-top-ten/"
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-cyber-security-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
         }
       ],
       "projectIdeas": [
-        "Set up a vulnerable test application, execute SQL injections to bypass authentication, and write patches."
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ],
       "interviewQuestions": [
-        "How does parameterized SQL query input protect against SQL injection?",
-        "Explain dynamic CSRF token verification protections."
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Nmap & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Nmap, Metasploit, Burp Suite, Wireshark, Hashcat.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-cyber-security-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Nmap & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: Python / Bash / JavaScript",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, Bash, JavaScript.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-cyber-security-lang-1",
+          "title": "Python Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in Python?",
+        "How does asynchronous logic work in Python?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: Python / Bash / JavaScript Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: NIST framework & OWASP rules & MITRE ATT&CK",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using NIST framework, OWASP rules, MITRE ATT&CK.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-cyber-security-fw-1",
+          "title": "NIST framework Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using NIST framework."
+      ],
+      "interviewQuestions": [
+        "When does a NIST framework component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in NIST framework."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: NIST framework & OWASP rules & MITRE ATT&CK Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using NIST framework."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: SQL security setups",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQL security setups.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-cyber-security-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using SQL security setups."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: SQL security setups Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using SQL security setups."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Vulnerability assessments / Penetration testing loops",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Vulnerability assessments, Penetration testing loops.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-cyber-security-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Vulnerability assessments / Penetration testing loops Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: Kali Linux / Firewall configurations AWS",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on Kali Linux, Firewall configurations AWS.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-cyber-security-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: Kali Linux / Firewall configurations AWS Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Buffer Overflows protection, Digital Signatures (RSA), IAM policies audit, Log auditing.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-cyber-security-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Buffer Overflows protection to solve scalability bottlenecks.",
+        "What security vulnerabilities does Log auditing protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-cyber-security-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "How do you define the differences between asymmetric and symmetric encryption?",
+        "What are the best methods to audit insecure container operations configs?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: Local Vulnerability Security Scanner script or Secure Cryptographic Signatures suite. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-cyber-security-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of Local Vulnerability Security Scanner script with documentation.",
+        "Build complete deployable version of Secure Cryptographic Signatures suite with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your Local Vulnerability Security Scanner script project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of Local Vulnerability Security Scanner script with documentation.",
+        "Build complete deployable version of Secure Cryptographic Signatures suite with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-cyber-security-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ]
+    }
+  ],
+  "roadmapNodes": [
+    {
+      "id": "roadmap-cyber-security-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-cyber-security-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-cyber-security-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ],
+      "interviewQuestions": [
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "internet-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-cyber-security-cs-1",
+          "title": "Operating Systems Internals Guide",
+          "type": "WEBSITE",
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-cyber-security-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+        }
+      ],
+      "projectIdeas": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ],
+      "interviewQuestions": [
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Nmap & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Nmap, Metasploit, Burp Suite, Wireshark, Hashcat.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-cyber-security-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Nmap & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: Python / Bash / JavaScript",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, Bash, JavaScript.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-cyber-security-lang-1",
+          "title": "Python Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in Python?",
+        "How does asynchronous logic work in Python?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: Python / Bash / JavaScript Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using Python handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: NIST framework & OWASP rules & MITRE ATT&CK",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using NIST framework, OWASP rules, MITRE ATT&CK.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-cyber-security-fw-1",
+          "title": "NIST framework Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using NIST framework."
+      ],
+      "interviewQuestions": [
+        "When does a NIST framework component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in NIST framework."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: NIST framework & OWASP rules & MITRE ATT&CK Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using NIST framework."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: SQL security setups",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQL security setups.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-cyber-security-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using SQL security setups."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: SQL security setups Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using SQL security setups."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Vulnerability assessments / Penetration testing loops",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Vulnerability assessments, Penetration testing loops.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-cyber-security-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Vulnerability assessments / Penetration testing loops Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: Kali Linux / Firewall configurations AWS",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on Kali Linux, Firewall configurations AWS.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-cyber-security-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: Kali Linux / Firewall configurations AWS Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Buffer Overflows protection, Digital Signatures (RSA), IAM policies audit, Log auditing.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-cyber-security-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Buffer Overflows protection to solve scalability bottlenecks.",
+        "What security vulnerabilities does Log auditing protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-cyber-security-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "How do you define the differences between asymmetric and symmetric encryption?",
+        "What are the best methods to audit insecure container operations configs?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: Local Vulnerability Security Scanner script or Secure Cryptographic Signatures suite. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-cyber-security-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of Local Vulnerability Security Scanner script with documentation.",
+        "Build complete deployable version of Secure Cryptographic Signatures suite with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your Local Vulnerability Security Scanner script project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of Local Vulnerability Security Scanner script with documentation.",
+        "Build complete deployable version of Secure Cryptographic Signatures suite with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-cyber-security-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-cyber-security-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
       ]
     }
   ]

@@ -1,64 +1,1047 @@
 {
   "id": "roadmap-software-architect",
-  "slug": "software-architect",
   "title": "Software Architect",
-  "description": "Design massive enterprise systems. Master system scalability, design patterns, microservices, databases tuning, and domain logic segregation.",
+  "slug": "software-architect",
+  "category": "DEVELOPMENT",
   "difficulty": "ADVANCED",
   "estimatedTime": "6 Months",
-  "category": "DEVELOPMENT",
+  "estimatedDuration": "6 Months",
+  "prerequisites": [
+    "backend-developer"
+  ],
   "nodes": [
     {
-      "id": "sa-node-1",
-      "slug": "design-patterns",
-      "title": "OOD Design Patterns",
-      "description": "Master Creational, Structural, and Behavioral patterns (Singleton, Factory, Observer, Strategy). Review SOLID code design guidelines.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "20 hours",
+      "id": "roadmap-software-architect-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-sa-1",
-          "title": "Refactoring Guru design patterns",
-          "type": "WEBSITE",
-          "url": "https://refactoring.guru/design-patterns"
+          "id": "res-software-architect-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-software-architect-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
         }
       ],
       "projectIdeas": [
-        "Write a text parser script utilizing Strategy and Factory patterns to easily adapt formatting configurations."
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ],
       "interviewQuestions": [
-        "Explain the Dependency Inversion Principle (SOLID).",
-        "When would you choose the Observer pattern over dynamic callback events?"
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
       ]
     },
     {
-      "id": "sa-node-2",
-      "slug": "microservices-ddd",
-      "title": "Microservices & Domain-Driven Design (DDD)",
-      "description": "Build modular services. Map bounded contexts, design microservice domain boundaries, configure API Gateways, and align database isolation schemas.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "30 hours",
+      "id": "roadmap-software-architect-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
       "prerequisites": [
-        "design-patterns"
+        "internet-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-sa-2",
-          "title": "Microservices Architecture Patterns",
+          "id": "res-software-architect-cs-1",
+          "title": "Operating Systems Internals Guide",
           "type": "WEBSITE",
-          "url": "https://microservices.io/"
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-software-architect-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
         }
       ],
       "projectIdeas": [
-        "Design a system architecture mapping payment channels, catalog views, and user profiles into bounded microservice sectors."
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
       ],
       "interviewQuestions": [
-        "What is a bounded context in Domain-Driven Design?",
-        "Explain database-per-service pattern challenges (e.g. data consistency)."
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Draw.io & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Draw.io, Docker, Kubernetes, Prometheus, UML diagrams.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-software-architect-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Draw.io & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: TypeScript / Java / Go / Python",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in TypeScript, Java, Go, Python.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-software-architect-lang-1",
+          "title": "TypeScript Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using TypeScript handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in TypeScript?",
+        "How does asynchronous logic work in TypeScript?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: TypeScript / Java / Go / Python Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using TypeScript handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Spring Cloud, NestJS monorepo, GraphQL Federation.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-software-architect-fw-1",
+          "title": "Spring Cloud Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+      ],
+      "interviewQuestions": [
+        "When does a Spring Cloud component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in Spring Cloud."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Multi-region), Cassandra, Redis Clustered.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-software-architect-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Chaos Mesh, LoadRunner, SonarQube quality checks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-software-architect-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS Multi-AZ, Kubernetes EKS clusters, Terraform IaC.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-software-architect-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Saga Transactions pattern, Event Sourcing, Domain-Driven Design (DDD), CAP Theorem tradeoffs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-software-architect-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Saga Transactions pattern to solve scalability bottlenecks.",
+        "What security vulnerabilities does CAP Theorem tradeoffs protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-software-architect-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What are the tradeoffs between Event Sourcing and relational state updates?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: Microservices Architectural Blueprint or Distributed Ledger Sync system. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-software-architect-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
+        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your Microservices Architectural Blueprint project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
+        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-software-architect-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ]
+    }
+  ],
+  "roadmapNodes": [
+    {
+      "id": "roadmap-software-architect-node-1",
+      "slug": "internet-fundamentals",
+      "title": "1. Internet Fundamentals",
+      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "8 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-software-architect-internet-1",
+          "title": "How the Internet Works (MDN Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-software-architect-internet-2",
+          "title": "HTTP Request Cycle Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ],
+      "interviewQuestions": [
+        "What is the function of a DNS server and how does it map domains to IP addresses?",
+        "Explain the differences between HTTP GET and POST requests."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the internet-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "1. Internet Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-2",
+      "slug": "computer-fundamentals",
+      "title": "2. Computer Fundamentals",
+      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "internet-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-software-architect-cs-1",
+          "title": "Operating Systems Internals Guide",
+          "type": "WEBSITE",
+          "url": "https://tldp.org"
+        },
+        {
+          "id": "res-software-architect-cs-2",
+          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+        }
+      ],
+      "projectIdeas": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ],
+      "interviewQuestions": [
+        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
+        "What is an operating system deadlock condition and how do you prevent it?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the computer-fundamentals milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "2. Computer Fundamentals Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write a memory allocation test program tracing stack and heap boundaries variables."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-3",
+      "slug": "tools",
+      "title": "3. Standard Tools: Draw.io & More",
+      "description": "Master version control with Git & GitHub and construct development environments using Draw.io, Docker, Kubernetes, Prometheus, UML diagrams.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "computer-fundamentals"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-software-architect-tools-1",
+          "title": "Git Handbook Guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "Explain git stash command usage."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the tools milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "3. Standard Tools: Draw.io & More Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-4",
+      "slug": "languages",
+      "title": "4. Target Languages: TypeScript / Java / Go / Python",
+      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in TypeScript, Java, Go, Python.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "tools"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-software-architect-lang-1",
+          "title": "TypeScript Official Guides",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a terminal console validator app using TypeScript handling variable arrays."
+      ],
+      "interviewQuestions": [
+        "What are the reference types vs value types in TypeScript?",
+        "How does asynchronous logic work in TypeScript?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the languages milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "4. Target Languages: TypeScript / Java / Go / Python Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a terminal console validator app using TypeScript handling variable arrays."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-5",
+      "slug": "frameworks",
+      "title": "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation",
+      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Spring Cloud, NestJS monorepo, GraphQL Federation.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "languages"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-software-architect-fw-1",
+          "title": "Spring Cloud Reference Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+      ],
+      "interviewQuestions": [
+        "When does a Spring Cloud component lifecycle trigger a re-render?",
+        "Explain how dependency injection or state management is handled in Spring Cloud."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-6",
+      "slug": "databases",
+      "title": "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered",
+      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Multi-region), Cassandra, Redis Clustered.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-software-architect-db-1",
+          "title": "Database Query Tuning and Indexes",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+      ],
+      "interviewQuestions": [
+        "What is database indexing and how does it speed up queries?",
+        "Explain transaction ACID guarantees under concurrent loads."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the databases milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-7",
+      "slug": "testing",
+      "title": "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks",
+      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Chaos Mesh, LoadRunner, SonarQube quality checks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-software-architect-test-1",
+          "title": "Software testing methodologies",
+          "type": "DOCUMENTATION",
+          "url": "https://jestjs.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between unit, integration, and E2E testing.",
+        "What is test mocking and why is it used for database layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Write unit tests files mapping components logic asserting edge input values."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-8",
+      "slug": "deployment",
+      "title": "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC",
+      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS Multi-AZ, Kubernetes EKS clusters, Terraform IaC.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "databases"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-software-architect-deploy-1",
+          "title": "Production hosting deployment guidelines",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build production build folders, package configurations, and host online."
+      ],
+      "interviewQuestions": [
+        "How do you manage environment configuration secrets inside production hosts?",
+        "What is a Docker container image build layers?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the deployment milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build production build folders, package configurations, and host online."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-9",
+      "slug": "advanced-concepts",
+      "title": "9. Advanced Concepts",
+      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Saga Transactions pattern, Event Sourcing, Domain-Driven Design (DDD), CAP Theorem tradeoffs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "deployment"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-software-architect-adv-1",
+          "title": "Advanced systems engineering layouts",
+          "type": "DOCUMENTATION",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "projectIdeas": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ],
+      "interviewQuestions": [
+        "Explain how you would implement Saga Transactions pattern to solve scalability bottlenecks.",
+        "What security vulnerabilities does CAP Theorem tradeoffs protect against?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-concepts milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Advanced Concepts Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a scalable micro-architecture or complex optimization script."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-10",
+      "slug": "interview-prep",
+      "title": "10. Technical Interview Preparation",
+      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "advanced-concepts"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-software-architect-int-1",
+          "title": "NeetCode DSA Roadmap Practice",
+          "type": "WEBSITE",
+          "url": "https://neetcode.io"
+        }
+      ],
+      "projectIdeas": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ],
+      "interviewQuestions": [
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What are the tradeoffs between Event Sourcing and relational state updates?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the interview-prep milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Technical Interview Preparation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-11",
+      "slug": "resume-projects",
+      "title": "11. High Impact Portfolio Projects",
+      "description": "Fulfill engineering requirements for target projects: Microservices Architectural Blueprint or Distributed Ledger Sync system. Set up deployment links and repository READMEs.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "interview-prep"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-software-architect-proj-1",
+          "title": "GitHub Readme templates design guidelines",
+          "type": "WEBSITE",
+          "url": "https://github.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
+        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+      ],
+      "interviewQuestions": [
+        "Explain the core architecture bottlenecks of your Microservices Architectural Blueprint project.",
+        "How does your database sharding or state caching optimize loading speeds?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the resume-projects milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. High Impact Portfolio Projects Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
+        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-12",
+      "slug": "job-readiness",
+      "title": "12. Career Job Readiness",
+      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "resume-projects"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-software-architect-jr-1",
+          "title": "StackMap Resume Readiness Analyzer Tool",
+          "type": "WEBSITE",
+          "url": "/resume/readiness"
+        }
+      ],
+      "projectIdeas": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+      ],
+      "interviewQuestions": [
+        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
+        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the job-readiness milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Career Job Readiness Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
       ]
     }
   ]
