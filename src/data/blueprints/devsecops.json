@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-devsecops",
+  "slug": "devsecops",
+  "title": "DevSecOps",
+  "description": "Shift security left. Integrate scanning tools, secure CI/CD pipelines, container auditing, secrets vaults, and policy compliance into operations.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "SYSTEMS",
+  "nodes": [
+    {
+      "id": "dso-node-1",
+      "slug": "secure-cicd",
+      "title": "Secure CI/CD Pipelines",
+      "description": "Integrate static application security testing (SAST) and dynamic testing (DAST) into workflow pipelines.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "10 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-dso-1",
+          "title": "GitLab Secure Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.gitlab.com/ee/user/application_security/"
+        }
+      ],
+      "projectIdeas": [
+        "Add a SonarQube audit workflow to a GitHub repository to block pull requests containing security vulnerabilities."
+      ],
+      "interviewQuestions": [
+        "What is the difference between SAST and DAST?",
+        "Why is 'shifting left' important in DevSecOps?"
+      ]
+    },
+    {
+      "id": "dso-node-2",
+      "slug": "container-security",
+      "title": "Container & Kubernetes Security",
+      "description": "Scan container images for CVE bugs and configure runtime security rules inside clusters.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "secure-cicd"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-dso-2",
+          "title": "Trivy Scanner Guide",
+          "type": "WEBSITE",
+          "url": "https://aquasecurity.github.io/trivy/"
+        }
+      ],
+      "projectIdeas": [
+        "Scan local Docker images using Trivy and fix all CRITICAL and HIGH severity CVE warnings in the base layers."
+      ],
+      "interviewQuestions": [
+        "What does it mean to run a Docker container as a non-root user?",
+        "Explain network policies in Kubernetes security."
+      ]
+    },
+    {
+      "id": "dso-node-3",
+      "slug": "secrets-vault",
+      "title": "Secrets Management (HashiCorp Vault)",
+      "description": "Store API keys, database credentials, and certificates securely. Avoid plaintext secrets in Git histories.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "secure-cicd"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-dso-3",
+          "title": "HashiCorp Vault Getting Started",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.hashicorp.com/vault/docs"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a HashiCorp Vault server locally, authorize a Node application using AppRole, and read API keys at runtime."
+      ],
+      "interviewQuestions": [
+        "Why should you avoid environment variable configuration injects for high-security secrets?",
+        "What is token replication in Vault?"
+      ]
+    }
+  ]
+}

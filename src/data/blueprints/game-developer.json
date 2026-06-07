@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-game-developer",
+  "slug": "game-developer",
+  "title": "Game Developer",
+  "description": "Build interactive 3D/2D games. Master Unity engine components, C# script controllers, physics matrices, and gameplay loops.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "5 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "gd-node-1",
+      "slug": "unity-csharp",
+      "title": "Unity Engine & C# Scripting",
+      "description": "Master GameObjects components, transform layouts, script triggers, update routines, and physical collision dynamics.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "25 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-gd-1",
+          "title": "Unity Learn Essentials",
+          "type": "WEBSITE",
+          "url": "https://learn.unity.com"
+        }
+      ],
+      "projectIdeas": [
+        "Build a 2D side-scroller game in Unity controlling a player character jumping over block obstacles."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between Update() and FixedUpdate() loops in Unity C# scripts.",
+        "What is a prefab component in game engine design?"
+      ]
+    }
+  ]
+}

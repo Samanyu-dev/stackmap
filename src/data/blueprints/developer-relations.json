@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-developer-relations",
+  "slug": "developer-relations",
+  "title": "Developer Relations",
+  "description": "Champion developer success. Create technical content, build local developer communities, analyze usage metrics, and direct SDK feedback loops.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "3 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "dr-node-1",
+      "slug": "content-creation",
+      "title": "Developer Content Creation",
+      "description": "Write clear tutorials, design SDK usage quick-start plans, and document API edge cases.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-dr-1",
+          "title": "DevRel handbook",
+          "type": "WEBSITE",
+          "url": "https://devrel.academy/"
+        }
+      ],
+      "projectIdeas": [
+        "Write a step-by-step setup tutorial teaching developers how to integrate custom SDK client queries."
+      ],
+      "interviewQuestions": [
+        "What are the key KPIs of Developer Relations teams?",
+        "How do you evaluate user feedback loops from SDK usage data?"
+      ]
+    }
+  ]
+}

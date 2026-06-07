@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-technical-writer",
+  "slug": "roadmap-technical-writer",
+  "title": "Technical Writer",
+  "description": "Document advanced APIs, software workflows, and architecture guides using Markdown and OpenAPI specifications.",
+  "difficulty": "BEGINNER",
+  "estimatedTime": "2 Months",
+  "category": "PREPARATION",
+  "nodes": [
+    {
+      "id": "tw-node-1",
+      "slug": "openapi-swagger",
+      "title": "OpenAPI & Swagger Documentation",
+      "description": "Write OpenAPI YAML configuration files defining API endpoints, queries schemas, request body structures, and response codes.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "12 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-tw-1",
+          "title": "OpenAPI Specification Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://swagger.io/specification/"
+        }
+      ],
+      "projectIdeas": [
+        "Draft a comprehensive OpenAPI specification file mapping a task manager REST API server routes."
+      ],
+      "interviewQuestions": [
+        "What is the difference between Swagger UI and Swagger Editor?",
+        "Explain why structuring schema components prevents specification bloating."
+      ]
+    }
+  ]
+}

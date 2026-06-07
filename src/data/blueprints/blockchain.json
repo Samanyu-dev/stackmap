@@ -1,0 +1,65 @@
+{
+  "id": "roadmap-blockchain",
+  "slug": "blockchain",
+  "title": "Blockchain Developer",
+  "description": "Learn cryptographic consensus. Build Solidity smart contracts, deploy decentralized apps (DApps), and audit security frameworks.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "bc-node-1",
+      "slug": "solidity-contracts",
+      "title": "Solidity Smart Contracts",
+      "description": "Understand compilation, variables scoping, EVM memory vs storage, mapping indices, events, and modifiers.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "20 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-bc-1",
+          "title": "Solidity Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.soliditylang.org/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a verified voting smart contract allowing registered nodes to cast cryptographic votes."
+      ],
+      "interviewQuestions": [
+        "What is the difference between memory and storage variables in Solidity?",
+        "Explain smart contract re-entrancy bugs and how checks-effects-interactions prevents them."
+      ]
+    },
+    {
+      "id": "bc-node-2",
+      "slug": "web3-dapp",
+      "title": "Web3 APIs & Frontends (ethers.js)",
+      "description": "Connect frontends with smart contracts. Master RPC node queries, wallet handshakes (MetaMask), and transactions signing.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "solidity-contracts"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-bc-2",
+          "title": "EthersJS Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.ethers.org/v6/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a token staking page dashboard that displays stake balances and triggers transactions signing via MetaMask."
+      ],
+      "interviewQuestions": [
+        "What does an RPC Node provider do in decentralized app connections?",
+        "Explain signed transactions gas limits."
+      ]
+    }
+  ]
+}

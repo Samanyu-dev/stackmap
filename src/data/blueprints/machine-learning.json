@@ -1,0 +1,65 @@
+{
+  "id": "roadmap-machine-learning",
+  "slug": "machine-learning",
+  "title": "Machine Learning",
+  "description": "Design model algorithms. Learn regression mathematical bounds, supervised/unsupervised classifiers, feature configurations, and validations.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "ml-node-1",
+      "slug": "python-ml-basics",
+      "title": "Python for ML & Feature Engineering",
+      "description": "Load datasets, normalize metrics scales, impute missing entries, and extract key indicators.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "20 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ml-1",
+          "title": "Kaggle Feature Engineering course",
+          "type": "WEBSITE",
+          "url": "https://www.kaggle.com/learn/feature-engineering"
+        }
+      ],
+      "projectIdeas": [
+        "Create a preprocessing pipeline that cleans real-estate metrics lists, scaling prices and normalizing areas."
+      ],
+      "interviewQuestions": [
+        "What is one-hot encoding and when do you use it?",
+        "Explain the difference between normalization and standardization features scaling."
+      ]
+    },
+    {
+      "id": "ml-node-2",
+      "slug": "supervised-learning",
+      "title": "Supervised & Unsupervised Learning",
+      "description": "Train classifiers (Trees, SVM) and regression models. Apply clustering (K-Means) to segments.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "python-ml-basics"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-ml-2",
+          "title": "Scikit-Learn Guide",
+          "type": "DOCUMENTATION",
+          "url": "https://scikit-learn.org/stable/user_guide.html"
+        }
+      ],
+      "projectIdeas": [
+        "Build a mail classification spam filter app using Scikit-Learn Naive Bayes algorithms."
+      ],
+      "interviewQuestions": [
+        "What are precision, recall, and F1-score evaluation metrics?",
+        "Explain K-Means clustering algorithm bounds."
+      ]
+    }
+  ]
+}

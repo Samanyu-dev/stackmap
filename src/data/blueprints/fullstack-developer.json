@@ -1,0 +1,91 @@
+{
+  "id": "roadmap-fullstack",
+  "slug": "fullstack-developer",
+  "title": "Full Stack Developer",
+  "description": "Combine Frontend visual engineering with Backend server and database infrastructure to build complete end-to-end applications.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "6 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "fs-node-1",
+      "slug": "fs-frontend",
+      "title": "Frontend Foundations",
+      "description": "Master HTML, CSS, JavaScript, and React components to build views.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "30 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-fs-1",
+          "title": "React Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        }
+      ],
+      "projectIdeas": [
+        "Build an interactive student visual page."
+      ],
+      "interviewQuestions": [
+        "Explain React state."
+      ]
+    },
+    {
+      "id": "fs-node-2",
+      "slug": "fs-backend",
+      "title": "Backend Foundations",
+      "description": "Learn Express, Databases (SQL), schema creation, and server APIs.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "fs-frontend"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-fs-2",
+          "title": "PostgreSQL Guide",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a REST database server."
+      ],
+      "interviewQuestions": [
+        "What are SQL primary and foreign keys?"
+      ]
+    },
+    {
+      "id": "fs-node-3",
+      "slug": "fs-integration",
+      "title": "API Integration & NextJS Full Stack",
+      "description": "Connect both layers: build API routes inside Next.js App Router, manage state, and authenticate user contexts.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "fs-frontend",
+        "fs-backend"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-fs-3",
+          "title": "Next.js Data Fetching",
+          "type": "DOCUMENTATION",
+          "url": "https://nextjs.org/docs/app/building-your-application/data-fetching"
+        }
+      ],
+      "projectIdeas": [
+        "Build a full-fledged ecommerce platform with dashboard analytics, admin controls, and database cache."
+      ],
+      "interviewQuestions": [
+        "What is Hydration mismatch in Next.js and how can you solve it?"
+      ]
+    }
+  ]
+}

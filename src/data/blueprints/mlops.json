@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-mlops",
+  "slug": "mlops",
+  "title": "MLOps",
+  "description": "Deploy and manage machine learning pipelines. Master model registries (MLflow), orchestration frameworks (Kubeflow), container deployment, and monitoring systems.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "4 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "mlo-node-1",
+      "slug": "model-tracking",
+      "title": "MLflow Model Registry",
+      "description": "Log hyper-parameters, compare model output metrics, register versions, and load weight files dynamically.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "12 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-mlo-1",
+          "title": "MLflow Getting Started",
+          "type": "DOCUMENTATION",
+          "url": "https://mlflow.org/docs/latest/index.html"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a training script that logs validation accuracy metrics to an MLflow tracker dashboard."
+      ],
+      "interviewQuestions": [
+        "What is a model registry and why is it critical in MLOps pipelines?",
+        "How do hyper-parameter metrics comparisons accelerate iteration?"
+      ]
+    }
+  ]
+}

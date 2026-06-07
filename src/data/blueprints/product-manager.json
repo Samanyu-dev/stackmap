@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-product-manager",
+  "slug": "product-manager",
+  "title": "Product Manager",
+  "description": "Align business value with dev outputs. Master prioritization models, product discovery matrices, analytics indicators, and user feedback processes.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "3 Months",
+  "category": "PREPARATION",
+  "nodes": [
+    {
+      "id": "pm-node-1",
+      "slug": "backlog-prioritization",
+      "title": "Backlog Prioritization Models",
+      "description": "Master prioritization frameworks (RICE, MoSCoW, Value vs Effort) and map out roadmap releases.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-pm-1",
+          "title": "Product Backlog Prioritization (Atlassian)",
+          "type": "WEBSITE",
+          "url": "https://www.atlassian.com/agile/product-management/prioritization"
+        }
+      ],
+      "projectIdeas": [
+        "Draft a RICE matrix evaluating 5 feature suggestions, and compile a roadmap timeline based on scoring results."
+      ],
+      "interviewQuestions": [
+        "What does RICE stand for and how is reach computed?",
+        "Explain the difference between a product vision and a product roadmap."
+      ]
+    }
+  ]
+}

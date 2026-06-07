@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-network-engineer",
+  "slug": "network-engineer",
+  "title": "Network Engineer",
+  "description": "Configure network topologies. Master OSI model layers, IP subnetting math, firewall rules, and diagnostics tools.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "4 Months",
+  "category": "SYSTEMS",
+  "nodes": [
+    {
+      "id": "ne-node-1",
+      "slug": "osi-model",
+      "title": "OSI Model & TCP/IP Network Protocols",
+      "description": "Study packet paths through physical, transport (TCP/UDP), and application layers. Review DNS routing steps.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ne-1",
+          "title": "OSI Model Explanation (Cloudflare)",
+          "type": "WEBSITE",
+          "url": "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/"
+        }
+      ],
+      "projectIdeas": [
+        "Capture network packets using Wireshark, trace TCP 3-Way Handshake steps, and output packet size distributions."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between TCP and UDP.",
+        "What happens at Layer 3 (Network Layer) of the OSI model?"
+      ]
+    }
+  ]
+}

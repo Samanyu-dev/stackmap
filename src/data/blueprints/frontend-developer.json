@@ -1,0 +1,248 @@
+{
+  "id": "roadmap-frontend",
+  "slug": "frontend-developer",
+  "title": "Frontend Developer",
+  "description": "Learn how to build beautiful, responsive, and high-performance user interfaces. This path takes you from basic internet concepts to modern framework engineering.",
+  "difficulty": "BEGINNER",
+  "estimatedTime": "3-4 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "fe-node-1",
+      "slug": "internet-basics",
+      "title": "Internet Basics",
+      "description": "Understand how the web works, hosting, DNS, HTTP/HTTPS, and browsers.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "2 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-fe-1",
+          "title": "How the Internet Works (MDN)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        },
+        {
+          "id": "res-fe-2",
+          "title": "How the Internet Works in 5 Minutes",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a simple static text page using GitHub Pages and map it to a custom sub-domain."
+      ],
+      "interviewQuestions": [
+        "What happens when you type a URL in your browser and hit Enter?",
+        "Explain the difference between HTTP and HTTPS."
+      ]
+    },
+    {
+      "id": "fe-node-2",
+      "slug": "html-basics",
+      "title": "Semantic HTML",
+      "description": "Learn structuring web documents using correct semantic tags for SEO and accessibility.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "4 hours",
+      "prerequisites": [
+        "internet-basics"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-fe-3",
+          "title": "HTML Basics (MDN)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+        },
+        {
+          "id": "res-fe-4",
+          "title": "HTML Full Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=UB1O30zR-EE"
+        }
+      ],
+      "projectIdeas": [
+        "Create a semantic markup mockup of a blog article with side panels, navigation links, and article bodies."
+      ],
+      "interviewQuestions": [
+        "Why should you use semantic tags like <main>, <article>, <section> instead of just <div>?",
+        "What is the purpose of the alt attribute on images?"
+      ]
+    },
+    {
+      "id": "fe-node-3",
+      "slug": "css-basics",
+      "title": "CSS Styles & Responsive Layouts",
+      "description": "Master Flexbox, Grid layouts, custom variables, responsive media queries, and design patterns.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "html-basics"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-fe-5",
+          "title": "CSS Layout (MDN)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout"
+        },
+        {
+          "id": "res-fe-6",
+          "title": "CSS Flexbox & Grid Guide",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=rg7Fvvl3taU"
+        }
+      ],
+      "projectIdeas": [
+        "Build a fully responsive pricing page card grid matching mobile, tablet, and desktop screens."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between flexbox and CSS Grid and when to use each.",
+        "What is the CSS Box Model?"
+      ]
+    },
+    {
+      "id": "fe-node-4",
+      "slug": "javascript-dom",
+      "title": "JavaScript & DOM Manipulation",
+      "description": "Learn async programming, promises, array methods, API integration, and standard browser DOM APIs.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "css-basics"
+      ],
+      "parentNodeId": null,
+      "order": 4,
+      "resources": [
+        {
+          "id": "res-fe-7",
+          "title": "Modern JavaScript Tutorial",
+          "type": "WEBSITE",
+          "url": "https://javascript.info"
+        },
+        {
+          "id": "res-fe-8",
+          "title": "Promises & Async/Await",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=V_Kr9OSfDeU"
+        }
+      ],
+      "projectIdeas": [
+        "Build a dynamic Todo List with LocalStorage cache and drag-and-drop ordering."
+      ],
+      "interviewQuestions": [
+        "What is event delegation in JavaScript?",
+        "What is the difference between let, const, and var?"
+      ]
+    },
+    {
+      "id": "fe-node-5",
+      "slug": "git-version",
+      "title": "Git & Version Control",
+      "description": "Learn how to manage version history, commit branches, merge changes, and collaborate using GitHub.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "3 hours",
+      "prerequisites": [
+        "javascript-dom"
+      ],
+      "parentNodeId": null,
+      "order": 5,
+      "resources": [
+        {
+          "id": "res-fe-9",
+          "title": "Git Handbook",
+          "type": "DOCUMENTATION",
+          "url": "https://guides.github.com/introduction/git-handbook/"
+        },
+        {
+          "id": "res-fe-10",
+          "title": "Git & GitHub Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=RGOj5yH7evk"
+        }
+      ],
+      "projectIdeas": [
+        "Initialize a Git repository, create a dev branch, make changes, resolve a mock merge conflict, and push to GitHub."
+      ],
+      "interviewQuestions": [
+        "What is the difference between git merge and git rebase?",
+        "What does git stash do?"
+      ]
+    },
+    {
+      "id": "fe-node-6",
+      "slug": "react-framework",
+      "title": "React Library core concepts",
+      "description": "Understand Virtual DOM, hooks (useState, useEffect, useMemo, useContext), props, and component lifecycle.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "20 hours",
+      "prerequisites": [
+        "javascript-dom",
+        "git-version"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-fe-11",
+          "title": "React Documentation",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        },
+        {
+          "id": "res-fe-12",
+          "title": "React JS Course for Beginners",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=bMknfKXIFA8"
+        }
+      ],
+      "projectIdeas": [
+        "Build an interactive Dashboard with filters, search fields, and details modal views."
+      ],
+      "interviewQuestions": [
+        "How does the virtual DOM work in React?",
+        "When does a React component re-render?"
+      ]
+    },
+    {
+      "id": "fe-node-7",
+      "slug": "nextjs-app",
+      "title": "Next.js App Router",
+      "description": "Master React Server Components (RSC), Client Components, server-side data fetching, page routing, and SEO optimization.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "react-framework"
+      ],
+      "parentNodeId": null,
+      "order": 7,
+      "resources": [
+        {
+          "id": "res-fe-13",
+          "title": "Next.js Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://nextjs.org/docs"
+        },
+        {
+          "id": "res-fe-14",
+          "title": "Next.js 14/15 App Router Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=wm5gMKuwSYk"
+        }
+      ],
+      "projectIdeas": [
+        "Create a Server-Side Rendered Blog with dynamic routing, pre-fetching tags, and responsive design systems."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between Server Components and Client Components in Next.js.",
+        "What is the difference between ISR and SSR?"
+      ]
+    }
+  ]
+}

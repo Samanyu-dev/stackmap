@@ -1,0 +1,63 @@
+{
+  "id": "roadmap-qa",
+  "slug": "qa",
+  "title": "QA Engineer",
+  "description": "Verify software quality. Master automated end-to-end testing, manual bug logging, API querying, and load sweeps.",
+  "difficulty": "BEGINNER",
+  "estimatedTime": "3 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "qa-node-1",
+      "slug": "cypress-testing",
+      "title": "Cypress Automated Testing",
+      "description": "Write automated end-to-end user browser scripts. Master element selectors, assertion conditions, and test suites.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-qa-1",
+          "title": "Cypress Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.cypress.io"
+        }
+      ],
+      "projectIdeas": [
+        "Write a Cypress suite testing login actions, session storage writes, and redirect links on a dashboard page."
+      ],
+      "interviewQuestions": [
+        "What is automated regression testing?",
+        "Explain how Cypress handles asynchronous code execution commands."
+      ]
+    },
+    {
+      "id": "qa-node-2",
+      "slug": "postman-apis",
+      "title": "API Verification (Postman)",
+      "description": "Construct REST client request templates, validate response body values, and run postman automated runner loops.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-qa-2",
+          "title": "Postman API testing guide",
+          "type": "WEBSITE",
+          "url": "https://learning.postman.com/docs/writing-scripts/intro-to-scripts/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a Postman collection querying task API endpoints, validating response status codes and body property fields."
+      ],
+      "interviewQuestions": [
+        "How do you verify JSON schema formats in API testing?",
+        "Explain how environment variables are updated dynamically in Postman collections."
+      ]
+    }
+  ]
+}

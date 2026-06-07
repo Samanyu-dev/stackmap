@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-data-analyst",
+  "slug": "data-analyst",
+  "title": "Data Analyst",
+  "description": "Extract, clean, and visualize data. Master Excel tables, SQL query metrics, Python analysis packages, and visualization platforms.",
+  "difficulty": "BEGINNER",
+  "estimatedTime": "3 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "da-node-1",
+      "slug": "sql-analytics",
+      "title": "SQL Data Querying & Filters",
+      "description": "Master JOIN operations, group Aggregations (SUM/AVG), conditional filtering, window functions, and SQL views.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-da-1",
+          "title": "PostgreSQL Tutorial",
+          "type": "WEBSITE",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "projectIdeas": [
+        "Write complex queries querying e-commerce analytics database tables to find user retention rates month-over-month."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between WHERE and HAVING clause filters.",
+        "What are SQL window functions?"
+      ]
+    },
+    {
+      "id": "da-node-2",
+      "slug": "pandas-python",
+      "title": "Python Analytics (Pandas/NumPy)",
+      "description": "Learn to load CSV/JSON files, fill missing values, clean structures, and run calculations using Pandas dataframes.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "20 hours",
+      "prerequisites": [
+        "sql-analytics"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-da-2",
+          "title": "Pandas User Guide",
+          "type": "DOCUMENTATION",
+          "url": "https://pandas.pydata.org/docs/user_guide/index.html"
+        }
+      ],
+      "projectIdeas": [
+        "Load a dataset representing hospital patient logs, clean null values, normalize date strings, and output statistic logs."
+      ],
+      "interviewQuestions": [
+        "How does NumPy optimize computational matrices vs standard Python lists?",
+        "What is the function of .fillna() in Pandas?"
+      ]
+    },
+    {
+      "id": "da-node-3",
+      "slug": "bi-dashboards",
+      "title": "BI Viz dashboards (Tableau/PowerBI)",
+      "description": "Connect data pipelines, design metrics grids, construct charts, and share interactive reports.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "pandas-python"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-da-3",
+          "title": "Tableau Training Videos",
+          "type": "WEBSITE",
+          "url": "https://www.tableau.com/learn/training"
+        }
+      ],
+      "projectIdeas": [
+        "Build an interactive sales analysis dashboard on Tableau Public demonstrating seasonal transaction trends."
+      ],
+      "interviewQuestions": [
+        "What are dimensions vs metrics in BI dashboards?",
+        "Explain the difference between live connection and extracts in Tableau."
+      ]
+    }
+  ]
+}

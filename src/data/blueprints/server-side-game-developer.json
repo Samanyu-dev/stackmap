@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-server-side-game-developer",
+  "slug": "server-side-game-developer",
+  "title": "Server Side Game Developer",
+  "description": "Build robust backend architectures for multiplayer games. Master WebSocket packets, matchmaking algorithms, anti-cheat structures, and game scaling.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "ssg-node-1",
+      "slug": "socket-networking",
+      "title": "Socket Networking & WebSockets",
+      "description": "Build low-latency communication nodes. Master TCP/UDP packet protocols, WebSockets integrations, and custom serialize frameworks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "20 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ssg-1",
+          "title": "WebSockets Protocol MDN",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+        }
+      ],
+      "projectIdeas": [
+        "Build a real-time coordinates broadcast server in Node broadcasting player coordinates data maps to connected nodes."
+      ],
+      "interviewQuestions": [
+        "Why is UDP preferred over TCP for real-time multiplayer gaming coordinates systems?",
+        "What are the latency overheads of HTTP vs WebSockets?"
+      ]
+    }
+  ]
+}

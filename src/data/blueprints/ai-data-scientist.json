@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-ai-data-scientist",
+  "slug": "ai-data-scientist",
+  "title": "AI and Data Scientist",
+  "description": "Analyze, predict, and optimize. Master ML algorithms, statistics matrices, mathematical models, and deep learning tools.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "ads-node-1",
+      "slug": "math-foundations",
+      "title": "Mathematical Foundations",
+      "description": "Master linear algebra, matrices operations, calculus gradients, statistics probability distributions, and correlation variables.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "30 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ads-1",
+          "title": "Mathematics for ML (MIT)",
+          "type": "DOCUMENTATION",
+          "url": "https://mml-book.github.io/"
+        }
+      ],
+      "projectIdeas": [
+        "Write Python matrices operations calculations using raw lists, checking mathematical equations results vs NumPy results."
+      ],
+      "interviewQuestions": [
+        "Explain eigenvalues and eigenvectors.",
+        "What is the Central Limit Theorem and why is it important in statistical experiments?"
+      ]
+    },
+    {
+      "id": "ads-node-2",
+      "slug": "ml-algorithms",
+      "title": "Machine Learning Algorithms",
+      "description": "Implement regression models, decision trees, random forests, clustering techniques, and evaluation metrics (precision/recall/F1).",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "40 hours",
+      "prerequisites": [
+        "math-foundations"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-ads-2",
+          "title": "Scikit-Learn Tutorials",
+          "type": "WEBSITE",
+          "url": "https://scikit-learn.org/stable/tutorial/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a house pricing estimation model using linear regression and validate score accuracies using Scikit-Learn metrics."
+      ],
+      "interviewQuestions": [
+        "What is the difference between bagging and boosting algorithms?",
+        "Explain overfitting and how regularization techniques (L1/L2) mitigate it."
+      ]
+    },
+    {
+      "id": "ads-node-3",
+      "slug": "deep-learning",
+      "title": "Deep Learning (PyTorch)",
+      "description": "Construct multi-layer neural networks, backpropagation pathways, activations functions (ReLU, Sigmoid), and weights optimization.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "35 hours",
+      "prerequisites": [
+        "ml-algorithms"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-ads-3",
+          "title": "PyTorch Getting Started",
+          "type": "DOCUMENTATION",
+          "url": "https://pytorch.org/get-started/locally/"
+        }
+      ],
+      "projectIdeas": [
+        "Build an image recognition classifier system that correctly labels handdrawn digits using PyTorch layers."
+      ],
+      "interviewQuestions": [
+        "What does backpropagation do in neural network training loops?",
+        "Why do we use activations functions inside hidden nodes layers?"
+      ]
+    }
+  ]
+}

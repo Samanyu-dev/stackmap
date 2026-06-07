@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-data-engineer",
+  "slug": "data-engineer",
+  "title": "Data Engineer",
+  "description": "Architect pipelines. Build large-scale data warehouses, ELT ingestion pipelines, data lakes, and stream processing pipelines.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "de-node-1",
+      "slug": "data-warehouses",
+      "title": "SQL & Data Warehousing (Snowflake/BigQuery)",
+      "description": "Master star schemas, index models, cluster distributions, query partitions, and analytical SQL querying.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-de-1",
+          "title": "Snowflake Documentation",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.snowflake.com"
+        }
+      ],
+      "projectIdeas": [
+        "Design an analytical database schema on BigQuery staging tables using star schemas mapping dimensions."
+      ],
+      "interviewQuestions": [
+        "What is the difference between transactional OLTP databases and warehouse OLAP databases?",
+        "Explain cluster keys in data warehouses."
+      ]
+    },
+    {
+      "id": "de-node-2",
+      "slug": "etl-orchestration",
+      "title": "ETL pipelines & Airflow Orchestration",
+      "description": "Construct data extraction DAG structures, run schedule schedules, and trace task dependencies in pipelines.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "data-warehouses"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-de-2",
+          "title": "Apache Airflow Getting Started",
+          "type": "WEBSITE",
+          "url": "https://airflow.apache.org/"
+        }
+      ],
+      "projectIdeas": [
+        "Write an Airflow DAG that pulls weather metrics daily from public APIs, cleans values, and appends records to Snowflake."
+      ],
+      "interviewQuestions": [
+        "What is a DAG in pipeline orchestrations?",
+        "How do you handle pipeline task failures and retries in Airflow workflows?"
+      ]
+    },
+    {
+      "id": "de-node-3",
+      "slug": "big-data-spark",
+      "title": "Big Data Processing (Apache Spark)",
+      "description": "Distribute computation across worker nodes. Master RDD frameworks, spark dataframes, and dynamic partitioning optimizations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "etl-orchestration"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-de-3",
+          "title": "Apache Spark Programming Guide",
+          "type": "DOCUMENTATION",
+          "url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html"
+        }
+      ],
+      "projectIdeas": [
+        "Build a log analysis pipeline that parses 10GB of log records in a distributed manner using PySpark."
+      ],
+      "interviewQuestions": [
+        "What is lazy evaluation in Spark and what is its benefit?",
+        "Explain the difference between actions and transformations in Spark."
+      ]
+    }
+  ]
+}

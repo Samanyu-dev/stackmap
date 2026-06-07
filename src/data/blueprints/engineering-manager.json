@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-engineering-manager",
+  "slug": "engineering-manager",
+  "title": "Engineering Manager",
+  "description": "Manage technical talent and strategic alignment. Learn development coaching, agile methodologies, recruitment strategies, and system governance.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "4 Months",
+  "category": "PREPARATION",
+  "nodes": [
+    {
+      "id": "em-node-1",
+      "slug": "talent-development",
+      "title": "Technical Talent Development",
+      "description": "Formulate growth plans, manage career progression targets, run performance review cycles, and handle delegation.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-em-1",
+          "title": "The Manager's Path (O'Reilly)",
+          "type": "BOOK",
+          "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/"
+        }
+      ],
+      "projectIdeas": [
+        "Draft a career framework mapping technical achievements expectations across SWE levels (L1 to L3)."
+      ],
+      "interviewQuestions": [
+        "How do you align business deliverable deadlines with developer growth targets?",
+        "Explain conflict resolution steps in engineering sprints."
+      ]
+    }
+  ]
+}

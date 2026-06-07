@@ -1,0 +1,65 @@
+{
+  "id": "roadmap-ios",
+  "slug": "ios",
+  "title": "iOS Developer",
+  "description": "Build native applications for Apple devices. Master Swift programming, SwiftUI layout components, data grids, and CoreData cache.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "4 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "ios-node-1",
+      "slug": "swift-syntax",
+      "title": "Swift Syntax & Classes",
+      "description": "Understand variables types, Swift Optionals, structs vs classes, protocols, optionals chaining, and error catches.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ios-1",
+          "title": "Swift Language Guide",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a localized terminal task utility in Swift demonstrating protocol inheritance classes."
+      ],
+      "interviewQuestions": [
+        "Explain Swift optionals and the difference between if-let and guard-let bindings.",
+        "What is the difference between a Struct and a Class in Swift?"
+      ]
+    },
+    {
+      "id": "ios-node-2",
+      "slug": "swiftui-views",
+      "title": "SwiftUI Declarative Layouts",
+      "description": "Build user interfaces using VStack, HStack, List, state bindings (@State, @Binding), and layout updates.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "swift-syntax"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-ios-2",
+          "title": "Apple SwiftUI Tutorials",
+          "type": "WEBSITE",
+          "url": "https://developer.apple.com/tutorials/swiftui"
+        }
+      ],
+      "projectIdeas": [
+        "Build a custom weather view list demonstrating bindings transitions and dynamic layout grids."
+      ],
+      "interviewQuestions": [
+        "What is the purpose of @StateObject vs @ObservedObject in SwiftUI?",
+        "Explain the layout layout flow of SwiftUI view trees."
+      ]
+    }
+  ]
+}

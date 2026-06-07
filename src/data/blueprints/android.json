@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-android",
+  "slug": "android",
+  "title": "Android Developer",
+  "description": "Build mobile applications for the Android OS. Master Kotlin syntax, Compose layouts, REST client caching, and local database storage.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "4 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "adr-node-1",
+      "slug": "kotlin-basics",
+      "title": "Kotlin Programming",
+      "description": "Master variables types, nullable values assertions, functions syntax, collections, lambdas, and class inheritances.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-adr-1",
+          "title": "Kotlin Learn Basics",
+          "type": "DOCUMENTATION",
+          "url": "https://kotlinlang.org/docs/home.html"
+        }
+      ],
+      "projectIdeas": [
+        "Build a Kotlin terminal calculator app that validates mathematical operations bounds safely."
+      ],
+      "interviewQuestions": [
+        "What are data classes in Kotlin?",
+        "Explain how Kotlin handles Null Safety (nullable vs non-null types)."
+      ]
+    },
+    {
+      "id": "adr-node-2",
+      "slug": "jetpack-compose",
+      "title": "Jetpack Compose Declarative UI",
+      "description": "Construct layouts using composable blocks, manage view state updates, and design material layouts.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "25 hours",
+      "prerequisites": [
+        "kotlin-basics"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-adr-2",
+          "title": "Compose Tutorials",
+          "type": "WEBSITE",
+          "url": "https://developer.android.com/jetpack/compose"
+        }
+      ],
+      "projectIdeas": [
+        "Build a responsive mobile checklist app utilizing Jetpack Compose components and themes."
+      ],
+      "interviewQuestions": [
+        "What is recomposition in Compose?",
+        "Explain the function of remember { mutableStateOf() } in Jetpack Compose views."
+      ]
+    },
+    {
+      "id": "adr-node-3",
+      "slug": "sqlite-room",
+      "title": "SQLite & Room Database Caching",
+      "description": "Staging database structures, configuring entity queries, and cache API responses locally.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "jetpack-compose"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-adr-3",
+          "title": "Room Database Guide",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.android.com/training/data-storage/room"
+        }
+      ],
+      "projectIdeas": [
+        "Build a offline-first journal application caching mobile entries locally using Room database tables."
+      ],
+      "interviewQuestions": [
+        "What is Room in Android and what are its key components?",
+        "Explain how DAOs map database queries to Swift/Kotlin classes."
+      ]
+    }
+  ]
+}

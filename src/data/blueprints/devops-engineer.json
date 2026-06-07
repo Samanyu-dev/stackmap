@@ -1,0 +1,111 @@
+{
+  "id": "roadmap-devops",
+  "slug": "devops-engineer",
+  "title": "DevOps Engineer",
+  "description": "Learn configuration automation, continuous integration and delivery pipelines, cloud computing administration, container architecture, and system observability.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "5 Months",
+  "category": "SYSTEMS",
+  "nodes": [
+    {
+      "id": "do-node-1",
+      "slug": "linux-cli",
+      "title": "Linux & Shell Scripting",
+      "description": "Understand Linux OS structure, process management, file permissions, shell variables, and scripting automations.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "10 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-do-1",
+          "title": "Bash Guide for Beginners",
+          "type": "WEBSITE",
+          "url": "https://tldp.org/LDP/Bash-Beginners-Guide/html/"
+        },
+        {
+          "id": "res-do-2",
+          "title": "Linux CLI Full Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=wBp0Rb-ZJak"
+        }
+      ],
+      "projectIdeas": [
+        "Write a bash script that periodically zips local server log files and moves them to a backup folder."
+      ],
+      "interviewQuestions": [
+        "How do you check current memory usage and disk space in Linux?",
+        "What is a soft link vs hard link?"
+      ]
+    },
+    {
+      "id": "do-node-2",
+      "slug": "ci-cd-pipelines",
+      "title": "CI/CD & GitHub Actions",
+      "description": "Set up continuous build, lint test automation, and code deployments upon git push hooks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "linux-cli"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-do-3",
+          "title": "GitHub Actions Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.github.com/en/actions"
+        },
+        {
+          "id": "res-do-4",
+          "title": "CI/CD Pipeline Tutorial",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=scEDHsr3APg"
+        }
+      ],
+      "projectIdeas": [
+        "Configure a GitHub action pipeline that runs ESLint and jest test assertions on every pull request."
+      ],
+      "interviewQuestions": [
+        "What is the difference between Continuous Integration, Delivery, and Deployment?",
+        "What are runner agents in CI/CD?"
+      ]
+    },
+    {
+      "id": "do-node-3",
+      "slug": "kubernetes-orch",
+      "title": "Kubernetes Orchestration",
+      "description": "Deploy and manage large-scale container clusters. Learn pods, services, deployments, ingress, configmaps, and secrets.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "20 hours",
+      "prerequisites": [
+        "ci-cd-pipelines"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-do-5",
+          "title": "Kubernetes Interactive tutorials",
+          "type": "WEBSITE",
+          "url": "https://kubernetes.io/docs/tutorials/"
+        },
+        {
+          "id": "res-do-6",
+          "title": "Kubernetes Course for Beginners",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/watch?v=X48VuDVv0do"
+        }
+      ],
+      "projectIdeas": [
+        "Deploy a multi-container web app setup (frontend, backend, database) inside a local minikube cluster."
+      ],
+      "interviewQuestions": [
+        "What is a Pod in Kubernetes?",
+        "Explain the role of Kubelet and API server in Kubernetes master control."
+      ]
+    }
+  ]
+}

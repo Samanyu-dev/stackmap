@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-postgresql",
+  "slug": "postgresql",
+  "title": "PostgreSQL",
+  "description": "Become a database expert. Master PostgreSQL transactions, indexing techniques, stored procedures, replication setups, and schema tuning.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "3 Months",
+  "category": "SYSTEMS",
+  "nodes": [
+    {
+      "id": "pg-node-1",
+      "slug": "pg-acid",
+      "title": "ACID & Transaction isolation",
+      "description": "Master database locking, transactional ACID properties, isolation levels (Read Committed, Serializable), and MVCC.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "10 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-pg-1",
+          "title": "PostgreSQL Transactions Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+        }
+      ],
+      "projectIdeas": [
+        "Write SQL script loops demonstrating Read Phenomenons (Dirty read, Phantom read) across multiple connection tabs."
+      ],
+      "interviewQuestions": [
+        "What is MVCC (Multi-Version Concurrency Control) in Postgres?",
+        "Explain how Read Committed isolation level operates."
+      ]
+    },
+    {
+      "id": "pg-node-2",
+      "slug": "pg-indexing",
+      "title": "Indexing & Query Plans (EXPLAIN)",
+      "description": "Build B-Tree, GIN, and GiST indexes. Analyze queries performance using EXPLAIN ANALYZE plan dumps.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "pg-acid"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-pg-2",
+          "title": "Explain Query Plan Guide",
+          "type": "WEBSITE",
+          "url": "https://www.pgmustard.com/docs/explain"
+        }
+      ],
+      "projectIdeas": [
+        "Build a B-Tree index on a table containing 1 million rows, and show how query scan moves from Sequential Scan to Index Scan."
+      ],
+      "interviewQuestions": [
+        "When would you use a GIN index instead of a B-Tree index in Postgres?",
+        "What does 'Sequential Scan' indicate in an EXPLAIN dump?"
+      ]
+    },
+    {
+      "id": "pg-node-3",
+      "slug": "pg-procedures",
+      "title": "PL/pgSQL stored procedures & triggers",
+      "description": "Write database routines, trigger actions on inserts, clean data, and construct auditing structures.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "12 hours",
+      "prerequisites": [
+        "pg-indexing"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-pg-3",
+          "title": "PL/pgSQL Programming Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://www.postgresql.org/docs/current/plpgsql.html"
+        }
+      ],
+      "projectIdeas": [
+        "Build a trigger that logs previous database column state rows into an audit history table whenever updates happen."
+      ],
+      "interviewQuestions": [
+        "What is the difference between a database function and a stored procedure?",
+        "Explain trigger execution boundaries (BEFORE vs AFTER)."
+      ]
+    }
+  ]
+}

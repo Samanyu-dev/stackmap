@@ -1,0 +1,93 @@
+{
+  "id": "roadmap-ai-engineer",
+  "slug": "ai-engineer",
+  "title": "AI Engineer",
+  "description": "Build intelligent systems. Learn prompt configurations, vector datastores, retrieval augmented generation (RAG) structures, and LLM APIs.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "4 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "ai-node-1",
+      "slug": "llm-apis",
+      "title": "LLM APIs & Prompt Configuration",
+      "description": "Understand model parameters (temperature, top-p, system instructions) and construct chat prompts.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "6 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ai-1",
+          "title": "Google Gemini API Docs",
+          "type": "DOCUMENTATION",
+          "url": "https://ai.google.dev/gemini-api/docs"
+        }
+      ],
+      "projectIdeas": [
+        "Build a CLI chatbot using the Gemini SDK that takes customizable system instructions and tracks chat context."
+      ],
+      "interviewQuestions": [
+        "What is the effect of raising the temperature parameter in LLM calls?",
+        "Explain few-shot prompting techniques."
+      ]
+    },
+    {
+      "id": "ai-node-2",
+      "slug": "embeddings-vectors",
+      "title": "Embeddings & Vector Databases",
+      "description": "Transform text documents into token embeddings. Master vector indexing, cosine similarity checks, and database lookups.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "10 hours",
+      "prerequisites": [
+        "llm-apis"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-ai-2",
+          "title": "Vector Databases Explained",
+          "type": "WEBSITE",
+          "url": "https://www.pinecone.io/learn/vector-database/"
+        }
+      ],
+      "projectIdeas": [
+        "Build a semantic code scanner that searches files based on meaning matches rather than literal text matches."
+      ],
+      "interviewQuestions": [
+        "What is the difference between vector embeddings and keywords search?",
+        "Explain Cosine Similarity vs Dot Product distance metric calculations."
+      ]
+    },
+    {
+      "id": "ai-node-3",
+      "slug": "rag-langchain",
+      "title": "RAG & LangChain Orchestration",
+      "description": "Build Retrieval-Augmented Generation (RAG) pipelines. Connect vector datastores with LLMs to provide real-time documentation checks.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "embeddings-vectors"
+      ],
+      "parentNodeId": null,
+      "order": 3,
+      "resources": [
+        {
+          "id": "res-ai-3",
+          "title": "LangChain Documentation",
+          "type": "DOCUMENTATION",
+          "url": "https://python.langchain.com/docs/get_started/introduction"
+        }
+      ],
+      "projectIdeas": [
+        "Build a 'Chat with my PDF' web app that parses documents, slices paragraphs into vectors, and returns cited answers."
+      ],
+      "interviewQuestions": [
+        "Explain the architectural steps of a typical RAG system.",
+        "How do you mitigate LLM hallucinations inside prompts?"
+      ]
+    }
+  ]
+}

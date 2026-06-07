@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-ux-design",
+  "slug": "roadmap-ux-design",
+  "title": "UX Design",
+  "description": "Design intuitive interfaces. Learn user wireframes, Figma prototyping, usability guidelines, and grid layout components.",
+  "difficulty": "BEGINNER",
+  "estimatedTime": "3 Months",
+  "category": "PREPARATION",
+  "nodes": [
+    {
+      "id": "ux-node-1",
+      "slug": "figma-prototyping",
+      "title": "Figma UI Prototyping",
+      "description": "Learn frame layers, auto-layouts grids, custom styles variables, component definitions, and interactive prototype animations.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "20 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-ux-1",
+          "title": "Figma Design Tutorials",
+          "type": "WEBSITE",
+          "url": "https://help.figma.com/hc/en-us/categories/360002047814"
+        }
+      ],
+      "projectIdeas": [
+        "Build a interactive mobile checkout user flow in Figma linking screens with interactive button transitions."
+      ],
+      "interviewQuestions": [
+        "What is auto-layout in Figma and why is it preferred for responsive layouts?",
+        "Explain component states in Figma UI designs."
+      ]
+    }
+  ]
+}

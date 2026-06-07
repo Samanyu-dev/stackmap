@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-forward-deployed-engineer",
+  "slug": "forward-deployed-engineer",
+  "title": "Forward Deployed Engineer",
+  "description": "Integrate complex client-facing software solutions. Master custom API bindings, data migrations, technical consulting, and critical triage.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "4 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "fde-node-1",
+      "slug": "integration-glue",
+      "title": "Custom Integrations & API Glue-Code",
+      "description": "Write robust ETL scripts and custom Webhook receivers to bridge client legacy systems with SaaS APIs.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-fde-1",
+          "title": "API Integration Patterns",
+          "type": "DOCUMENTATION",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
+        }
+      ],
+      "projectIdeas": [
+        "Write a custom webhook routing adapter that maps client ticketing alerts into standardized payloads for API delivery."
+      ],
+      "interviewQuestions": [
+        "How do you handle API rate-limiting and retry backoffs in real-time integration loops?",
+        "Explain how you handle data schema mapping mismatching."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "roadmap-bi-analyst",
+  "slug": "bi-analyst",
+  "title": "BI Analyst",
+  "description": "Deliver analytical business intelligence. Master data warehouse modeling, SQL reporting layers, and starschema database structures.",
+  "difficulty": "INTERMEDIATE",
+  "estimatedTime": "3 Months",
+  "category": "DATA_SCIENCE",
+  "nodes": [
+    {
+      "id": "bia-node-1",
+      "slug": "star-schemas",
+      "title": "Star & Snowflake Schemas Data Modeling",
+      "description": "Differentiate Dimension tables vs Fact tables, map primary keys relationships, and model indexing layers.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "12 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-bia-1",
+          "title": "Dimensional Modeling Guide",
+          "type": "DOCUMENTATION",
+          "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/"
+        }
+      ],
+      "projectIdeas": [
+        "Design a dimensional database model layout mapping customers, products sales, and regional dates variables."
+      ],
+      "interviewQuestions": [
+        "What is a Fact table and how does it differ from a Dimension table?",
+        "Explain why denormalized schemas are preferred inside BI data warehouses."
+      ]
+    }
+  ]
+}

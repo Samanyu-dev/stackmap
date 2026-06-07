@@ -1,0 +1,65 @@
+{
+  "id": "roadmap-software-architect",
+  "slug": "software-architect",
+  "title": "Software Architect",
+  "description": "Design massive enterprise systems. Master system scalability, design patterns, microservices, databases tuning, and domain logic segregation.",
+  "difficulty": "ADVANCED",
+  "estimatedTime": "6 Months",
+  "category": "DEVELOPMENT",
+  "nodes": [
+    {
+      "id": "sa-node-1",
+      "slug": "design-patterns",
+      "title": "OOD Design Patterns",
+      "description": "Master Creational, Structural, and Behavioral patterns (Singleton, Factory, Observer, Strategy). Review SOLID code design guidelines.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "20 hours",
+      "prerequisites": [],
+      "parentNodeId": null,
+      "order": 1,
+      "resources": [
+        {
+          "id": "res-sa-1",
+          "title": "Refactoring Guru design patterns",
+          "type": "WEBSITE",
+          "url": "https://refactoring.guru/design-patterns"
+        }
+      ],
+      "projectIdeas": [
+        "Write a text parser script utilizing Strategy and Factory patterns to easily adapt formatting configurations."
+      ],
+      "interviewQuestions": [
+        "Explain the Dependency Inversion Principle (SOLID).",
+        "When would you choose the Observer pattern over dynamic callback events?"
+      ]
+    },
+    {
+      "id": "sa-node-2",
+      "slug": "microservices-ddd",
+      "title": "Microservices & Domain-Driven Design (DDD)",
+      "description": "Build modular services. Map bounded contexts, design microservice domain boundaries, configure API Gateways, and align database isolation schemas.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "30 hours",
+      "prerequisites": [
+        "design-patterns"
+      ],
+      "parentNodeId": null,
+      "order": 2,
+      "resources": [
+        {
+          "id": "res-sa-2",
+          "title": "Microservices Architecture Patterns",
+          "type": "WEBSITE",
+          "url": "https://microservices.io/"
+        }
+      ],
+      "projectIdeas": [
+        "Design a system architecture mapping payment channels, catalog views, and user profiles into bounded microservice sectors."
+      ],
+      "interviewQuestions": [
+        "What is a bounded context in Domain-Driven Design?",
+        "Explain database-per-service pattern challenges (e.g. data consistency)."
+      ]
+    }
+  ]
+}
