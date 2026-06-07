@@ -2,6 +2,7 @@
   "id": "roadmap-blockchain",
   "title": "Blockchain Developer",
   "slug": "blockchain",
+  "description": "Master Blockchain Developer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "ADVANCED",
   "estimatedTime": "5 Months",
@@ -12,1036 +13,1650 @@
   "nodes": [
     {
       "id": "roadmap-blockchain-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "blockchain-fundamentals",
+      "title": "1. Blockchain Fundamentals",
+      "description": "Master core capabilities of Blockchain Fundamentals: What is blockchain?, Distributed ledger technology, Blocks, chains, nodes, Consensus mechanisms (PoW, PoS, DPoS, PoA), Public vs private vs consortium blockchains.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-blockchain-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-blockchain-1-1",
+          "title": "What is blockchain? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20blockchain%3F%20documentation"
         },
         {
-          "id": "res-blockchain-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-blockchain-1-2",
+          "title": "Distributed ledger technology Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Distributed%20ledger%20technology%20tutorial"
+        },
+        {
+          "id": "res-blockchain-1-3",
+          "title": "Practice Blocks, chains, nodes Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Blocks%2C%20chains%2C%20nodes%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is blockchain?, Distributed ledger technology, Blocks, chains, nodes."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is What is blockchain? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Distributed ledger technology."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the blockchain-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Blockchain Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is blockchain?, Distributed ledger technology, Blocks, chains, nodes."
       ]
     },
     {
       "id": "roadmap-blockchain-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "bitcoin-ethereum-basics",
+      "title": "2. Bitcoin & Ethereum Basics",
+      "description": "Master core capabilities of Bitcoin & Ethereum Basics: Bitcoin architecture, UTXO model, Bitcoin scripting basics, Ethereum architecture, Ethereum accounts (EOA vs contract).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "blockchain-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-blockchain-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-blockchain-2-1",
+          "title": "Bitcoin architecture Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Bitcoin%20architecture%20documentation"
         },
         {
-          "id": "res-blockchain-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-blockchain-2-2",
+          "title": "UTXO model Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=UTXO%20model%20tutorial"
+        },
+        {
+          "id": "res-blockchain-2-3",
+          "title": "Practice Bitcoin scripting basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Bitcoin%20scripting%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Bitcoin architecture, UTXO model, Bitcoin scripting basics."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Bitcoin architecture and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of UTXO model."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the bitcoin-ethereum-basics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Bitcoin & Ethereum Basics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Bitcoin architecture, UTXO model, Bitcoin scripting basics."
       ]
     },
     {
       "id": "roadmap-blockchain-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Hardhat & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Hardhat, Foundry, Truffle, Metamask Wallet, Etherscan.",
+      "slug": "solidity-smart-contract-development",
+      "title": "3. Solidity & Smart Contract Development",
+      "description": "Master core capabilities of Solidity & Smart Contract Development: Solidity syntax and basics, Data types (value vs reference), Functions, modifiers, events, State variables and storage, Constructor and fallback functions.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "bitcoin-ethereum-basics"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-blockchain-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-blockchain-3-1",
+          "title": "Solidity syntax and basics Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Solidity%20syntax%20and%20basics%20documentation"
+        },
+        {
+          "id": "res-blockchain-3-2",
+          "title": "Data types (value vs reference) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Data%20types%20(value%20vs%20reference)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-3-3",
+          "title": "Practice Functions, modifiers, events Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Functions%2C%20modifiers%2C%20events%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solidity syntax and basics, Data types (value vs reference), Functions, modifiers, events."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Solidity syntax and basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Data types (value vs reference)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the solidity-smart-contract-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Hardhat & More Core Theories",
+        "3. Solidity & Smart Contract Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solidity syntax and basics, Data types (value vs reference), Functions, modifiers, events."
       ]
     },
     {
       "id": "roadmap-blockchain-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Solidity / Rust / JavaScript/TypeScript",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Solidity, Rust, JavaScript/TypeScript.",
+      "slug": "development-environment-tooling",
+      "title": "4. Development Environment & Tooling",
+      "description": "Master core capabilities of Development Environment & Tooling: Hardhat setup and usage, Foundry setup and usage, Truffle (legacy), Ganache (local blockchain), Remix IDE.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "tools"
+        "solidity-smart-contract-development"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-blockchain-lang-1",
-          "title": "Solidity Official Guides",
+          "id": "res-blockchain-4-1",
+          "title": "Hardhat setup and usage Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Hardhat%20setup%20and%20usage%20documentation"
+        },
+        {
+          "id": "res-blockchain-4-2",
+          "title": "Foundry setup and usage Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Foundry%20setup%20and%20usage%20tutorial"
+        },
+        {
+          "id": "res-blockchain-4-3",
+          "title": "Practice Truffle (legacy) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Truffle%20(legacy)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Solidity handling variable arrays."
+        "Build a prototype integrating Hardhat setup and usage, Foundry setup and usage, Truffle (legacy)."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Solidity?",
-        "How does asynchronous logic work in Solidity?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Hardhat setup and usage and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Foundry setup and usage."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the development-environment-tooling milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Solidity / Rust / JavaScript/TypeScript Core Theories",
+        "4. Development Environment & Tooling Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Solidity handling variable arrays."
+        "Build a prototype integrating Hardhat setup and usage, Foundry setup and usage, Truffle (legacy)."
       ]
     },
     {
       "id": "roadmap-blockchain-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Web3.js & Ethers.js & Anchor (Solana)",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Web3.js, Ethers.js, Anchor (Solana).",
+      "slug": "token-standards",
+      "title": "5. Token Standards",
+      "description": "Master core capabilities of Token Standards: ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-token), ERC-4337 (account abstraction), ERC-2981 (royalties).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "languages"
+        "development-environment-tooling"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-blockchain-fw-1",
-          "title": "Web3.js Reference Docs",
+          "id": "res-blockchain-5-1",
+          "title": "ERC-20 (fungible tokens) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=ERC-20%20(fungible%20tokens)%20documentation"
+        },
+        {
+          "id": "res-blockchain-5-2",
+          "title": "ERC-721 (NFTs) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=ERC-721%20(NFTs)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-5-3",
+          "title": "Practice ERC-1155 (multi-token) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=ERC-1155%20(multi-token)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Web3.js."
+        "Build a prototype integrating ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-token)."
       ],
       "interviewQuestions": [
-        "When does a Web3.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Web3.js."
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is ERC-20 (fungible tokens) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of ERC-721 (NFTs)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the token-standards milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Web3.js & Ethers.js & Anchor (Solana) Core Theories",
+        "5. Token Standards Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Web3.js."
+        "Build a prototype integrating ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-token)."
       ]
     },
     {
       "id": "roadmap-blockchain-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: IPFS (Decentralized storage) / The Graph (indexing)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using IPFS (Decentralized storage), The Graph (indexing).",
+      "slug": "defi-decentralized-finance",
+      "title": "6. DeFi (Decentralized Finance)",
+      "description": "Master core capabilities of DeFi (Decentralized Finance): DeFi ecosystem overview, AMM (Automated Market Makers) — Uniswap, Lending protocols — Aave, Compound, Stablecoins (USDC, DAI), Yield farming and liquidity pools.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "token-standards"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-blockchain-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-blockchain-6-1",
+          "title": "DeFi ecosystem overview Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=DeFi%20ecosystem%20overview%20documentation"
+        },
+        {
+          "id": "res-blockchain-6-2",
+          "title": "AMM (Automated Market Makers) — Uniswap Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=AMM%20(Automated%20Market%20Makers)%20%E2%80%94%20Uniswap%20tutorial"
+        },
+        {
+          "id": "res-blockchain-6-3",
+          "title": "Practice Lending protocols — Aave, Compound Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Lending%20protocols%20%E2%80%94%20Aave%2C%20Compound%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using IPFS (Decentralized storage)."
+        "Build a prototype integrating DeFi ecosystem overview, AMM (Automated Market Makers) — Uniswap, Lending protocols — Aave, Compound."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is DeFi ecosystem overview and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of AMM (Automated Market Makers) — Uniswap."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the defi-decentralized-finance milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: IPFS (Decentralized storage) / The Graph (indexing) Core Theories",
+        "6. DeFi (Decentralized Finance) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using IPFS (Decentralized storage)."
+        "Build a prototype integrating DeFi ecosystem overview, AMM (Automated Market Makers) — Uniswap, Lending protocols — Aave, Compound."
       ]
     },
     {
       "id": "roadmap-blockchain-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Waffle / Foundry tests / Chai assertions",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Waffle, Foundry tests, Chai assertions.",
+      "slug": "smart-contract-security",
+      "title": "7. Smart Contract Security",
+      "description": "Master core capabilities of Smart Contract Security: Common vulnerabilities (reentrancy, integer overflow, access control, front-running), Reentrancy attack and prevention, Smart contract auditing process, Static analysis tools (Slither, MythX), Formal verification basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "defi-decentralized-finance"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-blockchain-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-blockchain-7-1",
+          "title": "Common vulnerabilities (reentrancy, integer overflow, access control, front-running) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Common%20vulnerabilities%20(reentrancy%2C%20integer%20overflow%2C%20access%20control%2C%20front-running)%20documentation"
+        },
+        {
+          "id": "res-blockchain-7-2",
+          "title": "Reentrancy attack and prevention Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Reentrancy%20attack%20and%20prevention%20tutorial"
+        },
+        {
+          "id": "res-blockchain-7-3",
+          "title": "Practice Smart contract auditing process Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Smart%20contract%20auditing%20process%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Common vulnerabilities (reentrancy, integer overflow, access control, front-running), Reentrancy attack and prevention, Smart contract auditing process."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Common vulnerabilities (reentrancy, integer overflow, access control, front-running) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Reentrancy attack and prevention."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the smart-contract-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Waffle / Foundry tests / Chai assertions Core Theories",
+        "7. Smart Contract Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Common vulnerabilities (reentrancy, integer overflow, access control, front-running), Reentrancy attack and prevention, Smart contract auditing process."
       ]
     },
     {
       "id": "roadmap-blockchain-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Ethereum Mainnet / Solana Devnet / Arbitrum Layer-2",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Ethereum Mainnet, Solana Devnet, Arbitrum Layer-2.",
+      "slug": "layer-2-scaling-solutions",
+      "title": "8. Layer 2 & Scaling Solutions",
+      "description": "Master core capabilities of Layer 2 & Scaling Solutions: Why Layer 2?, Rollups (Optimistic rollups vs ZK rollups), Optimism and Arbitrum, zkSync, Starknet, Polygon zkEVM, State channels.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "databases"
+        "smart-contract-security"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-blockchain-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-blockchain-8-1",
+          "title": "Why Layer 2? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Why%20Layer%202%3F%20documentation"
+        },
+        {
+          "id": "res-blockchain-8-2",
+          "title": "Rollups (Optimistic rollups vs ZK rollups) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Rollups%20(Optimistic%20rollups%20vs%20ZK%20rollups)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-8-3",
+          "title": "Practice Optimism and Arbitrum Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Optimism%20and%20Arbitrum%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Why Layer 2?, Rollups (Optimistic rollups vs ZK rollups), Optimism and Arbitrum."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Why Layer 2? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Rollups (Optimistic rollups vs ZK rollups)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the layer-2-scaling-solutions milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Ethereum Mainnet / Solana Devnet / Arbitrum Layer-2 Core Theories",
+        "8. Layer 2 & Scaling Solutions Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Why Layer 2?, Rollups (Optimistic rollups vs ZK rollups), Optimism and Arbitrum."
       ]
     },
     {
       "id": "roadmap-blockchain-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Reentrancy Vulnerabilities, Gas Optimization rules, DeFi Flash Loans, Zero Knowledge Proofs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "nfts-web3-applications",
+      "title": "9. NFTs & Web3 Applications",
+      "description": "Master core capabilities of NFTs & Web3 Applications: NFT marketplace development, IPFS and decentralized storage (Arweave, Filecoin), Metadata standards, Building an NFT mint contract, Frontend integration with Web3.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "deployment"
+        "layer-2-scaling-solutions"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-blockchain-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-blockchain-9-1",
+          "title": "NFT marketplace development Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=NFT%20marketplace%20development%20documentation"
+        },
+        {
+          "id": "res-blockchain-9-2",
+          "title": "IPFS and decentralized storage (Arweave, Filecoin) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=IPFS%20and%20decentralized%20storage%20(Arweave%2C%20Filecoin)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-9-3",
+          "title": "Practice Metadata standards Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Metadata%20standards%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating NFT marketplace development, IPFS and decentralized storage (Arweave, Filecoin), Metadata standards."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Reentrancy Vulnerabilities to solve scalability bottlenecks.",
-        "What security vulnerabilities does Zero Knowledge Proofs protect against?"
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is NFT marketplace development and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of IPFS and decentralized storage (Arweave, Filecoin)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the nfts-web3-applications milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. NFTs & Web3 Applications Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating NFT marketplace development, IPFS and decentralized storage (Arweave, Filecoin), Metadata standards."
       ]
     },
     {
       "id": "roadmap-blockchain-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "backend-infrastructure",
+      "title": "10. Backend & Infrastructure",
+      "description": "Master core capabilities of Backend & Infrastructure: Node.js with Web3, Event listening and indexing, IPFS deployment, Decentralized identity (DID), ENS (Ethereum Name Service).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "nfts-web3-applications"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-blockchain-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-blockchain-10-1",
+          "title": "Node.js with Web3 Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Node.js%20with%20Web3%20documentation"
+        },
+        {
+          "id": "res-blockchain-10-2",
+          "title": "Event listening and indexing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Event%20listening%20and%20indexing%20tutorial"
+        },
+        {
+          "id": "res-blockchain-10-3",
+          "title": "Practice IPFS deployment Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=IPFS%20deployment%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Node.js with Web3, Event listening and indexing, IPFS deployment."
       ],
       "interviewQuestions": [
-        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
-        "Explain the gas fees mechanism in EVM and how to optimize storage layout."
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Node.js with Web3 and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Event listening and indexing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the backend-infrastructure milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Backend & Infrastructure Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Node.js with Web3, Event listening and indexing, IPFS deployment."
       ]
     },
     {
       "id": "roadmap-blockchain-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Decentralized Crowdfunding Smart Contract or NFT Minting DApp Portal. Set up deployment links and repository READMEs.",
+      "slug": "other-blockchain-platforms",
+      "title": "11. Other Blockchain Platforms",
+      "description": "Master core capabilities of Other Blockchain Platforms: Solana basics (Rust / Anchor framework), Cosmos SDK basics, Polkadot / Substrate basics, Hyperledger Fabric (enterprise), Near Protocol.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "interview-prep"
+        "backend-infrastructure"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-blockchain-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-blockchain-11-1",
+          "title": "Solana basics (Rust / Anchor framework) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Solana%20basics%20(Rust%20%2F%20Anchor%20framework)%20documentation"
+        },
+        {
+          "id": "res-blockchain-11-2",
+          "title": "Cosmos SDK basics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Cosmos%20SDK%20basics%20tutorial"
+        },
+        {
+          "id": "res-blockchain-11-3",
+          "title": "Practice Polkadot / Substrate basics Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Polkadot%20%2F%20Substrate%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Decentralized Crowdfunding Smart Contract with documentation.",
-        "Build complete deployable version of NFT Minting DApp Portal with documentation."
+        "Build a prototype integrating Solana basics (Rust / Anchor framework), Cosmos SDK basics, Polkadot / Substrate basics."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Decentralized Crowdfunding Smart Contract project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Solana basics (Rust / Anchor framework) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Cosmos SDK basics."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the other-blockchain-platforms milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Other Blockchain Platforms Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Decentralized Crowdfunding Smart Contract with documentation.",
-        "Build complete deployable version of NFT Minting DApp Portal with documentation."
+        "Build a prototype integrating Solana basics (Rust / Anchor framework), Cosmos SDK basics, Polkadot / Substrate basics."
       ]
     },
     {
       "id": "roadmap-blockchain-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "deployment-production",
+      "title": "12. Deployment & Production",
+      "description": "Master core capabilities of Deployment & Production: Testnet deployments (Sepolia, Mumbai), Mainnet deployment checklist, Contract verification on Etherscan, Contract upgradability patterns (proxy patterns — UUPS, Transparent), Multi-sig deployment.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "resume-projects"
+        "other-blockchain-platforms"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-blockchain-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-blockchain-12-1",
+          "title": "Testnet deployments (Sepolia, Mumbai) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Testnet%20deployments%20(Sepolia%2C%20Mumbai)%20documentation"
+        },
+        {
+          "id": "res-blockchain-12-2",
+          "title": "Mainnet deployment checklist Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Mainnet%20deployment%20checklist%20tutorial"
+        },
+        {
+          "id": "res-blockchain-12-3",
+          "title": "Practice Contract verification on Etherscan Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Contract%20verification%20on%20Etherscan%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Testnet deployments (Sepolia, Mumbai), Mainnet deployment checklist, Contract verification on Etherscan."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Testnet deployments (Sepolia, Mumbai) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Mainnet deployment checklist."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the deployment-production milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Deployment & Production Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Testnet deployments (Sepolia, Mumbai), Mainnet deployment checklist, Contract verification on Etherscan."
+      ]
+    },
+    {
+      "id": "roadmap-blockchain-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "deployment-production"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-blockchain-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-blockchain-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-blockchain-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-blockchain-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-blockchain-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-blockchain-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-blockchain-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Decentralized Crowdfunding Smart Contract"
+      ],
+      "interviewQuestions": [
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Decentralized Crowdfunding Smart Contract"
+      ]
+    },
+    {
+      "id": "roadmap-blockchain-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-blockchain-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-blockchain-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-blockchain-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: NFT Minting DApp Portal"
+      ],
+      "interviewQuestions": [
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: NFT Minting DApp Portal"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-blockchain-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "blockchain-fundamentals",
+      "title": "1. Blockchain Fundamentals",
+      "description": "Master core capabilities of Blockchain Fundamentals: What is blockchain?, Distributed ledger technology, Blocks, chains, nodes, Consensus mechanisms (PoW, PoS, DPoS, PoA), Public vs private vs consortium blockchains.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-blockchain-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-blockchain-1-1",
+          "title": "What is blockchain? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20blockchain%3F%20documentation"
         },
         {
-          "id": "res-blockchain-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-blockchain-1-2",
+          "title": "Distributed ledger technology Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Distributed%20ledger%20technology%20tutorial"
+        },
+        {
+          "id": "res-blockchain-1-3",
+          "title": "Practice Blocks, chains, nodes Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Blocks%2C%20chains%2C%20nodes%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is blockchain?, Distributed ledger technology, Blocks, chains, nodes."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is What is blockchain? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Distributed ledger technology."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the blockchain-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Blockchain Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is blockchain?, Distributed ledger technology, Blocks, chains, nodes."
       ]
     },
     {
       "id": "roadmap-blockchain-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "bitcoin-ethereum-basics",
+      "title": "2. Bitcoin & Ethereum Basics",
+      "description": "Master core capabilities of Bitcoin & Ethereum Basics: Bitcoin architecture, UTXO model, Bitcoin scripting basics, Ethereum architecture, Ethereum accounts (EOA vs contract).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "blockchain-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-blockchain-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-blockchain-2-1",
+          "title": "Bitcoin architecture Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Bitcoin%20architecture%20documentation"
         },
         {
-          "id": "res-blockchain-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-blockchain-2-2",
+          "title": "UTXO model Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=UTXO%20model%20tutorial"
+        },
+        {
+          "id": "res-blockchain-2-3",
+          "title": "Practice Bitcoin scripting basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Bitcoin%20scripting%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Bitcoin architecture, UTXO model, Bitcoin scripting basics."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Bitcoin architecture and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of UTXO model."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the bitcoin-ethereum-basics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Bitcoin & Ethereum Basics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Bitcoin architecture, UTXO model, Bitcoin scripting basics."
       ]
     },
     {
       "id": "roadmap-blockchain-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Hardhat & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Hardhat, Foundry, Truffle, Metamask Wallet, Etherscan.",
+      "slug": "solidity-smart-contract-development",
+      "title": "3. Solidity & Smart Contract Development",
+      "description": "Master core capabilities of Solidity & Smart Contract Development: Solidity syntax and basics, Data types (value vs reference), Functions, modifiers, events, State variables and storage, Constructor and fallback functions.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "bitcoin-ethereum-basics"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-blockchain-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-blockchain-3-1",
+          "title": "Solidity syntax and basics Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Solidity%20syntax%20and%20basics%20documentation"
+        },
+        {
+          "id": "res-blockchain-3-2",
+          "title": "Data types (value vs reference) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Data%20types%20(value%20vs%20reference)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-3-3",
+          "title": "Practice Functions, modifiers, events Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Functions%2C%20modifiers%2C%20events%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solidity syntax and basics, Data types (value vs reference), Functions, modifiers, events."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Solidity syntax and basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Data types (value vs reference)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the solidity-smart-contract-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Hardhat & More Core Theories",
+        "3. Solidity & Smart Contract Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solidity syntax and basics, Data types (value vs reference), Functions, modifiers, events."
       ]
     },
     {
       "id": "roadmap-blockchain-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Solidity / Rust / JavaScript/TypeScript",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Solidity, Rust, JavaScript/TypeScript.",
+      "slug": "development-environment-tooling",
+      "title": "4. Development Environment & Tooling",
+      "description": "Master core capabilities of Development Environment & Tooling: Hardhat setup and usage, Foundry setup and usage, Truffle (legacy), Ganache (local blockchain), Remix IDE.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "tools"
+        "solidity-smart-contract-development"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-blockchain-lang-1",
-          "title": "Solidity Official Guides",
+          "id": "res-blockchain-4-1",
+          "title": "Hardhat setup and usage Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Hardhat%20setup%20and%20usage%20documentation"
+        },
+        {
+          "id": "res-blockchain-4-2",
+          "title": "Foundry setup and usage Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Foundry%20setup%20and%20usage%20tutorial"
+        },
+        {
+          "id": "res-blockchain-4-3",
+          "title": "Practice Truffle (legacy) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Truffle%20(legacy)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Solidity handling variable arrays."
+        "Build a prototype integrating Hardhat setup and usage, Foundry setup and usage, Truffle (legacy)."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Solidity?",
-        "How does asynchronous logic work in Solidity?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Hardhat setup and usage and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Foundry setup and usage."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the development-environment-tooling milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Solidity / Rust / JavaScript/TypeScript Core Theories",
+        "4. Development Environment & Tooling Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Solidity handling variable arrays."
+        "Build a prototype integrating Hardhat setup and usage, Foundry setup and usage, Truffle (legacy)."
       ]
     },
     {
       "id": "roadmap-blockchain-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Web3.js & Ethers.js & Anchor (Solana)",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Web3.js, Ethers.js, Anchor (Solana).",
+      "slug": "token-standards",
+      "title": "5. Token Standards",
+      "description": "Master core capabilities of Token Standards: ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-token), ERC-4337 (account abstraction), ERC-2981 (royalties).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "languages"
+        "development-environment-tooling"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-blockchain-fw-1",
-          "title": "Web3.js Reference Docs",
+          "id": "res-blockchain-5-1",
+          "title": "ERC-20 (fungible tokens) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=ERC-20%20(fungible%20tokens)%20documentation"
+        },
+        {
+          "id": "res-blockchain-5-2",
+          "title": "ERC-721 (NFTs) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=ERC-721%20(NFTs)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-5-3",
+          "title": "Practice ERC-1155 (multi-token) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=ERC-1155%20(multi-token)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Web3.js."
+        "Build a prototype integrating ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-token)."
       ],
       "interviewQuestions": [
-        "When does a Web3.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Web3.js."
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is ERC-20 (fungible tokens) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of ERC-721 (NFTs)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the token-standards milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Web3.js & Ethers.js & Anchor (Solana) Core Theories",
+        "5. Token Standards Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Web3.js."
+        "Build a prototype integrating ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-token)."
       ]
     },
     {
       "id": "roadmap-blockchain-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: IPFS (Decentralized storage) / The Graph (indexing)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using IPFS (Decentralized storage), The Graph (indexing).",
+      "slug": "defi-decentralized-finance",
+      "title": "6. DeFi (Decentralized Finance)",
+      "description": "Master core capabilities of DeFi (Decentralized Finance): DeFi ecosystem overview, AMM (Automated Market Makers) — Uniswap, Lending protocols — Aave, Compound, Stablecoins (USDC, DAI), Yield farming and liquidity pools.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "token-standards"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-blockchain-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-blockchain-6-1",
+          "title": "DeFi ecosystem overview Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=DeFi%20ecosystem%20overview%20documentation"
+        },
+        {
+          "id": "res-blockchain-6-2",
+          "title": "AMM (Automated Market Makers) — Uniswap Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=AMM%20(Automated%20Market%20Makers)%20%E2%80%94%20Uniswap%20tutorial"
+        },
+        {
+          "id": "res-blockchain-6-3",
+          "title": "Practice Lending protocols — Aave, Compound Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Lending%20protocols%20%E2%80%94%20Aave%2C%20Compound%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using IPFS (Decentralized storage)."
+        "Build a prototype integrating DeFi ecosystem overview, AMM (Automated Market Makers) — Uniswap, Lending protocols — Aave, Compound."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is DeFi ecosystem overview and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of AMM (Automated Market Makers) — Uniswap."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the defi-decentralized-finance milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: IPFS (Decentralized storage) / The Graph (indexing) Core Theories",
+        "6. DeFi (Decentralized Finance) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using IPFS (Decentralized storage)."
+        "Build a prototype integrating DeFi ecosystem overview, AMM (Automated Market Makers) — Uniswap, Lending protocols — Aave, Compound."
       ]
     },
     {
       "id": "roadmap-blockchain-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Waffle / Foundry tests / Chai assertions",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Waffle, Foundry tests, Chai assertions.",
+      "slug": "smart-contract-security",
+      "title": "7. Smart Contract Security",
+      "description": "Master core capabilities of Smart Contract Security: Common vulnerabilities (reentrancy, integer overflow, access control, front-running), Reentrancy attack and prevention, Smart contract auditing process, Static analysis tools (Slither, MythX), Formal verification basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "defi-decentralized-finance"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-blockchain-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-blockchain-7-1",
+          "title": "Common vulnerabilities (reentrancy, integer overflow, access control, front-running) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Common%20vulnerabilities%20(reentrancy%2C%20integer%20overflow%2C%20access%20control%2C%20front-running)%20documentation"
+        },
+        {
+          "id": "res-blockchain-7-2",
+          "title": "Reentrancy attack and prevention Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Reentrancy%20attack%20and%20prevention%20tutorial"
+        },
+        {
+          "id": "res-blockchain-7-3",
+          "title": "Practice Smart contract auditing process Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Smart%20contract%20auditing%20process%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Common vulnerabilities (reentrancy, integer overflow, access control, front-running), Reentrancy attack and prevention, Smart contract auditing process."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Common vulnerabilities (reentrancy, integer overflow, access control, front-running) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Reentrancy attack and prevention."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the smart-contract-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Waffle / Foundry tests / Chai assertions Core Theories",
+        "7. Smart Contract Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Common vulnerabilities (reentrancy, integer overflow, access control, front-running), Reentrancy attack and prevention, Smart contract auditing process."
       ]
     },
     {
       "id": "roadmap-blockchain-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Ethereum Mainnet / Solana Devnet / Arbitrum Layer-2",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Ethereum Mainnet, Solana Devnet, Arbitrum Layer-2.",
+      "slug": "layer-2-scaling-solutions",
+      "title": "8. Layer 2 & Scaling Solutions",
+      "description": "Master core capabilities of Layer 2 & Scaling Solutions: Why Layer 2?, Rollups (Optimistic rollups vs ZK rollups), Optimism and Arbitrum, zkSync, Starknet, Polygon zkEVM, State channels.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "databases"
+        "smart-contract-security"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-blockchain-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-blockchain-8-1",
+          "title": "Why Layer 2? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Why%20Layer%202%3F%20documentation"
+        },
+        {
+          "id": "res-blockchain-8-2",
+          "title": "Rollups (Optimistic rollups vs ZK rollups) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Rollups%20(Optimistic%20rollups%20vs%20ZK%20rollups)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-8-3",
+          "title": "Practice Optimism and Arbitrum Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Optimism%20and%20Arbitrum%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Why Layer 2?, Rollups (Optimistic rollups vs ZK rollups), Optimism and Arbitrum."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Why Layer 2? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Rollups (Optimistic rollups vs ZK rollups)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the layer-2-scaling-solutions milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Ethereum Mainnet / Solana Devnet / Arbitrum Layer-2 Core Theories",
+        "8. Layer 2 & Scaling Solutions Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Why Layer 2?, Rollups (Optimistic rollups vs ZK rollups), Optimism and Arbitrum."
       ]
     },
     {
       "id": "roadmap-blockchain-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Reentrancy Vulnerabilities, Gas Optimization rules, DeFi Flash Loans, Zero Knowledge Proofs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "nfts-web3-applications",
+      "title": "9. NFTs & Web3 Applications",
+      "description": "Master core capabilities of NFTs & Web3 Applications: NFT marketplace development, IPFS and decentralized storage (Arweave, Filecoin), Metadata standards, Building an NFT mint contract, Frontend integration with Web3.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "deployment"
+        "layer-2-scaling-solutions"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-blockchain-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-blockchain-9-1",
+          "title": "NFT marketplace development Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=NFT%20marketplace%20development%20documentation"
+        },
+        {
+          "id": "res-blockchain-9-2",
+          "title": "IPFS and decentralized storage (Arweave, Filecoin) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=IPFS%20and%20decentralized%20storage%20(Arweave%2C%20Filecoin)%20tutorial"
+        },
+        {
+          "id": "res-blockchain-9-3",
+          "title": "Practice Metadata standards Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Metadata%20standards%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating NFT marketplace development, IPFS and decentralized storage (Arweave, Filecoin), Metadata standards."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Reentrancy Vulnerabilities to solve scalability bottlenecks.",
-        "What security vulnerabilities does Zero Knowledge Proofs protect against?"
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is NFT marketplace development and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of IPFS and decentralized storage (Arweave, Filecoin)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the nfts-web3-applications milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. NFTs & Web3 Applications Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating NFT marketplace development, IPFS and decentralized storage (Arweave, Filecoin), Metadata standards."
       ]
     },
     {
       "id": "roadmap-blockchain-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "backend-infrastructure",
+      "title": "10. Backend & Infrastructure",
+      "description": "Master core capabilities of Backend & Infrastructure: Node.js with Web3, Event listening and indexing, IPFS deployment, Decentralized identity (DID), ENS (Ethereum Name Service).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "nfts-web3-applications"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-blockchain-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-blockchain-10-1",
+          "title": "Node.js with Web3 Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Node.js%20with%20Web3%20documentation"
+        },
+        {
+          "id": "res-blockchain-10-2",
+          "title": "Event listening and indexing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Event%20listening%20and%20indexing%20tutorial"
+        },
+        {
+          "id": "res-blockchain-10-3",
+          "title": "Practice IPFS deployment Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=IPFS%20deployment%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Node.js with Web3, Event listening and indexing, IPFS deployment."
       ],
       "interviewQuestions": [
-        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
-        "Explain the gas fees mechanism in EVM and how to optimize storage layout."
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Node.js with Web3 and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Event listening and indexing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the backend-infrastructure milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Backend & Infrastructure Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Node.js with Web3, Event listening and indexing, IPFS deployment."
       ]
     },
     {
       "id": "roadmap-blockchain-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Decentralized Crowdfunding Smart Contract or NFT Minting DApp Portal. Set up deployment links and repository READMEs.",
+      "slug": "other-blockchain-platforms",
+      "title": "11. Other Blockchain Platforms",
+      "description": "Master core capabilities of Other Blockchain Platforms: Solana basics (Rust / Anchor framework), Cosmos SDK basics, Polkadot / Substrate basics, Hyperledger Fabric (enterprise), Near Protocol.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "interview-prep"
+        "backend-infrastructure"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-blockchain-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-blockchain-11-1",
+          "title": "Solana basics (Rust / Anchor framework) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Solana%20basics%20(Rust%20%2F%20Anchor%20framework)%20documentation"
+        },
+        {
+          "id": "res-blockchain-11-2",
+          "title": "Cosmos SDK basics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Cosmos%20SDK%20basics%20tutorial"
+        },
+        {
+          "id": "res-blockchain-11-3",
+          "title": "Practice Polkadot / Substrate basics Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Polkadot%20%2F%20Substrate%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Decentralized Crowdfunding Smart Contract with documentation.",
-        "Build complete deployable version of NFT Minting DApp Portal with documentation."
+        "Build a prototype integrating Solana basics (Rust / Anchor framework), Cosmos SDK basics, Polkadot / Substrate basics."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Decentralized Crowdfunding Smart Contract project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Solana basics (Rust / Anchor framework) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Cosmos SDK basics."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the other-blockchain-platforms milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Other Blockchain Platforms Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Decentralized Crowdfunding Smart Contract with documentation.",
-        "Build complete deployable version of NFT Minting DApp Portal with documentation."
+        "Build a prototype integrating Solana basics (Rust / Anchor framework), Cosmos SDK basics, Polkadot / Substrate basics."
       ]
     },
     {
       "id": "roadmap-blockchain-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "deployment-production",
+      "title": "12. Deployment & Production",
+      "description": "Master core capabilities of Deployment & Production: Testnet deployments (Sepolia, Mumbai), Mainnet deployment checklist, Contract verification on Etherscan, Contract upgradability patterns (proxy patterns — UUPS, Transparent), Multi-sig deployment.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "resume-projects"
+        "other-blockchain-platforms"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-blockchain-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-blockchain-12-1",
+          "title": "Testnet deployments (Sepolia, Mumbai) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Testnet%20deployments%20(Sepolia%2C%20Mumbai)%20documentation"
+        },
+        {
+          "id": "res-blockchain-12-2",
+          "title": "Mainnet deployment checklist Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Mainnet%20deployment%20checklist%20tutorial"
+        },
+        {
+          "id": "res-blockchain-12-3",
+          "title": "Practice Contract verification on Etherscan Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Contract%20verification%20on%20Etherscan%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Testnet deployments (Sepolia, Mumbai), Mainnet deployment checklist, Contract verification on Etherscan."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Testnet deployments (Sepolia, Mumbai) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Mainnet deployment checklist."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the deployment-production milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Deployment & Production Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Testnet deployments (Sepolia, Mumbai), Mainnet deployment checklist, Contract verification on Etherscan."
+      ]
+    },
+    {
+      "id": "roadmap-blockchain-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "deployment-production"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-blockchain-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-blockchain-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-blockchain-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-blockchain-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-blockchain-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-blockchain-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-blockchain-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Decentralized Crowdfunding Smart Contract"
+      ],
+      "interviewQuestions": [
+        "Explain the gas fees mechanism in EVM and how to optimize storage layout.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Decentralized Crowdfunding Smart Contract"
+      ]
+    },
+    {
+      "id": "roadmap-blockchain-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-blockchain-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-blockchain-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-blockchain-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: NFT Minting DApp Portal"
+      ],
+      "interviewQuestions": [
+        "What is reentrancy and how do you mitigate it using checks-effects-interactions patterns?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: NFT Minting DApp Portal"
       ]
     }
   ]

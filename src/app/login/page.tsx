@@ -20,14 +20,39 @@ export default function LoginPage() {
     setLoading(true);
     setError("");
 
-    // Simulate login redirect directly
-    if (email === "student@stackmap.dev" && password === "password") {
+    if (email.includes("@") && password.length >= 6) {
       setTimeout(() => {
+        localStorage.setItem("stackmap_session", JSON.stringify({ email }));
+        
+        // Check if user profile already exists, if not, create one
+        const existingProfile = localStorage.getItem("stackmap_user_profile");
+        if (!existingProfile) {
+          const computedName = email.split("@")[0]
+            .replace(/[._-]/g, " ")
+            .split(" ")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ");
+            
+          const newUserProfile = {
+            id: `user-${Math.random().toString(36).substring(2, 9)}`,
+            name: computedName,
+            email: email,
+            image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
+            streak: 1,
+            completedTopics: 0,
+            completedProjects: 0,
+            dsaSolved: 0,
+            applicationsSent: 0,
+            interviewsScheduled: 0
+          };
+          localStorage.setItem("stackmap_user_profile", JSON.stringify(newUserProfile));
+        }
+        
         router.push("/dashboard");
       }, 800);
     } else {
       setLoading(false);
-      setError("Invalid student email or password credential.");
+      setError("Please check your input. Password must be at least 6 characters.");
     }
   };
 
@@ -85,8 +110,8 @@ export default function LoginPage() {
           <div className="p-3 bg-secondary/50 rounded-xl border border-border/60 text-xs text-muted-foreground flex items-start space-x-2 leading-relaxed">
             <BrainCircuit className="h-4.5 w-4.5 text-primary flex-shrink-0 mt-0.5" />
             <div>
-              <span className="font-bold text-foreground">Quick Sandbox Credentials:</span>
-              <p className="mt-0.5">Use email <code className="text-primary select-all">student@stackmap.dev</code> and password <code className="text-primary select-all">password</code> to bypass login.</p>
+              <span className="font-bold text-foreground">Dynamic Sandbox Credentials:</span>
+              <p className="mt-0.5">Enter any valid email and a password of 6+ characters. This will automatically provision a new customizable profile or log you into an existing one.</p>
             </div>
           </div>
         </CardFooter>

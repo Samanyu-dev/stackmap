@@ -2,6 +2,7 @@
   "id": "roadmap-android",
   "title": "Android Developer",
   "slug": "android",
+  "description": "Master Android Developer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "INTERMEDIATE",
   "estimatedTime": "4 Months",
@@ -10,292 +11,536 @@
   "nodes": [
     {
       "id": "roadmap-android-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "programming-language",
+      "title": "1. Programming Language",
+      "description": "Master core capabilities of Programming Language: Kotlin fundamentals, Variables, data types, functions, OOP in Kotlin, Null safety, Coroutines basics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-android-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-android-1-1",
+          "title": "Kotlin fundamentals Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=Kotlin%20fundamentals%20documentation"
         },
         {
-          "id": "res-android-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-android-1-2",
+          "title": "Variables, data types, functions Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Variables%2C%20data%20types%2C%20functions%20tutorial"
+        },
+        {
+          "id": "res-android-1-3",
+          "title": "Practice OOP in Kotlin Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=OOP%20in%20Kotlin%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Kotlin fundamentals, Variables, data types, functions, OOP in Kotlin."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is Kotlin fundamentals and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Variables, data types, functions."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the programming-language milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Programming Language Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Kotlin fundamentals, Variables, data types, functions, OOP in Kotlin."
       ]
     },
     {
       "id": "roadmap-android-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "android-fundamentals",
+      "title": "2. Android Fundamentals",
+      "description": "Master core capabilities of Android Fundamentals: Android Studio setup, Android architecture overview, Activities and Activity lifecycle, Fragments and Fragment lifecycle, Intents (explicit and implicit).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "programming-language"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-android-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-android-2-1",
+          "title": "Android Studio setup Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Android%20Studio%20setup%20documentation"
         },
         {
-          "id": "res-android-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-android-2-2",
+          "title": "Android architecture overview Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Android%20architecture%20overview%20tutorial"
+        },
+        {
+          "id": "res-android-2-3",
+          "title": "Practice Activities and Activity lifecycle Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Activities%20and%20Activity%20lifecycle%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Android Studio setup, Android architecture overview, Activities and Activity lifecycle."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Android Studio setup and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Android architecture overview."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the android-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Android Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Android Studio setup, Android architecture overview, Activities and Activity lifecycle."
       ]
     },
     {
       "id": "roadmap-android-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Android Studio & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Android Studio, Gradle, Logcat, ADB (Android Debug Bridge).",
+      "slug": "ui-development",
+      "title": "3. UI Development",
+      "description": "Master core capabilities of UI Development: XML layouts vs Jetpack Compose, View system (TextView, EditText, Button, ImageView, RecyclerView), Constraint Layout, Linear Layout, Frame Layout, Material Design components.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "android-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-android-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-android-3-1",
+          "title": "XML layouts vs Jetpack Compose Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=XML%20layouts%20vs%20Jetpack%20Compose%20documentation"
+        },
+        {
+          "id": "res-android-3-2",
+          "title": "View system (TextView, EditText, Button, ImageView, RecyclerView) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=View%20system%20(TextView%2C%20EditText%2C%20Button%2C%20ImageView%2C%20RecyclerView)%20tutorial"
+        },
+        {
+          "id": "res-android-3-3",
+          "title": "Practice Constraint Layout Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Constraint%20Layout%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating XML layouts vs Jetpack Compose, View system (TextView, EditText, Button, ImageView, RecyclerView), Constraint Layout."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is XML layouts vs Jetpack Compose and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of View system (TextView, EditText, Button, ImageView, RecyclerView)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the ui-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Android Studio & More Core Theories",
+        "3. UI Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating XML layouts vs Jetpack Compose, View system (TextView, EditText, Button, ImageView, RecyclerView), Constraint Layout."
       ]
     },
     {
       "id": "roadmap-android-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Kotlin / Java",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Kotlin, Java.",
+      "slug": "navigation-app-architecture",
+      "title": "4. Navigation & App Architecture",
+      "description": "Master core capabilities of Navigation & App Architecture: Android Navigation Component, NavGraph, Bottom Navigation, Drawer Navigation, Deep links.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "ui-development"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-android-lang-1",
-          "title": "Kotlin Official Guides",
+          "id": "res-android-4-1",
+          "title": "Android Navigation Component Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Android%20Navigation%20Component%20documentation"
+        },
+        {
+          "id": "res-android-4-2",
+          "title": "NavGraph Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=NavGraph%20tutorial"
+        },
+        {
+          "id": "res-android-4-3",
+          "title": "Practice Bottom Navigation Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Bottom%20Navigation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Kotlin handling variable arrays."
+        "Build a prototype integrating Android Navigation Component, NavGraph, Bottom Navigation."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Kotlin?",
-        "How does asynchronous logic work in Kotlin?"
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Android Navigation Component and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of NavGraph."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the navigation-app-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Kotlin / Java Core Theories",
+        "4. Navigation & App Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Kotlin handling variable arrays."
+        "Build a prototype integrating Android Navigation Component, NavGraph, Bottom Navigation."
       ]
     },
     {
       "id": "roadmap-android-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Jetpack Compose & Android SDK & Coroutines & Flows",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Jetpack Compose, Android SDK, Coroutines & Flows.",
+      "slug": "data-storage",
+      "title": "5. Data Storage",
+      "description": "Master core capabilities of Data Storage: SharedPreferences / DataStore, Room Database, SQLite basics, File storage (internal and external), Content Providers basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "navigation-app-architecture"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-android-fw-1",
-          "title": "Jetpack Compose Reference Docs",
+          "id": "res-android-5-1",
+          "title": "SharedPreferences / DataStore Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=SharedPreferences%20%2F%20DataStore%20documentation"
+        },
+        {
+          "id": "res-android-5-2",
+          "title": "Room Database Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Room%20Database%20tutorial"
+        },
+        {
+          "id": "res-android-5-3",
+          "title": "Practice SQLite basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://leetcode.com"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Jetpack Compose."
+        "Build a prototype integrating SharedPreferences / DataStore, Room Database, SQLite basics."
       ],
       "interviewQuestions": [
-        "When does a Jetpack Compose component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Jetpack Compose."
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is SharedPreferences / DataStore and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Room Database."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the data-storage milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Jetpack Compose & Android SDK & Coroutines & Flows Core Theories",
+        "5. Data Storage Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Jetpack Compose."
+        "Build a prototype integrating SharedPreferences / DataStore, Room Database, SQLite basics."
       ]
     },
     {
       "id": "roadmap-android-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: Room DB / SQLite / DataStore",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Room DB, SQLite, DataStore.",
+      "slug": "networking",
+      "title": "6. Networking",
+      "description": "Master core capabilities of Networking: Retrofit, OkHttp, REST API calls, JSON parsing with Gson / Moshi, Coroutines with networking.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "data-storage"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-android-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-android-6-1",
+          "title": "Retrofit Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Retrofit%20documentation"
+        },
+        {
+          "id": "res-android-6-2",
+          "title": "OkHttp Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=OkHttp%20tutorial"
+        },
+        {
+          "id": "res-android-6-3",
+          "title": "Practice REST API calls Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=REST%20API%20calls%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using Room DB."
+        "Build a prototype integrating Retrofit, OkHttp, REST API calls."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Retrofit and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of OkHttp."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the networking milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: Room DB / SQLite / DataStore Core Theories",
+        "6. Networking Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using Room DB."
+        "Build a prototype integrating Retrofit, OkHttp, REST API calls."
       ]
     },
     {
       "id": "roadmap-android-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: JUnit / Espresso / Mockk",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using JUnit, Espresso, Mockk.",
+      "slug": "dependency-injection",
+      "title": "7. Dependency Injection",
+      "description": "Master core capabilities of Dependency Injection: What is DI?, Hilt (recommended), Dagger basics, Koin, DI patterns.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "networking"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-android-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-android-7-1",
+          "title": "What is DI? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=What%20is%20DI%3F%20documentation"
+        },
+        {
+          "id": "res-android-7-2",
+          "title": "Hilt (recommended) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Hilt%20(recommended)%20tutorial"
+        },
+        {
+          "id": "res-android-7-3",
+          "title": "Practice Dagger basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Dagger%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating What is DI?, Hilt (recommended), Dagger basics."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is What is DI? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Hilt (recommended)."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the dependency-injection milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Dependency Injection Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating What is DI?, Hilt (recommended), Dagger basics."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-8",
+      "slug": "background-work",
+      "title": "8. Background Work",
+      "description": "Master core capabilities of Background Work: WorkManager, Services (Foreground, Background, Bound), BroadcastReceivers, AlarmManager, Notifications.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "dependency-injection"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-android-8-1",
+          "title": "WorkManager Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=WorkManager%20documentation"
+        },
+        {
+          "id": "res-android-8-2",
+          "title": "Services (Foreground, Background, Bound) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Services%20(Foreground%2C%20Background%2C%20Bound)%20tutorial"
+        },
+        {
+          "id": "res-android-8-3",
+          "title": "Practice BroadcastReceivers Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=BroadcastReceivers%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating WorkManager, Services (Foreground, Background, Bound), BroadcastReceivers."
+      ],
+      "interviewQuestions": [
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is WorkManager and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Services (Foreground, Background, Bound)."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the background-work milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Background Work Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating WorkManager, Services (Foreground, Background, Bound), BroadcastReceivers."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-9",
+      "slug": "firebase-third-party-sdks",
+      "title": "9. Firebase & Third-party SDKs",
+      "description": "Master core capabilities of Firebase & Third-party SDKs: Firebase setup, Firebase Authentication, Firebase Firestore, Firebase Realtime Database, Firebase Storage.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "background-work"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-android-9-1",
+          "title": "Firebase setup Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Firebase%20setup%20documentation"
+        },
+        {
+          "id": "res-android-9-2",
+          "title": "Firebase Authentication Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Firebase%20Authentication%20tutorial"
+        },
+        {
+          "id": "res-android-9-3",
+          "title": "Practice Firebase Firestore Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Firebase%20Firestore%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Firebase setup, Firebase Authentication, Firebase Firestore."
+      ],
+      "interviewQuestions": [
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is Firebase setup and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Firebase Authentication."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the firebase-third-party-sdks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Firebase & Third-party SDKs Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Firebase setup, Firebase Authentication, Firebase Firestore."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-10",
+      "slug": "testing",
+      "title": "10. Testing",
+      "description": "Master core capabilities of Testing: Unit testing with JUnit, UI testing with Espresso, Mocking with Mockito, Compose testing, Test coverage.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "firebase-third-party-sdks"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-android-10-1",
+          "title": "Unit testing with JUnit Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Unit%20testing%20with%20JUnit%20documentation"
+        },
+        {
+          "id": "res-android-10-2",
+          "title": "UI testing with Espresso Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=UI%20testing%20with%20Espresso%20tutorial"
+        },
+        {
+          "id": "res-android-10-3",
+          "title": "Practice Mocking with Mockito Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Mocking%20with%20Mockito%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Unit testing with JUnit, UI testing with Espresso, Mocking with Mockito."
+      ],
+      "interviewQuestions": [
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Unit testing with JUnit and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of UI testing with Espresso."
       ],
       "learningObjectives": [
         "Master key capabilities of the testing milestone.",
@@ -303,517 +548,824 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: JUnit / Espresso / Mockk Core Theories",
+        "10. Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
-      ]
-    },
-    {
-      "id": "roadmap-android-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Google Play Store / Firebase App Distribution",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Google Play Store, Firebase App Distribution.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
-      "prerequisites": [
-        "databases"
-      ],
-      "parentNodeId": null,
-      "order": 8,
-      "resources": [
-        {
-          "id": "res-android-deploy-1",
-          "title": "Production hosting deployment guidelines",
-          "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
-        }
-      ],
-      "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
-      ],
-      "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "8. Production Deployment: Google Play Store / Firebase App Distribution Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build production build folders, package configurations, and host online."
-      ]
-    },
-    {
-      "id": "roadmap-android-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Dagger Hilt Dependency Injection, Android WorkManager, Memory Leak profiling.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
-      "prerequisites": [
-        "deployment"
-      ],
-      "parentNodeId": null,
-      "order": 9,
-      "resources": [
-        {
-          "id": "res-android-adv-1",
-          "title": "Advanced systems engineering layouts",
-          "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
-        }
-      ],
-      "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ],
-      "interviewQuestions": [
-        "Explain how you would implement Dagger Hilt Dependency Injection to solve scalability bottlenecks.",
-        "What security vulnerabilities does Memory Leak profiling protect against?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "9. Advanced Concepts Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ]
-    },
-    {
-      "id": "roadmap-android-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
-      "prerequisites": [
-        "advanced-concepts"
-      ],
-      "parentNodeId": null,
-      "order": 10,
-      "resources": [
-        {
-          "id": "res-android-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
-          "type": "WEBSITE",
-          "url": "https://neetcode.io"
-        }
-      ],
-      "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
-      ],
-      "interviewQuestions": [
-        "Explain Android Activity Lifecycle states and how Compose remembers state.",
-        "What are Kotlin coroutines and how do they resolve thread blocking?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Unit testing with JUnit, UI testing with Espresso, Mocking with Mockito."
       ]
     },
     {
       "id": "roadmap-android-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Offline-first Journal App or Bluetooth IoT Controller Dashboard. Set up deployment links and repository READMEs.",
+      "slug": "publishing-distribution",
+      "title": "11. Publishing & Distribution",
+      "description": "Master core capabilities of Publishing & Distribution: App signing and keystores, Build variants (debug/release), ProGuard / R8 code shrinking, Google Play Store setup, App bundle (AAB) vs APK.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "interview-prep"
+        "testing"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-android-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-android-11-1",
+          "title": "App signing and keystores Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=App%20signing%20and%20keystores%20documentation"
+        },
+        {
+          "id": "res-android-11-2",
+          "title": "Build variants (debug/release) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Build%20variants%20(debug%2Frelease)%20tutorial"
+        },
+        {
+          "id": "res-android-11-3",
+          "title": "Practice ProGuard / R8 code shrinking Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=ProGuard%20%2F%20R8%20code%20shrinking%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Offline-first Journal App with documentation.",
-        "Build complete deployable version of Bluetooth IoT Controller Dashboard with documentation."
+        "Build a prototype integrating App signing and keystores, Build variants (debug/release), ProGuard / R8 code shrinking."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Offline-first Journal App project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is App signing and keystores and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Build variants (debug/release)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the publishing-distribution milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Publishing & Distribution Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Offline-first Journal App with documentation.",
-        "Build complete deployable version of Bluetooth IoT Controller Dashboard with documentation."
+        "Build a prototype integrating App signing and keystores, Build variants (debug/release), ProGuard / R8 code shrinking."
       ]
     },
     {
       "id": "roadmap-android-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "advanced-topics",
+      "title": "12. Advanced Topics",
+      "description": "Master core capabilities of Advanced Topics: Performance profiling (Android Profiler), Memory management, App startup optimization, Accessibility (TalkBack, content descriptions), Localization and internationalization.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "publishing-distribution"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-android-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-android-12-1",
+          "title": "Performance profiling (Android Profiler) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20(Android%20Profiler)%20documentation"
+        },
+        {
+          "id": "res-android-12-2",
+          "title": "Memory management Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Memory%20management%20tutorial"
+        },
+        {
+          "id": "res-android-12-3",
+          "title": "Practice App startup optimization Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=App%20startup%20optimization%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Performance profiling (Android Profiler), Memory management, App startup optimization."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Performance profiling (Android Profiler) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Memory management."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the advanced-topics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Advanced Topics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Performance profiling (Android Profiler), Memory management, App startup optimization."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-topics"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-android-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-android-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-android-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-android-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-android-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-android-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Offline-first Journal App"
+      ],
+      "interviewQuestions": [
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Offline-first Journal App"
+      ]
+    },
+    {
+      "id": "roadmap-android-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-android-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-android-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-android-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Bluetooth IoT Controller Dashboard"
+      ],
+      "interviewQuestions": [
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Bluetooth IoT Controller Dashboard"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-android-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "programming-language",
+      "title": "1. Programming Language",
+      "description": "Master core capabilities of Programming Language: Kotlin fundamentals, Variables, data types, functions, OOP in Kotlin, Null safety, Coroutines basics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-android-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-android-1-1",
+          "title": "Kotlin fundamentals Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=Kotlin%20fundamentals%20documentation"
         },
         {
-          "id": "res-android-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-android-1-2",
+          "title": "Variables, data types, functions Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Variables%2C%20data%20types%2C%20functions%20tutorial"
+        },
+        {
+          "id": "res-android-1-3",
+          "title": "Practice OOP in Kotlin Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=OOP%20in%20Kotlin%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Kotlin fundamentals, Variables, data types, functions, OOP in Kotlin."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is Kotlin fundamentals and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Variables, data types, functions."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the programming-language milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Programming Language Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Kotlin fundamentals, Variables, data types, functions, OOP in Kotlin."
       ]
     },
     {
       "id": "roadmap-android-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "android-fundamentals",
+      "title": "2. Android Fundamentals",
+      "description": "Master core capabilities of Android Fundamentals: Android Studio setup, Android architecture overview, Activities and Activity lifecycle, Fragments and Fragment lifecycle, Intents (explicit and implicit).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "programming-language"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-android-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-android-2-1",
+          "title": "Android Studio setup Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Android%20Studio%20setup%20documentation"
         },
         {
-          "id": "res-android-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-android-2-2",
+          "title": "Android architecture overview Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Android%20architecture%20overview%20tutorial"
+        },
+        {
+          "id": "res-android-2-3",
+          "title": "Practice Activities and Activity lifecycle Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Activities%20and%20Activity%20lifecycle%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Android Studio setup, Android architecture overview, Activities and Activity lifecycle."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Android Studio setup and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Android architecture overview."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the android-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Android Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Android Studio setup, Android architecture overview, Activities and Activity lifecycle."
       ]
     },
     {
       "id": "roadmap-android-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Android Studio & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Android Studio, Gradle, Logcat, ADB (Android Debug Bridge).",
+      "slug": "ui-development",
+      "title": "3. UI Development",
+      "description": "Master core capabilities of UI Development: XML layouts vs Jetpack Compose, View system (TextView, EditText, Button, ImageView, RecyclerView), Constraint Layout, Linear Layout, Frame Layout, Material Design components.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "android-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-android-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-android-3-1",
+          "title": "XML layouts vs Jetpack Compose Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=XML%20layouts%20vs%20Jetpack%20Compose%20documentation"
+        },
+        {
+          "id": "res-android-3-2",
+          "title": "View system (TextView, EditText, Button, ImageView, RecyclerView) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=View%20system%20(TextView%2C%20EditText%2C%20Button%2C%20ImageView%2C%20RecyclerView)%20tutorial"
+        },
+        {
+          "id": "res-android-3-3",
+          "title": "Practice Constraint Layout Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Constraint%20Layout%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating XML layouts vs Jetpack Compose, View system (TextView, EditText, Button, ImageView, RecyclerView), Constraint Layout."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is XML layouts vs Jetpack Compose and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of View system (TextView, EditText, Button, ImageView, RecyclerView)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the ui-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Android Studio & More Core Theories",
+        "3. UI Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating XML layouts vs Jetpack Compose, View system (TextView, EditText, Button, ImageView, RecyclerView), Constraint Layout."
       ]
     },
     {
       "id": "roadmap-android-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Kotlin / Java",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Kotlin, Java.",
+      "slug": "navigation-app-architecture",
+      "title": "4. Navigation & App Architecture",
+      "description": "Master core capabilities of Navigation & App Architecture: Android Navigation Component, NavGraph, Bottom Navigation, Drawer Navigation, Deep links.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "ui-development"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-android-lang-1",
-          "title": "Kotlin Official Guides",
+          "id": "res-android-4-1",
+          "title": "Android Navigation Component Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Android%20Navigation%20Component%20documentation"
+        },
+        {
+          "id": "res-android-4-2",
+          "title": "NavGraph Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=NavGraph%20tutorial"
+        },
+        {
+          "id": "res-android-4-3",
+          "title": "Practice Bottom Navigation Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Bottom%20Navigation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Kotlin handling variable arrays."
+        "Build a prototype integrating Android Navigation Component, NavGraph, Bottom Navigation."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Kotlin?",
-        "How does asynchronous logic work in Kotlin?"
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Android Navigation Component and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of NavGraph."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the navigation-app-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Kotlin / Java Core Theories",
+        "4. Navigation & App Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Kotlin handling variable arrays."
+        "Build a prototype integrating Android Navigation Component, NavGraph, Bottom Navigation."
       ]
     },
     {
       "id": "roadmap-android-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Jetpack Compose & Android SDK & Coroutines & Flows",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Jetpack Compose, Android SDK, Coroutines & Flows.",
+      "slug": "data-storage",
+      "title": "5. Data Storage",
+      "description": "Master core capabilities of Data Storage: SharedPreferences / DataStore, Room Database, SQLite basics, File storage (internal and external), Content Providers basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "navigation-app-architecture"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-android-fw-1",
-          "title": "Jetpack Compose Reference Docs",
+          "id": "res-android-5-1",
+          "title": "SharedPreferences / DataStore Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=SharedPreferences%20%2F%20DataStore%20documentation"
+        },
+        {
+          "id": "res-android-5-2",
+          "title": "Room Database Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Room%20Database%20tutorial"
+        },
+        {
+          "id": "res-android-5-3",
+          "title": "Practice SQLite basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://leetcode.com"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Jetpack Compose."
+        "Build a prototype integrating SharedPreferences / DataStore, Room Database, SQLite basics."
       ],
       "interviewQuestions": [
-        "When does a Jetpack Compose component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Jetpack Compose."
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is SharedPreferences / DataStore and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Room Database."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the data-storage milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Jetpack Compose & Android SDK & Coroutines & Flows Core Theories",
+        "5. Data Storage Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Jetpack Compose."
+        "Build a prototype integrating SharedPreferences / DataStore, Room Database, SQLite basics."
       ]
     },
     {
       "id": "roadmap-android-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: Room DB / SQLite / DataStore",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Room DB, SQLite, DataStore.",
+      "slug": "networking",
+      "title": "6. Networking",
+      "description": "Master core capabilities of Networking: Retrofit, OkHttp, REST API calls, JSON parsing with Gson / Moshi, Coroutines with networking.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "data-storage"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-android-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-android-6-1",
+          "title": "Retrofit Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Retrofit%20documentation"
+        },
+        {
+          "id": "res-android-6-2",
+          "title": "OkHttp Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=OkHttp%20tutorial"
+        },
+        {
+          "id": "res-android-6-3",
+          "title": "Practice REST API calls Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=REST%20API%20calls%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using Room DB."
+        "Build a prototype integrating Retrofit, OkHttp, REST API calls."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Retrofit and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of OkHttp."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the networking milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: Room DB / SQLite / DataStore Core Theories",
+        "6. Networking Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using Room DB."
+        "Build a prototype integrating Retrofit, OkHttp, REST API calls."
       ]
     },
     {
       "id": "roadmap-android-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: JUnit / Espresso / Mockk",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using JUnit, Espresso, Mockk.",
+      "slug": "dependency-injection",
+      "title": "7. Dependency Injection",
+      "description": "Master core capabilities of Dependency Injection: What is DI?, Hilt (recommended), Dagger basics, Koin, DI patterns.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "networking"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-android-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-android-7-1",
+          "title": "What is DI? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=What%20is%20DI%3F%20documentation"
+        },
+        {
+          "id": "res-android-7-2",
+          "title": "Hilt (recommended) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Hilt%20(recommended)%20tutorial"
+        },
+        {
+          "id": "res-android-7-3",
+          "title": "Practice Dagger basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Dagger%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating What is DI?, Hilt (recommended), Dagger basics."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is What is DI? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Hilt (recommended)."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the dependency-injection milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. Dependency Injection Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating What is DI?, Hilt (recommended), Dagger basics."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-8",
+      "slug": "background-work",
+      "title": "8. Background Work",
+      "description": "Master core capabilities of Background Work: WorkManager, Services (Foreground, Background, Bound), BroadcastReceivers, AlarmManager, Notifications.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "dependency-injection"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-android-8-1",
+          "title": "WorkManager Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=WorkManager%20documentation"
+        },
+        {
+          "id": "res-android-8-2",
+          "title": "Services (Foreground, Background, Bound) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Services%20(Foreground%2C%20Background%2C%20Bound)%20tutorial"
+        },
+        {
+          "id": "res-android-8-3",
+          "title": "Practice BroadcastReceivers Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=BroadcastReceivers%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating WorkManager, Services (Foreground, Background, Bound), BroadcastReceivers."
+      ],
+      "interviewQuestions": [
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is WorkManager and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Services (Foreground, Background, Bound)."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the background-work milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Background Work Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating WorkManager, Services (Foreground, Background, Bound), BroadcastReceivers."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-9",
+      "slug": "firebase-third-party-sdks",
+      "title": "9. Firebase & Third-party SDKs",
+      "description": "Master core capabilities of Firebase & Third-party SDKs: Firebase setup, Firebase Authentication, Firebase Firestore, Firebase Realtime Database, Firebase Storage.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "background-work"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-android-9-1",
+          "title": "Firebase setup Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Firebase%20setup%20documentation"
+        },
+        {
+          "id": "res-android-9-2",
+          "title": "Firebase Authentication Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Firebase%20Authentication%20tutorial"
+        },
+        {
+          "id": "res-android-9-3",
+          "title": "Practice Firebase Firestore Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Firebase%20Firestore%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Firebase setup, Firebase Authentication, Firebase Firestore."
+      ],
+      "interviewQuestions": [
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is Firebase setup and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Firebase Authentication."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the firebase-third-party-sdks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. Firebase & Third-party SDKs Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Firebase setup, Firebase Authentication, Firebase Firestore."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-10",
+      "slug": "testing",
+      "title": "10. Testing",
+      "description": "Master core capabilities of Testing: Unit testing with JUnit, UI testing with Espresso, Mocking with Mockito, Compose testing, Test coverage.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "firebase-third-party-sdks"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-android-10-1",
+          "title": "Unit testing with JUnit Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Unit%20testing%20with%20JUnit%20documentation"
+        },
+        {
+          "id": "res-android-10-2",
+          "title": "UI testing with Espresso Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=UI%20testing%20with%20Espresso%20tutorial"
+        },
+        {
+          "id": "res-android-10-3",
+          "title": "Practice Mocking with Mockito Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Mocking%20with%20Mockito%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Unit testing with JUnit, UI testing with Espresso, Mocking with Mockito."
+      ],
+      "interviewQuestions": [
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Unit testing with JUnit and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of UI testing with Espresso."
       ],
       "learningObjectives": [
         "Master key capabilities of the testing milestone.",
@@ -821,225 +1373,288 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: JUnit / Espresso / Mockk Core Theories",
+        "10. Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
-      ]
-    },
-    {
-      "id": "roadmap-android-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Google Play Store / Firebase App Distribution",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Google Play Store, Firebase App Distribution.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
-      "prerequisites": [
-        "databases"
-      ],
-      "parentNodeId": null,
-      "order": 8,
-      "resources": [
-        {
-          "id": "res-android-deploy-1",
-          "title": "Production hosting deployment guidelines",
-          "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
-        }
-      ],
-      "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
-      ],
-      "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "8. Production Deployment: Google Play Store / Firebase App Distribution Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build production build folders, package configurations, and host online."
-      ]
-    },
-    {
-      "id": "roadmap-android-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Dagger Hilt Dependency Injection, Android WorkManager, Memory Leak profiling.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
-      "prerequisites": [
-        "deployment"
-      ],
-      "parentNodeId": null,
-      "order": 9,
-      "resources": [
-        {
-          "id": "res-android-adv-1",
-          "title": "Advanced systems engineering layouts",
-          "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
-        }
-      ],
-      "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ],
-      "interviewQuestions": [
-        "Explain how you would implement Dagger Hilt Dependency Injection to solve scalability bottlenecks.",
-        "What security vulnerabilities does Memory Leak profiling protect against?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "9. Advanced Concepts Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ]
-    },
-    {
-      "id": "roadmap-android-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
-      "prerequisites": [
-        "advanced-concepts"
-      ],
-      "parentNodeId": null,
-      "order": 10,
-      "resources": [
-        {
-          "id": "res-android-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
-          "type": "WEBSITE",
-          "url": "https://neetcode.io"
-        }
-      ],
-      "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
-      ],
-      "interviewQuestions": [
-        "Explain Android Activity Lifecycle states and how Compose remembers state.",
-        "What are Kotlin coroutines and how do they resolve thread blocking?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Unit testing with JUnit, UI testing with Espresso, Mocking with Mockito."
       ]
     },
     {
       "id": "roadmap-android-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Offline-first Journal App or Bluetooth IoT Controller Dashboard. Set up deployment links and repository READMEs.",
+      "slug": "publishing-distribution",
+      "title": "11. Publishing & Distribution",
+      "description": "Master core capabilities of Publishing & Distribution: App signing and keystores, Build variants (debug/release), ProGuard / R8 code shrinking, Google Play Store setup, App bundle (AAB) vs APK.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "interview-prep"
+        "testing"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-android-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-android-11-1",
+          "title": "App signing and keystores Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=App%20signing%20and%20keystores%20documentation"
+        },
+        {
+          "id": "res-android-11-2",
+          "title": "Build variants (debug/release) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Build%20variants%20(debug%2Frelease)%20tutorial"
+        },
+        {
+          "id": "res-android-11-3",
+          "title": "Practice ProGuard / R8 code shrinking Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=ProGuard%20%2F%20R8%20code%20shrinking%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Offline-first Journal App with documentation.",
-        "Build complete deployable version of Bluetooth IoT Controller Dashboard with documentation."
+        "Build a prototype integrating App signing and keystores, Build variants (debug/release), ProGuard / R8 code shrinking."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Offline-first Journal App project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is App signing and keystores and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Build variants (debug/release)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the publishing-distribution milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Publishing & Distribution Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Offline-first Journal App with documentation.",
-        "Build complete deployable version of Bluetooth IoT Controller Dashboard with documentation."
+        "Build a prototype integrating App signing and keystores, Build variants (debug/release), ProGuard / R8 code shrinking."
       ]
     },
     {
       "id": "roadmap-android-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "advanced-topics",
+      "title": "12. Advanced Topics",
+      "description": "Master core capabilities of Advanced Topics: Performance profiling (Android Profiler), Memory management, App startup optimization, Accessibility (TalkBack, content descriptions), Localization and internationalization.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "publishing-distribution"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-android-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-android-12-1",
+          "title": "Performance profiling (Android Profiler) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20(Android%20Profiler)%20documentation"
+        },
+        {
+          "id": "res-android-12-2",
+          "title": "Memory management Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Memory%20management%20tutorial"
+        },
+        {
+          "id": "res-android-12-3",
+          "title": "Practice App startup optimization Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=App%20startup%20optimization%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Performance profiling (Android Profiler), Memory management, App startup optimization."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Performance profiling (Android Profiler) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Memory management."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the advanced-topics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Advanced Topics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Performance profiling (Android Profiler), Memory management, App startup optimization."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-topics"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-android-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-android-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-android-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-android-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-android-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-android-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-android-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Offline-first Journal App"
+      ],
+      "interviewQuestions": [
+        "What are Kotlin coroutines and how do they resolve thread blocking?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Offline-first Journal App"
+      ]
+    },
+    {
+      "id": "roadmap-android-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-android-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-android-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-android-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Bluetooth IoT Controller Dashboard"
+      ],
+      "interviewQuestions": [
+        "Explain Android Activity Lifecycle states and how Compose remembers state.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Bluetooth IoT Controller Dashboard"
       ]
     }
   ]

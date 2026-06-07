@@ -2,6 +2,7 @@
   "id": "roadmap-network-engineer",
   "title": "Network Engineer",
   "slug": "network-engineer",
+  "description": "Master Network Engineer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "SYSTEMS",
   "difficulty": "BEGINNER",
   "estimatedTime": "3 Months",
@@ -10,9 +11,9 @@
   "nodes": [
     {
       "id": "roadmap-network-engineer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "networking-fundamentals",
+      "title": "1. Networking Fundamentals",
+      "description": "Master core capabilities of Networking Fundamentals: What is a network?, Types of networks (LAN, WAN, MAN, PAN), Network topologies (star, ring, bus, mesh, hybrid), OSI model (7 layers), TCP/IP model (4 layers).",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -20,517 +21,824 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-network-engineer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-network-engineer-1-1",
+          "title": "What is a network? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20a%20network%3F%20documentation"
         },
         {
-          "id": "res-network-engineer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-network-engineer-1-2",
+          "title": "Types of networks (LAN, WAN, MAN, PAN) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Types%20of%20networks%20(LAN%2C%20WAN%2C%20MAN%2C%20PAN)%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-1-3",
+          "title": "Practice Network topologies (star, ring, bus, mesh, hybrid) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Network%20topologies%20(star%2C%20ring%2C%20bus%2C%20mesh%2C%20hybrid)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a network?, Types of networks (LAN, WAN, MAN, PAN), Network topologies (star, ring, bus, mesh, hybrid)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is What is a network? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Types of networks (LAN, WAN, MAN, PAN)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the networking-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Networking Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a network?, Types of networks (LAN, WAN, MAN, PAN), Network topologies (star, ring, bus, mesh, hybrid)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "physical-data-link-layer",
+      "title": "2. Physical & Data Link Layer",
+      "description": "Master core capabilities of Physical & Data Link Layer: Network cables (Cat5e, Cat6, fiber), Ethernet fundamentals, MAC addresses, Switches and switching, VLANs (Virtual LANs).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "networking-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-network-engineer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-network-engineer-2-1",
+          "title": "Network cables (Cat5e, Cat6, fiber) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Network%20cables%20(Cat5e%2C%20Cat6%2C%20fiber)%20documentation"
         },
         {
-          "id": "res-network-engineer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-network-engineer-2-2",
+          "title": "Ethernet fundamentals Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Ethernet%20fundamentals%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-2-3",
+          "title": "Practice MAC addresses Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=MAC%20addresses%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Network cables (Cat5e, Cat6, fiber), Ethernet fundamentals, MAC addresses."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Network cables (Cat5e, Cat6, fiber) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Ethernet fundamentals."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the physical-data-link-layer milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Physical & Data Link Layer Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Network cables (Cat5e, Cat6, fiber), Ethernet fundamentals, MAC addresses."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Wireshark & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Wireshark, Cisco Packet Tracer, GNS3, SSH/Telnet.",
+      "slug": "network-layer-ip-addressing",
+      "title": "3. Network Layer & IP Addressing",
+      "description": "Master core capabilities of Network Layer & IP Addressing: IPv4 addressing, Subnetting and CIDR notation, IPv6 addressing, Public vs private IP ranges, NAT (Network Address Translation).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "physical-data-link-layer"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-network-engineer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-network-engineer-3-1",
+          "title": "IPv4 addressing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=IPv4%20addressing%20documentation"
+        },
+        {
+          "id": "res-network-engineer-3-2",
+          "title": "Subnetting and CIDR notation Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Subnetting%20and%20CIDR%20notation%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-3-3",
+          "title": "Practice IPv6 addressing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=IPv6%20addressing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating IPv4 addressing, Subnetting and CIDR notation, IPv6 addressing."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is IPv4 addressing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Subnetting and CIDR notation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the network-layer-ip-addressing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Wireshark & More Core Theories",
+        "3. Network Layer & IP Addressing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating IPv4 addressing, Subnetting and CIDR notation, IPv6 addressing."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Bash / Python (Netmiko/Scapy)",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Bash, Python (Netmiko/Scapy).",
+      "slug": "routing-protocols",
+      "title": "4. Routing Protocols",
+      "description": "Master core capabilities of Routing Protocols: Static routing, Dynamic routing overview, RIP (Routing Information Protocol), OSPF (Open Shortest Path First), EIGRP (Cisco-specific).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "network-layer-ip-addressing"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-network-engineer-lang-1",
-          "title": "Bash Official Guides",
+          "id": "res-network-engineer-4-1",
+          "title": "Static routing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Static%20routing%20documentation"
+        },
+        {
+          "id": "res-network-engineer-4-2",
+          "title": "Dynamic routing overview Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Dynamic%20routing%20overview%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-4-3",
+          "title": "Practice RIP (Routing Information Protocol) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=RIP%20(Routing%20Information%20Protocol)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating Static routing, Dynamic routing overview, RIP (Routing Information Protocol)."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Bash?",
-        "How does asynchronous logic work in Bash?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Static routing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Dynamic routing overview."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the routing-protocols milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Bash / Python (Netmiko/Scapy) Core Theories",
+        "4. Routing Protocols Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating Static routing, Dynamic routing overview, RIP (Routing Information Protocol)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: TCP/IP stack & OSI reference model",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using TCP/IP stack, OSI reference model.",
+      "slug": "transport-layer",
+      "title": "5. Transport Layer",
+      "description": "Master core capabilities of Transport Layer: TCP (Transmission Control Protocol), TCP handshake (3-way handshake), TCP connection termination, TCP flow control and congestion control, UDP (User Datagram Protocol).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "routing-protocols"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-network-engineer-fw-1",
-          "title": "TCP/IP stack Reference Docs",
+          "id": "res-network-engineer-5-1",
+          "title": "TCP (Transmission Control Protocol) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=TCP%20(Transmission%20Control%20Protocol)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-5-2",
+          "title": "TCP handshake (3-way handshake) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=TCP%20handshake%20(3-way%20handshake)%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-5-3",
+          "title": "Practice TCP connection termination Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=TCP%20connection%20termination%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using TCP/IP stack."
+        "Build a prototype integrating TCP (Transmission Control Protocol), TCP handshake (3-way handshake), TCP connection termination."
       ],
       "interviewQuestions": [
-        "When does a TCP/IP stack component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in TCP/IP stack."
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is TCP (Transmission Control Protocol) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of TCP handshake (3-way handshake)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the transport-layer milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: TCP/IP stack & OSI reference model Core Theories",
+        "5. Transport Layer Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using TCP/IP stack."
+        "Build a prototype integrating TCP (Transmission Control Protocol), TCP handshake (3-way handshake), TCP connection termination."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: SQLite (for config logging)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQLite (for config logging).",
+      "slug": "dns-dhcp",
+      "title": "6. DNS & DHCP",
+      "description": "Master core capabilities of DNS & DHCP: DNS fundamentals, DNS resolution process (recursive, iterative), DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR), DNS caching and TTL, DHCP allocation cycle (DORA).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "transport-layer"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-network-engineer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-network-engineer-6-1",
+          "title": "DNS fundamentals Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=DNS%20fundamentals%20documentation"
+        },
+        {
+          "id": "res-network-engineer-6-2",
+          "title": "DNS resolution process (recursive, iterative) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=DNS%20resolution%20process%20(recursive%2C%20iterative)%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-6-3",
+          "title": "Practice DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR) Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=DNS%20record%20types%20(A%2C%20AAAA%2C%20CNAME%2C%20MX%2C%20TXT%2C%20NS%2C%20SOA%2C%20PTR)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using SQLite (for config logging)."
+        "Build a prototype integrating DNS fundamentals, DNS resolution process (recursive, iterative), DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR)."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is DNS fundamentals and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of DNS resolution process (recursive, iterative)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the dns-dhcp milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: SQLite (for config logging) Core Theories",
+        "6. DNS & DHCP Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using SQLite (for config logging)."
+        "Build a prototype integrating DNS fundamentals, DNS resolution process (recursive, iterative), DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Ping/Traceroute scripts / iPerf throughput testing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Ping/Traceroute scripts, iPerf throughput testing.",
+      "slug": "ip-routing-subnetting",
+      "title": "7. IP Routing & Subnetting",
+      "description": "Master core capabilities of IP Routing & Subnetting: VLSM (Variable Length Subnet Masking), Subnet calculations and partitions, Static routing vs Dynamic routing, Administrative distance and metrics, Inter-VLAN routing (Router-on-a-Stick).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "dns-dhcp"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-network-engineer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-network-engineer-7-1",
+          "title": "VLSM (Variable Length Subnet Masking) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=VLSM%20(Variable%20Length%20Subnet%20Masking)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-7-2",
+          "title": "Subnet calculations and partitions Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Subnet%20calculations%20and%20partitions%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-7-3",
+          "title": "Practice Static routing vs Dynamic routing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Static%20routing%20vs%20Dynamic%20routing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating VLSM (Variable Length Subnet Masking), Subnet calculations and partitions, Static routing vs Dynamic routing."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is VLSM (Variable Length Subnet Masking) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Subnet calculations and partitions."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the ip-routing-subnetting milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Ping/Traceroute scripts / iPerf throughput testing Core Theories",
+        "7. IP Routing & Subnetting Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating VLSM (Variable Length Subnet Masking), Subnet calculations and partitions, Static routing vs Dynamic routing."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Cisco IOS configurations / Cloud VPS network topologies",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Cisco IOS configurations, Cloud VPS network topologies.",
+      "slug": "dynamic-routing-protocols",
+      "title": "8. Dynamic Routing Protocols",
+      "description": "Master core capabilities of Dynamic Routing Protocols: OSPF (Open Shortest Path First) link-state routing, BGP (Border Gateway Protocol) path-vector routing, EIGRP hybrid routing basics, Route redistribution and summarization.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "ip-routing-subnetting"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-network-engineer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-network-engineer-8-1",
+          "title": "OSPF (Open Shortest Path First) link-state routing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=OSPF%20(Open%20Shortest%20Path%20First)%20link-state%20routing%20documentation"
+        },
+        {
+          "id": "res-network-engineer-8-2",
+          "title": "BGP (Border Gateway Protocol) path-vector routing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=BGP%20(Border%20Gateway%20Protocol)%20path-vector%20routing%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-8-3",
+          "title": "Practice EIGRP hybrid routing basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=EIGRP%20hybrid%20routing%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating OSPF (Open Shortest Path First) link-state routing, BGP (Border Gateway Protocol) path-vector routing, EIGRP hybrid routing basics."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is OSPF (Open Shortest Path First) link-state routing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of BGP (Border Gateway Protocol) path-vector routing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the dynamic-routing-protocols milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Cisco IOS configurations / Cloud VPS network topologies Core Theories",
+        "8. Dynamic Routing Protocols Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating OSPF (Open Shortest Path First) link-state routing, BGP (Border Gateway Protocol) path-vector routing, EIGRP hybrid routing basics."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: BGP & OSPF routing protocols, Subnet partitioning, VLAN trunking, DNS lookup resolving.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "network-security-firewalls",
+      "title": "9. Network Security & Firewalls",
+      "description": "Master core capabilities of Network Security & Firewalls: Access Control Lists (ACLs) standard and extended, Firewall security policies & zones, IPsec VPN tunnels setup, NAT/PAT configurations, Port security and 802.1X.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "dynamic-routing-protocols"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-network-engineer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-network-engineer-9-1",
+          "title": "Access Control Lists (ACLs) standard and extended Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Access%20Control%20Lists%20(ACLs)%20standard%20and%20extended%20documentation"
+        },
+        {
+          "id": "res-network-engineer-9-2",
+          "title": "Firewall security policies & zones Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Firewall%20security%20policies%20%26%20zones%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-9-3",
+          "title": "Practice IPsec VPN tunnels setup Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=IPsec%20VPN%20tunnels%20setup%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Access Control Lists (ACLs) standard and extended, Firewall security policies & zones, IPsec VPN tunnels setup."
       ],
       "interviewQuestions": [
-        "Explain how you would implement BGP & OSPF routing protocols to solve scalability bottlenecks.",
-        "What security vulnerabilities does DNS lookup resolving protect against?"
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is Access Control Lists (ACLs) standard and extended and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Firewall security policies & zones."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the network-security-firewalls milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Network Security & Firewalls Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Access Control Lists (ACLs) standard and extended, Firewall security policies & zones, IPsec VPN tunnels setup."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "wireless-wan-technologies",
+      "title": "10. Wireless & WAN Technologies",
+      "description": "Master core capabilities of Wireless & WAN Technologies: Wireless LAN standards (802.11a/b/g/n/ac/ax), WPA2/WPA3 wireless security, WAN connectivity (MPLS, SD-WAN), Fiber optics basics.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "network-security-firewalls"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-network-engineer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-network-engineer-10-1",
+          "title": "Wireless LAN standards (802.11a/b/g/n/ac/ax) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Wireless%20LAN%20standards%20(802.11a%2Fb%2Fg%2Fn%2Fac%2Fax)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-10-2",
+          "title": "WPA2/WPA3 wireless security Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=WPA2%2FWPA3%20wireless%20security%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-10-3",
+          "title": "Practice WAN connectivity (MPLS, SD-WAN) Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=WAN%20connectivity%20(MPLS%2C%20SD-WAN)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Wireless LAN standards (802.11a/b/g/n/ac/ax), WPA2/WPA3 wireless security, WAN connectivity (MPLS, SD-WAN)."
       ],
       "interviewQuestions": [
-        "Explain TCP 3-way handshake process and the flags set in each packet.",
-        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Wireless LAN standards (802.11a/b/g/n/ac/ax) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of WPA2/WPA3 wireless security."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the wireless-wan-technologies milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Wireless & WAN Technologies Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Wireless LAN standards (802.11a/b/g/n/ac/ax), WPA2/WPA3 wireless security, WAN connectivity (MPLS, SD-WAN)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Cisco Packet Tracer Network Topology setup or Python Wireshark Network Packet Scanner. Set up deployment links and repository READMEs.",
+      "slug": "network-automation-monitoring",
+      "title": "11. Network Automation & Monitoring",
+      "description": "Master core capabilities of Network Automation & Monitoring: Network monitoring (SNMP, Syslog), Traffic analysis with Wireshark, Python scripting for network configs (Netmiko, Scapy), Ansible for network devices automation.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "wireless-wan-technologies"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-network-engineer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-network-engineer-11-1",
+          "title": "Network monitoring (SNMP, Syslog) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Network%20monitoring%20(SNMP%2C%20Syslog)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-11-2",
+          "title": "Traffic analysis with Wireshark Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Traffic%20analysis%20with%20Wireshark%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-11-3",
+          "title": "Practice Python scripting for network configs (Netmiko, Scapy) Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Python%20scripting%20for%20network%20configs%20(Netmiko%2C%20Scapy)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Cisco Packet Tracer Network Topology setup with documentation.",
-        "Build complete deployable version of Python Wireshark Network Packet Scanner with documentation."
+        "Build a prototype integrating Network monitoring (SNMP, Syslog), Traffic analysis with Wireshark, Python scripting for network configs (Netmiko, Scapy)."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Cisco Packet Tracer Network Topology setup project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is Network monitoring (SNMP, Syslog) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Traffic analysis with Wireshark."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the network-automation-monitoring milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Network Automation & Monitoring Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Cisco Packet Tracer Network Topology setup with documentation.",
-        "Build complete deployable version of Python Wireshark Network Packet Scanner with documentation."
+        "Build a prototype integrating Network monitoring (SNMP, Syslog), Traffic analysis with Wireshark, Python scripting for network configs (Netmiko, Scapy)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "network-troubleshooting-career",
+      "title": "12. Network Troubleshooting & Career",
+      "description": "Master core capabilities of Network Troubleshooting & Career: Ping, Traceroute, and Pathping diagnostics, IP SLA network tracking, Cisco iOS configuration backup, Resume JD scoring optimization, CCNA mock exam loops.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "network-automation-monitoring"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-network-engineer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-network-engineer-12-1",
+          "title": "Ping, Traceroute, and Pathping diagnostics Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Ping%2C%20Traceroute%2C%20and%20Pathping%20diagnostics%20documentation"
+        },
+        {
+          "id": "res-network-engineer-12-2",
+          "title": "IP SLA network tracking Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=IP%20SLA%20network%20tracking%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-12-3",
+          "title": "Practice Cisco iOS configuration backup Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Cisco%20iOS%20configuration%20backup%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ping, Traceroute, and Pathping diagnostics, IP SLA network tracking, Cisco iOS configuration backup."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Ping, Traceroute, and Pathping diagnostics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of IP SLA network tracking."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the network-troubleshooting-career milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Network Troubleshooting & Career Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ping, Traceroute, and Pathping diagnostics, IP SLA network tracking, Cisco iOS configuration backup."
+      ]
+    },
+    {
+      "id": "roadmap-network-engineer-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "network-troubleshooting-career"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-network-engineer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-network-engineer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-network-engineer-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-network-engineer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-network-engineer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Cisco Packet Tracer Network Topology setup"
+      ],
+      "interviewQuestions": [
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Cisco Packet Tracer Network Topology setup"
+      ]
+    },
+    {
+      "id": "roadmap-network-engineer-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-network-engineer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-network-engineer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Python Wireshark Network Packet Scanner"
+      ],
+      "interviewQuestions": [
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Python Wireshark Network Packet Scanner"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-network-engineer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "networking-fundamentals",
+      "title": "1. Networking Fundamentals",
+      "description": "Master core capabilities of Networking Fundamentals: What is a network?, Types of networks (LAN, WAN, MAN, PAN), Network topologies (star, ring, bus, mesh, hybrid), OSI model (7 layers), TCP/IP model (4 layers).",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -538,508 +846,815 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-network-engineer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-network-engineer-1-1",
+          "title": "What is a network? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20a%20network%3F%20documentation"
         },
         {
-          "id": "res-network-engineer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-network-engineer-1-2",
+          "title": "Types of networks (LAN, WAN, MAN, PAN) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Types%20of%20networks%20(LAN%2C%20WAN%2C%20MAN%2C%20PAN)%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-1-3",
+          "title": "Practice Network topologies (star, ring, bus, mesh, hybrid) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Network%20topologies%20(star%2C%20ring%2C%20bus%2C%20mesh%2C%20hybrid)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a network?, Types of networks (LAN, WAN, MAN, PAN), Network topologies (star, ring, bus, mesh, hybrid)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is What is a network? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Types of networks (LAN, WAN, MAN, PAN)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the networking-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Networking Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a network?, Types of networks (LAN, WAN, MAN, PAN), Network topologies (star, ring, bus, mesh, hybrid)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "physical-data-link-layer",
+      "title": "2. Physical & Data Link Layer",
+      "description": "Master core capabilities of Physical & Data Link Layer: Network cables (Cat5e, Cat6, fiber), Ethernet fundamentals, MAC addresses, Switches and switching, VLANs (Virtual LANs).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "networking-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-network-engineer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-network-engineer-2-1",
+          "title": "Network cables (Cat5e, Cat6, fiber) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Network%20cables%20(Cat5e%2C%20Cat6%2C%20fiber)%20documentation"
         },
         {
-          "id": "res-network-engineer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-network-engineer-2-2",
+          "title": "Ethernet fundamentals Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Ethernet%20fundamentals%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-2-3",
+          "title": "Practice MAC addresses Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=MAC%20addresses%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Network cables (Cat5e, Cat6, fiber), Ethernet fundamentals, MAC addresses."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Network cables (Cat5e, Cat6, fiber) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Ethernet fundamentals."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the physical-data-link-layer milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Physical & Data Link Layer Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Network cables (Cat5e, Cat6, fiber), Ethernet fundamentals, MAC addresses."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Wireshark & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Wireshark, Cisco Packet Tracer, GNS3, SSH/Telnet.",
+      "slug": "network-layer-ip-addressing",
+      "title": "3. Network Layer & IP Addressing",
+      "description": "Master core capabilities of Network Layer & IP Addressing: IPv4 addressing, Subnetting and CIDR notation, IPv6 addressing, Public vs private IP ranges, NAT (Network Address Translation).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "physical-data-link-layer"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-network-engineer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-network-engineer-3-1",
+          "title": "IPv4 addressing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=IPv4%20addressing%20documentation"
+        },
+        {
+          "id": "res-network-engineer-3-2",
+          "title": "Subnetting and CIDR notation Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Subnetting%20and%20CIDR%20notation%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-3-3",
+          "title": "Practice IPv6 addressing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=IPv6%20addressing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating IPv4 addressing, Subnetting and CIDR notation, IPv6 addressing."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is IPv4 addressing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Subnetting and CIDR notation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the network-layer-ip-addressing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Wireshark & More Core Theories",
+        "3. Network Layer & IP Addressing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating IPv4 addressing, Subnetting and CIDR notation, IPv6 addressing."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Bash / Python (Netmiko/Scapy)",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Bash, Python (Netmiko/Scapy).",
+      "slug": "routing-protocols",
+      "title": "4. Routing Protocols",
+      "description": "Master core capabilities of Routing Protocols: Static routing, Dynamic routing overview, RIP (Routing Information Protocol), OSPF (Open Shortest Path First), EIGRP (Cisco-specific).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "network-layer-ip-addressing"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-network-engineer-lang-1",
-          "title": "Bash Official Guides",
+          "id": "res-network-engineer-4-1",
+          "title": "Static routing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Static%20routing%20documentation"
+        },
+        {
+          "id": "res-network-engineer-4-2",
+          "title": "Dynamic routing overview Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Dynamic%20routing%20overview%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-4-3",
+          "title": "Practice RIP (Routing Information Protocol) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=RIP%20(Routing%20Information%20Protocol)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating Static routing, Dynamic routing overview, RIP (Routing Information Protocol)."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Bash?",
-        "How does asynchronous logic work in Bash?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Static routing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Dynamic routing overview."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the routing-protocols milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Bash / Python (Netmiko/Scapy) Core Theories",
+        "4. Routing Protocols Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating Static routing, Dynamic routing overview, RIP (Routing Information Protocol)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: TCP/IP stack & OSI reference model",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using TCP/IP stack, OSI reference model.",
+      "slug": "transport-layer",
+      "title": "5. Transport Layer",
+      "description": "Master core capabilities of Transport Layer: TCP (Transmission Control Protocol), TCP handshake (3-way handshake), TCP connection termination, TCP flow control and congestion control, UDP (User Datagram Protocol).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "routing-protocols"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-network-engineer-fw-1",
-          "title": "TCP/IP stack Reference Docs",
+          "id": "res-network-engineer-5-1",
+          "title": "TCP (Transmission Control Protocol) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=TCP%20(Transmission%20Control%20Protocol)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-5-2",
+          "title": "TCP handshake (3-way handshake) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=TCP%20handshake%20(3-way%20handshake)%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-5-3",
+          "title": "Practice TCP connection termination Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=TCP%20connection%20termination%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using TCP/IP stack."
+        "Build a prototype integrating TCP (Transmission Control Protocol), TCP handshake (3-way handshake), TCP connection termination."
       ],
       "interviewQuestions": [
-        "When does a TCP/IP stack component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in TCP/IP stack."
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is TCP (Transmission Control Protocol) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of TCP handshake (3-way handshake)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the transport-layer milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: TCP/IP stack & OSI reference model Core Theories",
+        "5. Transport Layer Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using TCP/IP stack."
+        "Build a prototype integrating TCP (Transmission Control Protocol), TCP handshake (3-way handshake), TCP connection termination."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: SQLite (for config logging)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQLite (for config logging).",
+      "slug": "dns-dhcp",
+      "title": "6. DNS & DHCP",
+      "description": "Master core capabilities of DNS & DHCP: DNS fundamentals, DNS resolution process (recursive, iterative), DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR), DNS caching and TTL, DHCP allocation cycle (DORA).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "transport-layer"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-network-engineer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-network-engineer-6-1",
+          "title": "DNS fundamentals Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=DNS%20fundamentals%20documentation"
+        },
+        {
+          "id": "res-network-engineer-6-2",
+          "title": "DNS resolution process (recursive, iterative) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=DNS%20resolution%20process%20(recursive%2C%20iterative)%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-6-3",
+          "title": "Practice DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR) Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=DNS%20record%20types%20(A%2C%20AAAA%2C%20CNAME%2C%20MX%2C%20TXT%2C%20NS%2C%20SOA%2C%20PTR)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using SQLite (for config logging)."
+        "Build a prototype integrating DNS fundamentals, DNS resolution process (recursive, iterative), DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR)."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is DNS fundamentals and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of DNS resolution process (recursive, iterative)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the dns-dhcp milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: SQLite (for config logging) Core Theories",
+        "6. DNS & DHCP Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using SQLite (for config logging)."
+        "Build a prototype integrating DNS fundamentals, DNS resolution process (recursive, iterative), DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Ping/Traceroute scripts / iPerf throughput testing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Ping/Traceroute scripts, iPerf throughput testing.",
+      "slug": "ip-routing-subnetting",
+      "title": "7. IP Routing & Subnetting",
+      "description": "Master core capabilities of IP Routing & Subnetting: VLSM (Variable Length Subnet Masking), Subnet calculations and partitions, Static routing vs Dynamic routing, Administrative distance and metrics, Inter-VLAN routing (Router-on-a-Stick).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "dns-dhcp"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-network-engineer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-network-engineer-7-1",
+          "title": "VLSM (Variable Length Subnet Masking) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=VLSM%20(Variable%20Length%20Subnet%20Masking)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-7-2",
+          "title": "Subnet calculations and partitions Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Subnet%20calculations%20and%20partitions%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-7-3",
+          "title": "Practice Static routing vs Dynamic routing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Static%20routing%20vs%20Dynamic%20routing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating VLSM (Variable Length Subnet Masking), Subnet calculations and partitions, Static routing vs Dynamic routing."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is VLSM (Variable Length Subnet Masking) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Subnet calculations and partitions."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the ip-routing-subnetting milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Ping/Traceroute scripts / iPerf throughput testing Core Theories",
+        "7. IP Routing & Subnetting Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating VLSM (Variable Length Subnet Masking), Subnet calculations and partitions, Static routing vs Dynamic routing."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Cisco IOS configurations / Cloud VPS network topologies",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Cisco IOS configurations, Cloud VPS network topologies.",
+      "slug": "dynamic-routing-protocols",
+      "title": "8. Dynamic Routing Protocols",
+      "description": "Master core capabilities of Dynamic Routing Protocols: OSPF (Open Shortest Path First) link-state routing, BGP (Border Gateway Protocol) path-vector routing, EIGRP hybrid routing basics, Route redistribution and summarization.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "ip-routing-subnetting"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-network-engineer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-network-engineer-8-1",
+          "title": "OSPF (Open Shortest Path First) link-state routing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=OSPF%20(Open%20Shortest%20Path%20First)%20link-state%20routing%20documentation"
+        },
+        {
+          "id": "res-network-engineer-8-2",
+          "title": "BGP (Border Gateway Protocol) path-vector routing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=BGP%20(Border%20Gateway%20Protocol)%20path-vector%20routing%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-8-3",
+          "title": "Practice EIGRP hybrid routing basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=EIGRP%20hybrid%20routing%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating OSPF (Open Shortest Path First) link-state routing, BGP (Border Gateway Protocol) path-vector routing, EIGRP hybrid routing basics."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is OSPF (Open Shortest Path First) link-state routing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of BGP (Border Gateway Protocol) path-vector routing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the dynamic-routing-protocols milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Cisco IOS configurations / Cloud VPS network topologies Core Theories",
+        "8. Dynamic Routing Protocols Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating OSPF (Open Shortest Path First) link-state routing, BGP (Border Gateway Protocol) path-vector routing, EIGRP hybrid routing basics."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: BGP & OSPF routing protocols, Subnet partitioning, VLAN trunking, DNS lookup resolving.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "network-security-firewalls",
+      "title": "9. Network Security & Firewalls",
+      "description": "Master core capabilities of Network Security & Firewalls: Access Control Lists (ACLs) standard and extended, Firewall security policies & zones, IPsec VPN tunnels setup, NAT/PAT configurations, Port security and 802.1X.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "dynamic-routing-protocols"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-network-engineer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-network-engineer-9-1",
+          "title": "Access Control Lists (ACLs) standard and extended Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Access%20Control%20Lists%20(ACLs)%20standard%20and%20extended%20documentation"
+        },
+        {
+          "id": "res-network-engineer-9-2",
+          "title": "Firewall security policies & zones Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Firewall%20security%20policies%20%26%20zones%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-9-3",
+          "title": "Practice IPsec VPN tunnels setup Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=IPsec%20VPN%20tunnels%20setup%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Access Control Lists (ACLs) standard and extended, Firewall security policies & zones, IPsec VPN tunnels setup."
       ],
       "interviewQuestions": [
-        "Explain how you would implement BGP & OSPF routing protocols to solve scalability bottlenecks.",
-        "What security vulnerabilities does DNS lookup resolving protect against?"
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is Access Control Lists (ACLs) standard and extended and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Firewall security policies & zones."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the network-security-firewalls milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Network Security & Firewalls Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Access Control Lists (ACLs) standard and extended, Firewall security policies & zones, IPsec VPN tunnels setup."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "wireless-wan-technologies",
+      "title": "10. Wireless & WAN Technologies",
+      "description": "Master core capabilities of Wireless & WAN Technologies: Wireless LAN standards (802.11a/b/g/n/ac/ax), WPA2/WPA3 wireless security, WAN connectivity (MPLS, SD-WAN), Fiber optics basics.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "network-security-firewalls"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-network-engineer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-network-engineer-10-1",
+          "title": "Wireless LAN standards (802.11a/b/g/n/ac/ax) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Wireless%20LAN%20standards%20(802.11a%2Fb%2Fg%2Fn%2Fac%2Fax)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-10-2",
+          "title": "WPA2/WPA3 wireless security Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=WPA2%2FWPA3%20wireless%20security%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-10-3",
+          "title": "Practice WAN connectivity (MPLS, SD-WAN) Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=WAN%20connectivity%20(MPLS%2C%20SD-WAN)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Wireless LAN standards (802.11a/b/g/n/ac/ax), WPA2/WPA3 wireless security, WAN connectivity (MPLS, SD-WAN)."
       ],
       "interviewQuestions": [
-        "Explain TCP 3-way handshake process and the flags set in each packet.",
-        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Wireless LAN standards (802.11a/b/g/n/ac/ax) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of WPA2/WPA3 wireless security."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the wireless-wan-technologies milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Wireless & WAN Technologies Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Wireless LAN standards (802.11a/b/g/n/ac/ax), WPA2/WPA3 wireless security, WAN connectivity (MPLS, SD-WAN)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Cisco Packet Tracer Network Topology setup or Python Wireshark Network Packet Scanner. Set up deployment links and repository READMEs.",
+      "slug": "network-automation-monitoring",
+      "title": "11. Network Automation & Monitoring",
+      "description": "Master core capabilities of Network Automation & Monitoring: Network monitoring (SNMP, Syslog), Traffic analysis with Wireshark, Python scripting for network configs (Netmiko, Scapy), Ansible for network devices automation.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "wireless-wan-technologies"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-network-engineer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-network-engineer-11-1",
+          "title": "Network monitoring (SNMP, Syslog) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Network%20monitoring%20(SNMP%2C%20Syslog)%20documentation"
+        },
+        {
+          "id": "res-network-engineer-11-2",
+          "title": "Traffic analysis with Wireshark Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Traffic%20analysis%20with%20Wireshark%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-11-3",
+          "title": "Practice Python scripting for network configs (Netmiko, Scapy) Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Python%20scripting%20for%20network%20configs%20(Netmiko%2C%20Scapy)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Cisco Packet Tracer Network Topology setup with documentation.",
-        "Build complete deployable version of Python Wireshark Network Packet Scanner with documentation."
+        "Build a prototype integrating Network monitoring (SNMP, Syslog), Traffic analysis with Wireshark, Python scripting for network configs (Netmiko, Scapy)."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Cisco Packet Tracer Network Topology setup project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is Network monitoring (SNMP, Syslog) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Traffic analysis with Wireshark."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the network-automation-monitoring milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Network Automation & Monitoring Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Cisco Packet Tracer Network Topology setup with documentation.",
-        "Build complete deployable version of Python Wireshark Network Packet Scanner with documentation."
+        "Build a prototype integrating Network monitoring (SNMP, Syslog), Traffic analysis with Wireshark, Python scripting for network configs (Netmiko, Scapy)."
       ]
     },
     {
       "id": "roadmap-network-engineer-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "network-troubleshooting-career",
+      "title": "12. Network Troubleshooting & Career",
+      "description": "Master core capabilities of Network Troubleshooting & Career: Ping, Traceroute, and Pathping diagnostics, IP SLA network tracking, Cisco iOS configuration backup, Resume JD scoring optimization, CCNA mock exam loops.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "network-automation-monitoring"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-network-engineer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-network-engineer-12-1",
+          "title": "Ping, Traceroute, and Pathping diagnostics Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Ping%2C%20Traceroute%2C%20and%20Pathping%20diagnostics%20documentation"
+        },
+        {
+          "id": "res-network-engineer-12-2",
+          "title": "IP SLA network tracking Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=IP%20SLA%20network%20tracking%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-12-3",
+          "title": "Practice Cisco iOS configuration backup Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Cisco%20iOS%20configuration%20backup%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ping, Traceroute, and Pathping diagnostics, IP SLA network tracking, Cisco iOS configuration backup."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Ping, Traceroute, and Pathping diagnostics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of IP SLA network tracking."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the network-troubleshooting-career milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Network Troubleshooting & Career Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ping, Traceroute, and Pathping diagnostics, IP SLA network tracking, Cisco iOS configuration backup."
+      ]
+    },
+    {
+      "id": "roadmap-network-engineer-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "network-troubleshooting-career"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-network-engineer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-network-engineer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-network-engineer-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-network-engineer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-network-engineer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Cisco Packet Tracer Network Topology setup"
+      ],
+      "interviewQuestions": [
+        "What is the purpose of subnetting and how do you calculate CIDR IP allocations?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Cisco Packet Tracer Network Topology setup"
+      ]
+    },
+    {
+      "id": "roadmap-network-engineer-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-network-engineer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-network-engineer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-network-engineer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Python Wireshark Network Packet Scanner"
+      ],
+      "interviewQuestions": [
+        "Explain TCP 3-way handshake process and the flags set in each packet.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Python Wireshark Network Packet Scanner"
       ]
     }
   ]

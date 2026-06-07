@@ -2,6 +2,7 @@
   "id": "roadmap-developer-relations",
   "title": "Developer Relations (DevRel)",
   "slug": "developer-relations",
+  "description": "Master Developer Relations (DevRel) skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "INTERMEDIATE",
   "estimatedTime": "3 Months",
@@ -12,9 +13,9 @@
   "nodes": [
     {
       "id": "roadmap-developer-relations-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "developer-relations-fundamentals",
+      "title": "1. Developer Relations Fundamentals",
+      "description": "Master core capabilities of Developer Relations Fundamentals: What is DevRel?, DevRel vs marketing vs engineering, Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer), Developer experience (DX) concepts, Developer journey mapping.",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -22,517 +23,824 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-developer-relations-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-developer-relations-1-1",
+          "title": "What is DevRel? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20DevRel%3F%20documentation"
         },
         {
-          "id": "res-developer-relations-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-developer-relations-1-2",
+          "title": "DevRel vs marketing vs engineering Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=DevRel%20vs%20marketing%20vs%20engineering%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-1-3",
+          "title": "Practice Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Types%20of%20DevRel%20roles%20(Advocate%2C%20Evangelist%2C%20Community%20Manager%2C%20Technical%20Writer)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is DevRel?, DevRel vs marketing vs engineering, Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is What is DevRel? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of DevRel vs marketing vs engineering."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the developer-relations-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Developer Relations Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is DevRel?, DevRel vs marketing vs engineering, Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer)."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "technical-communication",
+      "title": "2. Technical Communication",
+      "description": "Master core capabilities of Technical Communication: Technical writing fundamentals, Writing API documentation, Writing tutorials and guides, README best practices, Changelog writing.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "developer-relations-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-developer-relations-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-developer-relations-2-1",
+          "title": "Technical writing fundamentals Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Technical%20writing%20fundamentals%20documentation"
         },
         {
-          "id": "res-developer-relations-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-developer-relations-2-2",
+          "title": "Writing API documentation Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Writing%20API%20documentation%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-2-3",
+          "title": "Practice Writing tutorials and guides Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Writing%20tutorials%20and%20guides%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Technical writing fundamentals, Writing API documentation, Writing tutorials and guides."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Technical writing fundamentals and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Writing API documentation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the technical-communication milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Technical Communication Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Technical writing fundamentals, Writing API documentation, Writing tutorials and guides."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: GitHub & More",
-      "description": "Master version control with Git & GitHub and construct development environments using GitHub, Discord, OBS Studio, Google Analytics, Markdown.",
+      "slug": "content-creation",
+      "title": "3. Content Creation",
+      "description": "Master core capabilities of Content Creation: Technical blog posts, Video content creation (screencasting, demos), YouTube for developers, Twitter/X for developers, LinkedIn for tech content.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "technical-communication"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-developer-relations-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-developer-relations-3-1",
+          "title": "Technical blog posts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Technical%20blog%20posts%20documentation"
+        },
+        {
+          "id": "res-developer-relations-3-2",
+          "title": "Video content creation (screencasting, demos) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Video%20content%20creation%20(screencasting%2C%20demos)%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-3-3",
+          "title": "Practice YouTube for developers Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=YouTube%20for%20developers%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Technical blog posts, Video content creation (screencasting, demos), YouTube for developers."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Technical blog posts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Video content creation (screencasting, demos)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the content-creation milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: GitHub & More Core Theories",
+        "3. Content Creation Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Technical blog posts, Video content creation (screencasting, demos), YouTube for developers."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: JavaScript / TypeScript / Python",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in JavaScript, TypeScript, Python.",
+      "slug": "public-speaking-presentations",
+      "title": "4. Public Speaking & Presentations",
+      "description": "Master core capabilities of Public Speaking & Presentations: Conference talk proposal (CFP) writing, Structuring a technical talk, Live coding demos, Workshop facilitation, Webinar hosting.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "content-creation"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-developer-relations-lang-1",
-          "title": "JavaScript Official Guides",
+          "id": "res-developer-relations-4-1",
+          "title": "Conference talk proposal (CFP) writing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Conference%20talk%20proposal%20(CFP)%20writing%20documentation"
+        },
+        {
+          "id": "res-developer-relations-4-2",
+          "title": "Structuring a technical talk Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Structuring%20a%20technical%20talk%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-4-3",
+          "title": "Practice Live coding demos Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Live%20coding%20demos%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Conference talk proposal (CFP) writing, Structuring a technical talk, Live coding demos."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in JavaScript?",
-        "How does asynchronous logic work in JavaScript?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Conference talk proposal (CFP) writing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Structuring a technical talk."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the public-speaking-presentations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: JavaScript / TypeScript / Python Core Theories",
+        "4. Public Speaking & Presentations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Conference talk proposal (CFP) writing, Structuring a technical talk, Live coding demos."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Next.js & Docusaurus & Tailwind CSS",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Next.js, Docusaurus, Tailwind CSS.",
+      "slug": "community-building",
+      "title": "5. Community Building",
+      "description": "Master core capabilities of Community Building: Community strategy, Discord server management, Slack community management, Forum moderation (Reddit, Stack Overflow, Discord), Developer programs.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "public-speaking-presentations"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-developer-relations-fw-1",
-          "title": "Next.js Reference Docs",
+          "id": "res-developer-relations-5-1",
+          "title": "Community strategy Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=Community%20strategy%20documentation"
+        },
+        {
+          "id": "res-developer-relations-5-2",
+          "title": "Discord server management Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Discord%20server%20management%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-5-3",
+          "title": "Practice Slack community management Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Slack%20community%20management%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Next.js."
+        "Build a prototype integrating Community strategy, Discord server management, Slack community management."
       ],
       "interviewQuestions": [
-        "When does a Next.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Next.js."
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Community strategy and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Discord server management."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the community-building milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Next.js & Docusaurus & Tailwind CSS Core Theories",
+        "5. Community Building Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Next.js."
+        "Build a prototype integrating Community strategy, Discord server management, Slack community management."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: SQL query basics",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQL query basics.",
+      "slug": "developer-experience-dx",
+      "title": "6. Developer Experience (DX)",
+      "description": "Master core capabilities of Developer Experience (DX): SDK and library design, API usability evaluation, Onboarding experience design, Documentation architecture, Interactive docs (Swagger, Mintlify, ReadMe).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "community-building"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-developer-relations-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-developer-relations-6-1",
+          "title": "SDK and library design Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=SDK%20and%20library%20design%20documentation"
+        },
+        {
+          "id": "res-developer-relations-6-2",
+          "title": "API usability evaluation Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=API%20usability%20evaluation%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-6-3",
+          "title": "Practice Onboarding experience design Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Onboarding%20experience%20design%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating SDK and library design, API usability evaluation, Onboarding experience design."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is SDK and library design and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of API usability evaluation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the developer-experience-dx milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: SQL query basics Core Theories",
+        "6. Developer Experience (DX) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating SDK and library design, API usability evaluation, Onboarding experience design."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: CI/CD validation scripts",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using CI/CD validation scripts.",
+      "slug": "open-source",
+      "title": "7. Open Source",
+      "description": "Master core capabilities of Open Source: Open source strategy, Maintaining open source projects, Contribution guidelines (CONTRIBUTING.md), Issue triage and management, Open source community dynamics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "developer-experience-dx"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-developer-relations-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-developer-relations-7-1",
+          "title": "Open source strategy Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Open%20source%20strategy%20documentation"
+        },
+        {
+          "id": "res-developer-relations-7-2",
+          "title": "Maintaining open source projects Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Maintaining%20open%20source%20projects%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-7-3",
+          "title": "Practice Contribution guidelines (CONTRIBUTING.md) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Contribution%20guidelines%20(CONTRIBUTING.md)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Open source strategy, Maintaining open source projects, Contribution guidelines (CONTRIBUTING.md)."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Open source strategy and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Maintaining open source projects."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the open-source milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: CI/CD validation scripts Core Theories",
+        "7. Open Source Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Open source strategy, Maintaining open source projects, Contribution guidelines (CONTRIBUTING.md)."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Vercel / GitHub Pages",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, GitHub Pages.",
+      "slug": "partnerships-ecosystem",
+      "title": "8. Partnerships & Ecosystem",
+      "description": "Master core capabilities of Partnerships & Ecosystem: Technology partner programs, Integration partnerships, Co-marketing with partners, Hackathon sponsorship and judging, Conference sponsorship.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "open-source"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-developer-relations-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-developer-relations-8-1",
+          "title": "Technology partner programs Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Technology%20partner%20programs%20documentation"
+        },
+        {
+          "id": "res-developer-relations-8-2",
+          "title": "Integration partnerships Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Integration%20partnerships%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-8-3",
+          "title": "Practice Co-marketing with partners Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Co-marketing%20with%20partners%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Technology partner programs, Integration partnerships, Co-marketing with partners."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Technology partner programs and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Integration partnerships."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the partnerships-ecosystem milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Vercel / GitHub Pages Core Theories",
+        "8. Partnerships & Ecosystem Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Technology partner programs, Integration partnerships, Co-marketing with partners."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Open-Source community strategies, API SDK generation, Public Speaking layouts, Analytics funnels.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "analytics-metrics",
+      "title": "9. Analytics & Metrics",
+      "description": "Master core capabilities of Analytics & Metrics: Developer funnel metrics, Documentation analytics (page views, search queries), Community metrics (DAU, MAU, engagement), Content performance metrics, SDK/API adoption metrics.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "partnerships-ecosystem"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-developer-relations-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-developer-relations-9-1",
+          "title": "Developer funnel metrics Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Developer%20funnel%20metrics%20documentation"
+        },
+        {
+          "id": "res-developer-relations-9-2",
+          "title": "Documentation analytics (page views, search queries) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Documentation%20analytics%20(page%20views%2C%20search%20queries)%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-9-3",
+          "title": "Practice Community metrics (DAU, MAU, engagement) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Community%20metrics%20(DAU%2C%20MAU%2C%20engagement)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Developer funnel metrics, Documentation analytics (page views, search queries), Community metrics (DAU, MAU, engagement)."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Open-Source community strategies to solve scalability bottlenecks.",
-        "What security vulnerabilities does Analytics funnels protect against?"
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Developer funnel metrics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Documentation analytics (page views, search queries)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the analytics-metrics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Analytics & Metrics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Developer funnel metrics, Documentation analytics (page views, search queries), Community metrics (DAU, MAU, engagement)."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "tools-platforms",
+      "title": "10. Tools & Platforms",
+      "description": "Master core capabilities of Tools & Platforms: GitHub and GitHub Actions, Mintlify / GitBook / ReadMe (documentation platforms), Zapier / Make for automation, Notion for content planning, Airtable for community management.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "analytics-metrics"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-developer-relations-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-developer-relations-10-1",
+          "title": "GitHub and GitHub Actions Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://git-scm.com/doc"
+        },
+        {
+          "id": "res-developer-relations-10-2",
+          "title": "Mintlify / GitBook / ReadMe (documentation platforms) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Mintlify%20%2F%20GitBook%20%2F%20ReadMe%20(documentation%20platforms)%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-10-3",
+          "title": "Practice Zapier / Make for automation Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Zapier%20%2F%20Make%20for%20automation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating GitHub and GitHub Actions, Mintlify / GitBook / ReadMe (documentation platforms), Zapier / Make for automation."
       ],
       "interviewQuestions": [
-        "How do you evaluate the success metrics of an open-source developer tool?",
-        "What is your strategy for handling critical developer feedback on a breaking API update?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is GitHub and GitHub Actions and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Mintlify / GitBook / ReadMe (documentation platforms)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the tools-platforms milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Tools & Platforms Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating GitHub and GitHub Actions, Mintlify / GitBook / ReadMe (documentation platforms), Zapier / Make for automation."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Open-Source SDK wrapper library or Technical documentation portal project. Set up deployment links and repository READMEs.",
+      "slug": "product-feedback-loop",
+      "title": "11. Product Feedback Loop",
+      "description": "Master core capabilities of Product Feedback Loop: Collecting developer feedback, User interviews for developers, Translating feedback to product teams, Beta programs, Early access programs.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "tools-platforms"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-developer-relations-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-developer-relations-11-1",
+          "title": "Collecting developer feedback Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Collecting%20developer%20feedback%20documentation"
+        },
+        {
+          "id": "res-developer-relations-11-2",
+          "title": "User interviews for developers Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=User%20interviews%20for%20developers%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-11-3",
+          "title": "Practice Translating feedback to product teams Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Translating%20feedback%20to%20product%20teams%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Open-Source SDK wrapper library with documentation.",
-        "Build complete deployable version of Technical documentation portal project with documentation."
+        "Build a prototype integrating Collecting developer feedback, User interviews for developers, Translating feedback to product teams."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Open-Source SDK wrapper library project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Collecting developer feedback and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of User interviews for developers."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the product-feedback-loop milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Product Feedback Loop Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Open-Source SDK wrapper library with documentation.",
-        "Build complete deployable version of Technical documentation portal project with documentation."
+        "Build a prototype integrating Collecting developer feedback, User interviews for developers, Translating feedback to product teams."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "devrel-strategy-career",
+      "title": "12. DevRel Strategy & Career",
+      "description": "Master core capabilities of DevRel Strategy & Career: Building a DevRel strategy from scratch, OKRs for DevRel, Proving DevRel ROI, DevRel budget management, Hiring and growing a DevRel team.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "product-feedback-loop"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-developer-relations-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-developer-relations-12-1",
+          "title": "Building a DevRel strategy from scratch Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Building%20a%20DevRel%20strategy%20from%20scratch%20documentation"
+        },
+        {
+          "id": "res-developer-relations-12-2",
+          "title": "OKRs for DevRel Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=OKRs%20for%20DevRel%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-12-3",
+          "title": "Practice Proving DevRel ROI Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Proving%20DevRel%20ROI%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Building a DevRel strategy from scratch, OKRs for DevRel, Proving DevRel ROI."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Building a DevRel strategy from scratch and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of OKRs for DevRel."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the devrel-strategy-career milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. DevRel Strategy & Career Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Building a DevRel strategy from scratch, OKRs for DevRel, Proving DevRel ROI."
+      ]
+    },
+    {
+      "id": "roadmap-developer-relations-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "devrel-strategy-career"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-developer-relations-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-developer-relations-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-developer-relations-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-developer-relations-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-developer-relations-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Open-Source SDK wrapper library"
+      ],
+      "interviewQuestions": [
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Open-Source SDK wrapper library"
+      ]
+    },
+    {
+      "id": "roadmap-developer-relations-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-developer-relations-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-developer-relations-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Technical documentation portal project"
+      ],
+      "interviewQuestions": [
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Technical documentation portal project"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-developer-relations-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "developer-relations-fundamentals",
+      "title": "1. Developer Relations Fundamentals",
+      "description": "Master core capabilities of Developer Relations Fundamentals: What is DevRel?, DevRel vs marketing vs engineering, Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer), Developer experience (DX) concepts, Developer journey mapping.",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -540,508 +848,815 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-developer-relations-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-developer-relations-1-1",
+          "title": "What is DevRel? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20DevRel%3F%20documentation"
         },
         {
-          "id": "res-developer-relations-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-developer-relations-1-2",
+          "title": "DevRel vs marketing vs engineering Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=DevRel%20vs%20marketing%20vs%20engineering%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-1-3",
+          "title": "Practice Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Types%20of%20DevRel%20roles%20(Advocate%2C%20Evangelist%2C%20Community%20Manager%2C%20Technical%20Writer)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is DevRel?, DevRel vs marketing vs engineering, Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is What is DevRel? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of DevRel vs marketing vs engineering."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the developer-relations-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Developer Relations Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is DevRel?, DevRel vs marketing vs engineering, Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer)."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "technical-communication",
+      "title": "2. Technical Communication",
+      "description": "Master core capabilities of Technical Communication: Technical writing fundamentals, Writing API documentation, Writing tutorials and guides, README best practices, Changelog writing.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "developer-relations-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-developer-relations-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-developer-relations-2-1",
+          "title": "Technical writing fundamentals Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Technical%20writing%20fundamentals%20documentation"
         },
         {
-          "id": "res-developer-relations-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-developer-relations-2-2",
+          "title": "Writing API documentation Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Writing%20API%20documentation%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-2-3",
+          "title": "Practice Writing tutorials and guides Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Writing%20tutorials%20and%20guides%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Technical writing fundamentals, Writing API documentation, Writing tutorials and guides."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Technical writing fundamentals and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Writing API documentation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the technical-communication milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Technical Communication Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Technical writing fundamentals, Writing API documentation, Writing tutorials and guides."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: GitHub & More",
-      "description": "Master version control with Git & GitHub and construct development environments using GitHub, Discord, OBS Studio, Google Analytics, Markdown.",
+      "slug": "content-creation",
+      "title": "3. Content Creation",
+      "description": "Master core capabilities of Content Creation: Technical blog posts, Video content creation (screencasting, demos), YouTube for developers, Twitter/X for developers, LinkedIn for tech content.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "technical-communication"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-developer-relations-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-developer-relations-3-1",
+          "title": "Technical blog posts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Technical%20blog%20posts%20documentation"
+        },
+        {
+          "id": "res-developer-relations-3-2",
+          "title": "Video content creation (screencasting, demos) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Video%20content%20creation%20(screencasting%2C%20demos)%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-3-3",
+          "title": "Practice YouTube for developers Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=YouTube%20for%20developers%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Technical blog posts, Video content creation (screencasting, demos), YouTube for developers."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Technical blog posts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Video content creation (screencasting, demos)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the content-creation milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: GitHub & More Core Theories",
+        "3. Content Creation Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Technical blog posts, Video content creation (screencasting, demos), YouTube for developers."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: JavaScript / TypeScript / Python",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in JavaScript, TypeScript, Python.",
+      "slug": "public-speaking-presentations",
+      "title": "4. Public Speaking & Presentations",
+      "description": "Master core capabilities of Public Speaking & Presentations: Conference talk proposal (CFP) writing, Structuring a technical talk, Live coding demos, Workshop facilitation, Webinar hosting.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "content-creation"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-developer-relations-lang-1",
-          "title": "JavaScript Official Guides",
+          "id": "res-developer-relations-4-1",
+          "title": "Conference talk proposal (CFP) writing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Conference%20talk%20proposal%20(CFP)%20writing%20documentation"
+        },
+        {
+          "id": "res-developer-relations-4-2",
+          "title": "Structuring a technical talk Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Structuring%20a%20technical%20talk%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-4-3",
+          "title": "Practice Live coding demos Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Live%20coding%20demos%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Conference talk proposal (CFP) writing, Structuring a technical talk, Live coding demos."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in JavaScript?",
-        "How does asynchronous logic work in JavaScript?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Conference talk proposal (CFP) writing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Structuring a technical talk."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the public-speaking-presentations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: JavaScript / TypeScript / Python Core Theories",
+        "4. Public Speaking & Presentations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Conference talk proposal (CFP) writing, Structuring a technical talk, Live coding demos."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Next.js & Docusaurus & Tailwind CSS",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Next.js, Docusaurus, Tailwind CSS.",
+      "slug": "community-building",
+      "title": "5. Community Building",
+      "description": "Master core capabilities of Community Building: Community strategy, Discord server management, Slack community management, Forum moderation (Reddit, Stack Overflow, Discord), Developer programs.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "public-speaking-presentations"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-developer-relations-fw-1",
-          "title": "Next.js Reference Docs",
+          "id": "res-developer-relations-5-1",
+          "title": "Community strategy Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=Community%20strategy%20documentation"
+        },
+        {
+          "id": "res-developer-relations-5-2",
+          "title": "Discord server management Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Discord%20server%20management%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-5-3",
+          "title": "Practice Slack community management Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Slack%20community%20management%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Next.js."
+        "Build a prototype integrating Community strategy, Discord server management, Slack community management."
       ],
       "interviewQuestions": [
-        "When does a Next.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Next.js."
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Community strategy and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Discord server management."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the community-building milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Next.js & Docusaurus & Tailwind CSS Core Theories",
+        "5. Community Building Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Next.js."
+        "Build a prototype integrating Community strategy, Discord server management, Slack community management."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: SQL query basics",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQL query basics.",
+      "slug": "developer-experience-dx",
+      "title": "6. Developer Experience (DX)",
+      "description": "Master core capabilities of Developer Experience (DX): SDK and library design, API usability evaluation, Onboarding experience design, Documentation architecture, Interactive docs (Swagger, Mintlify, ReadMe).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "community-building"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-developer-relations-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-developer-relations-6-1",
+          "title": "SDK and library design Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=SDK%20and%20library%20design%20documentation"
+        },
+        {
+          "id": "res-developer-relations-6-2",
+          "title": "API usability evaluation Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=API%20usability%20evaluation%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-6-3",
+          "title": "Practice Onboarding experience design Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Onboarding%20experience%20design%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating SDK and library design, API usability evaluation, Onboarding experience design."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is SDK and library design and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of API usability evaluation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the developer-experience-dx milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: SQL query basics Core Theories",
+        "6. Developer Experience (DX) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating SDK and library design, API usability evaluation, Onboarding experience design."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: CI/CD validation scripts",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using CI/CD validation scripts.",
+      "slug": "open-source",
+      "title": "7. Open Source",
+      "description": "Master core capabilities of Open Source: Open source strategy, Maintaining open source projects, Contribution guidelines (CONTRIBUTING.md), Issue triage and management, Open source community dynamics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "developer-experience-dx"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-developer-relations-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-developer-relations-7-1",
+          "title": "Open source strategy Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Open%20source%20strategy%20documentation"
+        },
+        {
+          "id": "res-developer-relations-7-2",
+          "title": "Maintaining open source projects Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Maintaining%20open%20source%20projects%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-7-3",
+          "title": "Practice Contribution guidelines (CONTRIBUTING.md) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Contribution%20guidelines%20(CONTRIBUTING.md)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Open source strategy, Maintaining open source projects, Contribution guidelines (CONTRIBUTING.md)."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Open source strategy and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Maintaining open source projects."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the open-source milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: CI/CD validation scripts Core Theories",
+        "7. Open Source Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Open source strategy, Maintaining open source projects, Contribution guidelines (CONTRIBUTING.md)."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Vercel / GitHub Pages",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, GitHub Pages.",
+      "slug": "partnerships-ecosystem",
+      "title": "8. Partnerships & Ecosystem",
+      "description": "Master core capabilities of Partnerships & Ecosystem: Technology partner programs, Integration partnerships, Co-marketing with partners, Hackathon sponsorship and judging, Conference sponsorship.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "open-source"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-developer-relations-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-developer-relations-8-1",
+          "title": "Technology partner programs Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Technology%20partner%20programs%20documentation"
+        },
+        {
+          "id": "res-developer-relations-8-2",
+          "title": "Integration partnerships Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Integration%20partnerships%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-8-3",
+          "title": "Practice Co-marketing with partners Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Co-marketing%20with%20partners%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Technology partner programs, Integration partnerships, Co-marketing with partners."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Technology partner programs and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Integration partnerships."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the partnerships-ecosystem milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Vercel / GitHub Pages Core Theories",
+        "8. Partnerships & Ecosystem Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Technology partner programs, Integration partnerships, Co-marketing with partners."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Open-Source community strategies, API SDK generation, Public Speaking layouts, Analytics funnels.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "analytics-metrics",
+      "title": "9. Analytics & Metrics",
+      "description": "Master core capabilities of Analytics & Metrics: Developer funnel metrics, Documentation analytics (page views, search queries), Community metrics (DAU, MAU, engagement), Content performance metrics, SDK/API adoption metrics.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "partnerships-ecosystem"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-developer-relations-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-developer-relations-9-1",
+          "title": "Developer funnel metrics Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Developer%20funnel%20metrics%20documentation"
+        },
+        {
+          "id": "res-developer-relations-9-2",
+          "title": "Documentation analytics (page views, search queries) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Documentation%20analytics%20(page%20views%2C%20search%20queries)%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-9-3",
+          "title": "Practice Community metrics (DAU, MAU, engagement) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Community%20metrics%20(DAU%2C%20MAU%2C%20engagement)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Developer funnel metrics, Documentation analytics (page views, search queries), Community metrics (DAU, MAU, engagement)."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Open-Source community strategies to solve scalability bottlenecks.",
-        "What security vulnerabilities does Analytics funnels protect against?"
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Developer funnel metrics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Documentation analytics (page views, search queries)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the analytics-metrics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Analytics & Metrics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Developer funnel metrics, Documentation analytics (page views, search queries), Community metrics (DAU, MAU, engagement)."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "tools-platforms",
+      "title": "10. Tools & Platforms",
+      "description": "Master core capabilities of Tools & Platforms: GitHub and GitHub Actions, Mintlify / GitBook / ReadMe (documentation platforms), Zapier / Make for automation, Notion for content planning, Airtable for community management.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "analytics-metrics"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-developer-relations-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-developer-relations-10-1",
+          "title": "GitHub and GitHub Actions Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://git-scm.com/doc"
+        },
+        {
+          "id": "res-developer-relations-10-2",
+          "title": "Mintlify / GitBook / ReadMe (documentation platforms) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Mintlify%20%2F%20GitBook%20%2F%20ReadMe%20(documentation%20platforms)%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-10-3",
+          "title": "Practice Zapier / Make for automation Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Zapier%20%2F%20Make%20for%20automation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating GitHub and GitHub Actions, Mintlify / GitBook / ReadMe (documentation platforms), Zapier / Make for automation."
       ],
       "interviewQuestions": [
-        "How do you evaluate the success metrics of an open-source developer tool?",
-        "What is your strategy for handling critical developer feedback on a breaking API update?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is GitHub and GitHub Actions and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Mintlify / GitBook / ReadMe (documentation platforms)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the tools-platforms milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Tools & Platforms Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating GitHub and GitHub Actions, Mintlify / GitBook / ReadMe (documentation platforms), Zapier / Make for automation."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Open-Source SDK wrapper library or Technical documentation portal project. Set up deployment links and repository READMEs.",
+      "slug": "product-feedback-loop",
+      "title": "11. Product Feedback Loop",
+      "description": "Master core capabilities of Product Feedback Loop: Collecting developer feedback, User interviews for developers, Translating feedback to product teams, Beta programs, Early access programs.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "tools-platforms"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-developer-relations-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-developer-relations-11-1",
+          "title": "Collecting developer feedback Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Collecting%20developer%20feedback%20documentation"
+        },
+        {
+          "id": "res-developer-relations-11-2",
+          "title": "User interviews for developers Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=User%20interviews%20for%20developers%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-11-3",
+          "title": "Practice Translating feedback to product teams Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Translating%20feedback%20to%20product%20teams%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Open-Source SDK wrapper library with documentation.",
-        "Build complete deployable version of Technical documentation portal project with documentation."
+        "Build a prototype integrating Collecting developer feedback, User interviews for developers, Translating feedback to product teams."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Open-Source SDK wrapper library project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Collecting developer feedback and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of User interviews for developers."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the product-feedback-loop milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Product Feedback Loop Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Open-Source SDK wrapper library with documentation.",
-        "Build complete deployable version of Technical documentation portal project with documentation."
+        "Build a prototype integrating Collecting developer feedback, User interviews for developers, Translating feedback to product teams."
       ]
     },
     {
       "id": "roadmap-developer-relations-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "devrel-strategy-career",
+      "title": "12. DevRel Strategy & Career",
+      "description": "Master core capabilities of DevRel Strategy & Career: Building a DevRel strategy from scratch, OKRs for DevRel, Proving DevRel ROI, DevRel budget management, Hiring and growing a DevRel team.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "product-feedback-loop"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-developer-relations-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-developer-relations-12-1",
+          "title": "Building a DevRel strategy from scratch Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Building%20a%20DevRel%20strategy%20from%20scratch%20documentation"
+        },
+        {
+          "id": "res-developer-relations-12-2",
+          "title": "OKRs for DevRel Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=OKRs%20for%20DevRel%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-12-3",
+          "title": "Practice Proving DevRel ROI Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Proving%20DevRel%20ROI%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Building a DevRel strategy from scratch, OKRs for DevRel, Proving DevRel ROI."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Building a DevRel strategy from scratch and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of OKRs for DevRel."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the devrel-strategy-career milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. DevRel Strategy & Career Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Building a DevRel strategy from scratch, OKRs for DevRel, Proving DevRel ROI."
+      ]
+    },
+    {
+      "id": "roadmap-developer-relations-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "devrel-strategy-career"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-developer-relations-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-developer-relations-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-developer-relations-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-developer-relations-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-developer-relations-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Open-Source SDK wrapper library"
+      ],
+      "interviewQuestions": [
+        "What is your strategy for handling critical developer feedback on a breaking API update?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Open-Source SDK wrapper library"
+      ]
+    },
+    {
+      "id": "roadmap-developer-relations-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-developer-relations-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-developer-relations-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-developer-relations-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Technical documentation portal project"
+      ],
+      "interviewQuestions": [
+        "How do you evaluate the success metrics of an open-source developer tool?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Technical documentation portal project"
       ]
     }
   ]

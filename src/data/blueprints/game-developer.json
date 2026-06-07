@@ -2,6 +2,7 @@
   "id": "roadmap-game-developer",
   "title": "Game Developer",
   "slug": "game-developer",
+  "description": "Master Game Developer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "INTERMEDIATE",
   "estimatedTime": "4 Months",
@@ -10,1036 +11,1650 @@
   "nodes": [
     {
       "id": "roadmap-game-developer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "game-development-fundamentals",
+      "title": "1. Game Development Fundamentals",
+      "description": "Master core capabilities of Game Development Fundamentals: What is game development?, Game loop and game architecture, 2D vs 3D game development, Client vs server-side game logic, Game genres and mechanics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-game-developer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-game-developer-1-1",
+          "title": "What is game development? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20game%20development%3F%20documentation"
         },
         {
-          "id": "res-game-developer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-game-developer-1-2",
+          "title": "Game loop and game architecture Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Game%20loop%20and%20game%20architecture%20tutorial"
+        },
+        {
+          "id": "res-game-developer-1-3",
+          "title": "Practice 2D vs 3D game development Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=2D%20vs%203D%20game%20development%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is game development?, Game loop and game architecture, 2D vs 3D game development."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is What is game development? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Game loop and game architecture."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the game-development-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Game Development Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is game development?, Game loop and game architecture, 2D vs 3D game development."
       ]
     },
     {
       "id": "roadmap-game-developer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "choose-a-game-engine",
+      "title": "2. Choose a Game Engine",
+      "description": "Master core capabilities of Choose a Game Engine: Unity overview, Unreal Engine overview, Godot overview, Phaser.js (2D web games), Pygame (Python).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "game-development-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-game-developer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-game-developer-2-1",
+          "title": "Unity overview Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Unity%20overview%20documentation"
         },
         {
-          "id": "res-game-developer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-game-developer-2-2",
+          "title": "Unreal Engine overview Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Unreal%20Engine%20overview%20tutorial"
+        },
+        {
+          "id": "res-game-developer-2-3",
+          "title": "Practice Godot overview Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Godot%20overview%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Unity overview, Unreal Engine overview, Godot overview."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Unity overview and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Unreal Engine overview."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the choose-a-game-engine milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Choose a Game Engine Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Unity overview, Unreal Engine overview, Godot overview."
       ]
     },
     {
       "id": "roadmap-game-developer-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Unity Engine & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Unity Engine, Unreal Engine, Blender, RenderDoc.",
+      "slug": "unity-fundamentals-primary-path",
+      "title": "3. Unity Fundamentals (Primary Path)",
+      "description": "Master core capabilities of Unity Fundamentals (Primary Path): Unity Editor interface, GameObjects and Components, Transform, Rigidbody, Collider, Scenes and prefabs, MonoBehaviour lifecycle (Start, Update, FixedUpdate).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "choose-a-game-engine"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-game-developer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-game-developer-3-1",
+          "title": "Unity Editor interface Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Unity%20Editor%20interface%20documentation"
+        },
+        {
+          "id": "res-game-developer-3-2",
+          "title": "GameObjects and Components Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GameObjects%20and%20Components%20tutorial"
+        },
+        {
+          "id": "res-game-developer-3-3",
+          "title": "Practice Transform, Rigidbody, Collider Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Transform%2C%20Rigidbody%2C%20Collider%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Unity Editor interface, GameObjects and Components, Transform, Rigidbody, Collider."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Unity Editor interface and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GameObjects and Components."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the unity-fundamentals-primary-path milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Unity Engine & More Core Theories",
+        "3. Unity Fundamentals (Primary Path) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Unity Editor interface, GameObjects and Components, Transform, Rigidbody, Collider."
       ]
     },
     {
       "id": "roadmap-game-developer-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: C# / C++ / GLSL Shaders",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in C#, C++, GLSL Shaders.",
+      "slug": "2d-game-development",
+      "title": "4. 2D Game Development",
+      "description": "Master core capabilities of 2D Game Development: Sprite creation and animation, Tilemap system, 2D physics, Camera management, 2D lighting.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "unity-fundamentals-primary-path"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-game-developer-lang-1",
-          "title": "C# Official Guides",
+          "id": "res-game-developer-4-1",
+          "title": "Sprite creation and animation Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Sprite%20creation%20and%20animation%20documentation"
+        },
+        {
+          "id": "res-game-developer-4-2",
+          "title": "Tilemap system Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Tilemap%20system%20tutorial"
+        },
+        {
+          "id": "res-game-developer-4-3",
+          "title": "Practice 2D physics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=2D%20physics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using C# handling variable arrays."
+        "Build a prototype integrating Sprite creation and animation, Tilemap system, 2D physics."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in C#?",
-        "How does asynchronous logic work in C#?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Sprite creation and animation and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Tilemap system."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the 2d-game-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: C# / C++ / GLSL Shaders Core Theories",
+        "4. 2D Game Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using C# handling variable arrays."
+        "Build a prototype integrating Sprite creation and animation, Tilemap system, 2D physics."
       ]
     },
     {
       "id": "roadmap-game-developer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: MonoBehaviour & Physics 2D/3D engines",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using MonoBehaviour, Physics 2D/3D engines.",
+      "slug": "3d-game-development",
+      "title": "5. 3D Game Development",
+      "description": "Master core capabilities of 3D Game Development: 3D models and meshes, Textures and UV mapping, Materials and shaders, Lighting (directional, point, spot), Shadows.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "2d-game-development"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-game-developer-fw-1",
-          "title": "MonoBehaviour Reference Docs",
+          "id": "res-game-developer-5-1",
+          "title": "3D models and meshes Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=3D%20models%20and%20meshes%20documentation"
+        },
+        {
+          "id": "res-game-developer-5-2",
+          "title": "Textures and UV mapping Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Textures%20and%20UV%20mapping%20tutorial"
+        },
+        {
+          "id": "res-game-developer-5-3",
+          "title": "Practice Materials and shaders Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Materials%20and%20shaders%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using MonoBehaviour."
+        "Build a prototype integrating 3D models and meshes, Textures and UV mapping, Materials and shaders."
       ],
       "interviewQuestions": [
-        "When does a MonoBehaviour component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in MonoBehaviour."
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is 3D models and meshes and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Textures and UV mapping."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the 3d-game-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: MonoBehaviour & Physics 2D/3D engines Core Theories",
+        "5. 3D Game Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using MonoBehaviour."
+        "Build a prototype integrating 3D models and meshes, Textures and UV mapping, Materials and shaders."
       ]
     },
     {
       "id": "roadmap-game-developer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: Local SaveGame files JSON",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Local SaveGame files JSON.",
+      "slug": "game-programming-patterns",
+      "title": "6. Game Programming Patterns",
+      "description": "Master core capabilities of Game Programming Patterns: Singleton pattern, Observer pattern, State machines (FSM), Object pooling, Component pattern.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "3d-game-development"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-game-developer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-game-developer-6-1",
+          "title": "Singleton pattern Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Singleton%20pattern%20documentation"
+        },
+        {
+          "id": "res-game-developer-6-2",
+          "title": "Observer pattern Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Observer%20pattern%20tutorial"
+        },
+        {
+          "id": "res-game-developer-6-3",
+          "title": "Practice State machines (FSM) Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=State%20machines%20(FSM)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using Local SaveGame files JSON."
+        "Build a prototype integrating Singleton pattern, Observer pattern, State machines (FSM)."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Singleton pattern and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Observer pattern."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the game-programming-patterns milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: Local SaveGame files JSON Core Theories",
+        "6. Game Programming Patterns Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using Local SaveGame files JSON."
+        "Build a prototype integrating Singleton pattern, Observer pattern, State machines (FSM)."
       ]
     },
     {
       "id": "roadmap-game-developer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Unity Test Runner / Unreal Automation Framework",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Unity Test Runner, Unreal Automation Framework.",
+      "slug": "audio",
+      "title": "7. Audio",
+      "description": "Master core capabilities of Audio: Audio sources and listeners, Background music, Sound effects, 3D spatial audio, Audio mixing (Unity Audio Mixer).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "game-programming-patterns"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-game-developer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-game-developer-7-1",
+          "title": "Audio sources and listeners Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Audio%20sources%20and%20listeners%20documentation"
+        },
+        {
+          "id": "res-game-developer-7-2",
+          "title": "Background music Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Background%20music%20tutorial"
+        },
+        {
+          "id": "res-game-developer-7-3",
+          "title": "Practice Sound effects Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Sound%20effects%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Audio sources and listeners, Background music, Sound effects."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Audio sources and listeners and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Background music."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the audio milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Unity Test Runner / Unreal Automation Framework Core Theories",
+        "7. Audio Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Audio sources and listeners, Background music, Sound effects."
       ]
     },
     {
       "id": "roadmap-game-developer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Steam Platform / itch.io / WebGL static build",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Steam Platform, itch.io, WebGL static build.",
+      "slug": "ui-in-games",
+      "title": "8. UI in Games",
+      "description": "Master core capabilities of UI in Games: Unity UI system (Canvas, uGUI), Heads-up display (HUD), Main menu and pause menu, Health bars and progress indicators, Inventory UI.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "databases"
+        "audio"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-game-developer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-game-developer-8-1",
+          "title": "Unity UI system (Canvas, uGUI) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Unity%20UI%20system%20(Canvas%2C%20uGUI)%20documentation"
+        },
+        {
+          "id": "res-game-developer-8-2",
+          "title": "Heads-up display (HUD) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Heads-up%20display%20(HUD)%20tutorial"
+        },
+        {
+          "id": "res-game-developer-8-3",
+          "title": "Practice Main menu and pause menu Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Main%20menu%20and%20pause%20menu%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Unity UI system (Canvas, uGUI), Heads-up display (HUD), Main menu and pause menu."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Unity UI system (Canvas, uGUI) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Heads-up display (HUD)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the ui-in-games milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Steam Platform / itch.io / WebGL static build Core Theories",
+        "8. UI in Games Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Unity UI system (Canvas, uGUI), Heads-up display (HUD), Main menu and pause menu."
       ]
     },
     {
       "id": "roadmap-game-developer-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Object Pooling, Shader Graph calculations, Spatial Partitioning grids, A* Pathfinding.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "data-persistence-saves",
+      "title": "9. Data Persistence & Saves",
+      "description": "Master core capabilities of Data Persistence & Saves: PlayerPrefs, JSON serialization/deserialization, Save/load systems, Binary serialization, Cloud saves basics.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "deployment"
+        "ui-in-games"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-game-developer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-game-developer-9-1",
+          "title": "PlayerPrefs Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=PlayerPrefs%20documentation"
+        },
+        {
+          "id": "res-game-developer-9-2",
+          "title": "JSON serialization/deserialization Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=JSON%20serialization%2Fdeserialization%20tutorial"
+        },
+        {
+          "id": "res-game-developer-9-3",
+          "title": "Practice Save/load systems Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Save%2Fload%20systems%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating PlayerPrefs, JSON serialization/deserialization, Save/load systems."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Object Pooling to solve scalability bottlenecks.",
-        "What security vulnerabilities does A* Pathfinding protect against?"
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is PlayerPrefs and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of JSON serialization/deserialization."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the data-persistence-saves milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Data Persistence & Saves Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating PlayerPrefs, JSON serialization/deserialization, Save/load systems."
       ]
     },
     {
       "id": "roadmap-game-developer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "multiplayer-basics",
+      "title": "10. Multiplayer Basics",
+      "description": "Master core capabilities of Multiplayer Basics: Networking fundamentals for games, Unity Netcode for GameObjects, Photon PUN2 basics, Client-server model, Peer-to-peer vs dedicated server.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "data-persistence-saves"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-game-developer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-game-developer-10-1",
+          "title": "Networking fundamentals for games Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Networking%20fundamentals%20for%20games%20documentation"
+        },
+        {
+          "id": "res-game-developer-10-2",
+          "title": "Unity Netcode for GameObjects Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Unity%20Netcode%20for%20GameObjects%20tutorial"
+        },
+        {
+          "id": "res-game-developer-10-3",
+          "title": "Practice Photon PUN2 basics Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Photon%20PUN2%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Networking fundamentals for games, Unity Netcode for GameObjects, Photon PUN2 basics."
       ],
       "interviewQuestions": [
-        "What is object pooling and how does it prevent GC stuttering in game loops?",
-        "Explain how draw calls optimization affects frame rendering rate."
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Networking fundamentals for games and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Unity Netcode for GameObjects."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the multiplayer-basics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Multiplayer Basics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Networking fundamentals for games, Unity Netcode for GameObjects, Photon PUN2 basics."
       ]
     },
     {
       "id": "roadmap-game-developer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: 2D Platformer Unity Project or 3D Maze solver with custom shaders. Set up deployment links and repository READMEs.",
+      "slug": "polish-game-feel",
+      "title": "11. Polish & Game Feel",
+      "description": "Master core capabilities of Polish & Game Feel: Screen shake, Juice and game feel principles, Post-processing effects, VFX (particle systems), Haptic feedback.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "interview-prep"
+        "multiplayer-basics"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-game-developer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-game-developer-11-1",
+          "title": "Screen shake Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Screen%20shake%20documentation"
+        },
+        {
+          "id": "res-game-developer-11-2",
+          "title": "Juice and game feel principles Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Juice%20and%20game%20feel%20principles%20tutorial"
+        },
+        {
+          "id": "res-game-developer-11-3",
+          "title": "Practice Post-processing effects Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Post-processing%20effects%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of 2D Platformer Unity Project with documentation.",
-        "Build complete deployable version of 3D Maze solver with custom shaders with documentation."
+        "Build a prototype integrating Screen shake, Juice and game feel principles, Post-processing effects."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your 2D Platformer Unity Project project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Screen shake and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Juice and game feel principles."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the polish-game-feel milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Polish & Game Feel Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of 2D Platformer Unity Project with documentation.",
-        "Build complete deployable version of 3D Maze solver with custom shaders with documentation."
+        "Build a prototype integrating Screen shake, Juice and game feel principles, Post-processing effects."
       ]
     },
     {
       "id": "roadmap-game-developer-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "publishing-monetization",
+      "title": "12. Publishing & Monetization",
+      "description": "Master core capabilities of Publishing & Monetization: Build settings and targets (PC, mobile, web), Platform-specific requirements, App store submission (Google Play, Apple App Store), Steam publishing, Monetization models (IAP, ads, premium).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "polish-game-feel"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-game-developer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-game-developer-12-1",
+          "title": "Build settings and targets (PC, mobile, web) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Build%20settings%20and%20targets%20(PC%2C%20mobile%2C%20web)%20documentation"
+        },
+        {
+          "id": "res-game-developer-12-2",
+          "title": "Platform-specific requirements Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Platform-specific%20requirements%20tutorial"
+        },
+        {
+          "id": "res-game-developer-12-3",
+          "title": "Practice App store submission (Google Play, Apple App Store) Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=App%20store%20submission%20(Google%20Play%2C%20Apple%20App%20Store)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Build settings and targets (PC, mobile, web), Platform-specific requirements, App store submission (Google Play, Apple App Store)."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Build settings and targets (PC, mobile, web) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Platform-specific requirements."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the publishing-monetization milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Publishing & Monetization Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Build settings and targets (PC, mobile, web), Platform-specific requirements, App store submission (Google Play, Apple App Store)."
+      ]
+    },
+    {
+      "id": "roadmap-game-developer-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "publishing-monetization"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-game-developer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-game-developer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-game-developer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-game-developer-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-game-developer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-game-developer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-game-developer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: 2D Platformer Unity Project"
+      ],
+      "interviewQuestions": [
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: 2D Platformer Unity Project"
+      ]
+    },
+    {
+      "id": "roadmap-game-developer-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-game-developer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-game-developer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-game-developer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: 3D Maze solver with custom shaders"
+      ],
+      "interviewQuestions": [
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: 3D Maze solver with custom shaders"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-game-developer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "game-development-fundamentals",
+      "title": "1. Game Development Fundamentals",
+      "description": "Master core capabilities of Game Development Fundamentals: What is game development?, Game loop and game architecture, 2D vs 3D game development, Client vs server-side game logic, Game genres and mechanics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-game-developer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-game-developer-1-1",
+          "title": "What is game development? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20game%20development%3F%20documentation"
         },
         {
-          "id": "res-game-developer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-game-developer-1-2",
+          "title": "Game loop and game architecture Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Game%20loop%20and%20game%20architecture%20tutorial"
+        },
+        {
+          "id": "res-game-developer-1-3",
+          "title": "Practice 2D vs 3D game development Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=2D%20vs%203D%20game%20development%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is game development?, Game loop and game architecture, 2D vs 3D game development."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is What is game development? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Game loop and game architecture."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the game-development-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Game Development Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is game development?, Game loop and game architecture, 2D vs 3D game development."
       ]
     },
     {
       "id": "roadmap-game-developer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "choose-a-game-engine",
+      "title": "2. Choose a Game Engine",
+      "description": "Master core capabilities of Choose a Game Engine: Unity overview, Unreal Engine overview, Godot overview, Phaser.js (2D web games), Pygame (Python).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "game-development-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-game-developer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-game-developer-2-1",
+          "title": "Unity overview Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Unity%20overview%20documentation"
         },
         {
-          "id": "res-game-developer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-game-developer-2-2",
+          "title": "Unreal Engine overview Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Unreal%20Engine%20overview%20tutorial"
+        },
+        {
+          "id": "res-game-developer-2-3",
+          "title": "Practice Godot overview Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Godot%20overview%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Unity overview, Unreal Engine overview, Godot overview."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Unity overview and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Unreal Engine overview."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the choose-a-game-engine milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Choose a Game Engine Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Unity overview, Unreal Engine overview, Godot overview."
       ]
     },
     {
       "id": "roadmap-game-developer-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Unity Engine & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Unity Engine, Unreal Engine, Blender, RenderDoc.",
+      "slug": "unity-fundamentals-primary-path",
+      "title": "3. Unity Fundamentals (Primary Path)",
+      "description": "Master core capabilities of Unity Fundamentals (Primary Path): Unity Editor interface, GameObjects and Components, Transform, Rigidbody, Collider, Scenes and prefabs, MonoBehaviour lifecycle (Start, Update, FixedUpdate).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "choose-a-game-engine"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-game-developer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-game-developer-3-1",
+          "title": "Unity Editor interface Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Unity%20Editor%20interface%20documentation"
+        },
+        {
+          "id": "res-game-developer-3-2",
+          "title": "GameObjects and Components Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GameObjects%20and%20Components%20tutorial"
+        },
+        {
+          "id": "res-game-developer-3-3",
+          "title": "Practice Transform, Rigidbody, Collider Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Transform%2C%20Rigidbody%2C%20Collider%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Unity Editor interface, GameObjects and Components, Transform, Rigidbody, Collider."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Unity Editor interface and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GameObjects and Components."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the unity-fundamentals-primary-path milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Unity Engine & More Core Theories",
+        "3. Unity Fundamentals (Primary Path) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Unity Editor interface, GameObjects and Components, Transform, Rigidbody, Collider."
       ]
     },
     {
       "id": "roadmap-game-developer-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: C# / C++ / GLSL Shaders",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in C#, C++, GLSL Shaders.",
+      "slug": "2d-game-development",
+      "title": "4. 2D Game Development",
+      "description": "Master core capabilities of 2D Game Development: Sprite creation and animation, Tilemap system, 2D physics, Camera management, 2D lighting.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "unity-fundamentals-primary-path"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-game-developer-lang-1",
-          "title": "C# Official Guides",
+          "id": "res-game-developer-4-1",
+          "title": "Sprite creation and animation Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Sprite%20creation%20and%20animation%20documentation"
+        },
+        {
+          "id": "res-game-developer-4-2",
+          "title": "Tilemap system Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Tilemap%20system%20tutorial"
+        },
+        {
+          "id": "res-game-developer-4-3",
+          "title": "Practice 2D physics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=2D%20physics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using C# handling variable arrays."
+        "Build a prototype integrating Sprite creation and animation, Tilemap system, 2D physics."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in C#?",
-        "How does asynchronous logic work in C#?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Sprite creation and animation and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Tilemap system."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the 2d-game-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: C# / C++ / GLSL Shaders Core Theories",
+        "4. 2D Game Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using C# handling variable arrays."
+        "Build a prototype integrating Sprite creation and animation, Tilemap system, 2D physics."
       ]
     },
     {
       "id": "roadmap-game-developer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: MonoBehaviour & Physics 2D/3D engines",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using MonoBehaviour, Physics 2D/3D engines.",
+      "slug": "3d-game-development",
+      "title": "5. 3D Game Development",
+      "description": "Master core capabilities of 3D Game Development: 3D models and meshes, Textures and UV mapping, Materials and shaders, Lighting (directional, point, spot), Shadows.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "2d-game-development"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-game-developer-fw-1",
-          "title": "MonoBehaviour Reference Docs",
+          "id": "res-game-developer-5-1",
+          "title": "3D models and meshes Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=3D%20models%20and%20meshes%20documentation"
+        },
+        {
+          "id": "res-game-developer-5-2",
+          "title": "Textures and UV mapping Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Textures%20and%20UV%20mapping%20tutorial"
+        },
+        {
+          "id": "res-game-developer-5-3",
+          "title": "Practice Materials and shaders Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Materials%20and%20shaders%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using MonoBehaviour."
+        "Build a prototype integrating 3D models and meshes, Textures and UV mapping, Materials and shaders."
       ],
       "interviewQuestions": [
-        "When does a MonoBehaviour component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in MonoBehaviour."
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is 3D models and meshes and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Textures and UV mapping."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the 3d-game-development milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: MonoBehaviour & Physics 2D/3D engines Core Theories",
+        "5. 3D Game Development Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using MonoBehaviour."
+        "Build a prototype integrating 3D models and meshes, Textures and UV mapping, Materials and shaders."
       ]
     },
     {
       "id": "roadmap-game-developer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: Local SaveGame files JSON",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Local SaveGame files JSON.",
+      "slug": "game-programming-patterns",
+      "title": "6. Game Programming Patterns",
+      "description": "Master core capabilities of Game Programming Patterns: Singleton pattern, Observer pattern, State machines (FSM), Object pooling, Component pattern.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "3d-game-development"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-game-developer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-game-developer-6-1",
+          "title": "Singleton pattern Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Singleton%20pattern%20documentation"
+        },
+        {
+          "id": "res-game-developer-6-2",
+          "title": "Observer pattern Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Observer%20pattern%20tutorial"
+        },
+        {
+          "id": "res-game-developer-6-3",
+          "title": "Practice State machines (FSM) Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=State%20machines%20(FSM)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using Local SaveGame files JSON."
+        "Build a prototype integrating Singleton pattern, Observer pattern, State machines (FSM)."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Singleton pattern and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Observer pattern."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the game-programming-patterns milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: Local SaveGame files JSON Core Theories",
+        "6. Game Programming Patterns Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using Local SaveGame files JSON."
+        "Build a prototype integrating Singleton pattern, Observer pattern, State machines (FSM)."
       ]
     },
     {
       "id": "roadmap-game-developer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Unity Test Runner / Unreal Automation Framework",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Unity Test Runner, Unreal Automation Framework.",
+      "slug": "audio",
+      "title": "7. Audio",
+      "description": "Master core capabilities of Audio: Audio sources and listeners, Background music, Sound effects, 3D spatial audio, Audio mixing (Unity Audio Mixer).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "game-programming-patterns"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-game-developer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-game-developer-7-1",
+          "title": "Audio sources and listeners Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Audio%20sources%20and%20listeners%20documentation"
+        },
+        {
+          "id": "res-game-developer-7-2",
+          "title": "Background music Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Background%20music%20tutorial"
+        },
+        {
+          "id": "res-game-developer-7-3",
+          "title": "Practice Sound effects Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Sound%20effects%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Audio sources and listeners, Background music, Sound effects."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Audio sources and listeners and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Background music."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the audio milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Unity Test Runner / Unreal Automation Framework Core Theories",
+        "7. Audio Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Audio sources and listeners, Background music, Sound effects."
       ]
     },
     {
       "id": "roadmap-game-developer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Steam Platform / itch.io / WebGL static build",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Steam Platform, itch.io, WebGL static build.",
+      "slug": "ui-in-games",
+      "title": "8. UI in Games",
+      "description": "Master core capabilities of UI in Games: Unity UI system (Canvas, uGUI), Heads-up display (HUD), Main menu and pause menu, Health bars and progress indicators, Inventory UI.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "databases"
+        "audio"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-game-developer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-game-developer-8-1",
+          "title": "Unity UI system (Canvas, uGUI) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Unity%20UI%20system%20(Canvas%2C%20uGUI)%20documentation"
+        },
+        {
+          "id": "res-game-developer-8-2",
+          "title": "Heads-up display (HUD) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Heads-up%20display%20(HUD)%20tutorial"
+        },
+        {
+          "id": "res-game-developer-8-3",
+          "title": "Practice Main menu and pause menu Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Main%20menu%20and%20pause%20menu%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Unity UI system (Canvas, uGUI), Heads-up display (HUD), Main menu and pause menu."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Unity UI system (Canvas, uGUI) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Heads-up display (HUD)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the ui-in-games milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Steam Platform / itch.io / WebGL static build Core Theories",
+        "8. UI in Games Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Unity UI system (Canvas, uGUI), Heads-up display (HUD), Main menu and pause menu."
       ]
     },
     {
       "id": "roadmap-game-developer-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Object Pooling, Shader Graph calculations, Spatial Partitioning grids, A* Pathfinding.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "data-persistence-saves",
+      "title": "9. Data Persistence & Saves",
+      "description": "Master core capabilities of Data Persistence & Saves: PlayerPrefs, JSON serialization/deserialization, Save/load systems, Binary serialization, Cloud saves basics.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "deployment"
+        "ui-in-games"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-game-developer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-game-developer-9-1",
+          "title": "PlayerPrefs Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=PlayerPrefs%20documentation"
+        },
+        {
+          "id": "res-game-developer-9-2",
+          "title": "JSON serialization/deserialization Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=JSON%20serialization%2Fdeserialization%20tutorial"
+        },
+        {
+          "id": "res-game-developer-9-3",
+          "title": "Practice Save/load systems Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Save%2Fload%20systems%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating PlayerPrefs, JSON serialization/deserialization, Save/load systems."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Object Pooling to solve scalability bottlenecks.",
-        "What security vulnerabilities does A* Pathfinding protect against?"
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is PlayerPrefs and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of JSON serialization/deserialization."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the data-persistence-saves milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Data Persistence & Saves Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating PlayerPrefs, JSON serialization/deserialization, Save/load systems."
       ]
     },
     {
       "id": "roadmap-game-developer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "multiplayer-basics",
+      "title": "10. Multiplayer Basics",
+      "description": "Master core capabilities of Multiplayer Basics: Networking fundamentals for games, Unity Netcode for GameObjects, Photon PUN2 basics, Client-server model, Peer-to-peer vs dedicated server.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "data-persistence-saves"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-game-developer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-game-developer-10-1",
+          "title": "Networking fundamentals for games Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Networking%20fundamentals%20for%20games%20documentation"
+        },
+        {
+          "id": "res-game-developer-10-2",
+          "title": "Unity Netcode for GameObjects Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Unity%20Netcode%20for%20GameObjects%20tutorial"
+        },
+        {
+          "id": "res-game-developer-10-3",
+          "title": "Practice Photon PUN2 basics Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Photon%20PUN2%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Networking fundamentals for games, Unity Netcode for GameObjects, Photon PUN2 basics."
       ],
       "interviewQuestions": [
-        "What is object pooling and how does it prevent GC stuttering in game loops?",
-        "Explain how draw calls optimization affects frame rendering rate."
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Networking fundamentals for games and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Unity Netcode for GameObjects."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the multiplayer-basics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Multiplayer Basics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Networking fundamentals for games, Unity Netcode for GameObjects, Photon PUN2 basics."
       ]
     },
     {
       "id": "roadmap-game-developer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: 2D Platformer Unity Project or 3D Maze solver with custom shaders. Set up deployment links and repository READMEs.",
+      "slug": "polish-game-feel",
+      "title": "11. Polish & Game Feel",
+      "description": "Master core capabilities of Polish & Game Feel: Screen shake, Juice and game feel principles, Post-processing effects, VFX (particle systems), Haptic feedback.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "interview-prep"
+        "multiplayer-basics"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-game-developer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-game-developer-11-1",
+          "title": "Screen shake Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Screen%20shake%20documentation"
+        },
+        {
+          "id": "res-game-developer-11-2",
+          "title": "Juice and game feel principles Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Juice%20and%20game%20feel%20principles%20tutorial"
+        },
+        {
+          "id": "res-game-developer-11-3",
+          "title": "Practice Post-processing effects Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Post-processing%20effects%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of 2D Platformer Unity Project with documentation.",
-        "Build complete deployable version of 3D Maze solver with custom shaders with documentation."
+        "Build a prototype integrating Screen shake, Juice and game feel principles, Post-processing effects."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your 2D Platformer Unity Project project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Screen shake and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Juice and game feel principles."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the polish-game-feel milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Polish & Game Feel Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of 2D Platformer Unity Project with documentation.",
-        "Build complete deployable version of 3D Maze solver with custom shaders with documentation."
+        "Build a prototype integrating Screen shake, Juice and game feel principles, Post-processing effects."
       ]
     },
     {
       "id": "roadmap-game-developer-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "publishing-monetization",
+      "title": "12. Publishing & Monetization",
+      "description": "Master core capabilities of Publishing & Monetization: Build settings and targets (PC, mobile, web), Platform-specific requirements, App store submission (Google Play, Apple App Store), Steam publishing, Monetization models (IAP, ads, premium).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "polish-game-feel"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-game-developer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-game-developer-12-1",
+          "title": "Build settings and targets (PC, mobile, web) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Build%20settings%20and%20targets%20(PC%2C%20mobile%2C%20web)%20documentation"
+        },
+        {
+          "id": "res-game-developer-12-2",
+          "title": "Platform-specific requirements Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Platform-specific%20requirements%20tutorial"
+        },
+        {
+          "id": "res-game-developer-12-3",
+          "title": "Practice App store submission (Google Play, Apple App Store) Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=App%20store%20submission%20(Google%20Play%2C%20Apple%20App%20Store)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Build settings and targets (PC, mobile, web), Platform-specific requirements, App store submission (Google Play, Apple App Store)."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Build settings and targets (PC, mobile, web) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Platform-specific requirements."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the publishing-monetization milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Publishing & Monetization Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Build settings and targets (PC, mobile, web), Platform-specific requirements, App store submission (Google Play, Apple App Store)."
+      ]
+    },
+    {
+      "id": "roadmap-game-developer-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "publishing-monetization"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-game-developer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-game-developer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-game-developer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-game-developer-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-game-developer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-game-developer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-game-developer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: 2D Platformer Unity Project"
+      ],
+      "interviewQuestions": [
+        "Explain how draw calls optimization affects frame rendering rate.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: 2D Platformer Unity Project"
+      ]
+    },
+    {
+      "id": "roadmap-game-developer-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-game-developer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-game-developer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-game-developer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: 3D Maze solver with custom shaders"
+      ],
+      "interviewQuestions": [
+        "What is object pooling and how does it prevent GC stuttering in game loops?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: 3D Maze solver with custom shaders"
       ]
     }
   ]

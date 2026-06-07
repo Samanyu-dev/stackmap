@@ -2,6 +2,7 @@
   "id": "roadmap-software-architect",
   "title": "Software Architect",
   "slug": "software-architect",
+  "description": "Master Software Architect skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "ADVANCED",
   "estimatedTime": "6 Months",
@@ -12,1036 +13,1650 @@
   "nodes": [
     {
       "id": "roadmap-software-architect-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "programming-fundamentals-mastery",
+      "title": "1. Programming Fundamentals Mastery",
+      "description": "Master core capabilities of Programming Fundamentals Mastery: Data structures and algorithms, Design patterns (GoF — Creational, Structural, Behavioral), SOLID principles, DRY, KISS, YAGNI, Clean code principles.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-software-architect-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-software-architect-1-1",
+          "title": "Data structures and algorithms Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=Data%20structures%20and%20algorithms%20documentation"
         },
         {
-          "id": "res-software-architect-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-software-architect-1-2",
+          "title": "Design patterns (GoF — Creational, Structural, Behavioral) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Design%20patterns%20(GoF%20%E2%80%94%20Creational%2C%20Structural%2C%20Behavioral)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-1-3",
+          "title": "Practice SOLID principles Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=SOLID%20principles%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Data structures and algorithms, Design patterns (GoF — Creational, Structural, Behavioral), SOLID principles."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Data structures and algorithms and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Design patterns (GoF — Creational, Structural, Behavioral)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the programming-fundamentals-mastery milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Programming Fundamentals Mastery Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Data structures and algorithms, Design patterns (GoF — Creational, Structural, Behavioral), SOLID principles."
       ]
     },
     {
       "id": "roadmap-software-architect-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "system-design-foundations",
+      "title": "2. System Design Foundations",
+      "description": "Master core capabilities of System Design Foundations: Functional vs non-functional requirements, Scalability (vertical vs horizontal), Reliability and fault tolerance, Availability and uptime SLAs, Latency and throughput.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "programming-fundamentals-mastery"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-software-architect-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-software-architect-2-1",
+          "title": "Functional vs non-functional requirements Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Functional%20vs%20non-functional%20requirements%20documentation"
         },
         {
-          "id": "res-software-architect-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-software-architect-2-2",
+          "title": "Scalability (vertical vs horizontal) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Scalability%20(vertical%20vs%20horizontal)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-2-3",
+          "title": "Practice Reliability and fault tolerance Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Reliability%20and%20fault%20tolerance%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Functional vs non-functional requirements, Scalability (vertical vs horizontal), Reliability and fault tolerance."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Functional vs non-functional requirements and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Scalability (vertical vs horizontal)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the system-design-foundations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. System Design Foundations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Functional vs non-functional requirements, Scalability (vertical vs horizontal), Reliability and fault tolerance."
       ]
     },
     {
       "id": "roadmap-software-architect-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Draw.io & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Draw.io, Docker, Kubernetes, Prometheus, UML diagrams.",
+      "slug": "architectural-patterns",
+      "title": "3. Architectural Patterns",
+      "description": "Master core capabilities of Architectural Patterns: Monolithic architecture, Microservices architecture, Service-oriented architecture (SOA), Event-driven architecture (EDA), Serverless architecture.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "system-design-foundations"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-software-architect-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-software-architect-3-1",
+          "title": "Monolithic architecture Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Monolithic%20architecture%20documentation"
+        },
+        {
+          "id": "res-software-architect-3-2",
+          "title": "Microservices architecture Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Microservices%20architecture%20tutorial"
+        },
+        {
+          "id": "res-software-architect-3-3",
+          "title": "Practice Service-oriented architecture (SOA) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Service-oriented%20architecture%20(SOA)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Monolithic architecture, Microservices architecture, Service-oriented architecture (SOA)."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Monolithic architecture and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Microservices architecture."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the architectural-patterns milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Draw.io & More Core Theories",
+        "3. Architectural Patterns Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Monolithic architecture, Microservices architecture, Service-oriented architecture (SOA)."
       ]
     },
     {
       "id": "roadmap-software-architect-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: TypeScript / Java / Go / Python",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in TypeScript, Java, Go, Python.",
+      "slug": "database-architecture",
+      "title": "4. Database Architecture",
+      "description": "Master core capabilities of Database Architecture: SQL vs NoSQL decision making, Database per service pattern, Shared database anti-pattern, Read replicas and write primaries, Database sharding strategies.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "tools"
+        "architectural-patterns"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-software-architect-lang-1",
-          "title": "TypeScript Official Guides",
+          "id": "res-software-architect-4-1",
+          "title": "SQL vs NoSQL decision making Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=SQL%20vs%20NoSQL%20decision%20making%20documentation"
+        },
+        {
+          "id": "res-software-architect-4-2",
+          "title": "Database per service pattern Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Database%20per%20service%20pattern%20tutorial"
+        },
+        {
+          "id": "res-software-architect-4-3",
+          "title": "Practice Shared database anti-pattern Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Shared%20database%20anti-pattern%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using TypeScript handling variable arrays."
+        "Build a prototype integrating SQL vs NoSQL decision making, Database per service pattern, Shared database anti-pattern."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in TypeScript?",
-        "How does asynchronous logic work in TypeScript?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is SQL vs NoSQL decision making and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Database per service pattern."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the database-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: TypeScript / Java / Go / Python Core Theories",
+        "4. Database Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using TypeScript handling variable arrays."
+        "Build a prototype integrating SQL vs NoSQL decision making, Database per service pattern, Shared database anti-pattern."
       ]
     },
     {
       "id": "roadmap-software-architect-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Spring Cloud, NestJS monorepo, GraphQL Federation.",
+      "slug": "api-design-integration",
+      "title": "5. API Design & Integration",
+      "description": "Master core capabilities of API Design & Integration: REST API best practices, GraphQL architecture, gRPC for internal services, API gateway patterns, Backend for Frontend (BFF) pattern.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "languages"
+        "database-architecture"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-software-architect-fw-1",
-          "title": "Spring Cloud Reference Docs",
+          "id": "res-software-architect-5-1",
+          "title": "REST API best practices Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=REST%20API%20best%20practices%20documentation"
+        },
+        {
+          "id": "res-software-architect-5-2",
+          "title": "GraphQL architecture Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GraphQL%20architecture%20tutorial"
+        },
+        {
+          "id": "res-software-architect-5-3",
+          "title": "Practice gRPC for internal services Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=gRPC%20for%20internal%20services%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+        "Build a prototype integrating REST API best practices, GraphQL architecture, gRPC for internal services."
       ],
       "interviewQuestions": [
-        "When does a Spring Cloud component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Spring Cloud."
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is REST API best practices and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GraphQL architecture."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the api-design-integration milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation Core Theories",
+        "5. API Design & Integration Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+        "Build a prototype integrating REST API best practices, GraphQL architecture, gRPC for internal services."
       ]
     },
     {
       "id": "roadmap-software-architect-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Multi-region), Cassandra, Redis Clustered.",
+      "slug": "distributed-systems",
+      "title": "6. Distributed Systems",
+      "description": "Master core capabilities of Distributed Systems: Distributed system challenges (network partitions, split brain), Consensus algorithms (Raft, Paxos), Leader election, Distributed caching, Distributed locking.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "frameworks"
+        "api-design-integration"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-software-architect-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-software-architect-6-1",
+          "title": "Distributed system challenges (network partitions, split brain) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Distributed%20system%20challenges%20(network%20partitions%2C%20split%20brain)%20documentation"
+        },
+        {
+          "id": "res-software-architect-6-2",
+          "title": "Consensus algorithms (Raft, Paxos) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Consensus%20algorithms%20(Raft%2C%20Paxos)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-6-3",
+          "title": "Practice Leader election Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Leader%20election%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+        "Build a prototype integrating Distributed system challenges (network partitions, split brain), Consensus algorithms (Raft, Paxos), Leader election."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Distributed system challenges (network partitions, split brain) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Consensus algorithms (Raft, Paxos)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the distributed-systems milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered Core Theories",
+        "6. Distributed Systems Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+        "Build a prototype integrating Distributed system challenges (network partitions, split brain), Consensus algorithms (Raft, Paxos), Leader election."
       ]
     },
     {
       "id": "roadmap-software-architect-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Chaos Mesh, LoadRunner, SonarQube quality checks.",
+      "slug": "cloud-architecture",
+      "title": "7. Cloud Architecture",
+      "description": "Master core capabilities of Cloud Architecture: Cloud providers (AWS, GCP, Azure) deep dive, Well-Architected Framework (AWS), Cloud-native principles, Kubernetes architecture, Service mesh.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "frameworks"
+        "distributed-systems"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-software-architect-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-software-architect-7-1",
+          "title": "Cloud providers (AWS, GCP, Azure) deep dive Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Cloud%20providers%20(AWS%2C%20GCP%2C%20Azure)%20deep%20dive%20documentation"
+        },
+        {
+          "id": "res-software-architect-7-2",
+          "title": "Well-Architected Framework (AWS) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Well-Architected%20Framework%20(AWS)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-7-3",
+          "title": "Practice Cloud-native principles Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Cloud-native%20principles%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Cloud providers (AWS, GCP, Azure) deep dive, Well-Architected Framework (AWS), Cloud-native principles."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Cloud providers (AWS, GCP, Azure) deep dive and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Well-Architected Framework (AWS)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the cloud-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks Core Theories",
+        "7. Cloud Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Cloud providers (AWS, GCP, Azure) deep dive, Well-Architected Framework (AWS), Cloud-native principles."
       ]
     },
     {
       "id": "roadmap-software-architect-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS Multi-AZ, Kubernetes EKS clusters, Terraform IaC.",
+      "slug": "security-architecture",
+      "title": "8. Security Architecture",
+      "description": "Master core capabilities of Security Architecture: Zero trust architecture, Authentication architecture (OAuth 2.0, OIDC), API security, Secrets management (Vault), Encryption at rest and in transit.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "databases"
+        "cloud-architecture"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-software-architect-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-software-architect-8-1",
+          "title": "Zero trust architecture Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Zero%20trust%20architecture%20documentation"
+        },
+        {
+          "id": "res-software-architect-8-2",
+          "title": "Authentication architecture (OAuth 2.0, OIDC) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Authentication%20architecture%20(OAuth%202.0%2C%20OIDC)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-8-3",
+          "title": "Practice API security Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=API%20security%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Zero trust architecture, Authentication architecture (OAuth 2.0, OIDC), API security."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Zero trust architecture and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Authentication architecture (OAuth 2.0, OIDC)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the security-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC Core Theories",
+        "8. Security Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Zero trust architecture, Authentication architecture (OAuth 2.0, OIDC), API security."
       ]
     },
     {
       "id": "roadmap-software-architect-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Saga Transactions pattern, Event Sourcing, Domain-Driven Design (DDD), CAP Theorem tradeoffs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "observability-reliability",
+      "title": "9. Observability & Reliability",
+      "description": "Master core capabilities of Observability & Reliability: The three pillars of observability (logs, metrics, traces), Distributed tracing (Jaeger, Zipkin, OpenTelemetry), Metrics and alerting (Prometheus, Grafana), Log aggregation (ELK, Loki), SLIs, SLOs, SLAs.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "deployment"
+        "security-architecture"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-software-architect-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-software-architect-9-1",
+          "title": "The three pillars of observability (logs, metrics, traces) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=The%20three%20pillars%20of%20observability%20(logs%2C%20metrics%2C%20traces)%20documentation"
+        },
+        {
+          "id": "res-software-architect-9-2",
+          "title": "Distributed tracing (Jaeger, Zipkin, OpenTelemetry) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Distributed%20tracing%20(Jaeger%2C%20Zipkin%2C%20OpenTelemetry)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-9-3",
+          "title": "Practice Metrics and alerting (Prometheus, Grafana) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Metrics%20and%20alerting%20(Prometheus%2C%20Grafana)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating The three pillars of observability (logs, metrics, traces), Distributed tracing (Jaeger, Zipkin, OpenTelemetry), Metrics and alerting (Prometheus, Grafana)."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Saga Transactions pattern to solve scalability bottlenecks.",
-        "What security vulnerabilities does CAP Theorem tradeoffs protect against?"
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is The three pillars of observability (logs, metrics, traces) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Distributed tracing (Jaeger, Zipkin, OpenTelemetry)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the observability-reliability milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Observability & Reliability Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating The three pillars of observability (logs, metrics, traces), Distributed tracing (Jaeger, Zipkin, OpenTelemetry), Metrics and alerting (Prometheus, Grafana)."
       ]
     },
     {
       "id": "roadmap-software-architect-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "performance-engineering",
+      "title": "10. Performance Engineering",
+      "description": "Master core capabilities of Performance Engineering: Performance profiling and benchmarking, Load testing and stress testing, CDN architecture, Caching strategies (L1, L2, distributed cache), Database query optimization.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "observability-reliability"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-software-architect-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-software-architect-10-1",
+          "title": "Performance profiling and benchmarking Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20and%20benchmarking%20documentation"
+        },
+        {
+          "id": "res-software-architect-10-2",
+          "title": "Load testing and stress testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Load%20testing%20and%20stress%20testing%20tutorial"
+        },
+        {
+          "id": "res-software-architect-10-3",
+          "title": "Practice CDN architecture Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=CDN%20architecture%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Performance profiling and benchmarking, Load testing and stress testing, CDN architecture."
       ],
       "interviewQuestions": [
-        "Explain the Saga pattern and how it manages distributed transactions consistency.",
-        "What are the tradeoffs between Event Sourcing and relational state updates?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Performance profiling and benchmarking and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Load testing and stress testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the performance-engineering milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Performance Engineering Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Performance profiling and benchmarking, Load testing and stress testing, CDN architecture."
       ]
     },
     {
       "id": "roadmap-software-architect-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Microservices Architectural Blueprint or Distributed Ledger Sync system. Set up deployment links and repository READMEs.",
+      "slug": "technical-leadership",
+      "title": "11. Technical Leadership",
+      "description": "Master core capabilities of Technical Leadership: Architecture decision records (ADRs), RFCs (Request for Comments) process, Technical roadmap planning, Legacy system modernization, Build vs buy decisions.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "interview-prep"
+        "performance-engineering"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-software-architect-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-software-architect-11-1",
+          "title": "Architecture decision records (ADRs) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Architecture%20decision%20records%20(ADRs)%20documentation"
+        },
+        {
+          "id": "res-software-architect-11-2",
+          "title": "RFCs (Request for Comments) process Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=RFCs%20(Request%20for%20Comments)%20process%20tutorial"
+        },
+        {
+          "id": "res-software-architect-11-3",
+          "title": "Practice Technical roadmap planning Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Technical%20roadmap%20planning%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
-        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+        "Build a prototype integrating Architecture decision records (ADRs), RFCs (Request for Comments) process, Technical roadmap planning."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Microservices Architectural Blueprint project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Architecture decision records (ADRs) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of RFCs (Request for Comments) process."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the technical-leadership milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Technical Leadership Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
-        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+        "Build a prototype integrating Architecture decision records (ADRs), RFCs (Request for Comments) process, Technical roadmap planning."
       ]
     },
     {
       "id": "roadmap-software-architect-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "domain-driven-design-ddd",
+      "title": "12. Domain-Driven Design (DDD)",
+      "description": "Master core capabilities of Domain-Driven Design (DDD): Ubiquitous language, Bounded contexts, Domain model, Aggregates, entities, value objects, Domain events.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "resume-projects"
+        "technical-leadership"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-software-architect-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-software-architect-12-1",
+          "title": "Ubiquitous language Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Ubiquitous%20language%20documentation"
+        },
+        {
+          "id": "res-software-architect-12-2",
+          "title": "Bounded contexts Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Bounded%20contexts%20tutorial"
+        },
+        {
+          "id": "res-software-architect-12-3",
+          "title": "Practice Domain model Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Domain%20model%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ubiquitous language, Bounded contexts, Domain model."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Ubiquitous language and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Bounded contexts."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the domain-driven-design-ddd milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Domain-Driven Design (DDD) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ubiquitous language, Bounded contexts, Domain model."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "16 hours",
+      "prerequisites": [
+        "domain-driven-design-ddd"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-software-architect-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-software-architect-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-software-architect-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "16 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-software-architect-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-software-architect-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-software-architect-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Microservices Architectural Blueprint"
+      ],
+      "interviewQuestions": [
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Microservices Architectural Blueprint"
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "16 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-software-architect-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-software-architect-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-software-architect-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Distributed Ledger Sync system"
+      ],
+      "interviewQuestions": [
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Distributed Ledger Sync system"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-software-architect-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "programming-fundamentals-mastery",
+      "title": "1. Programming Fundamentals Mastery",
+      "description": "Master core capabilities of Programming Fundamentals Mastery: Data structures and algorithms, Design patterns (GoF — Creational, Structural, Behavioral), SOLID principles, DRY, KISS, YAGNI, Clean code principles.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-software-architect-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-software-architect-1-1",
+          "title": "Data structures and algorithms Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=Data%20structures%20and%20algorithms%20documentation"
         },
         {
-          "id": "res-software-architect-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-software-architect-1-2",
+          "title": "Design patterns (GoF — Creational, Structural, Behavioral) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Design%20patterns%20(GoF%20%E2%80%94%20Creational%2C%20Structural%2C%20Behavioral)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-1-3",
+          "title": "Practice SOLID principles Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=SOLID%20principles%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Data structures and algorithms, Design patterns (GoF — Creational, Structural, Behavioral), SOLID principles."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Data structures and algorithms and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Design patterns (GoF — Creational, Structural, Behavioral)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the programming-fundamentals-mastery milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Programming Fundamentals Mastery Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Data structures and algorithms, Design patterns (GoF — Creational, Structural, Behavioral), SOLID principles."
       ]
     },
     {
       "id": "roadmap-software-architect-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "system-design-foundations",
+      "title": "2. System Design Foundations",
+      "description": "Master core capabilities of System Design Foundations: Functional vs non-functional requirements, Scalability (vertical vs horizontal), Reliability and fault tolerance, Availability and uptime SLAs, Latency and throughput.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "programming-fundamentals-mastery"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-software-architect-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-software-architect-2-1",
+          "title": "Functional vs non-functional requirements Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Functional%20vs%20non-functional%20requirements%20documentation"
         },
         {
-          "id": "res-software-architect-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-software-architect-2-2",
+          "title": "Scalability (vertical vs horizontal) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Scalability%20(vertical%20vs%20horizontal)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-2-3",
+          "title": "Practice Reliability and fault tolerance Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Reliability%20and%20fault%20tolerance%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Functional vs non-functional requirements, Scalability (vertical vs horizontal), Reliability and fault tolerance."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Functional vs non-functional requirements and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Scalability (vertical vs horizontal)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the system-design-foundations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. System Design Foundations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Functional vs non-functional requirements, Scalability (vertical vs horizontal), Reliability and fault tolerance."
       ]
     },
     {
       "id": "roadmap-software-architect-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Draw.io & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Draw.io, Docker, Kubernetes, Prometheus, UML diagrams.",
+      "slug": "architectural-patterns",
+      "title": "3. Architectural Patterns",
+      "description": "Master core capabilities of Architectural Patterns: Monolithic architecture, Microservices architecture, Service-oriented architecture (SOA), Event-driven architecture (EDA), Serverless architecture.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "system-design-foundations"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-software-architect-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-software-architect-3-1",
+          "title": "Monolithic architecture Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Monolithic%20architecture%20documentation"
+        },
+        {
+          "id": "res-software-architect-3-2",
+          "title": "Microservices architecture Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Microservices%20architecture%20tutorial"
+        },
+        {
+          "id": "res-software-architect-3-3",
+          "title": "Practice Service-oriented architecture (SOA) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Service-oriented%20architecture%20(SOA)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Monolithic architecture, Microservices architecture, Service-oriented architecture (SOA)."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Monolithic architecture and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Microservices architecture."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the architectural-patterns milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Draw.io & More Core Theories",
+        "3. Architectural Patterns Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Monolithic architecture, Microservices architecture, Service-oriented architecture (SOA)."
       ]
     },
     {
       "id": "roadmap-software-architect-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: TypeScript / Java / Go / Python",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in TypeScript, Java, Go, Python.",
+      "slug": "database-architecture",
+      "title": "4. Database Architecture",
+      "description": "Master core capabilities of Database Architecture: SQL vs NoSQL decision making, Database per service pattern, Shared database anti-pattern, Read replicas and write primaries, Database sharding strategies.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "tools"
+        "architectural-patterns"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-software-architect-lang-1",
-          "title": "TypeScript Official Guides",
+          "id": "res-software-architect-4-1",
+          "title": "SQL vs NoSQL decision making Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=SQL%20vs%20NoSQL%20decision%20making%20documentation"
+        },
+        {
+          "id": "res-software-architect-4-2",
+          "title": "Database per service pattern Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Database%20per%20service%20pattern%20tutorial"
+        },
+        {
+          "id": "res-software-architect-4-3",
+          "title": "Practice Shared database anti-pattern Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Shared%20database%20anti-pattern%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using TypeScript handling variable arrays."
+        "Build a prototype integrating SQL vs NoSQL decision making, Database per service pattern, Shared database anti-pattern."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in TypeScript?",
-        "How does asynchronous logic work in TypeScript?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is SQL vs NoSQL decision making and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Database per service pattern."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the database-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: TypeScript / Java / Go / Python Core Theories",
+        "4. Database Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using TypeScript handling variable arrays."
+        "Build a prototype integrating SQL vs NoSQL decision making, Database per service pattern, Shared database anti-pattern."
       ]
     },
     {
       "id": "roadmap-software-architect-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Spring Cloud, NestJS monorepo, GraphQL Federation.",
+      "slug": "api-design-integration",
+      "title": "5. API Design & Integration",
+      "description": "Master core capabilities of API Design & Integration: REST API best practices, GraphQL architecture, gRPC for internal services, API gateway patterns, Backend for Frontend (BFF) pattern.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "languages"
+        "database-architecture"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-software-architect-fw-1",
-          "title": "Spring Cloud Reference Docs",
+          "id": "res-software-architect-5-1",
+          "title": "REST API best practices Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=REST%20API%20best%20practices%20documentation"
+        },
+        {
+          "id": "res-software-architect-5-2",
+          "title": "GraphQL architecture Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GraphQL%20architecture%20tutorial"
+        },
+        {
+          "id": "res-software-architect-5-3",
+          "title": "Practice gRPC for internal services Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=gRPC%20for%20internal%20services%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+        "Build a prototype integrating REST API best practices, GraphQL architecture, gRPC for internal services."
       ],
       "interviewQuestions": [
-        "When does a Spring Cloud component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Spring Cloud."
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is REST API best practices and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GraphQL architecture."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the api-design-integration milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Spring Cloud & NestJS monorepo & GraphQL Federation Core Theories",
+        "5. API Design & Integration Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Spring Cloud."
+        "Build a prototype integrating REST API best practices, GraphQL architecture, gRPC for internal services."
       ]
     },
     {
       "id": "roadmap-software-architect-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Multi-region), Cassandra, Redis Clustered.",
+      "slug": "distributed-systems",
+      "title": "6. Distributed Systems",
+      "description": "Master core capabilities of Distributed Systems: Distributed system challenges (network partitions, split brain), Consensus algorithms (Raft, Paxos), Leader election, Distributed caching, Distributed locking.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "frameworks"
+        "api-design-integration"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-software-architect-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-software-architect-6-1",
+          "title": "Distributed system challenges (network partitions, split brain) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Distributed%20system%20challenges%20(network%20partitions%2C%20split%20brain)%20documentation"
+        },
+        {
+          "id": "res-software-architect-6-2",
+          "title": "Consensus algorithms (Raft, Paxos) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Consensus%20algorithms%20(Raft%2C%20Paxos)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-6-3",
+          "title": "Practice Leader election Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Leader%20election%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+        "Build a prototype integrating Distributed system challenges (network partitions, split brain), Consensus algorithms (Raft, Paxos), Leader election."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Distributed system challenges (network partitions, split brain) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Consensus algorithms (Raft, Paxos)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the distributed-systems milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL (Multi-region) / Cassandra / Redis Clustered Core Theories",
+        "6. Distributed Systems Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL (Multi-region)."
+        "Build a prototype integrating Distributed system challenges (network partitions, split brain), Consensus algorithms (Raft, Paxos), Leader election."
       ]
     },
     {
       "id": "roadmap-software-architect-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Chaos Mesh, LoadRunner, SonarQube quality checks.",
+      "slug": "cloud-architecture",
+      "title": "7. Cloud Architecture",
+      "description": "Master core capabilities of Cloud Architecture: Cloud providers (AWS, GCP, Azure) deep dive, Well-Architected Framework (AWS), Cloud-native principles, Kubernetes architecture, Service mesh.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "frameworks"
+        "distributed-systems"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-software-architect-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-software-architect-7-1",
+          "title": "Cloud providers (AWS, GCP, Azure) deep dive Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Cloud%20providers%20(AWS%2C%20GCP%2C%20Azure)%20deep%20dive%20documentation"
+        },
+        {
+          "id": "res-software-architect-7-2",
+          "title": "Well-Architected Framework (AWS) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Well-Architected%20Framework%20(AWS)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-7-3",
+          "title": "Practice Cloud-native principles Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Cloud-native%20principles%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Cloud providers (AWS, GCP, Azure) deep dive, Well-Architected Framework (AWS), Cloud-native principles."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Cloud providers (AWS, GCP, Azure) deep dive and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Well-Architected Framework (AWS)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the cloud-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Chaos Mesh / LoadRunner / SonarQube quality checks Core Theories",
+        "7. Cloud Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Cloud providers (AWS, GCP, Azure) deep dive, Well-Architected Framework (AWS), Cloud-native principles."
       ]
     },
     {
       "id": "roadmap-software-architect-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS Multi-AZ, Kubernetes EKS clusters, Terraform IaC.",
+      "slug": "security-architecture",
+      "title": "8. Security Architecture",
+      "description": "Master core capabilities of Security Architecture: Zero trust architecture, Authentication architecture (OAuth 2.0, OIDC), API security, Secrets management (Vault), Encryption at rest and in transit.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "databases"
+        "cloud-architecture"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-software-architect-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-software-architect-8-1",
+          "title": "Zero trust architecture Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Zero%20trust%20architecture%20documentation"
+        },
+        {
+          "id": "res-software-architect-8-2",
+          "title": "Authentication architecture (OAuth 2.0, OIDC) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Authentication%20architecture%20(OAuth%202.0%2C%20OIDC)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-8-3",
+          "title": "Practice API security Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=API%20security%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Zero trust architecture, Authentication architecture (OAuth 2.0, OIDC), API security."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Zero trust architecture and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Authentication architecture (OAuth 2.0, OIDC)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the security-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: AWS Multi-AZ / Kubernetes EKS clusters / Terraform IaC Core Theories",
+        "8. Security Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Zero trust architecture, Authentication architecture (OAuth 2.0, OIDC), API security."
       ]
     },
     {
       "id": "roadmap-software-architect-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Saga Transactions pattern, Event Sourcing, Domain-Driven Design (DDD), CAP Theorem tradeoffs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "observability-reliability",
+      "title": "9. Observability & Reliability",
+      "description": "Master core capabilities of Observability & Reliability: The three pillars of observability (logs, metrics, traces), Distributed tracing (Jaeger, Zipkin, OpenTelemetry), Metrics and alerting (Prometheus, Grafana), Log aggregation (ELK, Loki), SLIs, SLOs, SLAs.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "deployment"
+        "security-architecture"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-software-architect-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-software-architect-9-1",
+          "title": "The three pillars of observability (logs, metrics, traces) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=The%20three%20pillars%20of%20observability%20(logs%2C%20metrics%2C%20traces)%20documentation"
+        },
+        {
+          "id": "res-software-architect-9-2",
+          "title": "Distributed tracing (Jaeger, Zipkin, OpenTelemetry) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Distributed%20tracing%20(Jaeger%2C%20Zipkin%2C%20OpenTelemetry)%20tutorial"
+        },
+        {
+          "id": "res-software-architect-9-3",
+          "title": "Practice Metrics and alerting (Prometheus, Grafana) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Metrics%20and%20alerting%20(Prometheus%2C%20Grafana)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating The three pillars of observability (logs, metrics, traces), Distributed tracing (Jaeger, Zipkin, OpenTelemetry), Metrics and alerting (Prometheus, Grafana)."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Saga Transactions pattern to solve scalability bottlenecks.",
-        "What security vulnerabilities does CAP Theorem tradeoffs protect against?"
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is The three pillars of observability (logs, metrics, traces) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Distributed tracing (Jaeger, Zipkin, OpenTelemetry)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the observability-reliability milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Observability & Reliability Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating The three pillars of observability (logs, metrics, traces), Distributed tracing (Jaeger, Zipkin, OpenTelemetry), Metrics and alerting (Prometheus, Grafana)."
       ]
     },
     {
       "id": "roadmap-software-architect-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "performance-engineering",
+      "title": "10. Performance Engineering",
+      "description": "Master core capabilities of Performance Engineering: Performance profiling and benchmarking, Load testing and stress testing, CDN architecture, Caching strategies (L1, L2, distributed cache), Database query optimization.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "observability-reliability"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-software-architect-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-software-architect-10-1",
+          "title": "Performance profiling and benchmarking Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20and%20benchmarking%20documentation"
+        },
+        {
+          "id": "res-software-architect-10-2",
+          "title": "Load testing and stress testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Load%20testing%20and%20stress%20testing%20tutorial"
+        },
+        {
+          "id": "res-software-architect-10-3",
+          "title": "Practice CDN architecture Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=CDN%20architecture%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Performance profiling and benchmarking, Load testing and stress testing, CDN architecture."
       ],
       "interviewQuestions": [
-        "Explain the Saga pattern and how it manages distributed transactions consistency.",
-        "What are the tradeoffs between Event Sourcing and relational state updates?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Performance profiling and benchmarking and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Load testing and stress testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the performance-engineering milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Performance Engineering Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Performance profiling and benchmarking, Load testing and stress testing, CDN architecture."
       ]
     },
     {
       "id": "roadmap-software-architect-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Microservices Architectural Blueprint or Distributed Ledger Sync system. Set up deployment links and repository READMEs.",
+      "slug": "technical-leadership",
+      "title": "11. Technical Leadership",
+      "description": "Master core capabilities of Technical Leadership: Architecture decision records (ADRs), RFCs (Request for Comments) process, Technical roadmap planning, Legacy system modernization, Build vs buy decisions.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "interview-prep"
+        "performance-engineering"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-software-architect-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-software-architect-11-1",
+          "title": "Architecture decision records (ADRs) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Architecture%20decision%20records%20(ADRs)%20documentation"
+        },
+        {
+          "id": "res-software-architect-11-2",
+          "title": "RFCs (Request for Comments) process Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=RFCs%20(Request%20for%20Comments)%20process%20tutorial"
+        },
+        {
+          "id": "res-software-architect-11-3",
+          "title": "Practice Technical roadmap planning Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Technical%20roadmap%20planning%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
-        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+        "Build a prototype integrating Architecture decision records (ADRs), RFCs (Request for Comments) process, Technical roadmap planning."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Microservices Architectural Blueprint project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Architecture decision records (ADRs) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of RFCs (Request for Comments) process."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the technical-leadership milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Technical Leadership Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Microservices Architectural Blueprint with documentation.",
-        "Build complete deployable version of Distributed Ledger Sync system with documentation."
+        "Build a prototype integrating Architecture decision records (ADRs), RFCs (Request for Comments) process, Technical roadmap planning."
       ]
     },
     {
       "id": "roadmap-software-architect-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "domain-driven-design-ddd",
+      "title": "12. Domain-Driven Design (DDD)",
+      "description": "Master core capabilities of Domain-Driven Design (DDD): Ubiquitous language, Bounded contexts, Domain model, Aggregates, entities, value objects, Domain events.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "16 hours",
       "prerequisites": [
-        "resume-projects"
+        "technical-leadership"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-software-architect-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-software-architect-12-1",
+          "title": "Ubiquitous language Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Ubiquitous%20language%20documentation"
+        },
+        {
+          "id": "res-software-architect-12-2",
+          "title": "Bounded contexts Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Bounded%20contexts%20tutorial"
+        },
+        {
+          "id": "res-software-architect-12-3",
+          "title": "Practice Domain model Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Domain%20model%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ubiquitous language, Bounded contexts, Domain model."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Ubiquitous language and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Bounded contexts."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the domain-driven-design-ddd milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Domain-Driven Design (DDD) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Ubiquitous language, Bounded contexts, Domain model."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "16 hours",
+      "prerequisites": [
+        "domain-driven-design-ddd"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-software-architect-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-software-architect-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-software-architect-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "16 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-software-architect-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-software-architect-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-software-architect-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Microservices Architectural Blueprint"
+      ],
+      "interviewQuestions": [
+        "What are the tradeoffs between Event Sourcing and relational state updates?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Microservices Architectural Blueprint"
+      ]
+    },
+    {
+      "id": "roadmap-software-architect-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "16 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-software-architect-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-software-architect-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-software-architect-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Distributed Ledger Sync system"
+      ],
+      "interviewQuestions": [
+        "Explain the Saga pattern and how it manages distributed transactions consistency.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Distributed Ledger Sync system"
       ]
     }
   ]

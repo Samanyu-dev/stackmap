@@ -2,6 +2,7 @@
   "id": "roadmap-forward-deployed-engineer",
   "title": "Forward Deployed Engineer",
   "slug": "forward-deployed-engineer",
+  "description": "Master Forward Deployed Engineer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "ADVANCED",
   "estimatedTime": "4 Months",
@@ -13,1036 +14,1650 @@
   "nodes": [
     {
       "id": "roadmap-forward-deployed-engineer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "core-engineering-skills",
+      "title": "1. Core Engineering Skills",
+      "description": "Master core capabilities of Core Engineering Skills: Full stack development proficiency, Systems design fundamentals, API design and integration, Database design and querying, Cloud infrastructure basics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-forward-deployed-engineer-1-1",
+          "title": "Full stack development proficiency Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=Full%20stack%20development%20proficiency%20documentation"
         },
         {
-          "id": "res-forward-deployed-engineer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-forward-deployed-engineer-1-2",
+          "title": "Systems design fundamentals Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Systems%20design%20fundamentals%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-1-3",
+          "title": "Practice API design and integration Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=API%20design%20and%20integration%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Full stack development proficiency, Systems design fundamentals, API design and integration."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Full stack development proficiency and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Systems design fundamentals."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the core-engineering-skills milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Core Engineering Skills Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Full stack development proficiency, Systems design fundamentals, API design and integration."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "customer-facing-engineering",
+      "title": "2. Customer-Facing Engineering",
+      "description": "Master core capabilities of Customer-Facing Engineering: What is a Forward Deployed Engineer?, Enterprise software sales cycle, Pre-sales technical support, Proof of concept (PoC) development, Technical discovery sessions.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "core-engineering-skills"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-forward-deployed-engineer-2-1",
+          "title": "What is a Forward Deployed Engineer? Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=What%20is%20a%20Forward%20Deployed%20Engineer%3F%20documentation"
         },
         {
-          "id": "res-forward-deployed-engineer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-forward-deployed-engineer-2-2",
+          "title": "Enterprise software sales cycle Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Enterprise%20software%20sales%20cycle%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-2-3",
+          "title": "Practice Pre-sales technical support Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Pre-sales%20technical%20support%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating What is a Forward Deployed Engineer?, Enterprise software sales cycle, Pre-sales technical support."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is What is a Forward Deployed Engineer? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Enterprise software sales cycle."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the customer-facing-engineering milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Customer-Facing Engineering Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating What is a Forward Deployed Engineer?, Enterprise software sales cycle, Pre-sales technical support."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Docker & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Docker, Git & GitHub, Jira, Postman, Kibana.",
+      "slug": "solutions-architecture",
+      "title": "3. Solutions Architecture",
+      "description": "Master core capabilities of Solutions Architecture: Solution design for customer needs, Architecture diagrams (draw.io, Lucidchart), Technical proposal writing, Integration architecture, Data flow diagrams.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "customer-facing-engineering"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-forward-deployed-engineer-3-1",
+          "title": "Solution design for customer needs Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Solution%20design%20for%20customer%20needs%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-3-2",
+          "title": "Architecture diagrams (draw.io, Lucidchart) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Architecture%20diagrams%20(draw.io%2C%20Lucidchart)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-3-3",
+          "title": "Practice Technical proposal writing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Technical%20proposal%20writing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solution design for customer needs, Architecture diagrams (draw.io, Lucidchart), Technical proposal writing."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Solution design for customer needs and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Architecture diagrams (draw.io, Lucidchart)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the solutions-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Docker & More Core Theories",
+        "3. Solutions Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solution design for customer needs, Architecture diagrams (draw.io, Lucidchart), Technical proposal writing."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Python / SQL / JavaScript/TypeScript / Bash",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, SQL, JavaScript/TypeScript, Bash.",
+      "slug": "enterprise-integrations",
+      "title": "4. Enterprise Integrations",
+      "description": "Master core capabilities of Enterprise Integrations: REST and SOAP API integrations, SSO and identity federation (SAML, OIDC), Data migration strategies, ETL pipelines, Webhook implementations.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "solutions-architecture"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-lang-1",
-          "title": "Python Official Guides",
+          "id": "res-forward-deployed-engineer-4-1",
+          "title": "REST and SOAP API integrations Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=REST%20and%20SOAP%20API%20integrations%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-4-2",
+          "title": "SSO and identity federation (SAML, OIDC) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=SSO%20and%20identity%20federation%20(SAML%2C%20OIDC)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-4-3",
+          "title": "Practice Data migration strategies Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Data%20migration%20strategies%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype integrating REST and SOAP API integrations, SSO and identity federation (SAML, OIDC), Data migration strategies."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Python?",
-        "How does asynchronous logic work in Python?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is REST and SOAP API integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of SSO and identity federation (SAML, OIDC)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the enterprise-integrations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Python / SQL / JavaScript/TypeScript / Bash Core Theories",
+        "4. Enterprise Integrations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype integrating REST and SOAP API integrations, SSO and identity federation (SAML, OIDC), Data migration strategies."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: React.js & FastAPI & Pandas",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using React.js, FastAPI, Pandas.",
+      "slug": "rapid-prototyping",
+      "title": "5. Rapid Prototyping",
+      "description": "Master core capabilities of Rapid Prototyping: Rapid application development, Low-code/no-code tools (Retool, Bubble, Glide), Prototype vs production considerations, Demo environments setup, Sandbox environment management.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "enterprise-integrations"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-fw-1",
-          "title": "React.js Reference Docs",
+          "id": "res-forward-deployed-engineer-5-1",
+          "title": "Rapid application development Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=Rapid%20application%20development%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-5-2",
+          "title": "Low-code/no-code tools (Retool, Bubble, Glide) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Low-code%2Fno-code%20tools%20(Retool%2C%20Bubble%2C%20Glide)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-5-3",
+          "title": "Practice Prototype vs production considerations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Prototype%20vs%20production%20considerations%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating Rapid application development, Low-code/no-code tools (Retool, Bubble, Glide), Prototype vs production considerations."
       ],
       "interviewQuestions": [
-        "When does a React.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in React.js."
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Rapid application development and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Low-code/no-code tools (Retool, Bubble, Glide)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the rapid-prototyping milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: React.js & FastAPI & Pandas Core Theories",
+        "5. Rapid Prototyping Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating Rapid application development, Low-code/no-code tools (Retool, Bubble, Glide), Prototype vs production considerations."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL / Elasticsearch / Oracle DB",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL, Elasticsearch, Oracle DB.",
+      "slug": "technical-communication",
+      "title": "6. Technical Communication",
+      "description": "Master core capabilities of Technical Communication: Executive presentations, Technical documentation for customers, Status reports and project updates, Incident communication, Whiteboarding sessions.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "rapid-prototyping"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-forward-deployed-engineer-6-1",
+          "title": "Executive presentations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Executive%20presentations%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-6-2",
+          "title": "Technical documentation for customers Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Technical%20documentation%20for%20customers%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-6-3",
+          "title": "Practice Status reports and project updates Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Status%20reports%20and%20project%20updates%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL."
+        "Build a prototype integrating Executive presentations, Technical documentation for customers, Status reports and project updates."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Executive presentations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Technical documentation for customers."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the technical-communication milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL / Elasticsearch / Oracle DB Core Theories",
+        "6. Technical Communication Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL."
+        "Build a prototype integrating Executive presentations, Technical documentation for customers, Status reports and project updates."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Integration checks / User Acceptance Testing (UAT)",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Integration checks, User Acceptance Testing (UAT).",
+      "slug": "project-delivery",
+      "title": "7. Project Delivery",
+      "description": "Master core capabilities of Project Delivery: Project scoping and estimation, Agile for customer projects, Milestone tracking, Risk identification and mitigation, Escalation management.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "technical-communication"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-forward-deployed-engineer-7-1",
+          "title": "Project scoping and estimation Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Project%20scoping%20and%20estimation%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-7-2",
+          "title": "Agile for customer projects Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Agile%20for%20customer%20projects%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-7-3",
+          "title": "Practice Milestone tracking Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Milestone%20tracking%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Project scoping and estimation, Agile for customer projects, Milestone tracking."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Project scoping and estimation and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Agile for customer projects."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the project-delivery milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Integration checks / User Acceptance Testing (UAT) Core Theories",
+        "7. Project Delivery Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Project scoping and estimation, Agile for customer projects, Milestone tracking."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: On-Premise deployments / AWS VPCs / Kubernetes",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on On-Premise deployments, AWS VPCs, Kubernetes.",
+      "slug": "on-site-field-work",
+      "title": "8. On-site & Field Work",
+      "description": "Master core capabilities of On-site & Field Work: Travel logistics for field deployment, On-site setup and configuration, Network environment assessment, Air-gapped environment considerations, Hardware setup (servers, workstations).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "databases"
+        "project-delivery"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-forward-deployed-engineer-8-1",
+          "title": "Travel logistics for field deployment Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Travel%20logistics%20for%20field%20deployment%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-8-2",
+          "title": "On-site setup and configuration Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=On-site%20setup%20and%20configuration%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-8-3",
+          "title": "Practice Network environment assessment Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Network%20environment%20assessment%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Travel logistics for field deployment, On-site setup and configuration, Network environment assessment."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Travel logistics for field deployment and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of On-site setup and configuration."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the on-site-field-work milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: On-Premise deployments / AWS VPCs / Kubernetes Core Theories",
+        "8. On-site & Field Work Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Travel logistics for field deployment, On-site setup and configuration, Network environment assessment."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Data Integration pipelines, Client customization hooks, Legacy database migrations, SOC2 security checks.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "data-engineering-for-clients",
+      "title": "9. Data Engineering for Clients",
+      "description": "Master core capabilities of Data Engineering for Clients: Data pipeline design, ETL/ELT tools (Airbyte, Fivetran), Data transformation (dbt), Data visualization basics, SQL for client data analysis.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "deployment"
+        "on-site-field-work"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-forward-deployed-engineer-9-1",
+          "title": "Data pipeline design Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Data%20pipeline%20design%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-9-2",
+          "title": "ETL/ELT tools (Airbyte, Fivetran) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=ETL%2FELT%20tools%20(Airbyte%2C%20Fivetran)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-9-3",
+          "title": "Practice Data transformation (dbt) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Data%20transformation%20(dbt)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Data pipeline design, ETL/ELT tools (Airbyte, Fivetran), Data transformation (dbt)."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Data Integration pipelines to solve scalability bottlenecks.",
-        "What security vulnerabilities does SOC2 security checks protect against?"
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Data pipeline design and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of ETL/ELT tools (Airbyte, Fivetran)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the data-engineering-for-clients milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Data Engineering for Clients Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Data pipeline design, ETL/ELT tools (Airbyte, Fivetran), Data transformation (dbt)."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "security-compliance",
+      "title": "10. Security & Compliance",
+      "description": "Master core capabilities of Security & Compliance: Enterprise security requirements, GDPR compliance considerations, HIPAA basics, SOC 2 awareness, Data privacy engineering.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "data-engineering-for-clients"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-forward-deployed-engineer-10-1",
+          "title": "Enterprise security requirements Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Enterprise%20security%20requirements%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-10-2",
+          "title": "GDPR compliance considerations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GDPR%20compliance%20considerations%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-10-3",
+          "title": "Practice HIPAA basics Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=HIPAA%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Enterprise security requirements, GDPR compliance considerations, HIPAA basics."
       ],
       "interviewQuestions": [
-        "How do you balance writing custom code for a high-value client versus building scalable product features?",
-        "Describe how you debugged a system failure inside a client's secure, isolated VPC network."
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Enterprise security requirements and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GDPR compliance considerations."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the security-compliance milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Security & Compliance Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Enterprise security requirements, GDPR compliance considerations, HIPAA basics."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Heterogeneous Data Integration pipeline or On-Premises deployment suite. Set up deployment links and repository READMEs.",
+      "slug": "cloud-deployment-for-clients",
+      "title": "11. Cloud Deployment for Clients",
+      "description": "Master core capabilities of Cloud Deployment for Clients: Single-tenant vs multi-tenant deployments, VPC and network isolation, Private cloud deployments, Kubernetes for enterprise, Helm charts.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "interview-prep"
+        "security-compliance"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-forward-deployed-engineer-11-1",
+          "title": "Single-tenant vs multi-tenant deployments Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Single-tenant%20vs%20multi-tenant%20deployments%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-11-2",
+          "title": "VPC and network isolation Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=VPC%20and%20network%20isolation%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-11-3",
+          "title": "Practice Private cloud deployments Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Private%20cloud%20deployments%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Heterogeneous Data Integration pipeline with documentation.",
-        "Build complete deployable version of On-Premises deployment suite with documentation."
+        "Build a prototype integrating Single-tenant vs multi-tenant deployments, VPC and network isolation, Private cloud deployments."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Heterogeneous Data Integration pipeline project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Single-tenant vs multi-tenant deployments and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of VPC and network isolation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the cloud-deployment-for-clients milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Cloud Deployment for Clients Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Heterogeneous Data Integration pipeline with documentation.",
-        "Build complete deployable version of On-Premises deployment suite with documentation."
+        "Build a prototype integrating Single-tenant vs multi-tenant deployments, VPC and network isolation, Private cloud deployments."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "soft-skills-business-acumen",
+      "title": "12. Soft Skills & Business Acumen",
+      "description": "Master core capabilities of Soft Skills & Business Acumen: Negotiation basics, Managing customer expectations, Cross-functional collaboration, Building customer relationships, Upselling and expansion awareness.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "cloud-deployment-for-clients"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-forward-deployed-engineer-12-1",
+          "title": "Negotiation basics Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Negotiation%20basics%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-12-2",
+          "title": "Managing customer expectations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Managing%20customer%20expectations%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-12-3",
+          "title": "Practice Cross-functional collaboration Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Cross-functional%20collaboration%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Negotiation basics, Managing customer expectations, Cross-functional collaboration."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Negotiation basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Managing customer expectations."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the soft-skills-business-acumen milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Soft Skills & Business Acumen Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Negotiation basics, Managing customer expectations, Cross-functional collaboration."
+      ]
+    },
+    {
+      "id": "roadmap-forward-deployed-engineer-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "soft-skills-business-acumen"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-forward-deployed-engineer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-forward-deployed-engineer-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-forward-deployed-engineer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Heterogeneous Data Integration pipeline"
+      ],
+      "interviewQuestions": [
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Heterogeneous Data Integration pipeline"
+      ]
+    },
+    {
+      "id": "roadmap-forward-deployed-engineer-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-forward-deployed-engineer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: On-Premises deployment suite"
+      ],
+      "interviewQuestions": [
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: On-Premises deployment suite"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-forward-deployed-engineer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "core-engineering-skills",
+      "title": "1. Core Engineering Skills",
+      "description": "Master core capabilities of Core Engineering Skills: Full stack development proficiency, Systems design fundamentals, API design and integration, Database design and querying, Cloud infrastructure basics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-forward-deployed-engineer-1-1",
+          "title": "Full stack development proficiency Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=Full%20stack%20development%20proficiency%20documentation"
         },
         {
-          "id": "res-forward-deployed-engineer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-forward-deployed-engineer-1-2",
+          "title": "Systems design fundamentals Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Systems%20design%20fundamentals%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-1-3",
+          "title": "Practice API design and integration Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=API%20design%20and%20integration%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Full stack development proficiency, Systems design fundamentals, API design and integration."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Full stack development proficiency and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Systems design fundamentals."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the core-engineering-skills milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Core Engineering Skills Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating Full stack development proficiency, Systems design fundamentals, API design and integration."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "customer-facing-engineering",
+      "title": "2. Customer-Facing Engineering",
+      "description": "Master core capabilities of Customer-Facing Engineering: What is a Forward Deployed Engineer?, Enterprise software sales cycle, Pre-sales technical support, Proof of concept (PoC) development, Technical discovery sessions.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "core-engineering-skills"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-forward-deployed-engineer-2-1",
+          "title": "What is a Forward Deployed Engineer? Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=What%20is%20a%20Forward%20Deployed%20Engineer%3F%20documentation"
         },
         {
-          "id": "res-forward-deployed-engineer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-forward-deployed-engineer-2-2",
+          "title": "Enterprise software sales cycle Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Enterprise%20software%20sales%20cycle%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-2-3",
+          "title": "Practice Pre-sales technical support Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Pre-sales%20technical%20support%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating What is a Forward Deployed Engineer?, Enterprise software sales cycle, Pre-sales technical support."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is What is a Forward Deployed Engineer? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Enterprise software sales cycle."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the customer-facing-engineering milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Customer-Facing Engineering Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating What is a Forward Deployed Engineer?, Enterprise software sales cycle, Pre-sales technical support."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Docker & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Docker, Git & GitHub, Jira, Postman, Kibana.",
+      "slug": "solutions-architecture",
+      "title": "3. Solutions Architecture",
+      "description": "Master core capabilities of Solutions Architecture: Solution design for customer needs, Architecture diagrams (draw.io, Lucidchart), Technical proposal writing, Integration architecture, Data flow diagrams.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "customer-facing-engineering"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-forward-deployed-engineer-3-1",
+          "title": "Solution design for customer needs Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Solution%20design%20for%20customer%20needs%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-3-2",
+          "title": "Architecture diagrams (draw.io, Lucidchart) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Architecture%20diagrams%20(draw.io%2C%20Lucidchart)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-3-3",
+          "title": "Practice Technical proposal writing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Technical%20proposal%20writing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solution design for customer needs, Architecture diagrams (draw.io, Lucidchart), Technical proposal writing."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Solution design for customer needs and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Architecture diagrams (draw.io, Lucidchart)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the solutions-architecture milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Docker & More Core Theories",
+        "3. Solutions Architecture Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Solution design for customer needs, Architecture diagrams (draw.io, Lucidchart), Technical proposal writing."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Python / SQL / JavaScript/TypeScript / Bash",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, SQL, JavaScript/TypeScript, Bash.",
+      "slug": "enterprise-integrations",
+      "title": "4. Enterprise Integrations",
+      "description": "Master core capabilities of Enterprise Integrations: REST and SOAP API integrations, SSO and identity federation (SAML, OIDC), Data migration strategies, ETL pipelines, Webhook implementations.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "solutions-architecture"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-lang-1",
-          "title": "Python Official Guides",
+          "id": "res-forward-deployed-engineer-4-1",
+          "title": "REST and SOAP API integrations Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=REST%20and%20SOAP%20API%20integrations%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-4-2",
+          "title": "SSO and identity federation (SAML, OIDC) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=SSO%20and%20identity%20federation%20(SAML%2C%20OIDC)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-4-3",
+          "title": "Practice Data migration strategies Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Data%20migration%20strategies%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype integrating REST and SOAP API integrations, SSO and identity federation (SAML, OIDC), Data migration strategies."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Python?",
-        "How does asynchronous logic work in Python?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is REST and SOAP API integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of SSO and identity federation (SAML, OIDC)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the enterprise-integrations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Python / SQL / JavaScript/TypeScript / Bash Core Theories",
+        "4. Enterprise Integrations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype integrating REST and SOAP API integrations, SSO and identity federation (SAML, OIDC), Data migration strategies."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: React.js & FastAPI & Pandas",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using React.js, FastAPI, Pandas.",
+      "slug": "rapid-prototyping",
+      "title": "5. Rapid Prototyping",
+      "description": "Master core capabilities of Rapid Prototyping: Rapid application development, Low-code/no-code tools (Retool, Bubble, Glide), Prototype vs production considerations, Demo environments setup, Sandbox environment management.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "enterprise-integrations"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-fw-1",
-          "title": "React.js Reference Docs",
+          "id": "res-forward-deployed-engineer-5-1",
+          "title": "Rapid application development Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=Rapid%20application%20development%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-5-2",
+          "title": "Low-code/no-code tools (Retool, Bubble, Glide) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Low-code%2Fno-code%20tools%20(Retool%2C%20Bubble%2C%20Glide)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-5-3",
+          "title": "Practice Prototype vs production considerations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Prototype%20vs%20production%20considerations%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating Rapid application development, Low-code/no-code tools (Retool, Bubble, Glide), Prototype vs production considerations."
       ],
       "interviewQuestions": [
-        "When does a React.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in React.js."
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Rapid application development and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Low-code/no-code tools (Retool, Bubble, Glide)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the rapid-prototyping milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: React.js & FastAPI & Pandas Core Theories",
+        "5. Rapid Prototyping Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating Rapid application development, Low-code/no-code tools (Retool, Bubble, Glide), Prototype vs production considerations."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL / Elasticsearch / Oracle DB",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL, Elasticsearch, Oracle DB.",
+      "slug": "technical-communication",
+      "title": "6. Technical Communication",
+      "description": "Master core capabilities of Technical Communication: Executive presentations, Technical documentation for customers, Status reports and project updates, Incident communication, Whiteboarding sessions.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "rapid-prototyping"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-forward-deployed-engineer-6-1",
+          "title": "Executive presentations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Executive%20presentations%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-6-2",
+          "title": "Technical documentation for customers Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Technical%20documentation%20for%20customers%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-6-3",
+          "title": "Practice Status reports and project updates Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Status%20reports%20and%20project%20updates%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL."
+        "Build a prototype integrating Executive presentations, Technical documentation for customers, Status reports and project updates."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Executive presentations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Technical documentation for customers."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the technical-communication milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL / Elasticsearch / Oracle DB Core Theories",
+        "6. Technical Communication Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL."
+        "Build a prototype integrating Executive presentations, Technical documentation for customers, Status reports and project updates."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Integration checks / User Acceptance Testing (UAT)",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Integration checks, User Acceptance Testing (UAT).",
+      "slug": "project-delivery",
+      "title": "7. Project Delivery",
+      "description": "Master core capabilities of Project Delivery: Project scoping and estimation, Agile for customer projects, Milestone tracking, Risk identification and mitigation, Escalation management.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "technical-communication"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-forward-deployed-engineer-7-1",
+          "title": "Project scoping and estimation Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Project%20scoping%20and%20estimation%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-7-2",
+          "title": "Agile for customer projects Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Agile%20for%20customer%20projects%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-7-3",
+          "title": "Practice Milestone tracking Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Milestone%20tracking%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Project scoping and estimation, Agile for customer projects, Milestone tracking."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Project scoping and estimation and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Agile for customer projects."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the project-delivery milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Integration checks / User Acceptance Testing (UAT) Core Theories",
+        "7. Project Delivery Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Project scoping and estimation, Agile for customer projects, Milestone tracking."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: On-Premise deployments / AWS VPCs / Kubernetes",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on On-Premise deployments, AWS VPCs, Kubernetes.",
+      "slug": "on-site-field-work",
+      "title": "8. On-site & Field Work",
+      "description": "Master core capabilities of On-site & Field Work: Travel logistics for field deployment, On-site setup and configuration, Network environment assessment, Air-gapped environment considerations, Hardware setup (servers, workstations).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "databases"
+        "project-delivery"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-forward-deployed-engineer-8-1",
+          "title": "Travel logistics for field deployment Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Travel%20logistics%20for%20field%20deployment%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-8-2",
+          "title": "On-site setup and configuration Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=On-site%20setup%20and%20configuration%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-8-3",
+          "title": "Practice Network environment assessment Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Network%20environment%20assessment%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Travel logistics for field deployment, On-site setup and configuration, Network environment assessment."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Travel logistics for field deployment and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of On-site setup and configuration."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the on-site-field-work milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: On-Premise deployments / AWS VPCs / Kubernetes Core Theories",
+        "8. On-site & Field Work Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Travel logistics for field deployment, On-site setup and configuration, Network environment assessment."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Data Integration pipelines, Client customization hooks, Legacy database migrations, SOC2 security checks.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "data-engineering-for-clients",
+      "title": "9. Data Engineering for Clients",
+      "description": "Master core capabilities of Data Engineering for Clients: Data pipeline design, ETL/ELT tools (Airbyte, Fivetran), Data transformation (dbt), Data visualization basics, SQL for client data analysis.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "deployment"
+        "on-site-field-work"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-forward-deployed-engineer-9-1",
+          "title": "Data pipeline design Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Data%20pipeline%20design%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-9-2",
+          "title": "ETL/ELT tools (Airbyte, Fivetran) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=ETL%2FELT%20tools%20(Airbyte%2C%20Fivetran)%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-9-3",
+          "title": "Practice Data transformation (dbt) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Data%20transformation%20(dbt)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Data pipeline design, ETL/ELT tools (Airbyte, Fivetran), Data transformation (dbt)."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Data Integration pipelines to solve scalability bottlenecks.",
-        "What security vulnerabilities does SOC2 security checks protect against?"
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Data pipeline design and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of ETL/ELT tools (Airbyte, Fivetran)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the data-engineering-for-clients milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Data Engineering for Clients Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Data pipeline design, ETL/ELT tools (Airbyte, Fivetran), Data transformation (dbt)."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "security-compliance",
+      "title": "10. Security & Compliance",
+      "description": "Master core capabilities of Security & Compliance: Enterprise security requirements, GDPR compliance considerations, HIPAA basics, SOC 2 awareness, Data privacy engineering.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "data-engineering-for-clients"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-forward-deployed-engineer-10-1",
+          "title": "Enterprise security requirements Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Enterprise%20security%20requirements%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-10-2",
+          "title": "GDPR compliance considerations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GDPR%20compliance%20considerations%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-10-3",
+          "title": "Practice HIPAA basics Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=HIPAA%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Enterprise security requirements, GDPR compliance considerations, HIPAA basics."
       ],
       "interviewQuestions": [
-        "How do you balance writing custom code for a high-value client versus building scalable product features?",
-        "Describe how you debugged a system failure inside a client's secure, isolated VPC network."
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Enterprise security requirements and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GDPR compliance considerations."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the security-compliance milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Security & Compliance Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Enterprise security requirements, GDPR compliance considerations, HIPAA basics."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Heterogeneous Data Integration pipeline or On-Premises deployment suite. Set up deployment links and repository READMEs.",
+      "slug": "cloud-deployment-for-clients",
+      "title": "11. Cloud Deployment for Clients",
+      "description": "Master core capabilities of Cloud Deployment for Clients: Single-tenant vs multi-tenant deployments, VPC and network isolation, Private cloud deployments, Kubernetes for enterprise, Helm charts.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "interview-prep"
+        "security-compliance"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-forward-deployed-engineer-11-1",
+          "title": "Single-tenant vs multi-tenant deployments Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Single-tenant%20vs%20multi-tenant%20deployments%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-11-2",
+          "title": "VPC and network isolation Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=VPC%20and%20network%20isolation%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-11-3",
+          "title": "Practice Private cloud deployments Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Private%20cloud%20deployments%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Heterogeneous Data Integration pipeline with documentation.",
-        "Build complete deployable version of On-Premises deployment suite with documentation."
+        "Build a prototype integrating Single-tenant vs multi-tenant deployments, VPC and network isolation, Private cloud deployments."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Heterogeneous Data Integration pipeline project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Single-tenant vs multi-tenant deployments and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of VPC and network isolation."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the cloud-deployment-for-clients milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Cloud Deployment for Clients Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Heterogeneous Data Integration pipeline with documentation.",
-        "Build complete deployable version of On-Premises deployment suite with documentation."
+        "Build a prototype integrating Single-tenant vs multi-tenant deployments, VPC and network isolation, Private cloud deployments."
       ]
     },
     {
       "id": "roadmap-forward-deployed-engineer-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "soft-skills-business-acumen",
+      "title": "12. Soft Skills & Business Acumen",
+      "description": "Master core capabilities of Soft Skills & Business Acumen: Negotiation basics, Managing customer expectations, Cross-functional collaboration, Building customer relationships, Upselling and expansion awareness.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "cloud-deployment-for-clients"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-forward-deployed-engineer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-forward-deployed-engineer-12-1",
+          "title": "Negotiation basics Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Negotiation%20basics%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-12-2",
+          "title": "Managing customer expectations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Managing%20customer%20expectations%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-12-3",
+          "title": "Practice Cross-functional collaboration Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Cross-functional%20collaboration%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Negotiation basics, Managing customer expectations, Cross-functional collaboration."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Negotiation basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Managing customer expectations."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the soft-skills-business-acumen milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Soft Skills & Business Acumen Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Negotiation basics, Managing customer expectations, Cross-functional collaboration."
+      ]
+    },
+    {
+      "id": "roadmap-forward-deployed-engineer-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "soft-skills-business-acumen"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-forward-deployed-engineer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-forward-deployed-engineer-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-forward-deployed-engineer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Heterogeneous Data Integration pipeline"
+      ],
+      "interviewQuestions": [
+        "Describe how you debugged a system failure inside a client's secure, isolated VPC network.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Heterogeneous Data Integration pipeline"
+      ]
+    },
+    {
+      "id": "roadmap-forward-deployed-engineer-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-forward-deployed-engineer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-forward-deployed-engineer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-forward-deployed-engineer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: On-Premises deployment suite"
+      ],
+      "interviewQuestions": [
+        "How do you balance writing custom code for a high-value client versus building scalable product features?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: On-Premises deployment suite"
       ]
     }
   ]

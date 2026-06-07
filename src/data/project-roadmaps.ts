@@ -80,658 +80,378 @@ export const projectRoadmaps: Record<string, ProjectRoadmapData> = {
       "How to avoid animation lag by offloading styles processing to the GPU using transform properties."
     ]
   },
-  "weather-app": {
-    slug: "weather-app",
-    title: "Weather Dashboard",
-    description: "Build a weather search application showing conditions and forecasting curves for target cities.",
-    difficulty: "BEGINNER",
-    duration: "1 Week",
-    techStack: ["React", "CSS Grid", "OpenWeather API", "Chart.js"],
-    prerequisites: ["React Basics", "Fetch Web API"],
-    steps: [
-      {
-        task: "Connect OpenWeather API",
-        resources: [{ name: "OpenWeather Docs", url: "https://openweathermap.org/api" }],
-        expectedOutput: "Console log showing temperature and humidity conditions for searched terms.",
-        debuggingTips: "Add try-catch blocks. Map error states (like 404 - City Not Found) to custom user warnings."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Connect OpenWeather API",
-        resources: [{ name: "OpenWeather Docs", url: "https://openweathermap.org/api" }],
-        expectedOutput: "Console log showing temperature and humidity conditions for searched terms.",
-        debuggingTips: "Add try-catch blocks. Map error states (like 404 - City Not Found) to custom user warnings."
-      }
-    ],
-    outcomes: ["Third-party API processing", "React state handlers", "Interactive chart mapping"],
-    readmeChecklist: ["Add API key configuration template", "Add visual screenshot of the forecasting chart"],
-    deploymentGuide: ["Deploy static build folders to Vercel or Netlify, specifying production env API keys."],
-    resumeBullets: [
-      "Built a weather metrics portal querying OpenWeather endpoints, processing responses dynamically in custom charts.",
-      "Implemented localStorage search caching, avoiding redundant network payloads by 20%."
-    ],
-    interviewPoints: ["How to manage API keys securely in clientside applications.", "How to throttle search query triggers using debouncers."],
-    interviewTalkingPoints: ["How to manage API keys securely in clientside applications.", "How to throttle search query triggers using debouncers."]
-  },
-  "todo-app": {
-    slug: "todo-app",
-    title: "Task Kanban Board",
-    description: "Create a checklist workflow featuring status drag-and-drop columns and local state persistence.",
-    difficulty: "BEGINNER",
-    duration: "3-5 Days",
-    techStack: ["HTML5", "CSS Grid", "JavaScript (ES6)", "Drag and Drop API"],
-    prerequisites: ["DOM manipulations", "Event delegation"],
-    steps: [
-      {
-        task: "Drag & Drop Event Triggers",
-        resources: [{ name: "HTML5 Drag and Drop API Guide", url: "https://developer.mozilla.org" }],
-        expectedOutput: "Cards draggable across Todo, In-Progress, and Completed visual columns.",
-        debuggingTips: "Add event.preventDefault() to the dragOver listener to allow dropped states."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Drag & Drop Event Triggers",
-        resources: [{ name: "HTML5 Drag and Drop API Guide", url: "https://developer.mozilla.org" }],
-        expectedOutput: "Cards draggable across Todo, In-Progress, and Completed visual columns.",
-        debuggingTips: "Add event.preventDefault() to the dragOver listener to allow dropped states."
-      }
-    ],
-    outcomes: ["Browser drag event maps", "Status lists filtering", "Local storage state saves"],
-    readmeChecklist: ["Explain structural layout", "Document browser API support limits"],
-    deploymentGuide: ["Host statically on GitHub Pages or Vercel."],
-    resumeBullets: [
-      "Engineered an interactive Task Board application leveraging native HTML5 Drag & Drop APIs for smooth task cards tracking.",
-      "Implemented local storage state saves, maintaining user checklists logs with zero server latency."
-    ],
-    interviewPoints: ["Explain event delegation patterns in listing layouts.", "What is the difference between dragEnter and dragOver events?"],
-    interviewTalkingPoints: ["Explain event delegation patterns in listing layouts.", "What is the difference between dragEnter and dragOver events?"]
-  },
-  "expense-tracker": {
-    slug: "expense-tracker",
-    title: "Expense Tracker",
-    description: "Design an interactive personal finance manager showing category breakdown charts.",
-    difficulty: "BEGINNER",
-    duration: "1 Week",
-    techStack: ["React", "Tailwind CSS", "Recharts", "LocalStorage"],
-    prerequisites: ["Zustand State", "Recharts Components"],
-    steps: [
-      {
-        task: "Interactive Category Breakdown Chart",
-        resources: [{ name: "Recharts Pie Chart Guide", url: "https://recharts.org" }],
-        expectedOutput: "Color-coded Pie Chart mapping category distributions (e.g. food, rent, books) dynamically.",
-        debuggingTips: "Convert pricing inputs from strings to numerical types before parsing calculation datasets."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Interactive Category Breakdown Chart",
-        resources: [{ name: "Recharts Pie Chart Guide", url: "https://recharts.org" }],
-        expectedOutput: "Color-coded Pie Chart mapping category distributions (e.g. food, rent, books) dynamically.",
-        debuggingTips: "Convert pricing inputs from strings to numerical types before parsing calculation datasets."
-      }
-    ],
-    outcomes: ["Data visualization structures", "Inputs parsing validations", "Filter criteria schedules"],
-    readmeChecklist: ["Provide screenshots of charts dashboard", "Detail local storage persistence schemas"],
-    deploymentGuide: ["Deploy React project via Vercel."],
-    resumeBullets: [
-      "Built a personal finance manager tracking monthly expenditures, generating category metrics dashboards via Recharts.",
-      "Designed Zod validators for financial fields inputs, reducing input error entries by 35%."
-    ],
-    interviewPoints: ["How to manage floating-point pricing arithmetic in JavaScript without rounding errors.", "Explain responsive containers behavior in Recharts."],
-    interviewTalkingPoints: ["How to manage floating-point pricing arithmetic in JavaScript without rounding errors.", "Explain responsive containers behavior in Recharts."]
-  },
-  "blog-cms": {
-    slug: "blog-cms",
-    title: "Static Blog CMS",
-    description: "Build a static site generator blog that compiles Markdown files into web articles.",
-    difficulty: "BEGINNER",
-    duration: "1 Week",
-    techStack: ["Next.js", "TypeScript", "Gray-Matter (Markdown parser)", "Tailwind Typography"],
-    prerequisites: ["NextJS static parameters generation", "Markdown structure"],
-    steps: [
-      {
-        task: "Parse Frontmatter and Body",
-        resources: [{ name: "Gray-Matter Parsing Guide", url: "https://github.com/jonschlinkert/gray-matter" }],
-        expectedOutput: "Dynamic articles rendering headings, title metadata, and publish dates from Markdown fields.",
-        debuggingTips: "Ensure date variables parse correctly inside serialize functions."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Parse Frontmatter and Body",
-        resources: [{ name: "Gray-Matter Parsing Guide", url: "https://github.com/jonschlinkert/gray-matter" }],
-        expectedOutput: "Dynamic articles rendering headings, title metadata, and publish dates from Markdown fields.",
-        debuggingTips: "Ensure date variables parse correctly inside serialize functions."
-      }
-    ],
-    outcomes: ["Static Site Generation (SSG)", "Markdown parsing engines", "CSS prose styling (Tailwind Typography)"],
-    readmeChecklist: ["Provide a sample markdown template", "Explain build parameters"],
-    deploymentGuide: ["Host on Vercel with automatic hooks recompiling files upon GitHub pushes."],
-    resumeBullets: [
-      "Engineered an SSG developer blog that parses Markdown directories, generating SEO-optimized static articles.",
-      "Leveraged Next.js generateStaticParams to prerender markdown articles, achieving sub-100ms loading speeds."
-    ],
-    interviewPoints: ["Explain the difference between static site generation (SSG) and server-side rendering (SSR).", "Why is markdown preferred for headless content management?"],
-    interviewTalkingPoints: ["Explain the difference between static site generation (SSG) and server-side rendering (SSR).", "Why is markdown preferred for headless content management?"]
-  },
-
-  // === INTERMEDIATE PROJECTS ===
-  "netflix-clone": {
-    slug: "netflix-clone",
-    title: "Netflix Clone",
-    description: "Build a responsive video streaming mock database featuring list sliders, trailer player models, TMDB API feeds, and auth contexts.",
+  
+  // === SYSTEMS & SYSTEMS CLIENTS (NON-WEB INTERMEDIATE / ADVANCED) ===
+  "shell-cli": {
+    slug: "shell-cli",
+    title: "Custom Linux Shell CLI",
+    description: "Write your own functional POSIX shell CLI tool (like bash or zsh) that executes terminal commands, supports pipes, redirect streams, and maintains command histories.",
     difficulty: "INTERMEDIATE",
     duration: "1-2 Weeks",
-    techStack: ["React", "Tailwind CSS", "Firebase Auth", "TMDB API", "Framer Motion"],
-    prerequisites: ["HTML & CSS Basics", "JavaScript ES6 Async"],
+    techStack: ["C / C++", "POSIX API", "Make / CMake", "Linux System Calls"],
+    prerequisites: ["Pointers & Process Memory", "Linux OS Process Spawning (fork, exec)"],
     steps: [
       {
-        task: "Syllabus Layout Grid Setup",
-        resources: [
-          { name: "Flexbox & Grid layouts (MDN)", url: "https://developer.mozilla.org" },
-          { name: "Netflix Design Inspiration", url: "https://dribbble.com" }
-        ],
-        expectedOutput: "A responsive blank page featuring a black background and navigation layouts.",
-        debuggingTips: "Verify CSS resets are present. Set overflow-x-hidden on layout wrappers to prevent scrollbars."
+        task: "REPL Loop & Command Parser",
+        resources: [{ name: "Writing a simple shell", url: "https://brennan.io/write-shell-c/" }],
+        expectedOutput: "A console prompt that reads input strings, splits arguments by whitespaces, and exits on 'exit'.",
+        debuggingTips: "Beware of buffer overflows. Strip trailing line endings ('\\n') from input read streams."
       },
       {
-        task: "TMDB API Integration",
-        resources: [
-          { name: "TMDB API documentation", url: "https://developer.themoviedb.org" }
-        ],
-        expectedOutput: "Horizontal movie sliders fetching banners and genres dynamically.",
-        debuggingTips: "Ensure API keys are fetched from .env files. Test response limits under browser consoles."
+        task: "Process Spawning & Execution",
+        resources: [{ name: "fork() and execvp() man pages", url: "https://man7.org/linux/man-pages/man2/fork.2.html" }],
+        expectedOutput: "Spawns child processes executing core binaries (like ls, pwd, cat) returning focus back to shell loop.",
+        debuggingTips: "Remember to wait() on child processes so you do not create orphaned or zombie processes."
+      },
+      {
+        task: "Pipes and Stream Redirection",
+        resources: [{ name: "dup2() and pipe() man pages", url: "https://man7.org/linux/man-pages/man2/pipe.2.html" }],
+        expectedOutput: "Connects stdout of one process to stdin of another (e.g. cat file.txt | grep text), or redirects to files (ls > out.txt).",
+        debuggingTips: "Close unused read/write ends of pipes in parent and child processes to avoid hanging stdin descriptors."
       }
     ],
     roadmapSteps: [
       {
-        task: "Syllabus Layout Grid Setup",
-        resources: [
-          { name: "Flexbox & Grid layouts (MDN)", url: "https://developer.mozilla.org" },
-          { name: "Netflix Design Inspiration", url: "https://dribbble.com" }
-        ],
-        expectedOutput: "A responsive blank page featuring a black background and navigation layouts.",
-        debuggingTips: "Verify CSS resets are present. Set overflow-x-hidden on layout wrappers to prevent scrollbars."
+        task: "REPL Loop & Command Parser",
+        resources: [{ name: "Writing a simple shell", url: "https://brennan.io/write-shell-c/" }],
+        expectedOutput: "A console prompt that reads input strings, splits arguments by whitespaces, and exits on 'exit'.",
+        debuggingTips: "Beware of buffer overflows. Strip trailing line endings ('\\n') from input read streams."
       },
       {
-        task: "TMDB API Integration",
-        resources: [
-          { name: "TMDB API documentation", url: "https://developer.themoviedb.org" }
-        ],
-        expectedOutput: "Horizontal movie sliders fetching banners and genres dynamically.",
-        debuggingTips: "Ensure API keys are fetched from .env files. Test response limits under browser consoles."
+        task: "Process Spawning & Execution",
+        resources: [{ name: "fork() and execvp() man pages", url: "https://man7.org/linux/man-pages/man2/fork.2.html" }],
+        expectedOutput: "Spawns child processes executing core binaries (like ls, pwd, cat) returning focus back to shell loop.",
+        debuggingTips: "Remember to wait() on child processes so you do not create orphaned or zombie processes."
+      },
+      {
+        task: "Pipes and Stream Redirection",
+        resources: [{ name: "dup2() and pipe() man pages", url: "https://man7.org/linux/man-pages/man2/pipe.2.html" }],
+        expectedOutput: "Connects stdout of one process to stdin of another (e.g. cat file.txt | grep text), or redirects to files (ls > out.txt).",
+        debuggingTips: "Close unused read/write ends of pipes in parent and child processes to avoid hanging stdin descriptors."
       }
     ],
-    outcomes: ["Component life-cycle management", "External API integrations", "Context state handling"],
-    readmeChecklist: [
-      "Include clear GIF previews of sliders",
-      "List environment configuration templates",
-      "Mention TMDB API key prerequisites"
-    ],
-    deploymentGuide: [
-      "Build production files via npm run build",
-      "Deploy static folders directly to Vercel or Netlify",
-      "Add environment variables inside Vercel Dashboard configurations"
-    ],
+    outcomes: ["POSIX systems programming", "Process lifecycle control (fork, exec, wait)", "Descriptor duplicates redirection (dup2)"],
+    readmeChecklist: ["Provide building scripts using CMake", "Document supported shell operators (|, >, <, &)"],
+    deploymentGuide: ["Compile on standard GCC toolchains. Install binary globally in /usr/local/bin to use natively."],
     resumeBullets: [
-      "Engineered a responsive video mock application using React, reducing API query rates by 20% using TMDB caching.",
-      "Integrated Firebase Auth context handlers securing user bookmark records across sessions."
+      "Engineered a custom POSIX-compliant shell CLI in C, managing process lifecycles via fork, execvp, and wait system calls.",
+      "Implemented standard I/O redirection and piping using file descriptor manipulation (dup2, pipe), lowering pipeline memory overhead."
     ],
     interviewPoints: [
-      "Explain TMDB data fetching optimization using memoization hooks.",
-      "Detail how Firebase tokens are stored and refreshed in the browser."
+      "Explain the difference between execve, execvp, and execl.",
+      "What is a zombie process and how does waitpid prevent it?"
     ],
     interviewTalkingPoints: [
-      "Explain TMDB data fetching optimization using memoization hooks.",
-      "Detail how Firebase tokens are stored and refreshed in the browser."
+      "Explain the difference between execve, execvp, and execl.",
+      "What is a zombie process and how does waitpid prevent it?"
     ]
   },
-  "e-commerce-platform": {
-    slug: "e-commerce-platform",
-    title: "E-Commerce System",
-    description: "Build a complete shop featuring carts state, payment validations, item lists, and admin dashboard logs.",
+  "cryptography-vault": {
+    slug: "cryptography-vault",
+    title: "Secure Local Password Vault CLI",
+    description: "Build a secure CLI manager that encrypts credentials locally using AES-256-GCM, deriving keys securely from a master password.",
     difficulty: "INTERMEDIATE",
-    duration: "3-4 Weeks",
-    techStack: ["Next.js App Router", "Zustand", "Prisma", "Stripe API", "PostgreSQL"],
-    prerequisites: ["Context state maps", "API integrations"],
-    steps: [
-      {
-        task: "Zustand Cart State Sync",
-        resources: [{ name: "Zustand State Guide", url: "https://github.com/pmndrs/zustand" }],
-        expectedOutput: "Persistent cart items list toggleable across route navigations.",
-        debuggingTips: "Ensure localstorage persistence is configured correctly inside Zustand middleware."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Zustand Cart State Sync",
-        resources: [{ name: "Zustand State Guide", url: "https://github.com/pmndrs/zustand" }],
-        expectedOutput: "Persistent cart items list toggleable across route navigations.",
-        debuggingTips: "Ensure localstorage persistence is configured correctly inside Zustand middleware."
-      }
-    ],
-    outcomes: ["Stripe webhook processing", "Zustand state caching", "Relational database operations"],
-    readmeChecklist: ["Add Stripe test keys", "Explain admin credentials"],
-    deploymentGuide: ["Deploy on Vercel setting Stripe webhook keys."],
-    resumeBullets: [
-      "Architected a transactional e-commerce platform processing checkout orders via Stripe API integration.",
-      "Optimized query speeds by 35% through custom index schemas on database product search columns."
-    ],
-    interviewPoints: ["How does Stripe webhook signature validation prevent payment spoofing?"],
-    interviewTalkingPoints: ["How does Stripe webhook signature validation prevent payment spoofing?"]
-  },
-  "chat-application": {
-    slug: "chat-application",
-    title: "Real-time Chat App",
-    description: "Create a live group messaging system featuring chatrooms, active users indicators, and database logging.",
-    difficulty: "INTERMEDIATE",
-    duration: "2 Weeks",
-    techStack: ["React", "Node.js", "Socket.io", "PostgreSQL", "Tailwind CSS"],
-    prerequisites: ["WebSocket protocols", "JWT auth guards"],
-    steps: [
-      {
-        task: "Establish WebSocket channels",
-        resources: [{ name: "Socket.io docs", url: "https://socket.io" }],
-        expectedOutput: "Two terminal consoles successfully communicating messages back and forth in real-time.",
-        debuggingTips: "Verify CORS mappings on WebSocket connections. Handle reconnect loops."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Establish WebSocket channels",
-        resources: [{ name: "Socket.io docs", url: "https://socket.io" }],
-        expectedOutput: "Two terminal consoles successfully communicating messages back and forth in real-time.",
-        debuggingTips: "Verify CORS mappings on WebSocket connections. Handle reconnect loops."
-      }
-    ],
-    outcomes: ["State synchronization", "Event-driven programming", "WebSocket handshake hooks"],
-    readmeChecklist: ["Provide local test credentials", "Explain room join parameters"],
-    deploymentGuide: ["Deploy Node app using socket.io ports on VPS systems (Render/DigitalOcean)."],
-    resumeBullets: [
-      "Built a concurrent real-time messaging tool leveraging WebSocket event queues, maintaining low-latency state logs.",
-      "Configured dynamic chat room partitioning reducing broadcast load by 30%."
-    ],
-    interviewPoints: ["Explain the difference between HTTP polling and WebSockets."],
-    interviewTalkingPoints: ["Explain the difference between HTTP polling and WebSockets."]
-  },
-  "job-portal": {
-    slug: "job-portal",
-    title: "Student Job Portal",
-    description: "Build an application catalog with filters, resume uploads, applicant lists, and admin approval matrices.",
-    difficulty: "INTERMEDIATE",
-    duration: "2-3 Weeks",
-    techStack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Cloudinary"],
-    prerequisites: ["Form validation Zod schemas", "Dynamic query selectors"],
-    steps: [
-      {
-        task: "Database Mappings Setup",
-        resources: [{ name: "Database relationships (Prisma)", url: "https://prisma.io" }],
-        expectedOutput: "Relational models representing Jobs, Users, and Applications active.",
-        debuggingTips: "Check foreign key cascade behaviors to prevent orphaned application references."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Database Mappings Setup",
-        resources: [{ name: "Database relationships (Prisma)", url: "https://prisma.io" }],
-        expectedOutput: "Relational models representing Jobs, Users, and Applications active.",
-        debuggingTips: "Check foreign key cascade behaviors to prevent orphaned application references."
-      }
-    ],
-    outcomes: ["User role separation (Student/Recruiter)", "Database query pagination", "Cloud asset storage"],
-    readmeChecklist: ["Include mock seed templates", "List system endpoints"],
-    deploymentGuide: ["Deploy to Vercel linking Neon PostgreSQL servers."],
-    resumeBullets: [
-      "Developed a role-separated career portal utilizing Prisma query pagination, streamlining loading speeds by 25%.",
-      "Engineered secure resume uploads integrating Cloudinary document bucket integrations."
-    ],
-    interviewPoints: ["How to secure recruiter endpoints from standard user access."],
-    interviewTalkingPoints: ["How to secure recruiter endpoints from standard user access."]
-  },
-  "lms-platform": {
-    slug: "lms-platform",
-    title: "E-Learning Platform",
-    description: "Build a structured course platform featuring video lessons tracking, quiz questions modules, and certificates.",
-    difficulty: "INTERMEDIATE",
-    duration: "2-3 Weeks",
-    techStack: ["Next.js App Router", "Prisma", "Mux Video API", "PostgreSQL", "Tailwind CSS"],
-    prerequisites: ["Database migrations", "Dynamic routing routes"],
-    steps: [
-      {
-        task: "Video Upload with Mux",
-        resources: [{ name: "Mux Video API Documentation", url: "https://docs.mux.com" }],
-        expectedOutput: "Course lessons rendering custom HLS video players tracking play progression.",
-        debuggingTips: "Handle Mux webhook triggers to update video processing status variables."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Video Upload with Mux",
-        resources: [{ name: "Mux Video API Documentation", url: "https://docs.mux.com" }],
-        expectedOutput: "Course lessons rendering custom HLS video players tracking play progression.",
-        debuggingTips: "Handle Mux webhook triggers to update video processing status variables."
-      }
-    ],
-    outcomes: ["Media streaming architectures", "Lessons checklist tracking", "Mux webhook event maps"],
-    readmeChecklist: ["Document env fields for Mux API tokens", "Detail mock quiz structures"],
-    deploymentGuide: ["Deploy on Vercel setting Neon Postgres db URLs."],
-    resumeBullets: [
-      "Developed a video e-learning system leveraging Mux API hooks, optimizing video encoding and playback loops.",
-      "Configured database models matching chapters progress, reducing dynamic query sizes by 20%."
-    ],
-    interviewPoints: ["Explain how HLS video streaming works.", "How to secure course video media from bulk download scrapers."],
-    interviewTalkingPoints: ["Explain how HLS video streaming works.", "How to secure course video media from bulk download scrapers."]
-  },
-
-  // === ADVANCED PROJECTS ===
-  "url-shortener": {
-    slug: "url-shortener",
-    title: "Distributed URL Shortener",
-    description: "Write a high-performance redirect microservice that generates short hash links and tracks analytics.",
-    difficulty: "ADVANCED",
     duration: "1 Week",
-    techStack: ["Node.js", "Express", "MongoDB / Prisma", "Redis Cache", "Tailwind CSS"],
-    prerequisites: ["Express routers", "Relational schemas"],
+    techStack: ["Go / Rust", "AES-256-GCM", "PBKDF2 / Argon2id", "JSON Database"],
+    prerequisites: ["Basic Cryptography (Symmetric Encryption)", "File I/O"],
     steps: [
       {
-        task: "Generate Short Hash Keys",
-        resources: [
-          { name: "Cryptographic hash generation guide", url: "https://wikipedia.org" }
-        ],
-        expectedOutput: "Unique 6-character string tags (e.g. 'aG3x9L') generated for each URL submission.",
-        debuggingTips: "Prevent key collisions. Implement index uniqueness constraints at database levels."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Generate Short Hash Keys",
-        resources: [
-          { name: "Cryptographic hash generation guide", url: "https://wikipedia.org" }
-        ],
-        expectedOutput: "Unique 6-character string tags (e.g. 'aG3x9L') generated for each URL submission.",
-        debuggingTips: "Prevent key collisions. Implement index uniqueness constraints at database levels."
-      }
-    ],
-    outcomes: ["Redis key caching logic", "HTTP redirect codes (301/302)", "Database indexes optimization"],
-    readmeChecklist: ["Add Docker Compose configurations", "Detail benchmark statistics"],
-    deploymentGuide: ["Run node app inside a dockerized network mapping port 80 to Nginx."],
-    resumeBullets: [
-      "Developed a URL shortener backend handling 100+ requests/sec using Redis memory caching schemas.",
-      "Optimized lookup speeds by 40% mapping indexed hashes directly in PostgreSQL."
-    ],
-    interviewPoints: ["Why is 301 redirect preferred over 302 for SEO mappings?"],
-    interviewTalkingPoints: ["Why is 301 redirect preferred over 302 for SEO mappings?"]
-  },
-  "ride-sharing": {
-    slug: "ride-sharing",
-    title: "Ride Sharing Dispatcher",
-    description: "Design a spatial dispatcher coordinating driver updates, geofence queries, and matching routes.",
-    difficulty: "ADVANCED",
-    duration: "3-4 Weeks",
-    techStack: ["Node.js", "Redis (GeoSets)", "PostgreSQL", "Socket.io", "Leaflet Maps"],
-    prerequisites: ["Redis Geospatial API", "WebSockets protocols"],
-    steps: [
-      {
-        task: "Spatial Driver Indexes",
-        resources: [{ name: "Redis Geo Commands Reference", url: "https://redis.io/commands/geoadd/" }],
-        expectedOutput: "Real-time query indexes matching active drivers within a 5km coordinate radius.",
-        debuggingTips: "Filter coordinates values boundary limits carefully to prevent database query failures."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Spatial Driver Indexes",
-        resources: [{ name: "Redis Geo Commands Reference", url: "https://redis.io/commands/geoadd/" }],
-        expectedOutput: "Real-time query indexes matching active drivers within a 5km coordinate radius.",
-        debuggingTips: "Filter coordinates values boundary limits carefully to prevent database query failures."
-      }
-    ],
-    outcomes: ["Geospatial indexing schemas", "Websocket location streaming", "Driver dispatcher loops"],
-    readmeChecklist: ["Add map UI demo screens", "Document concurrency limits"],
-    deploymentGuide: ["Dockerize backend cluster and deploy on AWS ECS linked to Redis Cloud."],
-    resumeBullets: [
-      "Engineered a spatial ride dispatcher dispatching coordinates updates to drivers via Redis GeoSets, reducing delays by 25%.",
-      "Configured Socket.io brokers broadcast grouping drivers by geographical geofences, dropping message overloads."
-    ],
-    interviewPoints: ["How does quadtree geo-indexing compare to Redis Geo Hashing?", "Explain how location updates are decoupled from transactional databases."],
-    interviewTalkingPoints: ["How does quadtree geo-indexing compare to Redis Geo Hashing?", "Explain how location updates are decoupled from transactional databases."]
-  },
-  "food-delivery": {
-    slug: "food-delivery",
-    title: "Food Delivery System",
-    description: "Build a distributed food order queue manager integrating restaurant dashboards, delivery riders, and payments.",
-    difficulty: "ADVANCED",
-    duration: "3 Weeks",
-    techStack: ["Go (Golang)", "Kafka / RabbitMQ", "MongoDB", "gRPC", "React"],
-    prerequisites: ["Message queue brokers", "Concurrency constructs"],
-    steps: [
-      {
-        task: "Configure Order Kafka Pipeline",
-        resources: [{ name: "Apache Kafka Quickstart", url: "https://kafka.apache.org/quickstart" }],
-        expectedOutput: "Decoupled transaction consumer logs showing orders emitted, verified, and sent to kitchens.",
-        debuggingTips: "Adjust Kafka offset configuration loops to prevent message duplication bugs."
-      }
-    ],
-    roadmapSteps: [
-      {
-        task: "Configure Order Kafka Pipeline",
-        resources: [{ name: "Apache Kafka Quickstart", url: "https://kafka.apache.org/quickstart" }],
-        expectedOutput: "Decoupled transaction consumer logs showing orders emitted, verified, and sent to kitchens.",
-        debuggingTips: "Adjust Kafka offset configuration loops to prevent message duplication bugs."
-      }
-    ],
-    outcomes: ["Asynchronous pipeline architectures", "gRPC interservice communication", "Order queue metrics"],
-    readmeChecklist: ["Include Docker Compose setup", "Explain topic configurations for Kafka"],
-    deploymentGuide: ["Deploy to AWS EKS with Kubernetes pods scale guidelines for restaurant loops."],
-    resumeBullets: [
-      "Built a distributed delivery catalog in Go processing checkout streams using Apache Kafka queues.",
-      "Optimized dashboard synchronization cycles using gRPC communication channels, lowering latency bounds by 30%."
-    ],
-    interviewPoints: ["What is the difference between gRPC and REST?", "Explain consumer groups mapping in Kafka architecture."],
-    interviewTalkingPoints: ["What is the difference between gRPC and REST?", "Explain consumer groups mapping in Kafka architecture."]
-  },
-  "ai-resume-analyzer": {
-    slug: "ai-resume-analyzer",
-    title: "AI Resume Analyzer",
-    description: "Design an ATS rating system checking resume text against job descriptions using Google Gemini.",
-    difficulty: "ADVANCED",
-    duration: "2 Weeks",
-    techStack: ["Next.js App Router", "TypeScript", "Prisma ORM", "Gemini API", "Tailwind CSS"],
-    prerequisites: ["NextJS API routes", "Basic database models"],
-    steps: [
-      {
-        task: "Parse Resume Upload Texts",
-        resources: [
-          { name: "File Reader web API", url: "https://developer.mozilla.org" }
-        ],
-        expectedOutput: "Text areas displaying parsed copy inputs or doc strings.",
-        debuggingTips: "Clean file symbols and encoding issues. Trim large whitespace loops."
+        task: "Key Derivation from Master Key",
+        resources: [{ name: "Argon2 key derivation guide", url: "https://en.wikipedia.org/wiki/Argon2" }],
+        expectedOutput: "Master password hashed and expanded to a secure 32-byte cryptographic key.",
+        debuggingTips: "Always use random salt. Never hardcode salts or iteration parameters inside credentials vault files."
       },
       {
-        task: "Gemini Model integration",
-        resources: [
-          { name: "Google Gemini NodeJS API guide", url: "https://ai.google.dev" }
-        ],
-        expectedOutput: "A JSON API return containing match score, key gaps, and recommended tips.",
-        debuggingTips: "Verify JSON schemas are enforced on prompting Gemini. Use fallback calculators on timeouts."
+        task: "AES-256-GCM File Encryption",
+        resources: [{ name: "Symmetric Encryption man pages", url: "https://man7.org/linux/man-pages/" }],
+        expectedOutput: "JSON database file securely encrypted when saved and decrypted when read by the CLI.",
+        debuggingTips: "Always generate a unique Initialization Vector (IV/Nonce) for each encryption cycle to prevent replay attacks."
       }
     ],
     roadmapSteps: [
       {
-        task: "Parse Resume Upload Texts",
-        resources: [
-          { name: "File Reader web API", url: "https://developer.mozilla.org" }
-        ],
-        expectedOutput: "Text areas displaying parsed copy inputs or doc strings.",
-        debuggingTips: "Clean file symbols and encoding issues. Trim large whitespace loops."
+        task: "Key Derivation from Master Key",
+        resources: [{ name: "Argon2 key derivation guide", url: "https://en.wikipedia.org/wiki/Argon2" }],
+        expectedOutput: "Master password hashed and expanded to a secure 32-byte cryptographic key.",
+        debuggingTips: "Always use random salt. Never hardcode salts or iteration parameters inside credentials vault files."
       },
       {
-        task: "Gemini Model integration",
-        resources: [
-          { name: "Google Gemini NodeJS API guide", url: "https://ai.google.dev" }
-        ],
-        expectedOutput: "A JSON API return containing match score, key gaps, and recommended tips.",
-        debuggingTips: "Verify JSON schemas are enforced on prompting Gemini. Use fallback calculators on timeouts."
+        task: "AES-256-GCM File Encryption",
+        resources: [{ name: "Symmetric Encryption man pages", url: "https://man7.org/linux/man-pages/" }],
+        expectedOutput: "JSON database file securely encrypted when saved and decrypted when read by the CLI.",
+        debuggingTips: "Always generate a unique Initialization Vector (IV/Nonce) for each encryption cycle to prevent replay attacks."
       }
     ],
-    outcomes: ["Model prompting structures", "NextJS App Router API route loops", "JSON database schema mappings"],
-    readmeChecklist: [
-      "Explain the matching score logic",
-      "Provide step-by-step schema migrations instructions"
-    ],
-    deploymentGuide: [
-      "Configure PostgreSQL on Supabase database grids",
-      "Host next-app on Vercel setting GEMINI_API_KEY environment flags"
-    ],
+    outcomes: ["Cryptographic key derivations (Argon2id)", "AES-GCM Authenticated Encryption", "Secure memory cleaning"],
+    readmeChecklist: ["Document vault file schemas", "Detail key derivation parameters used"],
+    deploymentGuide: ["Build static binary using cargo or go build, and distribute via homebrew tap or binary files."],
     resumeBullets: [
-      "Architected an AI-powered resume readiness scanner fetching Google Gemini vectors, increasing score alignment by 35%.",
-      "Implemented local storage mock databases enabling offline testing cycles."
+      "Engineered an offline credential manager in Rust utilizing AES-256-GCM symmetric encryption for data vaults safety.",
+      "Implemented PBKDF2/Argon2id key derivation functions with random salts, preventing brute-force attack vectors."
     ],
     interviewPoints: [
-      "Explain prompt formatting rules helping Gemini return structured JSON outputs.",
-      "How to prevent database block locks when multiple users submit requests simultaneously."
+      "Why is AES-GCM preferred over AES-CBC or AES-ECB modes?",
+      "Explain key derivation functions (KDF) purpose."
     ],
     interviewTalkingPoints: [
-      "Explain prompt formatting rules helping Gemini return structured JSON outputs.",
-      "How to prevent database block locks when multiple users submit requests simultaneously."
+      "Why is AES-GCM preferred over AES-CBC or AES-ECB modes?",
+      "Explain key derivation functions (KDF) purpose."
     ]
   },
-  "rag-pdf-chatbot": {
-    slug: "rag-pdf-chatbot",
-    title: "RAG PDF Chatbot",
-    description: "Design a PDF reader chatbot using retrieval-augmented generation to answer questions based on files uploaded.",
+  "compiler-interpreter": {
+    slug: "compiler-interpreter",
+    title: "Lisp Compiler & VM Interpreter",
+    description: "Write an interpreter or compiler from scratch for a subset of Lisp/Scheme, building your own parser, AST tree, and virtual machine execution environment.",
     difficulty: "ADVANCED",
-    duration: "3 Weeks",
-    techStack: ["Next.js", "Python FastAPI", "Pinecone Vector DB", "LangChain", "Gemini API"],
-    prerequisites: ["FastAPI routes", "Vector embeddings theory"],
+    duration: "3-4 Weeks",
+    techStack: ["Rust / Go", "Abstract Syntax Trees (AST)", "Context-Free Grammars", "Virtual Machine"],
+    prerequisites: ["Tree Data Structures", "Recursive Descent Parsing"],
     steps: [
       {
-        task: "Generate Document Chunk Vectors",
-        resources: [{ name: "LangChain text splitters", url: "https://python.langchain.com" }],
-        expectedOutput: "PDF content split into vector array nodes indexed in Pinecone databases.",
-        debuggingTips: "Keep chunk sizes balanced (e.g. 500 characters) to preserve contextual matches."
+        task: "Tokenizing & Lexer",
+        resources: [{ name: "Crafting Interpreters (Lexing)", url: "https://craftinginterpreters.com/scanning.html" }],
+        expectedOutput: "Translates raw code string into structured stream of tokens with line/col positions.",
+        debuggingTips: "Handle string escape tokens and multi-line comment scopes correctly to prevent loop hangs."
+      },
+      {
+        task: "Recursive Descent AST Parser",
+        resources: [{ name: "AST parsing guide", url: "https://craftinginterpreters.com/parsing.html" }],
+        expectedOutput: "Parses tokens into an Abstract Syntax Tree (AST) checking semantic syntax correctness.",
+        debuggingTips: "Define clear precedence rules for arithmetic operator nodes to keep equations aligned."
+      },
+      {
+        task: "Bytecode VM Compiler & Runner",
+        resources: [{ name: "Stack-based VM design", url: "https://craftinginterpreters.com/a-bytecode-virtual-machine.html" }],
+        expectedOutput: "AST compiled to a custom bytecode format and executed in your own stack-based virtual machine.",
+        debuggingTips: "Trace variables allocation stacks carefully to avoid stack overflow or memory leaks."
       }
     ],
     roadmapSteps: [
       {
-        task: "Generate Document Chunk Vectors",
-        resources: [{ name: "LangChain text splitters", url: "https://python.langchain.com" }],
-        expectedOutput: "PDF content split into vector array nodes indexed in Pinecone databases.",
-        debuggingTips: "Keep chunk sizes balanced (e.g. 500 characters) to preserve contextual matches."
+        task: "Tokenizing & Lexer",
+        resources: [{ name: "Crafting Interpreters (Lexing)", url: "https://craftinginterpreters.com/scanning.html" }],
+        expectedOutput: "Translates raw code string into structured stream of tokens with line/col positions.",
+        debuggingTips: "Handle string escape tokens and multi-line comment scopes correctly to prevent loop hangs."
+      },
+      {
+        task: "Recursive Descent AST Parser",
+        resources: [{ name: "AST parsing guide", url: "https://craftinginterpreters.com/parsing.html" }],
+        expectedOutput: "Parses tokens into an Abstract Syntax Tree (AST) checking semantic syntax correctness.",
+        debuggingTips: "Define clear precedence rules for arithmetic operator nodes to keep equations aligned."
+      },
+      {
+        task: "Bytecode VM Compiler & Runner",
+        resources: [{ name: "Stack-based VM design", url: "https://craftinginterpreters.com/a-bytecode-virtual-machine.html" }],
+        expectedOutput: "AST compiled to a custom bytecode format and executed in your own stack-based virtual machine.",
+        debuggingTips: "Trace variables allocation stacks carefully to avoid stack overflow or memory leaks."
       }
     ],
-    outcomes: ["Vector search operations", "FastAPI server connections", "Retrieval-Augmented Generation workflows"],
-    readmeChecklist: ["Add model keys", "Provide sample test PDF files"],
-    deploymentGuide: ["Host Python code on Render, and Next.js frontend on Vercel."],
+    outcomes: ["Compiler scanner design", "Semantic analysis and parsing", "Virtual Machine bytecode instruction sets"],
+    readmeChecklist: ["Document BNF grammar guidelines", "Provide example scripts that execute correctly in VM"],
+    deploymentGuide: ["Compile to binary and upload as a CLI interpreter tool on GitHub Release pipelines."],
     resumeBullets: [
-      "Engineered a Retrieval-Augmented Generation (RAG) platform querying Pinecone DB vector stores for PDF contextual answering.",
-      "Optimized vector search latency under 120ms utilizing metadata filters."
+      "Built a stack-based Virtual Machine bytecode compiler and interpreter from scratch in Rust, processing custom AST structures.",
+      "Implemented a recursive descent compiler scanner resolving arithmetic precedence and variables scoping variables."
     ],
-    interviewPoints: ["Explain the difference between vector similarity search and keyword matching."],
-    interviewTalkingPoints: ["Explain the difference between vector similarity search and keyword matching."]
+    interviewPoints: [
+      "Explain the difference between tree-walk interpreters and bytecode virtual machines.",
+      "What is stack overflow and stack underflow inside a virtual machine executor?"
+    ],
+    interviewTalkingPoints: [
+      "Explain the difference between tree-walk interpreters and bytecode virtual machines.",
+      "What is stack overflow and stack underflow inside a virtual machine executor?"
+    ]
   },
-  "stock-prediction": {
-    slug: "stock-prediction",
-    title: "AI Stock Sentiment Platform",
-    description: "Build an interactive dashboard mapping stock pricing graphs alongside live sentiment ratings scraped from headlines.",
+  "bittorrent-client": {
+    slug: "bittorrent-client",
+    title: "Concurrent BitTorrent Client CLI",
+    description: "Write a high-performance BitTorrent client in Go/Rust parsing torrent files, contacting trackers, and downloading chunks concurrently.",
     difficulty: "ADVANCED",
-    duration: "2 Weeks",
-    techStack: ["Next.js", "Python FastAPI", "BeautifulSoup", "Recharts", "PostgreSQL"],
-    prerequisites: ["FastAPI routing", "Web scraping limits"],
+    duration: "3-4 Weeks",
+    techStack: ["Go / Rust", "TCP / UDP Sockets", "Bencode Parser", "Concurrencies (Goroutines/Tokio)"],
+    prerequisites: ["TCP/IP Sockets", "Async Concurrency model"],
     steps: [
       {
-        task: "Scrape Finance News Headlines",
-        resources: [{ name: "Web scraping guidelines (BS4)", url: "https://beautiful-soup-4.readthedocs.io" }],
-        expectedOutput: "Clean JSON feeds containing publisher title, dates, and text headlines.",
-        debuggingTips: "Verify class selectors. Set correct user-agents to prevent scrapers being blocked."
+        task: "Bencode Format Parser",
+        resources: [{ name: "BitTorrent Protocol specification", url: "http://www.bittorrent.org/beps/bep_0003.html" }],
+        expectedOutput: "Successfully parses `.torrent` file returning trackers announce URLs, file lengths, and SHA-1 chunk hashes.",
+        debuggingTips: "Be careful parsing binary string hash bytes in Bencode lists since they do not match standard UTF-8 encodings."
+      },
+      {
+        task: "UDP Tracker Handshake",
+        resources: [{ name: "UDP Tracker protocol specification", url: "http://www.bittorrent.org/beps/bep_0015.html" }],
+        expectedOutput: "Connection packet queries tracker URL returning list of active peer IP addresses and port bindings.",
+        debuggingTips: "Be ready to retry connection packets on packet loss. Implement backoff retry scales."
+      },
+      {
+        task: "Concurrent TCP Peer Engine",
+        resources: [{ name: "Peer wire protocols", url: "http://www.bittorrent.org/beps/bep_0003.html" }],
+        expectedOutput: "CLI connecting to 10+ peers concurrently over TCP, downloading blocks, checking SHA-1, and assembling final file.",
+        debuggingTips: "Synchronize download blocks map updates using thread-safe structures to prevent corruption."
       }
     ],
     roadmapSteps: [
       {
-        task: "Scrape Finance News Headlines",
-        resources: [{ name: "Web scraping guidelines (BS4)", url: "https://beautiful-soup-4.readthedocs.io" }],
-        expectedOutput: "Clean JSON feeds containing publisher title, dates, and text headlines.",
-        debuggingTips: "Verify class selectors. Set correct user-agents to prevent scrapers being blocked."
+        task: "Bencode Format Parser",
+        resources: [{ name: "BitTorrent Protocol specification", url: "http://www.bittorrent.org/beps/bep_0003.html" }],
+        expectedOutput: "Successfully parses `.torrent` file returning trackers announce URLs, file lengths, and SHA-1 chunk hashes.",
+        debuggingTips: "Be careful parsing binary string hash bytes in Bencode lists since they do not match standard UTF-8 encodings."
+      },
+      {
+        task: "UDP Tracker Handshake",
+        resources: [{ name: "UDP Tracker protocol specification", url: "http://www.bittorrent.org/beps/bep_0015.html" }],
+        expectedOutput: "Connection packet queries tracker URL returning list of active peer IP addresses and port bindings.",
+        debuggingTips: "Be ready to retry connection packets on packet loss. Implement backoff retry scales."
+      },
+      {
+        task: "Concurrent TCP Peer Engine",
+        resources: [{ name: "Peer wire protocols", url: "http://www.bittorrent.org/beps/bep_0003.html" }],
+        expectedOutput: "CLI connecting to 10+ peers concurrently over TCP, downloading blocks, checking SHA-1, and assembling final file.",
+        debuggingTips: "Synchronize download blocks map updates using thread-safe structures to prevent corruption."
       }
     ],
-    outcomes: ["Data visualization workflows", "Sentiment classification analysis", "Web scraper optimization"],
-    readmeChecklist: ["List libraries", "Provide pricing API credentials"],
-    deploymentGuide: ["Dockerize FastAPI scrapers and deploy schedule cron tasks on Render."],
+    outcomes: ["Binary Bencode decoding", "Concurrencies orchestration", "TCP socket stream handlers"],
+    readmeChecklist: ["Detail concurrent workers architecture", "Provide speed download metrics in CLI logs"],
+    deploymentGuide: ["Distribute as statically compiled CLI executable tool."],
     resumeBullets: [
-      "Developed a financial news sentiment scraper utilizing FastAPI, processing 100+ articles daily for market insights.",
-      "Designed interactive price graphs using Recharts, optimizing loading efficiency by 40%."
+      "Developed a multi-threaded BitTorrent client in Go orchestrating TCP connections to peer nodes concurrently via Goroutines.",
+      "Created binary Bencode decoders verifying block downloads using SHA-1 hashing, ensuring zero file corruption."
     ],
-    interviewPoints: ["How do you handle rate-limit blocks when web scraping news articles?"],
-    interviewTalkingPoints: ["How do you handle rate-limit blocks when web scraping news articles?"]
+    interviewPoints: [
+      "How does peer exchange (PEX) and DHT locate peers without trackers?",
+      "How to avoid deadlock bugs when multiple threads coordinate block download updates."
+    ],
+    interviewTalkingPoints: [
+      "How does peer exchange (PEX) and DHT locate peers without trackers?",
+      "How to avoid deadlock bugs when multiple threads coordinate block download updates."
+    ]
   },
-  "kubernetes-dashboard": {
-    slug: "kubernetes-dashboard",
-    title: "Kubernetes Ops Panel",
-    description: "Develop a real-time monitor panel reporting cluster states, nodes metrics, container pods, and service logs.",
+  "database-engine": {
+    slug: "database-engine",
+    title: "B-Tree Relational Storage Engine",
+    description: "Write an ACID-compliant SQL storage engine from scratch implementing custom binary formats, index caches, and table schema rules.",
+    difficulty: "ADVANCED",
+    duration: "4 Weeks",
+    techStack: ["C++ / Rust", "B-Trees / B+ Trees", "ACID File Logs (WAL)", "Virtual Page cache"],
+    prerequisites: ["Advanced Tree Data structures", "Low-level File I/O"],
+    steps: [
+      {
+        task: "Disk Page Manager & Serialization",
+        resources: [{ name: "Database Internals (Pages)", url: "https://www.oreilly.com/library/view/database-internals/9781492051398/" }],
+        expectedOutput: "A page manager caching 4096-byte memory buffers, writing page files cleanly to disk.",
+        debuggingTips: "Ensure correct endianness mapping when serializing integer markers to disk files."
+      },
+      {
+        task: "B+ Tree Index Implementation",
+        resources: [{ name: "B+ Tree index rules", url: "https://en.wikipedia.org/wiki/B%2B_tree" }],
+        expectedOutput: "Nodes split, merge, and locate key offsets on binary pages.",
+        debuggingTips: "Verify key leaf nodes splits pointers are linked correctly to support range queries."
+      },
+      {
+        task: "Write-Ahead Logging (WAL) Recovery",
+        resources: [{ name: "Write-Ahead Logging (WAL) internals", url: "https://en.wikipedia.org/wiki/Write-ahead_logging" }],
+        expectedOutput: "Transactions committed to logs first; database state recovered from logs on simulated crashes.",
+        debuggingTips: "Run fsync() on log files immediately during transaction commits to guarantee durability bounds."
+      }
+    ],
+    roadmapSteps: [
+      {
+        task: "Disk Page Manager & Serialization",
+        resources: [{ name: "Database Internals (Pages)", url: "https://www.oreilly.com/library/view/database-internals/9781492051398/" }],
+        expectedOutput: "A page manager caching 4096-byte memory buffers, writing page files cleanly to disk.",
+        debuggingTips: "Ensure correct endianness mapping when serializing integer markers to disk files."
+      },
+      {
+        task: "B+ Tree Index Implementation",
+        resources: [{ name: "B+ Tree index rules", url: "https://en.wikipedia.org/wiki/B%2B_tree" }],
+        expectedOutput: "Nodes split, merge, and locate key offsets on binary pages.",
+        debuggingTips: "Verify key leaf nodes splits pointers are linked correctly to support range queries."
+      },
+      {
+        task: "Write-Ahead Logging (WAL) Recovery",
+        resources: [{ name: "Write-Ahead Logging (WAL) internals", url: "https://en.wikipedia.org/wiki/Write-ahead_logging" }],
+        expectedOutput: "Transactions committed to logs first; database state recovered from logs on simulated crashes.",
+        debuggingTips: "Run fsync() on log files immediately during transaction commits to guarantee durability bounds."
+      }
+    ],
+    outcomes: ["B+ Tree index searching", "Disk buffer page caching", "ACID transactions logging (WAL)"],
+    readmeChecklist: ["Document B-Tree page schemas", "Detail performance benchmarks queries per second"],
+    deploymentGuide: ["Distribute as an embedded C++ library or CLI database manager tool."],
+    resumeBullets: [
+      "Architected an ACID-compliant database storage engine in C++ executing indexing queries on B+ Trees.",
+      "Engineered a write-ahead logging (WAL) crash recovery engine, guaranteeing data durability bounds."
+    ],
+    interviewPoints: [
+      "Explain why B+ Trees are preferred over Binary Search Trees or Hash Tables for disk databases.",
+      "How does page eviction (LRU) manage disk buffer pools constraints?"
+    ],
+    interviewTalkingPoints: [
+      "Explain why B+ Trees are preferred over Binary Search Trees or Hash Tables for disk databases.",
+      "How does page eviction (LRU) manage disk buffer pools constraints?"
+    ]
+  },
+  "raytracer-engine": {
+    slug: "raytracer-engine",
+    title: "3D Ray Tracer Graphics Engine",
+    description: "Write a high-performance 3D Ray Tracer rendering scene spheres, reflections, shadows, and light refraction vectors.",
     difficulty: "ADVANCED",
     duration: "2-3 Weeks",
-    techStack: ["React", "Go (Golang)", "Kubernetes API Client", "Socket.io", "Tailwind CSS"],
-    prerequisites: ["Kubernetes RBAC configurations", "SSE or Websockets API"],
+    techStack: ["C++ / Rust / CUDA", "PPM Image output", "Vector Mathematics", "Linear Algebra"],
+    prerequisites: ["Linear Algebra (Matrix operations)", "Physics of Light"],
     steps: [
       {
-        task: "Connect Kubernetes Clientset",
-        resources: [{ name: "Go Client for Kubernetes", url: "https://github.com/kubernetes/client-go" }],
-        expectedOutput: "Dashboard API logs returning structured JSON metrics representing nodes health, pod counts, and namespace scopes.",
-        debuggingTips: "Utilize Kubeconfig path context loaders fallback loops when running outside local clusters."
+        task: "Camera Projection Vectors",
+        resources: [{ name: "Ray Tracing in One Weekend", url: "https://raytracing.github.io/books/RayTracingInOneWeekend.html" }],
+        expectedOutput: "Generates a PPM image of a gradient sky backdrop using coordinates mapping.",
+        debuggingTips: "Validate normal vectors calculations. Keep coordinates systems matching camera directions."
+      },
+      {
+        task: "Spheres Collision & Diffuse Materials",
+        resources: [{ name: "Ray Tracing Sphere Intersections", url: "https://raytracing.github.io" }],
+        expectedOutput: "Renders solid 3D spheres on screen with soft ambient shadows and light bounce diffusions.",
+        debuggingTips: "Verify quadratic formula roots calculations to prevent visual edge clipping errors."
+      },
+      {
+        task: "Reflection & Refraction (Glass/Metal)",
+        resources: [{ name: "Snell's Law and Fresnel reflection equations", url: "https://wikipedia.org" }],
+        expectedOutput: "Glass spheres refracting background views, and metallic spheres reflecting surrounding elements.",
+        debuggingTips: "Clamp reflection counts (e.g. max depth 50) to prevent infinite loop recursive stack crashes."
       }
     ],
     roadmapSteps: [
       {
-        task: "Connect Kubernetes Clientset",
-        resources: [{ name: "Go Client for Kubernetes", url: "https://github.com/kubernetes/client-go" }],
-        expectedOutput: "Dashboard API logs returning structured JSON metrics representing nodes health, pod counts, and namespace scopes.",
-        debuggingTips: "Utilize Kubeconfig path context loaders fallback loops when running outside local clusters."
-      }
-    ],
-    outcomes: ["K8s client interaction APIs", "Server-Sent Events streaming", "Clustered health checks"],
-    readmeChecklist: ["Document cluster role permissions configurations", "Provide sample yaml deployment templates"],
-    deploymentGuide: ["Deploy inside local clusters using customized deployment helm templates."],
-    resumeBullets: [
-      "Engineered a Kubernetes operational monitoring panel in Go, enabling developers to review live pod states and namespace files.",
-      "Implemented cluster event pipelines reducing dashboard UI state refresh times by 30%."
-    ],
-    interviewPoints: ["Explain how RBAC secures access to cluster APIs.", "What is the role of custom resource definitions (CRDs) inside a cluster?"],
-    interviewTalkingPoints: ["Explain how RBAC secures access to cluster APIs.", "What is the role of custom resource definitions (CRDs) inside a cluster?"]
-  },
-  "devops-monitoring": {
-    slug: "devops-monitoring",
-    title: "DevOps Monitoring Suite",
-    description: "Setup Docker container networks, proxy routing, and build workflow actions pushing updates to cloud hosts.",
-    difficulty: "ADVANCED",
-    duration: "2 Weeks",
-    techStack: ["GitHub Actions", "Docker Compose", "Nginx", "AWS EC2", "Jest"],
-    prerequisites: ["Docker structures", "GitHub workflow YAMLs"],
-    steps: [
+        task: "Camera Projection Vectors",
+        resources: [{ name: "Ray Tracing in One Weekend", url: "https://raytracing.github.io/books/RayTracingInOneWeekend.html" }],
+        expectedOutput: "Generates a PPM image of a gradient sky backdrop using coordinates mapping.",
+        debuggingTips: "Validate normal vectors calculations. Keep coordinates systems matching camera directions."
+      },
       {
-        task: "Automate build runner tests",
-        resources: [{ name: "Docker multi-stage compilation", url: "https://docs.docker.com" }],
-        expectedOutput: "Green checks on GitHub Actions verifying build test passes.",
-        debuggingTips: "Cache package-lock files to save runner download times."
-      }
-    ],
-    roadmapSteps: [
+        task: "Spheres Collision & Diffuse Materials",
+        resources: [{ name: "Ray Tracing Sphere Intersections", url: "https://raytracing.github.io" }],
+        expectedOutput: "Renders solid 3D spheres on screen with soft ambient shadows and light bounce diffusions.",
+        debuggingTips: "Verify quadratic formula roots calculations to prevent visual edge clipping errors."
+      },
       {
-        task: "Automate build runner tests",
-        resources: [{ name: "Docker multi-stage compilation", url: "https://docs.docker.com" }],
-        expectedOutput: "Green checks on GitHub Actions verifying build test passes.",
-        debuggingTips: "Cache package-lock files to save runner download times."
+        task: "Reflection & Refraction (Glass/Metal)",
+        resources: [{ name: "Snell's Law and Fresnel reflection equations", url: "https://wikipedia.org" }],
+        expectedOutput: "Glass spheres refracting background views, and metallic spheres reflecting surrounding elements.",
+        debuggingTips: "Clamp reflection counts (e.g. max depth 50) to prevent infinite loop recursive stack crashes."
       }
     ],
-    outcomes: ["Multi-stage compilation", "Nginx reverse proxy mapping", "Continuous deployment setups"],
-    readmeChecklist: ["Add workflow configuration maps", "Provide setup guides"],
-    deploymentGuide: ["Install self-hosted runner on AWS EC2 mapping SSL via Nginx."],
+    outcomes: ["Geometric ray calculations", "Refractive glass physics", "Material diffuse shading patterns"],
+    readmeChecklist: ["Provide rendered output image files", "List rendering speed optimization benchmarks"],
+    deploymentGuide: ["Distribute compiled CLI utility. Integrate output images generation scripts."],
     resumeBullets: [
-      "Configured a zero-downtime GitHub Actions pipeline automating Docker multi-stage builds on AWS EC2 servers.",
-      "Implemented Nginx reverse proxies mapping SSL certificates, cutting bundle traffic latency by 15%."
+      "Developed a CPU ray tracing engine in C++ executing vector physics rendering reflections and refractions.",
+      "Optimized rendering rendering rates by 40% through parallel chunk loops using OpenMP."
     ],
-    interviewPoints: ["Explain the difference between Docker containers overlay and host network modes."],
-    interviewTalkingPoints: ["Explain the difference between Docker containers overlay and host network modes."]
+    interviewPoints: [
+      "Explain Snell's law role in glass refractions.",
+      "How do Bounding Volume Hierarchies (BVH) speed up triangle rendering intersection checks?"
+    ],
+    interviewTalkingPoints: [
+      "Explain Snell's law role in glass refractions.",
+      "How do Bounding Volume Hierarchies (BVH) speed up triangle rendering intersection checks?"
+    ]
   }
 };

@@ -2,6 +2,7 @@
   "id": "roadmap-ai-engineer",
   "title": "AI Engineer",
   "slug": "ai-engineer",
+  "description": "Master AI Engineer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DATA_SCIENCE",
   "difficulty": "ADVANCED",
   "estimatedTime": "4 Months",
@@ -13,124 +14,109 @@
   "nodes": [
     {
       "id": "roadmap-ai-engineer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "fundamentals",
+      "title": "1. Core AI Engineer Fundamentals",
+      "description": "Understand the foundational principles of AI Engineer, primary operational architectures, and basic lifecycle concepts.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-ai-engineer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-ai-engineer-1-1",
+          "title": "1. Core AI Engineer Fundamentals Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
-        },
-        {
-          "id": "res-ai-engineer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype demonstrating fundamentals core concepts."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Core AI Engineer Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype demonstrating fundamentals core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "cs-fundamentals",
+      "title": "2. Computer Science & Systems Theory",
+      "description": "Master operating systems process cycles, memory segment layers, and data structure constraints relevant to engineering.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-ai-engineer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
-        },
-        {
-          "id": "res-ai-engineer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "id": "res-ai-engineer-2-1",
+          "title": "2. Computer Science & Systems Theory Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype demonstrating cs-fundamentals core concepts."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the cs-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Computer Science & Systems Theory Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype demonstrating cs-fundamentals core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-3",
       "slug": "tools",
-      "title": "3. Standard Tools: Pinecone Vector DB & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Pinecone Vector DB, ChromaDB, LangChain, OpenAI/Gemini SDKs.",
+      "title": "3. Standard Tools: Pinecone Vector DB & CLI Environment",
+      "description": "Configure version control using Git & GitHub, and prepare local workspace instances using: Pinecone Vector DB, ChromaDB, LangChain.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "cs-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-ai-engineer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-ai-engineer-3-1",
+          "title": "3. Standard Tools: Pinecone Vector DB & CLI Environment Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype demonstrating tools core concepts."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
         "Master key capabilities of the tools milestone.",
@@ -138,22 +124,22 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Pinecone Vector DB & More Core Theories",
+        "3. Standard Tools: Pinecone Vector DB & CLI Environment Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype demonstrating tools core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-4",
       "slug": "languages",
-      "title": "4. Target Languages: Python / TypeScript / SQL",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, TypeScript, SQL.",
+      "title": "4. Programming Languages: Python / TypeScript / SQL",
+      "description": "Write typesafe, concurrent, and asynchronous code scripts using the target programming languages: Python, TypeScript, SQL.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "tools"
       ],
@@ -161,18 +147,17 @@
       "order": 4,
       "resources": [
         {
-          "id": "res-ai-engineer-lang-1",
-          "title": "Python Official Guides",
+          "id": "res-ai-engineer-4-1",
+          "title": "4. Programming Languages: Python / TypeScript / SQL Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
           "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype demonstrating languages core concepts."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Python?",
-        "How does asynchronous logic work in Python?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the languages milestone.",
@@ -180,22 +165,22 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Python / TypeScript / SQL Core Theories",
+        "4. Programming Languages: Python / TypeScript / SQL Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype demonstrating languages core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using FastAPI, Next.js App Router, LlamaIndex.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "slug": "syntax-adv",
+      "title": "5. Advanced Syntax: Concurrency & Threads",
+      "description": "Master asynchronous code execution blocks, thread management, typesafety models, and error handling grids.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "languages"
       ],
@@ -203,18 +188,58 @@
       "order": 5,
       "resources": [
         {
-          "id": "res-ai-engineer-fw-1",
-          "title": "FastAPI Reference Docs",
+          "id": "res-ai-engineer-5-1",
+          "title": "5. Advanced Syntax: Concurrency & Threads Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using FastAPI."
+        "Build a prototype demonstrating syntax-adv core concepts."
       ],
       "interviewQuestions": [
-        "When does a FastAPI component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in FastAPI."
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the syntax-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Advanced Syntax: Concurrency & Threads Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating syntax-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-6",
+      "slug": "frameworks",
+      "title": "6. Core Frameworks: FastAPI & Next.js App Router",
+      "description": "Build routing layouts, custom controller components, and unified data flow structures using: FastAPI, Next.js App Router, LlamaIndex.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "syntax-adv"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-ai-engineer-6-1",
+          "title": "6. Core Frameworks: FastAPI & Next.js App Router Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating frameworks core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the frameworks milestone.",
@@ -222,62 +247,20 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex Core Theories",
+        "6. Core Frameworks: FastAPI & Next.js App Router Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using FastAPI."
-      ]
-    },
-    {
-      "id": "roadmap-ai-engineer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Pinecone, Milvus, PostgreSQL (pgvector).",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
-      "prerequisites": [
-        "frameworks"
-      ],
-      "parentNodeId": null,
-      "order": 6,
-      "resources": [
-        {
-          "id": "res-ai-engineer-db-1",
-          "title": "Database Query Tuning and Indexes",
-          "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
-        }
-      ],
-      "projectIdeas": [
-        "Create database tables mapping models schema using Pinecone."
-      ],
-      "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector) Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Create database tables mapping models schema using Pinecone."
+        "Build a prototype demonstrating frameworks core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Prompt evaluations frameworks, LLM validation tests.",
+      "slug": "databases",
+      "title": "7. Database Systems: Pinecone & Milvus",
+      "description": "Configure structured schemas, queries indexing, transactional logs mapping, and storage layouts using: Pinecone, Milvus, PostgreSQL (pgvector).",
       "difficulty": "INTERMEDIATE",
       "estimatedTime": "15 hours",
       "prerequisites": [
@@ -287,39 +270,38 @@
       "order": 7,
       "resources": [
         {
-          "id": "res-ai-engineer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-ai-engineer-7-1",
+          "title": "7. Database Systems: Pinecone & Milvus Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype demonstrating databases core concepts."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the databases milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests Core Theories",
+        "7. Database Systems: Pinecone & Milvus Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype demonstrating databases core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Vercel / Render / Docker Compose",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, Render, Docker Compose.",
+      "slug": "db-queries-adv",
+      "title": "8. Advanced Queries & Index Optimization",
+      "description": "Write complex query joins, configure database replication clusters, read execution plans, and set up caching.",
       "difficulty": "INTERMEDIATE",
       "estimatedTime": "15 hours",
       "prerequisites": [
@@ -329,18 +311,222 @@
       "order": 8,
       "resources": [
         {
-          "id": "res-ai-engineer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-ai-engineer-8-1",
+          "title": "8. Advanced Queries & Index Optimization Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype demonstrating db-queries-adv core concepts."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the db-queries-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Advanced Queries & Index Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating db-queries-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-9",
+      "slug": "apis-routing-core",
+      "title": "9. API Engineering & Inter-service Communication",
+      "description": "Build RESTful routes, map JSON inputs, validate request payloads, and handle gRPC/WebSocket streaming protocols.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "db-queries-adv"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-ai-engineer-9-1",
+          "title": "9. API Engineering & Inter-service Communication Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the apis-routing-core milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. API Engineering & Inter-service Communication Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-10",
+      "slug": "testing",
+      "title": "10. Testing & Code Quality: Prompt evaluations frameworks",
+      "description": "Write automated validation logic, integration checking routes, and unit assertion conditions using: Prompt evaluations frameworks, LLM validation tests.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "apis-routing-core"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-ai-engineer-10-1",
+          "title": "10. Testing & Code Quality: Prompt evaluations frameworks Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating testing core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Testing & Code Quality: Prompt evaluations frameworks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating testing core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-11",
+      "slug": "security-patterns",
+      "title": "11. OWASP Threat Protections & Security Patterns",
+      "description": "Configure HTTPS protocols, sanitise input parameters, prevent SQL inject arrays, and design role-based policies.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "testing"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-ai-engineer-11-1",
+          "title": "11. OWASP Threat Protections & Security Patterns Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the security-patterns milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. OWASP Threat Protections & Security Patterns Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-12",
+      "slug": "isolation-docker",
+      "title": "12. Containerization & Isolation using Docker",
+      "description": "Write functional Dockerfiles, configure multi-container compositions, and handle container networks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "security-patterns"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-ai-engineer-12-1",
+          "title": "12. Containerization & Isolation using Docker Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the isolation-docker milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Containerization & Isolation using Docker Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-13",
+      "slug": "deployment",
+      "title": "13. Deployment & Hosting: Vercel / Render",
+      "description": "Package deployment bundles, map environment secret variables, and provision host execution instances on: Vercel, Render, Docker Compose.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "isolation-docker"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-ai-engineer-13-1",
+          "title": "13. Deployment & Hosting: Vercel / Render Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating deployment core concepts."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
         "Master key capabilities of the deployment milestone.",
@@ -348,41 +534,40 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Vercel / Render / Docker Compose Core Theories",
+        "13. Deployment & Hosting: Vercel / Render Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype demonstrating deployment core concepts."
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-9",
+      "id": "roadmap-ai-engineer-node-14",
       "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Retrieval-Augmented Generation (RAG), Vector Embeddings Cosine similarity, Prompt Engineering few-shot, Agents & Tools loops.",
+      "title": "14. Advanced Architectural Paradigms",
+      "description": "Master high-concurrency systems scaling, security mitigations, and performance tuning: Retrieval-Augmented Generation (RAG), Vector Embeddings Cosine similarity, Prompt Engineering few-shot, Agents & Tools loops.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "deployment"
       ],
       "parentNodeId": null,
-      "order": 9,
+      "order": 14,
       "resources": [
         {
-          "id": "res-ai-engineer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-ai-engineer-14-1",
+          "title": "14. Advanced Architectural Paradigms Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype demonstrating advanced-concepts core concepts."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Retrieval-Augmented Generation (RAG) to solve scalability bottlenecks.",
-        "What security vulnerabilities does Agents & Tools loops protect against?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the advanced-concepts milestone.",
@@ -390,84 +575,122 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "14. Advanced Architectural Paradigms Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype demonstrating advanced-concepts core concepts."
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "id": "roadmap-ai-engineer-node-15",
+      "slug": "performance-profiling",
+      "title": "15. System Performance & Latency Benchmarks",
+      "description": "Profile execution bottlenecks, evaluate memory leaks, configure caching layers, and optimize bundle sizes.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "advanced-concepts"
       ],
       "parentNodeId": null,
-      "order": 10,
+      "order": 15,
       "resources": [
         {
-          "id": "res-ai-engineer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
-          "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "id": "res-ai-engineer-15-1",
+          "title": "15. System Performance & Latency Benchmarks Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype demonstrating performance-profiling core concepts."
       ],
       "interviewQuestions": [
-        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups.",
-        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the performance-profiling milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "15. System Performance & Latency Benchmarks Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype demonstrating performance-profiling core concepts."
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: CLI Chatbot using Gemini SDK or RAG 'Chat with PDF' web application. Set up deployment links and repository READMEs.",
+      "id": "roadmap-ai-engineer-node-16",
+      "slug": "automation-cicd",
+      "title": "16. Automated Pipelines (CI/CD) & Automation",
+      "description": "Implement automatic checking workflows, build testing hooks, and automate release distribution paths.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "interview-prep"
+        "performance-profiling"
       ],
       "parentNodeId": null,
-      "order": 11,
+      "order": 16,
       "resources": [
         {
-          "id": "res-ai-engineer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
-          "type": "WEBSITE",
-          "url": "https://github.com"
+          "id": "res-ai-engineer-16-1",
+          "title": "16. Automated Pipelines (CI/CD) & Automation Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
-        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+        "Build a prototype demonstrating automation-cicd core concepts."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your CLI Chatbot using Gemini SDK project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the automation-cicd milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "16. Automated Pipelines (CI/CD) & Automation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating automation-cicd core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-17",
+      "slug": "resume-projects",
+      "title": "17. High Impact Portfolio Projects",
+      "description": "Design, deploy, and document production-ready projects in your portfolio: CLI Chatbot using Gemini SDK or RAG 'Chat with PDF' web application.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "automation-cicd"
+      ],
+      "parentNodeId": null,
+      "order": 17,
+      "resources": [
+        {
+          "id": "res-ai-engineer-17-1",
+          "title": "17. High Impact Portfolio Projects Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: CLI Chatbot using Gemini SDK"
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
         "Master key capabilities of the resume-projects milestone.",
@@ -475,42 +698,40 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "17. High Impact Portfolio Projects Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
-        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+        "Build a complete implementation of: CLI Chatbot using Gemini SDK"
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-12",
+      "id": "roadmap-ai-engineer-node-18",
       "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "title": "18. Job Readiness & Placement Scan",
+      "description": "Conduct mock technical interviews, customize resume formatting metrics, optimize LinkedIn/GitHub profiles, and begin career applications.",
       "difficulty": "ADVANCED",
       "estimatedTime": "15 hours",
       "prerequisites": [
         "resume-projects"
       ],
       "parentNodeId": null,
-      "order": 12,
+      "order": 18,
       "resources": [
         {
-          "id": "res-ai-engineer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
-          "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "id": "res-ai-engineer-18-1",
+          "title": "18. Job Readiness & Placement Scan Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the job-readiness milestone.",
@@ -518,137 +739,122 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "18. Job Readiness & Placement Scan Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-ai-engineer-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "fundamentals",
+      "title": "1. Core AI Engineer Fundamentals",
+      "description": "Understand the foundational principles of AI Engineer, primary operational architectures, and basic lifecycle concepts.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-ai-engineer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-ai-engineer-1-1",
+          "title": "1. Core AI Engineer Fundamentals Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
-        },
-        {
-          "id": "res-ai-engineer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype demonstrating fundamentals core concepts."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Core AI Engineer Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype demonstrating fundamentals core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "cs-fundamentals",
+      "title": "2. Computer Science & Systems Theory",
+      "description": "Master operating systems process cycles, memory segment layers, and data structure constraints relevant to engineering.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-ai-engineer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
-        },
-        {
-          "id": "res-ai-engineer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
-          "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "id": "res-ai-engineer-2-1",
+          "title": "2. Computer Science & Systems Theory Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype demonstrating cs-fundamentals core concepts."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the cs-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Computer Science & Systems Theory Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype demonstrating cs-fundamentals core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-3",
       "slug": "tools",
-      "title": "3. Standard Tools: Pinecone Vector DB & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Pinecone Vector DB, ChromaDB, LangChain, OpenAI/Gemini SDKs.",
+      "title": "3. Standard Tools: Pinecone Vector DB & CLI Environment",
+      "description": "Configure version control using Git & GitHub, and prepare local workspace instances using: Pinecone Vector DB, ChromaDB, LangChain.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "cs-fundamentals"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-ai-engineer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-ai-engineer-3-1",
+          "title": "3. Standard Tools: Pinecone Vector DB & CLI Environment Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype demonstrating tools core concepts."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
         "Master key capabilities of the tools milestone.",
@@ -656,22 +862,22 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Pinecone Vector DB & More Core Theories",
+        "3. Standard Tools: Pinecone Vector DB & CLI Environment Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype demonstrating tools core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-4",
       "slug": "languages",
-      "title": "4. Target Languages: Python / TypeScript / SQL",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Python, TypeScript, SQL.",
+      "title": "4. Programming Languages: Python / TypeScript / SQL",
+      "description": "Write typesafe, concurrent, and asynchronous code scripts using the target programming languages: Python, TypeScript, SQL.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "tools"
       ],
@@ -679,18 +885,17 @@
       "order": 4,
       "resources": [
         {
-          "id": "res-ai-engineer-lang-1",
-          "title": "Python Official Guides",
+          "id": "res-ai-engineer-4-1",
+          "title": "4. Programming Languages: Python / TypeScript / SQL Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
           "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype demonstrating languages core concepts."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Python?",
-        "How does asynchronous logic work in Python?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the languages milestone.",
@@ -698,22 +903,22 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Python / TypeScript / SQL Core Theories",
+        "4. Programming Languages: Python / TypeScript / SQL Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Python handling variable arrays."
+        "Build a prototype demonstrating languages core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using FastAPI, Next.js App Router, LlamaIndex.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "slug": "syntax-adv",
+      "title": "5. Advanced Syntax: Concurrency & Threads",
+      "description": "Master asynchronous code execution blocks, thread management, typesafety models, and error handling grids.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "languages"
       ],
@@ -721,18 +926,58 @@
       "order": 5,
       "resources": [
         {
-          "id": "res-ai-engineer-fw-1",
-          "title": "FastAPI Reference Docs",
+          "id": "res-ai-engineer-5-1",
+          "title": "5. Advanced Syntax: Concurrency & Threads Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using FastAPI."
+        "Build a prototype demonstrating syntax-adv core concepts."
       ],
       "interviewQuestions": [
-        "When does a FastAPI component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in FastAPI."
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the syntax-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "5. Advanced Syntax: Concurrency & Threads Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating syntax-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-6",
+      "slug": "frameworks",
+      "title": "6. Core Frameworks: FastAPI & Next.js App Router",
+      "description": "Build routing layouts, custom controller components, and unified data flow structures using: FastAPI, Next.js App Router, LlamaIndex.",
+      "difficulty": "BEGINNER",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "syntax-adv"
+      ],
+      "parentNodeId": null,
+      "order": 6,
+      "resources": [
+        {
+          "id": "res-ai-engineer-6-1",
+          "title": "6. Core Frameworks: FastAPI & Next.js App Router Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating frameworks core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the frameworks milestone.",
@@ -740,62 +985,20 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: FastAPI & Next.js App Router & LlamaIndex Core Theories",
+        "6. Core Frameworks: FastAPI & Next.js App Router Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using FastAPI."
-      ]
-    },
-    {
-      "id": "roadmap-ai-engineer-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using Pinecone, Milvus, PostgreSQL (pgvector).",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
-      "prerequisites": [
-        "frameworks"
-      ],
-      "parentNodeId": null,
-      "order": 6,
-      "resources": [
-        {
-          "id": "res-ai-engineer-db-1",
-          "title": "Database Query Tuning and Indexes",
-          "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
-        }
-      ],
-      "projectIdeas": [
-        "Create database tables mapping models schema using Pinecone."
-      ],
-      "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "6. Database Systems: Pinecone / Milvus / PostgreSQL (pgvector) Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Create database tables mapping models schema using Pinecone."
+        "Build a prototype demonstrating frameworks core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Prompt evaluations frameworks, LLM validation tests.",
+      "slug": "databases",
+      "title": "7. Database Systems: Pinecone & Milvus",
+      "description": "Configure structured schemas, queries indexing, transactional logs mapping, and storage layouts using: Pinecone, Milvus, PostgreSQL (pgvector).",
       "difficulty": "INTERMEDIATE",
       "estimatedTime": "15 hours",
       "prerequisites": [
@@ -805,39 +1008,38 @@
       "order": 7,
       "resources": [
         {
-          "id": "res-ai-engineer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-ai-engineer-7-1",
+          "title": "7. Database Systems: Pinecone & Milvus Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype demonstrating databases core concepts."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the databases milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Prompt evaluations frameworks / LLM validation tests Core Theories",
+        "7. Database Systems: Pinecone & Milvus Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype demonstrating databases core concepts."
       ]
     },
     {
       "id": "roadmap-ai-engineer-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Vercel / Render / Docker Compose",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, Render, Docker Compose.",
+      "slug": "db-queries-adv",
+      "title": "8. Advanced Queries & Index Optimization",
+      "description": "Write complex query joins, configure database replication clusters, read execution plans, and set up caching.",
       "difficulty": "INTERMEDIATE",
       "estimatedTime": "15 hours",
       "prerequisites": [
@@ -847,18 +1049,222 @@
       "order": 8,
       "resources": [
         {
-          "id": "res-ai-engineer-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-ai-engineer-8-1",
+          "title": "8. Advanced Queries & Index Optimization Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype demonstrating db-queries-adv core concepts."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the db-queries-adv milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. Advanced Queries & Index Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating db-queries-adv core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-9",
+      "slug": "apis-routing-core",
+      "title": "9. API Engineering & Inter-service Communication",
+      "description": "Build RESTful routes, map JSON inputs, validate request payloads, and handle gRPC/WebSocket streaming protocols.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "db-queries-adv"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-ai-engineer-9-1",
+          "title": "9. API Engineering & Inter-service Communication Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the apis-routing-core milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. API Engineering & Inter-service Communication Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating apis-routing-core core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-10",
+      "slug": "testing",
+      "title": "10. Testing & Code Quality: Prompt evaluations frameworks",
+      "description": "Write automated validation logic, integration checking routes, and unit assertion conditions using: Prompt evaluations frameworks, LLM validation tests.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "apis-routing-core"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-ai-engineer-10-1",
+          "title": "10. Testing & Code Quality: Prompt evaluations frameworks Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating testing core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the testing milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Testing & Code Quality: Prompt evaluations frameworks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating testing core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-11",
+      "slug": "security-patterns",
+      "title": "11. OWASP Threat Protections & Security Patterns",
+      "description": "Configure HTTPS protocols, sanitise input parameters, prevent SQL inject arrays, and design role-based policies.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "testing"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-ai-engineer-11-1",
+          "title": "11. OWASP Threat Protections & Security Patterns Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the security-patterns milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "11. OWASP Threat Protections & Security Patterns Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating security-patterns core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-12",
+      "slug": "isolation-docker",
+      "title": "12. Containerization & Isolation using Docker",
+      "description": "Write functional Dockerfiles, configure multi-container compositions, and handle container networks.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "security-patterns"
+      ],
+      "parentNodeId": null,
+      "order": 12,
+      "resources": [
+        {
+          "id": "res-ai-engineer-12-1",
+          "title": "12. Containerization & Isolation using Docker Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ],
+      "interviewQuestions": [
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the isolation-docker milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "12. Containerization & Isolation using Docker Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating isolation-docker core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-13",
+      "slug": "deployment",
+      "title": "13. Deployment & Hosting: Vercel / Render",
+      "description": "Package deployment bundles, map environment secret variables, and provision host execution instances on: Vercel, Render, Docker Compose.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "isolation-docker"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-ai-engineer-13-1",
+          "title": "13. Deployment & Hosting: Vercel / Render Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype demonstrating deployment core concepts."
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
         "Master key capabilities of the deployment milestone.",
@@ -866,41 +1272,40 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Vercel / Render / Docker Compose Core Theories",
+        "13. Deployment & Hosting: Vercel / Render Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype demonstrating deployment core concepts."
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-9",
+      "id": "roadmap-ai-engineer-node-14",
       "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Retrieval-Augmented Generation (RAG), Vector Embeddings Cosine similarity, Prompt Engineering few-shot, Agents & Tools loops.",
+      "title": "14. Advanced Architectural Paradigms",
+      "description": "Master high-concurrency systems scaling, security mitigations, and performance tuning: Retrieval-Augmented Generation (RAG), Vector Embeddings Cosine similarity, Prompt Engineering few-shot, Agents & Tools loops.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "deployment"
       ],
       "parentNodeId": null,
-      "order": 9,
+      "order": 14,
       "resources": [
         {
-          "id": "res-ai-engineer-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-ai-engineer-14-1",
+          "title": "14. Advanced Architectural Paradigms Guide (MDN / Official Docs)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype demonstrating advanced-concepts core concepts."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Retrieval-Augmented Generation (RAG) to solve scalability bottlenecks.",
-        "What security vulnerabilities does Agents & Tools loops protect against?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the advanced-concepts milestone.",
@@ -908,84 +1313,122 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "14. Advanced Architectural Paradigms Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype demonstrating advanced-concepts core concepts."
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "id": "roadmap-ai-engineer-node-15",
+      "slug": "performance-profiling",
+      "title": "15. System Performance & Latency Benchmarks",
+      "description": "Profile execution bottlenecks, evaluate memory leaks, configure caching layers, and optimize bundle sizes.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
         "advanced-concepts"
       ],
       "parentNodeId": null,
-      "order": 10,
+      "order": 15,
       "resources": [
         {
-          "id": "res-ai-engineer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
-          "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "id": "res-ai-engineer-15-1",
+          "title": "15. System Performance & Latency Benchmarks Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype demonstrating performance-profiling core concepts."
       ],
       "interviewQuestions": [
-        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups.",
-        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the performance-profiling milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "15. System Performance & Latency Benchmarks Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype demonstrating performance-profiling core concepts."
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: CLI Chatbot using Gemini SDK or RAG 'Chat with PDF' web application. Set up deployment links and repository READMEs.",
+      "id": "roadmap-ai-engineer-node-16",
+      "slug": "automation-cicd",
+      "title": "16. Automated Pipelines (CI/CD) & Automation",
+      "description": "Implement automatic checking workflows, build testing hooks, and automate release distribution paths.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "15 hours",
       "prerequisites": [
-        "interview-prep"
+        "performance-profiling"
       ],
       "parentNodeId": null,
-      "order": 11,
+      "order": 16,
       "resources": [
         {
-          "id": "res-ai-engineer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
-          "type": "WEBSITE",
-          "url": "https://github.com"
+          "id": "res-ai-engineer-16-1",
+          "title": "16. Automated Pipelines (CI/CD) & Automation Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
-        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+        "Build a prototype demonstrating automation-cicd core concepts."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your CLI Chatbot using Gemini SDK project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the automation-cicd milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "16. Automated Pipelines (CI/CD) & Automation Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype demonstrating automation-cicd core concepts."
+      ]
+    },
+    {
+      "id": "roadmap-ai-engineer-node-17",
+      "slug": "resume-projects",
+      "title": "17. High Impact Portfolio Projects",
+      "description": "Design, deploy, and document production-ready projects in your portfolio: CLI Chatbot using Gemini SDK or RAG 'Chat with PDF' web application.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "15 hours",
+      "prerequisites": [
+        "automation-cicd"
+      ],
+      "parentNodeId": null,
+      "order": 17,
+      "resources": [
+        {
+          "id": "res-ai-engineer-17-1",
+          "title": "17. High Impact Portfolio Projects Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: CLI Chatbot using Gemini SDK"
+      ],
+      "interviewQuestions": [
+        "Explain the steps of a typical RAG pipeline and how vector databases speed up semantic lookups."
       ],
       "learningObjectives": [
         "Master key capabilities of the resume-projects milestone.",
@@ -993,42 +1436,40 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "17. High Impact Portfolio Projects Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of CLI Chatbot using Gemini SDK with documentation.",
-        "Build complete deployable version of RAG 'Chat with PDF' web application with documentation."
+        "Build a complete implementation of: CLI Chatbot using Gemini SDK"
       ]
     },
     {
-      "id": "roadmap-ai-engineer-node-12",
+      "id": "roadmap-ai-engineer-node-18",
       "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "title": "18. Job Readiness & Placement Scan",
+      "description": "Conduct mock technical interviews, customize resume formatting metrics, optimize LinkedIn/GitHub profiles, and begin career applications.",
       "difficulty": "ADVANCED",
       "estimatedTime": "15 hours",
       "prerequisites": [
         "resume-projects"
       ],
       "parentNodeId": null,
-      "order": 12,
+      "order": 18,
       "resources": [
         {
-          "id": "res-ai-engineer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
-          "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "id": "res-ai-engineer-18-1",
+          "title": "18. Job Readiness & Placement Scan Guide (MDN / Official Docs)",
+          "type": "DOCUMENTATION",
+          "url": "https://developer.mozilla.org"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you enforce structured JSON output types on OpenAI/Gemini models?"
       ],
       "learningObjectives": [
         "Master key capabilities of the job-readiness milestone.",
@@ -1036,13 +1477,13 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "18. Job Readiness & Placement Scan Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+."
       ]
     }
   ]

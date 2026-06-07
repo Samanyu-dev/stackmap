@@ -2,6 +2,7 @@
   "id": "roadmap-postgresql",
   "title": "PostgreSQL Database Engineer",
   "slug": "postgresql",
+  "description": "Master PostgreSQL Database Engineer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "SYSTEMS",
   "difficulty": "INTERMEDIATE",
   "estimatedTime": "3 Months",
@@ -10,9 +11,9 @@
   "nodes": [
     {
       "id": "roadmap-postgresql-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "relational-database-fundamentals",
+      "title": "1. Relational Database Fundamentals",
+      "description": "Master core capabilities of Relational Database Fundamentals: What is a relational database?, ACID properties, Relational model and set theory, Database design principles, Normalization (1NF, 2NF, 3NF, BCNF).",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -20,517 +21,824 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-postgresql-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-postgresql-1-1",
+          "title": "What is a relational database? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20a%20relational%20database%3F%20documentation"
         },
         {
-          "id": "res-postgresql-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-postgresql-1-2",
+          "title": "ACID properties Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=ACID%20properties%20tutorial"
+        },
+        {
+          "id": "res-postgresql-1-3",
+          "title": "Practice Relational model and set theory Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Relational%20model%20and%20set%20theory%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a relational database?, ACID properties, Relational model and set theory."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is What is a relational database? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of ACID properties."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the relational-database-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Relational Database Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a relational database?, ACID properties, Relational model and set theory."
       ]
     },
     {
       "id": "roadmap-postgresql-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "postgresql-installation-setup",
+      "title": "2. PostgreSQL Installation & Setup",
+      "description": "Master core capabilities of PostgreSQL Installation & Setup: Installation (Linux, Mac, Windows, Docker), PostgreSQL architecture (postmaster, shared buffers, WAL), psql command-line client, pgAdmin GUI, Configuration files (postgresql.conf, pg_hba.conf).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "relational-database-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-postgresql-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-postgresql-2-1",
+          "title": "Installation (Linux, Mac, Windows, Docker) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
         },
         {
-          "id": "res-postgresql-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-postgresql-2-2",
+          "title": "PostgreSQL architecture (postmaster, shared buffers, WAL) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=PostgreSQL%20architecture%20(postmaster%2C%20shared%20buffers%2C%20WAL)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-2-3",
+          "title": "Practice psql command-line client Exercises",
+          "type": "WEBSITE",
+          "url": "https://leetcode.com"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Installation (Linux, Mac, Windows, Docker), PostgreSQL architecture (postmaster, shared buffers, WAL), psql command-line client."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Installation (Linux, Mac, Windows, Docker) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of PostgreSQL architecture (postmaster, shared buffers, WAL)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the postgresql-installation-setup milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. PostgreSQL Installation & Setup Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Installation (Linux, Mac, Windows, Docker), PostgreSQL architecture (postmaster, shared buffers, WAL), psql command-line client."
       ]
     },
     {
       "id": "roadmap-postgresql-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: pgAdmin & More",
-      "description": "Master version control with Git & GitHub and construct development environments using pgAdmin, pg_dump/pg_restore, Explain Visualizers, psql CLI.",
+      "slug": "sql-fundamentals",
+      "title": "3. SQL Fundamentals",
+      "description": "Master core capabilities of SQL Fundamentals: SELECT, INSERT, UPDATE, DELETE, WHERE clauses and operators, ORDER BY and LIMIT, NULL handling, Aliases.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "postgresql-installation-setup"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-postgresql-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-postgresql-3-1",
+          "title": "SELECT, INSERT, UPDATE, DELETE Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=SELECT%2C%20INSERT%2C%20UPDATE%2C%20DELETE%20documentation"
+        },
+        {
+          "id": "res-postgresql-3-2",
+          "title": "WHERE clauses and operators Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=WHERE%20clauses%20and%20operators%20tutorial"
+        },
+        {
+          "id": "res-postgresql-3-3",
+          "title": "Practice ORDER BY and LIMIT Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=ORDER%20BY%20and%20LIMIT%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating SELECT, INSERT, UPDATE, DELETE, WHERE clauses and operators, ORDER BY and LIMIT."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is SELECT, INSERT, UPDATE, DELETE and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of WHERE clauses and operators."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the sql-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: pgAdmin & More Core Theories",
+        "3. SQL Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating SELECT, INSERT, UPDATE, DELETE, WHERE clauses and operators, ORDER BY and LIMIT."
       ]
     },
     {
       "id": "roadmap-postgresql-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: SQL / PL/pgSQL / Python/Bash",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in SQL, PL/pgSQL, Python/Bash.",
+      "slug": "advanced-sql",
+      "title": "4. Advanced SQL",
+      "description": "Master core capabilities of Advanced SQL: JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF), Subqueries (correlated and non-correlated), CTEs (WITH clause), Window functions (ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, PARTITION BY), CASE expressions.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "sql-fundamentals"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-postgresql-lang-1",
-          "title": "SQL Official Guides",
+          "id": "res-postgresql-4-1",
+          "title": "JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=JOINs%20(INNER%2C%20LEFT%2C%20RIGHT%2C%20FULL%20OUTER%2C%20CROSS%2C%20SELF)%20documentation"
+        },
+        {
+          "id": "res-postgresql-4-2",
+          "title": "Subqueries (correlated and non-correlated) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Subqueries%20(correlated%20and%20non-correlated)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-4-3",
+          "title": "Practice CTEs (WITH clause) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=CTEs%20(WITH%20clause)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using SQL handling variable arrays."
+        "Build a prototype integrating JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF), Subqueries (correlated and non-correlated), CTEs (WITH clause)."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in SQL?",
-        "How does asynchronous logic work in SQL?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Subqueries (correlated and non-correlated)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the advanced-sql milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: SQL / PL/pgSQL / Python/Bash Core Theories",
+        "4. Advanced SQL Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using SQL handling variable arrays."
+        "Build a prototype integrating JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF), Subqueries (correlated and non-correlated), CTEs (WITH clause)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Prisma & Sequelize",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Prisma, Sequelize.",
+      "slug": "postgresql-specific-features",
+      "title": "5. PostgreSQL-specific Features",
+      "description": "Master core capabilities of PostgreSQL-specific Features: Arrays, JSONB and JSON operations, HSTORE, UUID data type, Range types.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "advanced-sql"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-postgresql-fw-1",
-          "title": "Prisma Reference Docs",
+          "id": "res-postgresql-5-1",
+          "title": "Arrays Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=Arrays%20documentation"
+        },
+        {
+          "id": "res-postgresql-5-2",
+          "title": "JSONB and JSON operations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=JSONB%20and%20JSON%20operations%20tutorial"
+        },
+        {
+          "id": "res-postgresql-5-3",
+          "title": "Practice HSTORE Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=HSTORE%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Prisma."
+        "Build a prototype integrating Arrays, JSONB and JSON operations, HSTORE."
       ],
       "interviewQuestions": [
-        "When does a Prisma component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Prisma."
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Arrays and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of JSONB and JSON operations."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the postgresql-specific-features milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Prisma & Sequelize Core Theories",
+        "5. PostgreSQL-specific Features Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Prisma."
+        "Build a prototype integrating Arrays, JSONB and JSON operations, HSTORE."
       ]
     },
     {
       "id": "roadmap-postgresql-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL (Advanced)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Advanced).",
+      "slug": "indexes-performance",
+      "title": "6. Indexes & Performance",
+      "description": "Master core capabilities of Indexes & Performance: Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST), Creating and managing indexes, Composite indexes, Partial indexes, Index-only scans.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "postgresql-specific-features"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-postgresql-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-postgresql-6-1",
+          "title": "Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Index%20types%20(B-tree%2C%20Hash%2C%20GIN%2C%20GiST%2C%20BRIN%2C%20SP-GiST)%20documentation"
+        },
+        {
+          "id": "res-postgresql-6-2",
+          "title": "Creating and managing indexes Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Creating%20and%20managing%20indexes%20tutorial"
+        },
+        {
+          "id": "res-postgresql-6-3",
+          "title": "Practice Composite indexes Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Composite%20indexes%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL (Advanced)."
+        "Build a prototype integrating Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST), Creating and managing indexes, Composite indexes."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Creating and managing indexes."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the indexes-performance milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL (Advanced) Core Theories",
+        "6. Indexes & Performance Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL (Advanced)."
+        "Build a prototype integrating Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST), Creating and managing indexes, Composite indexes."
       ]
     },
     {
       "id": "roadmap-postgresql-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: pgTap unit testing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using pgTap unit testing.",
+      "slug": "transactions-concurrency",
+      "title": "7. Transactions & Concurrency",
+      "description": "Master core capabilities of Transactions & Concurrency: Transaction basics (BEGIN, COMMIT, ROLLBACK), Savepoints, Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE), MVCC (Multi-Version Concurrency Control), Row-level locking.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "indexes-performance"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-postgresql-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-postgresql-7-1",
+          "title": "Transaction basics (BEGIN, COMMIT, ROLLBACK) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Transaction%20basics%20(BEGIN%2C%20COMMIT%2C%20ROLLBACK)%20documentation"
+        },
+        {
+          "id": "res-postgresql-7-2",
+          "title": "Savepoints Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Savepoints%20tutorial"
+        },
+        {
+          "id": "res-postgresql-7-3",
+          "title": "Practice Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Isolation%20levels%20(READ%20UNCOMMITTED%2C%20READ%20COMMITTED%2C%20REPEATABLE%20READ%2C%20SERIALIZABLE)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Transaction basics (BEGIN, COMMIT, ROLLBACK), Savepoints, Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE)."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Transaction basics (BEGIN, COMMIT, ROLLBACK) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Savepoints."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the transactions-concurrency milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: pgTap unit testing Core Theories",
+        "7. Transactions & Concurrency Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Transaction basics (BEGIN, COMMIT, ROLLBACK), Savepoints, Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Supabase / AWS RDS Postgres / Dockerized Postgres clustered",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Supabase, AWS RDS Postgres, Dockerized Postgres clustered.",
+      "slug": "stored-procedures-functions",
+      "title": "8. Stored Procedures & Functions",
+      "description": "Master core capabilities of Stored Procedures & Functions: PL/pgSQL basics, Creating functions, Creating stored procedures (PostgreSQL 11+), Triggers, Trigger functions.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "transactions-concurrency"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-postgresql-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-postgresql-8-1",
+          "title": "PL/pgSQL basics Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=PL%2FpgSQL%20basics%20documentation"
+        },
+        {
+          "id": "res-postgresql-8-2",
+          "title": "Creating functions Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Creating%20functions%20tutorial"
+        },
+        {
+          "id": "res-postgresql-8-3",
+          "title": "Practice Creating stored procedures (PostgreSQL 11+) Exercises",
+          "type": "WEBSITE",
+          "url": "https://leetcode.com"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating PL/pgSQL basics, Creating functions, Creating stored procedures (PostgreSQL 11+)."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is PL/pgSQL basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Creating functions."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the stored-procedures-functions milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Supabase / AWS RDS Postgres / Dockerized Postgres clustered Core Theories",
+        "8. Stored Procedures & Functions Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating PL/pgSQL basics, Creating functions, Creating stored procedures (PostgreSQL 11+)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Connection Pooling (PgBouncer), Write-Ahead Logging (WAL), Logical Replication, Composite Indexing.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "replication-high-availability",
+      "title": "9. Replication & High Availability",
+      "description": "Master core capabilities of Replication & High Availability: Streaming replication (primary-replica), Logical replication, Replication slots, Synchronous vs asynchronous replication, Hot standby and read replicas.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "stored-procedures-functions"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-postgresql-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-postgresql-9-1",
+          "title": "Streaming replication (primary-replica) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Streaming%20replication%20(primary-replica)%20documentation"
+        },
+        {
+          "id": "res-postgresql-9-2",
+          "title": "Logical replication Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Logical%20replication%20tutorial"
+        },
+        {
+          "id": "res-postgresql-9-3",
+          "title": "Practice Replication slots Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Replication%20slots%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Streaming replication (primary-replica), Logical replication, Replication slots."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Connection Pooling (PgBouncer) to solve scalability bottlenecks.",
-        "What security vulnerabilities does Composite Indexing protect against?"
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Streaming replication (primary-replica) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Logical replication."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the replication-high-availability milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Replication & High Availability Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Streaming replication (primary-replica), Logical replication, Replication slots."
       ]
     },
     {
       "id": "roadmap-postgresql-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "backup-recovery",
+      "title": "10. Backup & Recovery",
+      "description": "Master core capabilities of Backup & Recovery: pg_dump (logical backups), pg_dumpall, pg_restore, Point-in-Time Recovery (PITR), WAL archiving.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "replication-high-availability"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-postgresql-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-postgresql-10-1",
+          "title": "pg_dump (logical backups) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=pg_dump%20(logical%20backups)%20documentation"
+        },
+        {
+          "id": "res-postgresql-10-2",
+          "title": "pg_dumpall Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=pg_dumpall%20tutorial"
+        },
+        {
+          "id": "res-postgresql-10-3",
+          "title": "Practice pg_restore Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=pg_restore%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating pg_dump (logical backups), pg_dumpall, pg_restore."
       ],
       "interviewQuestions": [
-        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
-        "How do you configure PgBouncer and optimize database connection limits?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is pg_dump (logical backups) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of pg_dumpall."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the backup-recovery milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Backup & Recovery Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating pg_dump (logical backups), pg_dumpall, pg_restore."
       ]
     },
     {
       "id": "roadmap-postgresql-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Highly Available Postgres Cluster setup or Database Query Performance Optimizer Suite. Set up deployment links and repository READMEs.",
+      "slug": "extensions-ecosystem",
+      "title": "11. Extensions & Ecosystem",
+      "description": "Master core capabilities of Extensions & Ecosystem: PostGIS (geospatial), TimescaleDB (time-series), pg_partman (partition management), pgvector (vector embeddings for AI), pg_cron (scheduled jobs).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "backup-recovery"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-postgresql-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-postgresql-11-1",
+          "title": "PostGIS (geospatial) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=PostGIS%20(geospatial)%20documentation"
+        },
+        {
+          "id": "res-postgresql-11-2",
+          "title": "TimescaleDB (time-series) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=TimescaleDB%20(time-series)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-11-3",
+          "title": "Practice pg_partman (partition management) Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=pg_partman%20(partition%20management)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Highly Available Postgres Cluster setup with documentation.",
-        "Build complete deployable version of Database Query Performance Optimizer Suite with documentation."
+        "Build a prototype integrating PostGIS (geospatial), TimescaleDB (time-series), pg_partman (partition management)."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Highly Available Postgres Cluster setup project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is PostGIS (geospatial) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of TimescaleDB (time-series)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the extensions-ecosystem milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Extensions & Ecosystem Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Highly Available Postgres Cluster setup with documentation.",
-        "Build complete deployable version of Database Query Performance Optimizer Suite with documentation."
+        "Build a prototype integrating PostGIS (geospatial), TimescaleDB (time-series), pg_partman (partition management)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "postgresql-in-production",
+      "title": "12. PostgreSQL in Production",
+      "description": "Master core capabilities of PostgreSQL in Production: Connection pooling strategies, Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter), Alerting on slow queries, Cloud PostgreSQL (AWS RDS, AWS Aurora, GCP CloudSQL, Supabase), Schema migrations (Flyway, Liquibase, Alembic).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "extensions-ecosystem"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-postgresql-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-postgresql-12-1",
+          "title": "Connection pooling strategies Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Connection%20pooling%20strategies%20documentation"
+        },
+        {
+          "id": "res-postgresql-12-2",
+          "title": "Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Monitoring%20(pg_stat_activity%2C%20pg_stat_user_tables%2C%20pg_stat_bgwriter)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-12-3",
+          "title": "Practice Alerting on slow queries Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Alerting%20on%20slow%20queries%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Connection pooling strategies, Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter), Alerting on slow queries."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Connection pooling strategies and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the postgresql-in-production milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. PostgreSQL in Production Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Connection pooling strategies, Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter), Alerting on slow queries."
+      ]
+    },
+    {
+      "id": "roadmap-postgresql-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "postgresql-in-production"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-postgresql-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-postgresql-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-postgresql-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-postgresql-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-postgresql-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-postgresql-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-postgresql-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Highly Available Postgres Cluster setup"
+      ],
+      "interviewQuestions": [
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Highly Available Postgres Cluster setup"
+      ]
+    },
+    {
+      "id": "roadmap-postgresql-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-postgresql-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-postgresql-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-postgresql-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Database Query Performance Optimizer Suite"
+      ],
+      "interviewQuestions": [
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Database Query Performance Optimizer Suite"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-postgresql-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "relational-database-fundamentals",
+      "title": "1. Relational Database Fundamentals",
+      "description": "Master core capabilities of Relational Database Fundamentals: What is a relational database?, ACID properties, Relational model and set theory, Database design principles, Normalization (1NF, 2NF, 3NF, BCNF).",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -538,508 +846,815 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-postgresql-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-postgresql-1-1",
+          "title": "What is a relational database? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20a%20relational%20database%3F%20documentation"
         },
         {
-          "id": "res-postgresql-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-postgresql-1-2",
+          "title": "ACID properties Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=ACID%20properties%20tutorial"
+        },
+        {
+          "id": "res-postgresql-1-3",
+          "title": "Practice Relational model and set theory Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Relational%20model%20and%20set%20theory%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a relational database?, ACID properties, Relational model and set theory."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is What is a relational database? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of ACID properties."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the relational-database-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Relational Database Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is a relational database?, ACID properties, Relational model and set theory."
       ]
     },
     {
       "id": "roadmap-postgresql-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "postgresql-installation-setup",
+      "title": "2. PostgreSQL Installation & Setup",
+      "description": "Master core capabilities of PostgreSQL Installation & Setup: Installation (Linux, Mac, Windows, Docker), PostgreSQL architecture (postmaster, shared buffers, WAL), psql command-line client, pgAdmin GUI, Configuration files (postgresql.conf, pg_hba.conf).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "relational-database-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-postgresql-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-postgresql-2-1",
+          "title": "Installation (Linux, Mac, Windows, Docker) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
         },
         {
-          "id": "res-postgresql-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-postgresql-2-2",
+          "title": "PostgreSQL architecture (postmaster, shared buffers, WAL) Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=PostgreSQL%20architecture%20(postmaster%2C%20shared%20buffers%2C%20WAL)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-2-3",
+          "title": "Practice psql command-line client Exercises",
+          "type": "WEBSITE",
+          "url": "https://leetcode.com"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Installation (Linux, Mac, Windows, Docker), PostgreSQL architecture (postmaster, shared buffers, WAL), psql command-line client."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Installation (Linux, Mac, Windows, Docker) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of PostgreSQL architecture (postmaster, shared buffers, WAL)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the postgresql-installation-setup milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. PostgreSQL Installation & Setup Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Installation (Linux, Mac, Windows, Docker), PostgreSQL architecture (postmaster, shared buffers, WAL), psql command-line client."
       ]
     },
     {
       "id": "roadmap-postgresql-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: pgAdmin & More",
-      "description": "Master version control with Git & GitHub and construct development environments using pgAdmin, pg_dump/pg_restore, Explain Visualizers, psql CLI.",
+      "slug": "sql-fundamentals",
+      "title": "3. SQL Fundamentals",
+      "description": "Master core capabilities of SQL Fundamentals: SELECT, INSERT, UPDATE, DELETE, WHERE clauses and operators, ORDER BY and LIMIT, NULL handling, Aliases.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "postgresql-installation-setup"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-postgresql-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-postgresql-3-1",
+          "title": "SELECT, INSERT, UPDATE, DELETE Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=SELECT%2C%20INSERT%2C%20UPDATE%2C%20DELETE%20documentation"
+        },
+        {
+          "id": "res-postgresql-3-2",
+          "title": "WHERE clauses and operators Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=WHERE%20clauses%20and%20operators%20tutorial"
+        },
+        {
+          "id": "res-postgresql-3-3",
+          "title": "Practice ORDER BY and LIMIT Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=ORDER%20BY%20and%20LIMIT%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating SELECT, INSERT, UPDATE, DELETE, WHERE clauses and operators, ORDER BY and LIMIT."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is SELECT, INSERT, UPDATE, DELETE and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of WHERE clauses and operators."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the sql-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: pgAdmin & More Core Theories",
+        "3. SQL Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating SELECT, INSERT, UPDATE, DELETE, WHERE clauses and operators, ORDER BY and LIMIT."
       ]
     },
     {
       "id": "roadmap-postgresql-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: SQL / PL/pgSQL / Python/Bash",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in SQL, PL/pgSQL, Python/Bash.",
+      "slug": "advanced-sql",
+      "title": "4. Advanced SQL",
+      "description": "Master core capabilities of Advanced SQL: JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF), Subqueries (correlated and non-correlated), CTEs (WITH clause), Window functions (ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, PARTITION BY), CASE expressions.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "sql-fundamentals"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-postgresql-lang-1",
-          "title": "SQL Official Guides",
+          "id": "res-postgresql-4-1",
+          "title": "JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=JOINs%20(INNER%2C%20LEFT%2C%20RIGHT%2C%20FULL%20OUTER%2C%20CROSS%2C%20SELF)%20documentation"
+        },
+        {
+          "id": "res-postgresql-4-2",
+          "title": "Subqueries (correlated and non-correlated) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Subqueries%20(correlated%20and%20non-correlated)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-4-3",
+          "title": "Practice CTEs (WITH clause) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=CTEs%20(WITH%20clause)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using SQL handling variable arrays."
+        "Build a prototype integrating JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF), Subqueries (correlated and non-correlated), CTEs (WITH clause)."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in SQL?",
-        "How does asynchronous logic work in SQL?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Subqueries (correlated and non-correlated)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the advanced-sql milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: SQL / PL/pgSQL / Python/Bash Core Theories",
+        "4. Advanced SQL Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using SQL handling variable arrays."
+        "Build a prototype integrating JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF), Subqueries (correlated and non-correlated), CTEs (WITH clause)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Prisma & Sequelize",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Prisma, Sequelize.",
+      "slug": "postgresql-specific-features",
+      "title": "5. PostgreSQL-specific Features",
+      "description": "Master core capabilities of PostgreSQL-specific Features: Arrays, JSONB and JSON operations, HSTORE, UUID data type, Range types.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "advanced-sql"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-postgresql-fw-1",
-          "title": "Prisma Reference Docs",
+          "id": "res-postgresql-5-1",
+          "title": "Arrays Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=Arrays%20documentation"
+        },
+        {
+          "id": "res-postgresql-5-2",
+          "title": "JSONB and JSON operations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=JSONB%20and%20JSON%20operations%20tutorial"
+        },
+        {
+          "id": "res-postgresql-5-3",
+          "title": "Practice HSTORE Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=HSTORE%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Prisma."
+        "Build a prototype integrating Arrays, JSONB and JSON operations, HSTORE."
       ],
       "interviewQuestions": [
-        "When does a Prisma component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Prisma."
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Arrays and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of JSONB and JSON operations."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the postgresql-specific-features milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Prisma & Sequelize Core Theories",
+        "5. PostgreSQL-specific Features Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Prisma."
+        "Build a prototype integrating Arrays, JSONB and JSON operations, HSTORE."
       ]
     },
     {
       "id": "roadmap-postgresql-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL (Advanced)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Advanced).",
+      "slug": "indexes-performance",
+      "title": "6. Indexes & Performance",
+      "description": "Master core capabilities of Indexes & Performance: Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST), Creating and managing indexes, Composite indexes, Partial indexes, Index-only scans.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "postgresql-specific-features"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-postgresql-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-postgresql-6-1",
+          "title": "Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Index%20types%20(B-tree%2C%20Hash%2C%20GIN%2C%20GiST%2C%20BRIN%2C%20SP-GiST)%20documentation"
+        },
+        {
+          "id": "res-postgresql-6-2",
+          "title": "Creating and managing indexes Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Creating%20and%20managing%20indexes%20tutorial"
+        },
+        {
+          "id": "res-postgresql-6-3",
+          "title": "Practice Composite indexes Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Composite%20indexes%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL (Advanced)."
+        "Build a prototype integrating Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST), Creating and managing indexes, Composite indexes."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Creating and managing indexes."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the indexes-performance milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL (Advanced) Core Theories",
+        "6. Indexes & Performance Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL (Advanced)."
+        "Build a prototype integrating Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST), Creating and managing indexes, Composite indexes."
       ]
     },
     {
       "id": "roadmap-postgresql-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: pgTap unit testing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using pgTap unit testing.",
+      "slug": "transactions-concurrency",
+      "title": "7. Transactions & Concurrency",
+      "description": "Master core capabilities of Transactions & Concurrency: Transaction basics (BEGIN, COMMIT, ROLLBACK), Savepoints, Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE), MVCC (Multi-Version Concurrency Control), Row-level locking.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "indexes-performance"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-postgresql-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-postgresql-7-1",
+          "title": "Transaction basics (BEGIN, COMMIT, ROLLBACK) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Transaction%20basics%20(BEGIN%2C%20COMMIT%2C%20ROLLBACK)%20documentation"
+        },
+        {
+          "id": "res-postgresql-7-2",
+          "title": "Savepoints Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Savepoints%20tutorial"
+        },
+        {
+          "id": "res-postgresql-7-3",
+          "title": "Practice Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Isolation%20levels%20(READ%20UNCOMMITTED%2C%20READ%20COMMITTED%2C%20REPEATABLE%20READ%2C%20SERIALIZABLE)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Transaction basics (BEGIN, COMMIT, ROLLBACK), Savepoints, Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE)."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Transaction basics (BEGIN, COMMIT, ROLLBACK) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Savepoints."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the transactions-concurrency milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: pgTap unit testing Core Theories",
+        "7. Transactions & Concurrency Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Transaction basics (BEGIN, COMMIT, ROLLBACK), Savepoints, Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Supabase / AWS RDS Postgres / Dockerized Postgres clustered",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Supabase, AWS RDS Postgres, Dockerized Postgres clustered.",
+      "slug": "stored-procedures-functions",
+      "title": "8. Stored Procedures & Functions",
+      "description": "Master core capabilities of Stored Procedures & Functions: PL/pgSQL basics, Creating functions, Creating stored procedures (PostgreSQL 11+), Triggers, Trigger functions.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "transactions-concurrency"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-postgresql-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-postgresql-8-1",
+          "title": "PL/pgSQL basics Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=PL%2FpgSQL%20basics%20documentation"
+        },
+        {
+          "id": "res-postgresql-8-2",
+          "title": "Creating functions Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Creating%20functions%20tutorial"
+        },
+        {
+          "id": "res-postgresql-8-3",
+          "title": "Practice Creating stored procedures (PostgreSQL 11+) Exercises",
+          "type": "WEBSITE",
+          "url": "https://leetcode.com"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating PL/pgSQL basics, Creating functions, Creating stored procedures (PostgreSQL 11+)."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is PL/pgSQL basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Creating functions."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the stored-procedures-functions milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: Supabase / AWS RDS Postgres / Dockerized Postgres clustered Core Theories",
+        "8. Stored Procedures & Functions Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating PL/pgSQL basics, Creating functions, Creating stored procedures (PostgreSQL 11+)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Connection Pooling (PgBouncer), Write-Ahead Logging (WAL), Logical Replication, Composite Indexing.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "replication-high-availability",
+      "title": "9. Replication & High Availability",
+      "description": "Master core capabilities of Replication & High Availability: Streaming replication (primary-replica), Logical replication, Replication slots, Synchronous vs asynchronous replication, Hot standby and read replicas.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "stored-procedures-functions"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-postgresql-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-postgresql-9-1",
+          "title": "Streaming replication (primary-replica) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=Streaming%20replication%20(primary-replica)%20documentation"
+        },
+        {
+          "id": "res-postgresql-9-2",
+          "title": "Logical replication Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Logical%20replication%20tutorial"
+        },
+        {
+          "id": "res-postgresql-9-3",
+          "title": "Practice Replication slots Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Replication%20slots%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Streaming replication (primary-replica), Logical replication, Replication slots."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Connection Pooling (PgBouncer) to solve scalability bottlenecks.",
-        "What security vulnerabilities does Composite Indexing protect against?"
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Streaming replication (primary-replica) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Logical replication."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the replication-high-availability milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Replication & High Availability Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating Streaming replication (primary-replica), Logical replication, Replication slots."
       ]
     },
     {
       "id": "roadmap-postgresql-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "backup-recovery",
+      "title": "10. Backup & Recovery",
+      "description": "Master core capabilities of Backup & Recovery: pg_dump (logical backups), pg_dumpall, pg_restore, Point-in-Time Recovery (PITR), WAL archiving.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "replication-high-availability"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-postgresql-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-postgresql-10-1",
+          "title": "pg_dump (logical backups) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=pg_dump%20(logical%20backups)%20documentation"
+        },
+        {
+          "id": "res-postgresql-10-2",
+          "title": "pg_dumpall Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=pg_dumpall%20tutorial"
+        },
+        {
+          "id": "res-postgresql-10-3",
+          "title": "Practice pg_restore Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=pg_restore%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating pg_dump (logical backups), pg_dumpall, pg_restore."
       ],
       "interviewQuestions": [
-        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
-        "How do you configure PgBouncer and optimize database connection limits?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is pg_dump (logical backups) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of pg_dumpall."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the backup-recovery milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Backup & Recovery Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating pg_dump (logical backups), pg_dumpall, pg_restore."
       ]
     },
     {
       "id": "roadmap-postgresql-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Highly Available Postgres Cluster setup or Database Query Performance Optimizer Suite. Set up deployment links and repository READMEs.",
+      "slug": "extensions-ecosystem",
+      "title": "11. Extensions & Ecosystem",
+      "description": "Master core capabilities of Extensions & Ecosystem: PostGIS (geospatial), TimescaleDB (time-series), pg_partman (partition management), pgvector (vector embeddings for AI), pg_cron (scheduled jobs).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "backup-recovery"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-postgresql-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-postgresql-11-1",
+          "title": "PostGIS (geospatial) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=PostGIS%20(geospatial)%20documentation"
+        },
+        {
+          "id": "res-postgresql-11-2",
+          "title": "TimescaleDB (time-series) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=TimescaleDB%20(time-series)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-11-3",
+          "title": "Practice pg_partman (partition management) Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=pg_partman%20(partition%20management)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Highly Available Postgres Cluster setup with documentation.",
-        "Build complete deployable version of Database Query Performance Optimizer Suite with documentation."
+        "Build a prototype integrating PostGIS (geospatial), TimescaleDB (time-series), pg_partman (partition management)."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Highly Available Postgres Cluster setup project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is PostGIS (geospatial) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of TimescaleDB (time-series)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the extensions-ecosystem milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Extensions & Ecosystem Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Highly Available Postgres Cluster setup with documentation.",
-        "Build complete deployable version of Database Query Performance Optimizer Suite with documentation."
+        "Build a prototype integrating PostGIS (geospatial), TimescaleDB (time-series), pg_partman (partition management)."
       ]
     },
     {
       "id": "roadmap-postgresql-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "postgresql-in-production",
+      "title": "12. PostgreSQL in Production",
+      "description": "Master core capabilities of PostgreSQL in Production: Connection pooling strategies, Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter), Alerting on slow queries, Cloud PostgreSQL (AWS RDS, AWS Aurora, GCP CloudSQL, Supabase), Schema migrations (Flyway, Liquibase, Alembic).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "extensions-ecosystem"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-postgresql-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-postgresql-12-1",
+          "title": "Connection pooling strategies Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Connection%20pooling%20strategies%20documentation"
+        },
+        {
+          "id": "res-postgresql-12-2",
+          "title": "Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Monitoring%20(pg_stat_activity%2C%20pg_stat_user_tables%2C%20pg_stat_bgwriter)%20tutorial"
+        },
+        {
+          "id": "res-postgresql-12-3",
+          "title": "Practice Alerting on slow queries Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Alerting%20on%20slow%20queries%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Connection pooling strategies, Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter), Alerting on slow queries."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Connection pooling strategies and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the postgresql-in-production milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. PostgreSQL in Production Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Connection pooling strategies, Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter), Alerting on slow queries."
+      ]
+    },
+    {
+      "id": "roadmap-postgresql-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "postgresql-in-production"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-postgresql-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-postgresql-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-postgresql-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-postgresql-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-postgresql-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-postgresql-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-postgresql-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Highly Available Postgres Cluster setup"
+      ],
+      "interviewQuestions": [
+        "How do you configure PgBouncer and optimize database connection limits?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Highly Available Postgres Cluster setup"
+      ]
+    },
+    {
+      "id": "roadmap-postgresql-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-postgresql-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-postgresql-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-postgresql-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Database Query Performance Optimizer Suite"
+      ],
+      "interviewQuestions": [
+        "Explain the differences between PostgreSQL transaction isolation levels and how they prevent dirty reads.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Database Query Performance Optimizer Suite"
       ]
     }
   ]

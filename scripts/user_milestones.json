@@ -1,0 +1,2872 @@
+{
+  "frontend-developer": [
+    {
+      "order": 1,
+      "title": "1. Internet & Web Basics",
+      "subtopics": [
+        "How does the internet work?",
+        "What is HTTP/HTTPS?",
+        "What is a domain name?",
+        "What is hosting?",
+        "DNS and how it works",
+        "Browsers and how they work",
+        "What is a web server?"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. HTML",
+      "subtopics": [
+        "HTML basics & syntax",
+        "Semantic HTML",
+        "Forms and validations",
+        "Accessibility (a11y) basics",
+        "SEO basics",
+        "Meta tags",
+        "HTML5 APIs"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. CSS",
+      "subtopics": [
+        "CSS basics & syntax",
+        "Selectors and specificity",
+        "Box model",
+        "Flexbox",
+        "CSS Grid",
+        "Responsive design & media queries",
+        "CSS variables",
+        "Animations and transitions",
+        "CSS preprocessors (Sass/SCSS)",
+        "CSS architecture (BEM)"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. JavaScript Fundamentals",
+      "subtopics": [
+        "Variables, data types, operators",
+        "Functions and scope",
+        "DOM manipulation",
+        "Events and event listeners",
+        "Fetch API / AJAX",
+        "ES6+ features (arrow functions, destructuring, spread, modules)",
+        "Promises and async/await",
+        "Error handling",
+        "Local Storage / Session Storage"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Version Control",
+      "subtopics": [
+        "What is Git?",
+        "Basic Git commands (init, add, commit, push, pull)",
+        "Branching and merging",
+        "GitHub / GitLab basics",
+        "Pull requests and code reviews"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Package Managers & Tooling",
+      "subtopics": [
+        "npm basics",
+        "yarn basics",
+        "npx",
+        "Webpack basics",
+        "Vite",
+        "Babel",
+        "ESLint & Prettier"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. CSS Frameworks",
+      "subtopics": [
+        "Tailwind CSS",
+        "Bootstrap",
+        "CSS Modules",
+        "Styled Components"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. JavaScript Frameworks \u2014 React",
+      "subtopics": [
+        "React fundamentals & JSX",
+        "Components (functional vs class)",
+        "Props and state",
+        "useState and useEffect hooks",
+        "Component lifecycle",
+        "React Router (client-side routing)",
+        "Context API",
+        "Custom hooks",
+        "React performance optimization",
+        "React DevTools"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. State Management",
+      "subtopics": [
+        "Local state vs global state",
+        "Redux / Redux Toolkit",
+        "Zustand",
+        "React Query / TanStack Query"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Build & Deploy",
+      "subtopics": [
+        "npm scripts",
+        "Environment variables",
+        "Build optimization",
+        "Code splitting and lazy loading",
+        "Deploying to Vercel / Netlify",
+        "GitHub Actions basics (CI/CD)"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Testing",
+      "subtopics": [
+        "Why testing?",
+        "Unit testing with Jest",
+        "Component testing with React Testing Library",
+        "End-to-end testing with Playwright / Cypress",
+        "Test coverage"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Web Performance & Best Practices",
+      "subtopics": [
+        "Core Web Vitals (LCP, CLS, FID)",
+        "Lighthouse audit",
+        "Image optimization",
+        "Lazy loading",
+        "Caching strategies",
+        "Progressive Web Apps (PWA) basics",
+        "Web security basics (XSS, CSRF)",
+        "TypeScript basics for frontend"
+      ]
+    }
+  ],
+  "backend-developer": [
+    {
+      "order": 1,
+      "title": "1. Internet & How the Web Works",
+      "subtopics": [
+        "How does the internet work?",
+        "What is HTTP/HTTPS?",
+        "HTTP methods (GET, POST, PUT, DELETE, PATCH)",
+        "HTTP status codes",
+        "What is an API?",
+        "What is a web server?",
+        "DNS and domain names",
+        "What is hosting?",
+        "Browsers and how they work"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Pick a Backend Language",
+      "subtopics": [
+        "JavaScript (Node.js)",
+        "Python",
+        "Go",
+        "Ruby",
+        "Java",
+        "C#",
+        "PHP",
+        "Rust",
+        "Language syntax and fundamentals",
+        "OOP concepts",
+        "Functional programming basics"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Version Control",
+      "subtopics": [
+        "Git basics",
+        "Branching strategies (Gitflow)",
+        "GitHub / GitLab",
+        "Pull requests and code reviews",
+        "Conventional commits"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Relational Databases",
+      "subtopics": [
+        "What is a database?",
+        "Relational vs non-relational",
+        "MySQL",
+        "PostgreSQL",
+        "MariaDB",
+        "SQLite",
+        "MS SQL",
+        "Oracle",
+        "SQL queries (SELECT, INSERT, UPDATE, DELETE)",
+        "Joins (INNER, LEFT, RIGHT, FULL)",
+        "Indexes",
+        "Transactions",
+        "ACID properties",
+        "Normalization",
+        "N+1 problem"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. NoSQL Databases",
+      "subtopics": [
+        "MongoDB",
+        "Redis (key-value store)",
+        "Cassandra",
+        "DynamoDB",
+        "When to use NoSQL vs SQL",
+        "Document vs key-value vs column vs graph"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. APIs",
+      "subtopics": [
+        "REST API design principles",
+        "JSON APIs",
+        "SOAP",
+        "gRPC",
+        "GraphQL",
+        "OpenAPI / Swagger specification",
+        "API versioning",
+        "Rate limiting"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Authentication & Authorization",
+      "subtopics": [
+        "Session-based authentication",
+        "JWT (JSON Web Tokens)",
+        "OAuth 2.0",
+        "OpenID Connect",
+        "SAML",
+        "Cookie-based auth",
+        "Token-based auth",
+        "Role-based access control (RBAC)",
+        "API keys"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Caching",
+      "subtopics": [
+        "Why caching?",
+        "In-memory caching (Redis)",
+        "Memcached",
+        "Client-side caching",
+        "Server-side caching",
+        "CDN caching",
+        "HTTP caching headers (Cache-Control, ETag)",
+        "Cache invalidation strategies"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Web Security",
+      "subtopics": [
+        "HTTPS and SSL/TLS",
+        "OWASP Top 10",
+        "CORS",
+        "CSP (Content Security Policy)",
+        "SQL injection",
+        "XSS",
+        "CSRF",
+        "Hashing algorithms (MD5, SHA, bcrypt, scrypt)",
+        "Server security best practices",
+        "API security best practices"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Web Servers & Hosting",
+      "subtopics": [
+        "Nginx",
+        "Apache",
+        "Caddy",
+        "MS IIS",
+        "Load balancers",
+        "Reverse proxies",
+        "Virtual hosts"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. AI in Development",
+      "subtopics": [
+        "How LLMs work",
+        "AI vs traditional coding",
+        "Embeddings",
+        "Vectors and RAG",
+        "AI-assisted coding tools (GitHub Copilot, Cursor, Claude Code, Aider, Windsurf, Antgravity)",
+        "Prompt engineering basics",
+        "Building AI-powered features",
+        "Integration patterns (streaming, structured outputs, function calling)",
+        "AI providers (OpenAI, Anthropic, Gemini)",
+        "MCP (Model Context Protocol)",
+        "AI Agents basics"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Testing",
+      "subtopics": [
+        "Unit testing",
+        "Integration testing",
+        "Functional testing",
+        "End-to-end testing",
+        "Test-driven development (TDD)",
+        "Mocking and stubbing",
+        "Test coverage"
+      ]
+    },
+    {
+      "order": 13,
+      "title": "13. CI/CD",
+      "subtopics": [
+        "What is CI/CD?",
+        "GitHub Actions",
+        "GitLab CI",
+        "Jenkins",
+        "Automated testing pipelines",
+        "Deployment pipelines",
+        "Docker basics for CI/CD"
+      ]
+    },
+    {
+      "order": 14,
+      "title": "14. Containers & Deployment",
+      "subtopics": [
+        "Docker basics",
+        "Docker Compose",
+        "Container registries",
+        "Kubernetes introduction",
+        "Cloud platforms (AWS, GCP, Azure) basics",
+        "Serverless basics",
+        "Environment management"
+      ]
+    },
+    {
+      "order": 15,
+      "title": "15. Advanced Backend Topics",
+      "subtopics": [
+        "Message queues (RabbitMQ, Kafka)",
+        "WebSockets and real-time communication",
+        "Microservices vs monolith",
+        "gRPC advanced",
+        "Background jobs and task queues (Celery, Bull)",
+        "Database migrations",
+        "Transactions advanced",
+        "Sharding and replication",
+        "Search engines (Elasticsearch)"
+      ]
+    }
+  ],
+  "fullstack-developer": [
+    {
+      "order": 1,
+      "title": "1. Internet & Web Basics",
+      "subtopics": [
+        "How does the internet work?",
+        "HTTP/HTTPS",
+        "DNS",
+        "Hosting",
+        "Browsers",
+        "Web servers"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. HTML & CSS Fundamentals",
+      "subtopics": [
+        "Semantic HTML",
+        "HTML forms and validation",
+        "Flexbox and Grid",
+        "Responsive design",
+        "CSS animations",
+        "CSS preprocessors (Sass)",
+        "BEM methodology"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. JavaScript",
+      "subtopics": [
+        "Core JS (variables, types, functions, loops)",
+        "DOM manipulation",
+        "Events",
+        "ES6+ features",
+        "Async JS (Promises, async/await)",
+        "Fetch API",
+        "Modules"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Frontend Framework \u2014 React",
+      "subtopics": [
+        "JSX and components",
+        "Props, state, hooks",
+        "React Router",
+        "Context API",
+        "Custom hooks",
+        "React DevTools",
+        "Error boundaries"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Tailwind CSS",
+      "subtopics": [
+        "Utility-first CSS",
+        "Responsive utilities",
+        "Dark mode",
+        "Custom configuration",
+        "Component patterns"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Frontend Apps \u2014 Checkpoint",
+      "subtopics": [
+        "Static webpages",
+        "Interactive UIs",
+        "Collaborative workflows with Git",
+        "External packages with npm",
+        "Frontend application architecture"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Version Control & Collaboration",
+      "subtopics": [
+        "Git fundamentals",
+        "GitHub workflows",
+        "Pull requests",
+        "Code reviews",
+        "Git branching strategies"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Backend Language \u2014 Node.js",
+      "subtopics": [
+        "Node.js fundamentals",
+        "npm ecosystem",
+        "Express.js",
+        "Middleware",
+        "File system",
+        "Streams",
+        "Environment variables"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. CLI Apps & APIs",
+      "subtopics": [
+        "Building CLI tools",
+        "RESTful API design",
+        "CRUD operations",
+        "Request/response cycle",
+        "JSON APIs",
+        "Error handling in APIs",
+        "API documentation"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Database \u2014 PostgreSQL",
+      "subtopics": [
+        "Relational database concepts",
+        "SQL fundamentals",
+        "PostgreSQL setup",
+        "CRUD with SQL",
+        "Joins and relationships",
+        "Indexes",
+        "Transactions"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Authentication",
+      "subtopics": [
+        "Session vs token auth",
+        "JWT",
+        "OAuth basics",
+        "Password hashing (bcrypt)",
+        "Middleware for auth",
+        "Role-based access"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Redis & Caching",
+      "subtopics": [
+        "Redis setup",
+        "Key-value operations",
+        "Caching strategies",
+        "Session storage with Redis",
+        "Pub/sub with Redis"
+      ]
+    },
+    {
+      "order": 13,
+      "title": "13. RESTful APIs \u2014 Complete",
+      "subtopics": [
+        "REST design principles",
+        "CRUD API",
+        "Pagination and filtering",
+        "Rate limiting",
+        "API versioning",
+        "Swagger/OpenAPI docs"
+      ]
+    },
+    {
+      "order": 14,
+      "title": "14. DevOps Basics",
+      "subtopics": [
+        "Linux basics",
+        "Command-line tools",
+        "Environment management",
+        "Basic AWS services (EC2, VPC, S3, Route53, SES)",
+        "SSH and server management"
+      ]
+    },
+    {
+      "order": 15,
+      "title": "15. Deployment",
+      "subtopics": [
+        "Deploying backend to AWS/VPS",
+        "Deploying frontend to Vercel/Netlify",
+        "Environment variables in production",
+        "HTTPS setup",
+        "Nginx as reverse proxy",
+        "Process manager (PM2)"
+      ]
+    },
+    {
+      "order": 16,
+      "title": "16. CI/CD",
+      "subtopics": [
+        "GitHub Actions",
+        "Automated testing",
+        "Deployment pipelines",
+        "Build optimization",
+        "Branch-based deployments"
+      ]
+    },
+    {
+      "order": 17,
+      "title": "17. Monitoring & Automation",
+      "subtopics": [
+        "Server monitoring with Monit",
+        "Log management",
+        "Error tracking (Sentry)",
+        "Ansible basics for automation",
+        "Health checks"
+      ]
+    },
+    {
+      "order": 18,
+      "title": "18. Infrastructure as Code",
+      "subtopics": [
+        "Terraform basics",
+        "Infrastructure provisioning",
+        "State management",
+        "Cloud resource management"
+      ]
+    },
+    {
+      "order": 19,
+      "title": "19. Testing",
+      "subtopics": [
+        "Unit testing (Jest)",
+        "API testing",
+        "Integration testing",
+        "E2E testing (Playwright)",
+        "Testing best practices"
+      ]
+    },
+    {
+      "order": 20,
+      "title": "20. Advanced Topics",
+      "subtopics": [
+        "WebSockets",
+        "Background jobs",
+        "Microservices intro",
+        "GraphQL intro",
+        "TypeScript for full stack",
+        "Performance optimization",
+        "Security hardening"
+      ]
+    }
+  ],
+  "android": [
+    {
+      "order": 1,
+      "title": "1. Programming Language",
+      "subtopics": [
+        "Kotlin fundamentals",
+        "Variables, data types, functions",
+        "OOP in Kotlin",
+        "Null safety",
+        "Coroutines basics",
+        "Extension functions",
+        "Lambda and higher-order functions",
+        "Java interoperability",
+        "Java basics (legacy codebases)"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Android Fundamentals",
+      "subtopics": [
+        "Android Studio setup",
+        "Android architecture overview",
+        "Activities and Activity lifecycle",
+        "Fragments and Fragment lifecycle",
+        "Intents (explicit and implicit)",
+        "Context",
+        "Resources and assets",
+        "Manifest file",
+        "Permissions (runtime and manifest)",
+        "App signing basics"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. UI Development",
+      "subtopics": [
+        "XML layouts vs Jetpack Compose",
+        "View system (TextView, EditText, Button, ImageView, RecyclerView)",
+        "Constraint Layout",
+        "Linear Layout, Frame Layout",
+        "Material Design components",
+        "Themes and styles",
+        "Jetpack Compose basics",
+        "Composables and state in Compose",
+        "Navigation in Compose",
+        "Responsive layouts for different screen sizes"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Navigation & App Architecture",
+      "subtopics": [
+        "Android Navigation Component",
+        "NavGraph",
+        "Bottom Navigation",
+        "Drawer Navigation",
+        "Deep links",
+        "MVVM architecture",
+        "ViewModel",
+        "LiveData",
+        "StateFlow",
+        "Repository pattern"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Data Storage",
+      "subtopics": [
+        "SharedPreferences / DataStore",
+        "Room Database",
+        "SQLite basics",
+        "File storage (internal and external)",
+        "Content Providers basics"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Networking",
+      "subtopics": [
+        "Retrofit",
+        "OkHttp",
+        "REST API calls",
+        "JSON parsing with Gson / Moshi",
+        "Coroutines with networking",
+        "Error handling in API calls",
+        "Authentication (JWT, OAuth in Android)",
+        "Interceptors"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Dependency Injection",
+      "subtopics": [
+        "What is DI?",
+        "Hilt (recommended)",
+        "Dagger basics",
+        "Koin",
+        "DI patterns"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Background Work",
+      "subtopics": [
+        "WorkManager",
+        "Services (Foreground, Background, Bound)",
+        "BroadcastReceivers",
+        "AlarmManager",
+        "Notifications",
+        "Push notifications (Firebase Cloud Messaging)"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Firebase & Third-party SDKs",
+      "subtopics": [
+        "Firebase setup",
+        "Firebase Authentication",
+        "Firebase Firestore",
+        "Firebase Realtime Database",
+        "Firebase Storage",
+        "Firebase Analytics",
+        "Firebase Crashlytics",
+        "Google Maps SDK",
+        "Payment integrations basics"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Testing",
+      "subtopics": [
+        "Unit testing with JUnit",
+        "UI testing with Espresso",
+        "Mocking with Mockito",
+        "Compose testing",
+        "Test coverage"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Publishing & Distribution",
+      "subtopics": [
+        "App signing and keystores",
+        "Build variants (debug/release)",
+        "ProGuard / R8 code shrinking",
+        "Google Play Store setup",
+        "App bundle (AAB) vs APK",
+        "Play Store listing (screenshots, description)",
+        "In-app updates and versioning"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Advanced Topics",
+      "subtopics": [
+        "Performance profiling (Android Profiler)",
+        "Memory management",
+        "App startup optimization",
+        "Accessibility (TalkBack, content descriptions)",
+        "Localization and internationalization",
+        "Kotlin Multiplatform (KMP) basics",
+        "Security best practices (encryption, certificate pinning)",
+        "CI/CD for Android (Fastlane, GitHub Actions)"
+      ]
+    }
+  ],
+  "ios": [
+    {
+      "order": 1,
+      "title": "1. Programming Language \u2014 Swift",
+      "subtopics": [
+        "Swift syntax and basics",
+        "Variables, constants, data types",
+        "Optionals and optional chaining",
+        "Control flow (if, guard, switch)",
+        "Functions and closures",
+        "OOP (classes, structs, enums, protocols)",
+        "Error handling (do-try-catch)",
+        "Generics",
+        "Swift concurrency (async/await, actors)",
+        "Swift Package Manager"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Xcode & iOS Fundamentals",
+      "subtopics": [
+        "Xcode IDE setup and interface",
+        "Simulators and real device testing",
+        "iOS app structure",
+        "Info.plist",
+        "Assets and resources",
+        "App lifecycle (UIApplicationDelegate / SwiftUI App protocol)",
+        "Scene and window management",
+        "Bundle and entitlements"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. UI Development \u2014 UIKit",
+      "subtopics": [
+        "UIViewController and lifecycle",
+        "Auto Layout and constraints",
+        "Storyboards vs programmatic UI",
+        "UITableView and UICollectionView",
+        "Navigation controllers and tab bars",
+        "Modal presentations",
+        "UIStackView",
+        "Gesture recognizers",
+        "Custom views and animations",
+        "Core Animation"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. UI Development \u2014 SwiftUI",
+      "subtopics": [
+        "SwiftUI basics and declarative syntax",
+        "Views, modifiers, and layout",
+        "State and data flow (@State, @Binding, @ObservedObject, @EnvironmentObject)",
+        "Lists and navigation",
+        "SwiftUI animations",
+        "Combine framework basics",
+        "SwiftUI vs UIKit interoperability"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. App Architecture",
+      "subtopics": [
+        "MVC pattern",
+        "MVVM pattern",
+        "Coordinator pattern",
+        "Clean architecture basics",
+        "Dependency injection in iOS",
+        "Combine for reactive programming"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Data Persistence",
+      "subtopics": [
+        "UserDefaults",
+        "Core Data",
+        "SwiftData (iOS 17+)",
+        "Keychain (secure storage)",
+        "File system",
+        "CloudKit basics",
+        "iCloud sync"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Networking",
+      "subtopics": [
+        "URLSession",
+        "Codable (JSON encoding/decoding)",
+        "Async/await networking",
+        "REST API calls",
+        "Authentication (JWT, OAuth)",
+        "Error handling",
+        "Third-party libraries (Alamofire)"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Apple Frameworks",
+      "subtopics": [
+        "MapKit",
+        "Core Location",
+        "AVFoundation (audio/video)",
+        "Camera and photo library access",
+        "Notifications (local and push \u2014 APNs)",
+        "HealthKit basics",
+        "ARKit basics",
+        "CoreML basics",
+        "CloudKit"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Testing",
+      "subtopics": [
+        "XCTest framework",
+        "Unit testing",
+        "UI testing",
+        "Test plans",
+        "Mocking and dependency injection for tests",
+        "Code coverage in Xcode"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. App Store & Distribution",
+      "subtopics": [
+        "Apple Developer Program",
+        "Code signing and certificates",
+        "Provisioning profiles",
+        "TestFlight for beta testing",
+        "App Store Connect",
+        "App Store submission guidelines",
+        "App review process",
+        "In-app purchases (StoreKit)",
+        "App versioning"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Performance & Security",
+      "subtopics": [
+        "Instruments profiling tool",
+        "Memory leaks and retain cycles",
+        "ARC (Automatic Reference Counting)",
+        "App startup time optimization",
+        "Background modes and background fetch",
+        "App Transport Security (ATS)",
+        "Keychain and secure storage",
+        "Certificate pinning",
+        "Obfuscation basics"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Advanced Topics",
+      "subtopics": [
+        "Swift concurrency advanced (actors, task groups)",
+        "Widgets (WidgetKit)",
+        "App Clips",
+        "Accessibility (VoiceOver, Dynamic Type)",
+        "Localization and internationalization",
+        "CI/CD for iOS (Fastlane, Xcode Cloud, GitHub Actions)",
+        "Kotlin Multiplatform / React Native (cross-platform awareness)",
+        "SwiftUI advanced patterns"
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "order": 1,
+      "title": "1. Software Testing Fundamentals",
+      "subtopics": [
+        "What is software testing?",
+        "Importance of QA in SDLC",
+        "Testing types overview (manual vs automated)",
+        "SDLC models (Waterfall, Agile, Scrum)",
+        "STLC (Software Testing Life Cycle)",
+        "Defect life cycle",
+        "Test levels (unit, integration, system, UAT)",
+        "Test types (functional, non-functional, regression, smoke, sanity)",
+        "Testing principles (7 principles of testing)"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Test Planning & Documentation",
+      "subtopics": [
+        "Test plan creation",
+        "Test strategy vs test plan",
+        "Test scenarios and test cases",
+        "Test case design techniques (BVA, equivalence partitioning, decision table, state transition)",
+        "Test data management",
+        "Traceability matrix",
+        "Test execution reports",
+        "Defect reporting",
+        "Bug report writing"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Manual Testing",
+      "subtopics": [
+        "Exploratory testing",
+        "Ad hoc testing",
+        "Regression testing",
+        "Smoke and sanity testing",
+        "UAT (User Acceptance Testing)",
+        "Cross-browser testing",
+        "Cross-device testing",
+        "API manual testing with Postman",
+        "Database testing basics"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Bug Tracking & Project Management Tools",
+      "subtopics": [
+        "Bug tracking concepts",
+        "JIRA",
+        "Trello",
+        "Azure DevOps",
+        "Bugzilla",
+        "TestRail",
+        "Confluence",
+        "Agile and Scrum basics for QA",
+        "Sprint ceremonies (planning, review, retrospective)"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. API Testing",
+      "subtopics": [
+        "What is an API?",
+        "REST API concepts",
+        "Postman basics",
+        "Creating and running collections",
+        "Environment variables in Postman",
+        "Assertions and test scripts in Postman",
+        "API documentation reading",
+        "Status codes and response validation"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Test Automation Fundamentals",
+      "subtopics": [
+        "Why automate?",
+        "Programming basics (Python or JavaScript)",
+        "Selenium WebDriver",
+        "Locators (XPath, CSS selectors, ID, name)",
+        "Playwright basics",
+        "Cypress basics",
+        "Page Object Model (POM)",
+        "Test runner setup (pytest, Mocha, Jest)"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Performance Testing",
+      "subtopics": [
+        "What is performance testing?",
+        "Load testing, stress testing, spike testing",
+        "JMeter basics",
+        "k6 basics",
+        "Key metrics (response time, throughput, error rate)",
+        "Performance test reporting"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Mobile Testing",
+      "subtopics": [
+        "Mobile testing challenges",
+        "Android testing basics",
+        "iOS testing basics",
+        "Emulators vs real devices",
+        "Appium basics",
+        "BrowserStack / Sauce Labs",
+        "Mobile-specific test cases (gestures, orientation, connectivity)"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. CI/CD for QA",
+      "subtopics": [
+        "What is CI/CD?",
+        "Integrating tests in pipelines",
+        "GitHub Actions basics",
+        "Running automated tests on push/PR",
+        "Test reporting in CI",
+        "Shift-left testing concept"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Advanced Testing Concepts",
+      "subtopics": [
+        "Security testing basics (OWASP)",
+        "Accessibility testing (WCAG)",
+        "Visual regression testing",
+        "Contract testing (Pact)",
+        "Chaos engineering basics",
+        "AI-powered testing tools"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Non-Functional Testing",
+      "subtopics": [
+        "Usability testing",
+        "Compatibility testing",
+        "Reliability testing",
+        "Localization testing",
+        "Scalability testing basics"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. QA Best Practices & Career",
+      "subtopics": [
+        "Test pyramid concept",
+        "Shift-left and shift-right testing",
+        "QA in Agile teams",
+        "Writing effective bug reports",
+        "Communication with developers",
+        "Metrics and KPIs for QA",
+        "Building a test portfolio",
+        "QA interview preparation"
+      ]
+    }
+  ],
+  "blockchain": [
+    {
+      "order": 1,
+      "title": "1. Blockchain Fundamentals",
+      "subtopics": [
+        "What is blockchain?",
+        "Distributed ledger technology",
+        "Blocks, chains, nodes",
+        "Consensus mechanisms (PoW, PoS, DPoS, PoA)",
+        "Public vs private vs consortium blockchains",
+        "Cryptographic hash functions (SHA-256, Keccak)",
+        "Digital signatures and public/private keys",
+        "Merkle trees",
+        "Byzantine fault tolerance",
+        "Blockchain trilemma (scalability, security, decentralization)"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Bitcoin & Ethereum Basics",
+      "subtopics": [
+        "Bitcoin architecture",
+        "UTXO model",
+        "Bitcoin scripting basics",
+        "Ethereum architecture",
+        "Ethereum accounts (EOA vs contract)",
+        "Gas and gas fees",
+        "Ethereum Virtual Machine (EVM)",
+        "ETH transactions and receipts",
+        "Ethereum Improvement Proposals (EIPs)",
+        "Ethereum 2.0 / Proof of Stake"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Solidity & Smart Contract Development",
+      "subtopics": [
+        "Solidity syntax and basics",
+        "Data types (value vs reference)",
+        "Functions, modifiers, events",
+        "State variables and storage",
+        "Constructor and fallback functions",
+        "Inheritance and interfaces",
+        "Libraries",
+        "Error handling (require, revert, assert)",
+        "Mappings and arrays",
+        "Structs and enums",
+        "Contract-to-contract interaction",
+        "ABI encoding"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Development Environment & Tooling",
+      "subtopics": [
+        "Hardhat setup and usage",
+        "Foundry setup and usage",
+        "Truffle (legacy)",
+        "Ganache (local blockchain)",
+        "Remix IDE",
+        "OpenZeppelin contracts",
+        "Ethers.js",
+        "Web3.js",
+        "MetaMask integration",
+        "Alchemy / Infura (node providers)",
+        "Tenderly (debugging)"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Token Standards",
+      "subtopics": [
+        "ERC-20 (fungible tokens)",
+        "ERC-721 (NFTs)",
+        "ERC-1155 (multi-token)",
+        "ERC-4337 (account abstraction)",
+        "ERC-2981 (royalties)",
+        "Creating and deploying tokens",
+        "Token economics (tokenomics)"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. DeFi (Decentralized Finance)",
+      "subtopics": [
+        "DeFi ecosystem overview",
+        "AMM (Automated Market Makers) \u2014 Uniswap",
+        "Lending protocols \u2014 Aave, Compound",
+        "Stablecoins (USDC, DAI)",
+        "Yield farming and liquidity pools",
+        "Flash loans",
+        "DEX vs CEX",
+        "Price oracles (Chainlink)",
+        "Slippage and MEV",
+        "DeFi security risks"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Smart Contract Security",
+      "subtopics": [
+        "Common vulnerabilities (reentrancy, integer overflow, access control, front-running)",
+        "Reentrancy attack and prevention",
+        "Smart contract auditing process",
+        "Static analysis tools (Slither, MythX)",
+        "Formal verification basics",
+        "Security testing with Foundry fuzz testing",
+        "Audit reports reading",
+        "Bug bounty programs"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Layer 2 & Scaling Solutions",
+      "subtopics": [
+        "Why Layer 2?",
+        "Rollups (Optimistic rollups vs ZK rollups)",
+        "Optimism and Arbitrum",
+        "zkSync, Starknet, Polygon zkEVM",
+        "State channels",
+        "Sidechains (Polygon PoS)",
+        "Bridges and cross-chain communication",
+        "Data availability"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. NFTs & Web3 Applications",
+      "subtopics": [
+        "NFT marketplace development",
+        "IPFS and decentralized storage (Arweave, Filecoin)",
+        "Metadata standards",
+        "Building an NFT mint contract",
+        "Frontend integration with Web3",
+        "Wallet connect (WalletConnect, RainbowKit)",
+        "The Graph (indexing blockchain data)",
+        "Subgraphs"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Backend & Infrastructure",
+      "subtopics": [
+        "Node.js with Web3",
+        "Event listening and indexing",
+        "IPFS deployment",
+        "Decentralized identity (DID)",
+        "ENS (Ethereum Name Service)",
+        "Gnosis Safe (multisig)",
+        "Chainlink (oracles, VRF, CCIP)"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Other Blockchain Platforms",
+      "subtopics": [
+        "Solana basics (Rust / Anchor framework)",
+        "Cosmos SDK basics",
+        "Polkadot / Substrate basics",
+        "Hyperledger Fabric (enterprise)",
+        "Near Protocol",
+        "When to choose which platform"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Deployment & Production",
+      "subtopics": [
+        "Testnet deployments (Sepolia, Mumbai)",
+        "Mainnet deployment checklist",
+        "Contract verification on Etherscan",
+        "Contract upgradability patterns (proxy patterns \u2014 UUPS, Transparent)",
+        "Multi-sig deployment",
+        "CI/CD for smart contracts",
+        "Gas optimization techniques",
+        "Monitoring contracts in production"
+      ]
+    }
+  ],
+  "game-developer": [
+    {
+      "order": 1,
+      "title": "1. Game Development Fundamentals",
+      "subtopics": [
+        "What is game development?",
+        "Game loop and game architecture",
+        "2D vs 3D game development",
+        "Client vs server-side game logic",
+        "Game genres and mechanics",
+        "Coordinate systems",
+        "Frame rate and delta time",
+        "Input handling",
+        "Physics basics (collision detection, gravity, rigid bodies)",
+        "Game design document (GDD) basics"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Choose a Game Engine",
+      "subtopics": [
+        "Unity overview",
+        "Unreal Engine overview",
+        "Godot overview",
+        "Phaser.js (2D web games)",
+        "Pygame (Python)",
+        "Comparison and when to use each",
+        "C# for Unity",
+        "C++ for Unreal basics",
+        "GDScript for Godot"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Unity Fundamentals (Primary Path)",
+      "subtopics": [
+        "Unity Editor interface",
+        "GameObjects and Components",
+        "Transform, Rigidbody, Collider",
+        "Scenes and prefabs",
+        "MonoBehaviour lifecycle (Start, Update, FixedUpdate)",
+        "Input system (new Input System)",
+        "Physics engine (2D and 3D)",
+        "Unity Physics materials",
+        "Tags and layers",
+        "Asset management"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. 2D Game Development",
+      "subtopics": [
+        "Sprite creation and animation",
+        "Tilemap system",
+        "2D physics",
+        "Camera management",
+        "2D lighting",
+        "Particle systems",
+        "2D pathfinding",
+        "Platformer mechanics",
+        "Top-down mechanics",
+        "Pixel art basics"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. 3D Game Development",
+      "subtopics": [
+        "3D models and meshes",
+        "Textures and UV mapping",
+        "Materials and shaders",
+        "Lighting (directional, point, spot)",
+        "Shadows",
+        "3D animation (rigging, skinning, blend trees)",
+        "Animator Controller",
+        "NavMesh and AI navigation",
+        "Terrain system",
+        "LOD (Level of Detail)"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Game Programming Patterns",
+      "subtopics": [
+        "Singleton pattern",
+        "Observer pattern",
+        "State machines (FSM)",
+        "Object pooling",
+        "Component pattern",
+        "Entity-Component-System (ECS)",
+        "Event systems",
+        "ScriptableObjects (Unity)",
+        "Command pattern for undo/replay"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Audio",
+      "subtopics": [
+        "Audio sources and listeners",
+        "Background music",
+        "Sound effects",
+        "3D spatial audio",
+        "Audio mixing (Unity Audio Mixer)",
+        "FMOD / Wwise basics",
+        "Dynamic audio based on gameplay"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. UI in Games",
+      "subtopics": [
+        "Unity UI system (Canvas, uGUI)",
+        "Heads-up display (HUD)",
+        "Main menu and pause menu",
+        "Health bars and progress indicators",
+        "Inventory UI",
+        "Text Mesh Pro",
+        "UI animations and transitions"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Data Persistence & Saves",
+      "subtopics": [
+        "PlayerPrefs",
+        "JSON serialization/deserialization",
+        "Save/load systems",
+        "Binary serialization",
+        "Cloud saves basics",
+        "Settings persistence"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Multiplayer Basics",
+      "subtopics": [
+        "Networking fundamentals for games",
+        "Unity Netcode for GameObjects",
+        "Photon PUN2 basics",
+        "Client-server model",
+        "Peer-to-peer vs dedicated server",
+        "Lag compensation basics",
+        "Lobbies and matchmaking"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Polish & Game Feel",
+      "subtopics": [
+        "Screen shake",
+        "Juice and game feel principles",
+        "Post-processing effects",
+        "VFX (particle systems)",
+        "Haptic feedback",
+        "Hit stop and freeze frames",
+        "Tutorial design",
+        "Accessibility basics in games"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Publishing & Monetization",
+      "subtopics": [
+        "Build settings and targets (PC, mobile, web)",
+        "Platform-specific requirements",
+        "App store submission (Google Play, Apple App Store)",
+        "Steam publishing",
+        "Monetization models (IAP, ads, premium)",
+        "Unity Ads / AdMob integration",
+        "Analytics (Unity Analytics, GameAnalytics)",
+        "Performance profiling and optimization",
+        "Memory management",
+        "IL2CPP and build optimization"
+      ]
+    }
+  ],
+  "server-side-game-developer": [
+    {
+      "order": 1,
+      "title": "1. Backend Fundamentals for Games",
+      "subtopics": [
+        "Client-server architecture",
+        "TCP vs UDP",
+        "WebSockets",
+        "Socket.io",
+        "Game server architecture patterns",
+        "Authoritative server model",
+        "Latency and bandwidth considerations",
+        "Tick rate and game loops on server",
+        "State synchronization"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Programming Language (Go / C++ / Node.js)",
+      "subtopics": [
+        "Go fundamentals (goroutines, channels, interfaces)",
+        "C++ for game servers (memory management, performance)",
+        "Node.js with Socket.io",
+        "Concurrency patterns",
+        "Performance optimization in server code",
+        "Memory management"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Real-time Networking",
+      "subtopics": [
+        "UDP game protocol design",
+        "TCP game protocol design",
+        "Packet structure and serialization",
+        "Protocol Buffers (Protobuf)",
+        "MessagePack",
+        "Delta compression",
+        "Bandwidth optimization",
+        "Client-side prediction",
+        "Server reconciliation",
+        "Entity interpolation",
+        "Dead reckoning",
+        "Lag compensation"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Game Server Frameworks",
+      "subtopics": [
+        "Colyseus (Node.js)",
+        "Nakama game server",
+        "Photon Server",
+        "Agones (Kubernetes-based)",
+        "PlayFab",
+        "Mirror (Unity networking)",
+        "Custom game server in Go"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Matchmaking Systems",
+      "subtopics": [
+        "Matchmaking algorithms (ELO, TrueSkill, MMR)",
+        "Lobby systems",
+        "Party systems",
+        "Skill-based matchmaking (SBMM)",
+        "Regional matchmaking",
+        "Queue management",
+        "Redis for matchmaking state"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Game State Management",
+      "subtopics": [
+        "Authoritative game state",
+        "State serialization",
+        "Snapshot-based synchronization",
+        "Event-driven game state",
+        "Conflict resolution",
+        "Replay systems",
+        "Game state persistence"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Databases for Game Servers",
+      "subtopics": [
+        "Player profiles and stats (PostgreSQL)",
+        "Leaderboards (Redis sorted sets)",
+        "Inventory systems (NoSQL \u2014 MongoDB)",
+        "Session management (Redis)",
+        "Game logs and analytics events",
+        "Time-series data for stats"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Anti-Cheat Systems",
+      "subtopics": [
+        "Client-side vs server-side validation",
+        "Authoritative server checks",
+        "Speed hack detection",
+        "Aimbots and cheat detection",
+        "Rate limiting actions",
+        "Input validation",
+        "Replay analysis for cheating",
+        "Anti-cheat SDKs (EAC, BattlEye awareness)"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Scalability & Infrastructure",
+      "subtopics": [
+        "Horizontal scaling game servers",
+        "Kubernetes + Agones for game servers",
+        "Auto-scaling based on player count",
+        "Load balancing for game servers",
+        "Region-based server selection",
+        "Redis Cluster for shared state",
+        "Message queues between services (Kafka, RabbitMQ)",
+        "CDN for game assets"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Live Ops & Game Economy",
+      "subtopics": [
+        "Virtual currency systems",
+        "In-app purchase validation (Apple, Google)",
+        "Loot box and gacha systems",
+        "Battle pass systems",
+        "Season and event systems",
+        "A/B testing game features",
+        "Remote config (dynamic game config)",
+        "Player bans and moderation"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Analytics & Telemetry",
+      "subtopics": [
+        "Event tracking architecture",
+        "Player behavior analytics",
+        "Funnel analysis",
+        "Retention metrics (D1, D7, D30)",
+        "Churn prediction basics",
+        "BigQuery / data warehouse for game analytics",
+        "Real-time dashboards for game health",
+        "Error tracking and alerting"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. DevOps for Game Servers",
+      "subtopics": [
+        "Docker for game servers",
+        "Kubernetes deployment",
+        "Blue-green deployments for live games",
+        "Zero-downtime deployments",
+        "Game server health checks",
+        "CI/CD pipelines",
+        "Load testing game servers (Gatling, locust)",
+        "Monitoring (Prometheus, Grafana)",
+        "Log aggregation (ELK stack)"
+      ]
+    }
+  ],
+  "software-architect": [
+    {
+      "order": 1,
+      "title": "1. Programming Fundamentals Mastery",
+      "subtopics": [
+        "Data structures and algorithms",
+        "Design patterns (GoF \u2014 Creational, Structural, Behavioral)",
+        "SOLID principles",
+        "DRY, KISS, YAGNI",
+        "Clean code principles",
+        "Refactoring techniques",
+        "Code review best practices",
+        "Technical debt management"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. System Design Foundations",
+      "subtopics": [
+        "Functional vs non-functional requirements",
+        "Scalability (vertical vs horizontal)",
+        "Reliability and fault tolerance",
+        "Availability and uptime SLAs",
+        "Latency and throughput",
+        "Consistency, availability, partition tolerance (CAP theorem)",
+        "PACELC theorem",
+        "Back-of-the-envelope estimation",
+        "System design interview approach"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Architectural Patterns",
+      "subtopics": [
+        "Monolithic architecture",
+        "Microservices architecture",
+        "Service-oriented architecture (SOA)",
+        "Event-driven architecture (EDA)",
+        "Serverless architecture",
+        "Layered architecture (N-tier)",
+        "Hexagonal architecture (ports and adapters)",
+        "CQRS (Command Query Responsibility Segregation)",
+        "Event sourcing",
+        "Saga pattern",
+        "Strangler fig pattern"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Database Architecture",
+      "subtopics": [
+        "SQL vs NoSQL decision making",
+        "Database per service pattern",
+        "Shared database anti-pattern",
+        "Read replicas and write primaries",
+        "Database sharding strategies",
+        "Data partitioning",
+        "Eventual consistency",
+        "Saga pattern for distributed transactions",
+        "Database migration strategies",
+        "Polyglot persistence",
+        "Data lakes vs data warehouses"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. API Design & Integration",
+      "subtopics": [
+        "REST API best practices",
+        "GraphQL architecture",
+        "gRPC for internal services",
+        "API gateway patterns",
+        "Backend for Frontend (BFF) pattern",
+        "Webhook design",
+        "Event streaming (Kafka)",
+        "Message queues (RabbitMQ, SQS)",
+        "API versioning strategies",
+        "Contract-first API design"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Distributed Systems",
+      "subtopics": [
+        "Distributed system challenges (network partitions, split brain)",
+        "Consensus algorithms (Raft, Paxos)",
+        "Leader election",
+        "Distributed caching",
+        "Distributed locking",
+        "Service mesh (Istio, Linkerd)",
+        "Circuit breaker pattern",
+        "Bulkhead pattern",
+        "Retry and backoff strategies",
+        "Idempotency",
+        "Two-phase commit"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Cloud Architecture",
+      "subtopics": [
+        "Cloud providers (AWS, GCP, Azure) deep dive",
+        "Well-Architected Framework (AWS)",
+        "Cloud-native principles",
+        "Kubernetes architecture",
+        "Service mesh",
+        "Infrastructure as Code (Terraform, Pulumi)",
+        "Cloud cost optimization",
+        "Multi-cloud and hybrid cloud strategies",
+        "Cloud security architecture",
+        "Disaster recovery planning (RPO, RTO)"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Security Architecture",
+      "subtopics": [
+        "Zero trust architecture",
+        "Authentication architecture (OAuth 2.0, OIDC)",
+        "API security",
+        "Secrets management (Vault)",
+        "Encryption at rest and in transit",
+        "Network security (VPCs, subnets, firewalls)",
+        "Identity and access management (IAM)",
+        "Security scanning in CI/CD",
+        "Threat modeling (STRIDE)",
+        "OWASP application security"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Observability & Reliability",
+      "subtopics": [
+        "The three pillars of observability (logs, metrics, traces)",
+        "Distributed tracing (Jaeger, Zipkin, OpenTelemetry)",
+        "Metrics and alerting (Prometheus, Grafana)",
+        "Log aggregation (ELK, Loki)",
+        "SLIs, SLOs, SLAs",
+        "Error budgets",
+        "Chaos engineering (Chaos Monkey)",
+        "Runbooks and on-call practices",
+        "Post-mortem culture",
+        "Incident management"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Performance Engineering",
+      "subtopics": [
+        "Performance profiling and benchmarking",
+        "Load testing and stress testing",
+        "CDN architecture",
+        "Caching strategies (L1, L2, distributed cache)",
+        "Database query optimization",
+        "Connection pooling",
+        "Async processing and queues",
+        "Read/write splitting",
+        "Performance budgets"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Technical Leadership",
+      "subtopics": [
+        "Architecture decision records (ADRs)",
+        "RFCs (Request for Comments) process",
+        "Technical roadmap planning",
+        "Legacy system modernization",
+        "Build vs buy decisions",
+        "Vendor selection and evaluation",
+        "Technical documentation",
+        "Communicating with stakeholders",
+        "Mentoring engineering teams",
+        "Cross-team alignment"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Domain-Driven Design (DDD)",
+      "subtopics": [
+        "Ubiquitous language",
+        "Bounded contexts",
+        "Domain model",
+        "Aggregates, entities, value objects",
+        "Domain events",
+        "Context mapping",
+        "Anti-corruption layer",
+        "Core domain vs supporting domain",
+        "Event storming"
+      ]
+    }
+  ],
+  "developer-relations": [
+    {
+      "order": 1,
+      "title": "1. Developer Relations Fundamentals",
+      "subtopics": [
+        "What is DevRel?",
+        "DevRel vs marketing vs engineering",
+        "Types of DevRel roles (Advocate, Evangelist, Community Manager, Technical Writer)",
+        "Developer experience (DX) concepts",
+        "Developer journey mapping",
+        "Metrics for DevRel (AAARR for developers)",
+        "DevRel team structures"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Technical Communication",
+      "subtopics": [
+        "Technical writing fundamentals",
+        "Writing API documentation",
+        "Writing tutorials and guides",
+        "README best practices",
+        "Changelog writing",
+        "Release notes",
+        "Code samples and snippets",
+        "Tone and style for developer audiences",
+        "Plain language for technical content"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Content Creation",
+      "subtopics": [
+        "Technical blog posts",
+        "Video content creation (screencasting, demos)",
+        "YouTube for developers",
+        "Twitter/X for developers",
+        "LinkedIn for tech content",
+        "Podcast guesting",
+        "Newsletter for developers",
+        "Open source project promotion",
+        "SEO for developer content"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Public Speaking & Presentations",
+      "subtopics": [
+        "Conference talk proposal (CFP) writing",
+        "Structuring a technical talk",
+        "Live coding demos",
+        "Workshop facilitation",
+        "Webinar hosting",
+        "Meetup presentations",
+        "Demo engineering",
+        "Handling Q&A"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Community Building",
+      "subtopics": [
+        "Community strategy",
+        "Discord server management",
+        "Slack community management",
+        "Forum moderation (Reddit, Stack Overflow, Discord)",
+        "Developer programs",
+        "Champion and ambassador programs",
+        "Community metrics",
+        "Community tooling (Circle, Discourse)",
+        "Event organizing (meetups, hackathons)"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Developer Experience (DX)",
+      "subtopics": [
+        "SDK and library design",
+        "API usability evaluation",
+        "Onboarding experience design",
+        "Documentation architecture",
+        "Interactive docs (Swagger, Mintlify, ReadMe)",
+        "Quickstart guides",
+        "Sample apps and starter kits",
+        "CLI usability",
+        "Feedback loops with product teams"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Open Source",
+      "subtopics": [
+        "Open source strategy",
+        "Maintaining open source projects",
+        "Contribution guidelines (CONTRIBUTING.md)",
+        "Issue triage and management",
+        "Open source community dynamics",
+        "Licensing choices",
+        "GitHub presence optimization",
+        "Stars, forks, and open source metrics"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Partnerships & Ecosystem",
+      "subtopics": [
+        "Technology partner programs",
+        "Integration partnerships",
+        "Co-marketing with partners",
+        "Hackathon sponsorship and judging",
+        "Conference sponsorship",
+        "API marketplace presence",
+        "ISV programs",
+        "Relationship management"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Analytics & Metrics",
+      "subtopics": [
+        "Developer funnel metrics",
+        "Documentation analytics (page views, search queries)",
+        "Community metrics (DAU, MAU, engagement)",
+        "Content performance metrics",
+        "SDK/API adoption metrics",
+        "Net Promoter Score (NPS) for developers",
+        "Attribution for DevRel work"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Tools & Platforms",
+      "subtopics": [
+        "GitHub and GitHub Actions",
+        "Mintlify / GitBook / ReadMe (documentation platforms)",
+        "Zapier / Make for automation",
+        "Notion for content planning",
+        "Airtable for community management",
+        "Loom for async videos",
+        "Canva for design",
+        "Buffer / Hootsuite for social scheduling"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Product Feedback Loop",
+      "subtopics": [
+        "Collecting developer feedback",
+        "User interviews for developers",
+        "Translating feedback to product teams",
+        "Beta programs",
+        "Early access programs",
+        "Feature requests management",
+        "Bug reporting workflows"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. DevRel Strategy & Career",
+      "subtopics": [
+        "Building a DevRel strategy from scratch",
+        "OKRs for DevRel",
+        "Proving DevRel ROI",
+        "DevRel budget management",
+        "Hiring and growing a DevRel team",
+        "DevRel career paths",
+        "Building your personal brand as a developer",
+        "Portfolio building for DevRel"
+      ]
+    }
+  ],
+  "forward-deployed-engineer": [
+    {
+      "order": 1,
+      "title": "1. Core Engineering Skills",
+      "subtopics": [
+        "Full stack development proficiency",
+        "Systems design fundamentals",
+        "API design and integration",
+        "Database design and querying",
+        "Cloud infrastructure basics",
+        "Security fundamentals",
+        "Performance optimization",
+        "Debugging and troubleshooting"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Customer-Facing Engineering",
+      "subtopics": [
+        "What is a Forward Deployed Engineer?",
+        "Enterprise software sales cycle",
+        "Pre-sales technical support",
+        "Proof of concept (PoC) development",
+        "Technical discovery sessions",
+        "Stakeholder mapping",
+        "Technical requirement gathering",
+        "Solution scoping"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Solutions Architecture",
+      "subtopics": [
+        "Solution design for customer needs",
+        "Architecture diagrams (draw.io, Lucidchart)",
+        "Technical proposal writing",
+        "Integration architecture",
+        "Data flow diagrams",
+        "Cost estimation for solutions",
+        "Build vs buy analysis",
+        "Vendor assessment"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Enterprise Integrations",
+      "subtopics": [
+        "REST and SOAP API integrations",
+        "SSO and identity federation (SAML, OIDC)",
+        "Data migration strategies",
+        "ETL pipelines",
+        "Webhook implementations",
+        "Enterprise system integrations (Salesforce, SAP, Oracle)",
+        "iPaaS platforms (MuleSoft, Boomi)",
+        "Middleware design"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Rapid Prototyping",
+      "subtopics": [
+        "Rapid application development",
+        "Low-code/no-code tools (Retool, Bubble, Glide)",
+        "Prototype vs production considerations",
+        "Demo environments setup",
+        "Sandbox environment management",
+        "Mock data generation",
+        "Scripted demos"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Technical Communication",
+      "subtopics": [
+        "Executive presentations",
+        "Technical documentation for customers",
+        "Status reports and project updates",
+        "Incident communication",
+        "Whiteboarding sessions",
+        "Workshop facilitation",
+        "Training material development",
+        "Handoff documentation"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Project Delivery",
+      "subtopics": [
+        "Project scoping and estimation",
+        "Agile for customer projects",
+        "Milestone tracking",
+        "Risk identification and mitigation",
+        "Escalation management",
+        "Customer success metrics",
+        "Go-live support",
+        "Post-deployment support"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. On-site & Field Work",
+      "subtopics": [
+        "Travel logistics for field deployment",
+        "On-site setup and configuration",
+        "Network environment assessment",
+        "Air-gapped environment considerations",
+        "Hardware setup (servers, workstations)",
+        "VPN and secure access setup",
+        "Change management for clients",
+        "Training end users"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Data Engineering for Clients",
+      "subtopics": [
+        "Data pipeline design",
+        "ETL/ELT tools (Airbyte, Fivetran)",
+        "Data transformation (dbt)",
+        "Data visualization basics",
+        "SQL for client data analysis",
+        "Data quality assessment",
+        "Data governance basics"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Security & Compliance",
+      "subtopics": [
+        "Enterprise security requirements",
+        "GDPR compliance considerations",
+        "HIPAA basics",
+        "SOC 2 awareness",
+        "Data privacy engineering",
+        "Access control design",
+        "Audit logging",
+        "Penetration testing awareness"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Cloud Deployment for Clients",
+      "subtopics": [
+        "Single-tenant vs multi-tenant deployments",
+        "VPC and network isolation",
+        "Private cloud deployments",
+        "Kubernetes for enterprise",
+        "Helm charts",
+        "Customer-managed encryption keys (CMEK)",
+        "BYOC (Bring Your Own Cloud) architectures"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Soft Skills & Business Acumen",
+      "subtopics": [
+        "Negotiation basics",
+        "Managing customer expectations",
+        "Cross-functional collaboration",
+        "Building customer relationships",
+        "Upselling and expansion awareness",
+        "Competitive intelligence",
+        "Revenue metrics (ARR, expansion ARR)",
+        "Customer health scoring"
+      ]
+    }
+  ],
+  "devops-engineer": [
+    {
+      "order": 1,
+      "title": "1. Linux & Command Line",
+      "subtopics": [
+        "Linux file system hierarchy",
+        "Essential commands (ls, cd, cp, mv, rm, find, grep, awk, sed)",
+        "File permissions and ownership (chmod, chown)",
+        "Process management (ps, top, htop, kill)",
+        "Package management (apt, yum, dnf)",
+        "Shell scripting (bash)",
+        "Cron jobs and scheduled tasks",
+        "SSH and remote access",
+        "Networking commands (ping, netstat, curl, wget, nslookup, dig)",
+        "Log viewing (tail, less, journalctl)",
+        "System monitoring basics"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Version Control & Git Workflows",
+      "subtopics": [
+        "Git advanced (rebasing, cherry-pick, stash)",
+        "Gitflow workflow",
+        "Trunk-based development",
+        "Monorepo vs polyrepo",
+        "Branch protection rules",
+        "Code review processes",
+        "Git hooks"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Programming for DevOps",
+      "subtopics": [
+        "Python for DevOps scripting",
+        "Bash scripting advanced",
+        "YAML and JSON",
+        "Makefile basics",
+        "Go for DevOps tools",
+        "Regular expressions"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Containers \u2014 Docker",
+      "subtopics": [
+        "Docker architecture",
+        "Dockerfile writing",
+        "Image layers and optimization",
+        "Docker Compose",
+        "Container networking",
+        "Docker volumes",
+        "Container registries (Docker Hub, ECR, GCR)",
+        "Multi-stage builds",
+        "Container security",
+        "Image scanning"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Container Orchestration \u2014 Kubernetes",
+      "subtopics": [
+        "Kubernetes architecture (control plane, nodes)",
+        "Pods, Deployments, Services, Ingress",
+        "ConfigMaps and Secrets",
+        "Namespaces",
+        "StatefulSets and DaemonSets",
+        "Persistent Volumes and Persistent Volume Claims",
+        "RBAC in Kubernetes",
+        "Helm package manager",
+        "Kubernetes networking (CNI)",
+        "Kubernetes monitoring",
+        "kubectl proficiency",
+        "Managed Kubernetes (EKS, GKE, AKS)"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. CI/CD Pipelines",
+      "subtopics": [
+        "CI/CD concepts and principles",
+        "GitHub Actions",
+        "GitLab CI/CD",
+        "Jenkins",
+        "CircleCI / Travis CI",
+        "ArgoCD (GitOps)",
+        "Flux CD",
+        "Pipeline stages (build, test, security scan, deploy)",
+        "Artifact management",
+        "Blue-green deployments",
+        "Canary deployments",
+        "Rollback strategies"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Infrastructure as Code",
+      "subtopics": [
+        "Terraform fundamentals",
+        "Terraform state management",
+        "Terraform modules",
+        "Terraform workspaces",
+        "Pulumi basics",
+        "Ansible for configuration management",
+        "Ansible playbooks and roles",
+        "Chef / Puppet awareness",
+        "CloudFormation (AWS)",
+        "Bicep (Azure)"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Cloud Platforms",
+      "subtopics": [
+        "AWS core services (EC2, VPC, S3, RDS, Lambda, ECS, EKS, CloudFront, Route53, IAM, CloudWatch)",
+        "GCP core services (Compute Engine, GKE, Cloud Run, Cloud Storage, BigQuery)",
+        "Azure core services (VMs, AKS, Azure DevOps, Blob Storage)",
+        "Cloud networking (VPC, subnets, security groups, NACLs)",
+        "Cloud IAM and policies",
+        "Cost optimization strategies",
+        "Reserved instances and savings plans"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Monitoring & Observability",
+      "subtopics": [
+        "Prometheus setup and configuration",
+        "Grafana dashboards",
+        "AlertManager",
+        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+        "Loki for log aggregation",
+        "Jaeger / Zipkin for distributed tracing",
+        "OpenTelemetry",
+        "Uptime monitoring",
+        "On-call and incident response",
+        "Runbooks",
+        "SLIs, SLOs, SLAs"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Security (DevSecOps basics)",
+      "subtopics": [
+        "Secrets management (HashiCorp Vault, AWS Secrets Manager)",
+        "Security scanning in pipelines (SAST, DAST)",
+        "Container image scanning (Trivy, Clair)",
+        "Network policies in Kubernetes",
+        "RBAC and least privilege",
+        "Compliance as Code",
+        "Vulnerability management"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Networking for DevOps",
+      "subtopics": [
+        "TCP/IP fundamentals",
+        "DNS deep dive",
+        "Load balancers (ALB, NLB, HAProxy)",
+        "Reverse proxies (Nginx, Traefik)",
+        "Service mesh (Istio basics)",
+        "VPN and private networking",
+        "Network troubleshooting",
+        "Firewall rules"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Advanced DevOps Practices",
+      "subtopics": [
+        "Site Reliability Engineering (SRE) principles",
+        "Chaos engineering (Chaos Monkey, LitmusChaos)",
+        "FinOps and cloud cost management",
+        "Platform engineering concepts",
+        "Internal developer platforms (IDPs)",
+        "Developer experience (DX) in DevOps",
+        "GitOps principles",
+        "Disaster recovery and business continuity",
+        "Capacity planning"
+      ]
+    }
+  ],
+  "devsecops": [
+    {
+      "order": 1,
+      "title": "1. Security Fundamentals",
+      "subtopics": [
+        "CIA triad (Confidentiality, Integrity, Availability)",
+        "Authentication and authorization",
+        "Cryptography basics (symmetric, asymmetric, hashing)",
+        "PKI and certificates",
+        "OWASP Top 10",
+        "Threat modeling (STRIDE, PASTA)",
+        "Security frameworks (NIST, ISO 27001)",
+        "Risk assessment",
+        "Security policies"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. DevOps Foundation",
+      "subtopics": [
+        "Linux and command line",
+        "Docker and containers",
+        "Kubernetes fundamentals",
+        "CI/CD pipelines",
+        "Infrastructure as Code (Terraform)",
+        "Cloud platforms (AWS/GCP/Azure basics)",
+        "Git and version control",
+        "Scripting (Python, Bash)"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Shift-Left Security",
+      "subtopics": [
+        "What is DevSecOps?",
+        "Shift-left security concept",
+        "Security requirements in planning",
+        "Threat modeling in design phase",
+        "Developer security education",
+        "Security champions program",
+        "Security gates in CI/CD"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Static Application Security Testing (SAST)",
+      "subtopics": [
+        "SAST concepts",
+        "SonarQube",
+        "Semgrep",
+        "Bandit (Python)",
+        "ESLint security plugins",
+        "CodeQL",
+        "Integration in CI pipelines",
+        "Triaging findings",
+        "False positive management"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Dynamic Application Security Testing (DAST)",
+      "subtopics": [
+        "DAST concepts",
+        "OWASP ZAP",
+        "Burp Suite basics",
+        "API security testing",
+        "Fuzzing",
+        "Integration in CI/CD",
+        "Penetration testing basics",
+        "Vulnerability reporting"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Container & Infrastructure Security",
+      "subtopics": [
+        "Dockerfile security best practices",
+        "Container image scanning (Trivy, Clair, Snyk)",
+        "Docker bench security",
+        "Kubernetes security (RBAC, Network Policies, Pod Security)",
+        "Kubernetes security benchmarks (CIS)",
+        "Falco for runtime security",
+        "Open Policy Agent (OPA)",
+        "Infrastructure security scanning (Checkov, tfsec)",
+        "Cloud security posture management (CSPM)"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Secrets Management",
+      "subtopics": [
+        "Secrets in CI/CD (common mistakes)",
+        "HashiCorp Vault",
+        "AWS Secrets Manager",
+        "Azure Key Vault",
+        "GCP Secret Manager",
+        "Detecting secrets in code (GitLeaks, TruffleHog, detect-secrets)",
+        "Secrets rotation",
+        "Least privilege for secrets"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Supply Chain Security",
+      "subtopics": [
+        "Software supply chain attacks",
+        "SLSA framework",
+        "SBOM (Software Bill of Materials)",
+        "Sigstore and container signing",
+        "Cosign",
+        "Dependency scanning (Snyk, Dependabot, OWASP Dependency-Check)",
+        "Package integrity verification",
+        "Private package registries"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Cloud Security",
+      "subtopics": [
+        "AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector)",
+        "GCP Security Command Center",
+        "Azure Defender",
+        "Cloud IAM best practices",
+        "VPC security (security groups, NACLs, private endpoints)",
+        "Data encryption at rest and in transit",
+        "S3 bucket security",
+        "Cloud access security broker (CASB)",
+        "Zero trust network access (ZTNA)"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Compliance as Code",
+      "subtopics": [
+        "Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR)",
+        "Policy as Code (OPA, Rego)",
+        "Compliance automation",
+        "Audit logging and trails",
+        "Configuration compliance (AWS Config, Azure Policy)",
+        "CIS benchmarks",
+        "Automated compliance reports"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Incident Response",
+      "subtopics": [
+        "Incident response lifecycle",
+        "Security incident classification",
+        "Forensic basics (disk imaging, memory forensics)",
+        "Log analysis for security incidents",
+        "SIEM basics (Splunk, Elastic SIEM)",
+        "SOAR (Security Orchestration, Automation, Response)",
+        "Threat intelligence",
+        "Indicators of compromise (IoC)",
+        "Post-incident review"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Security Operations",
+      "subtopics": [
+        "Security Operations Center (SOC) overview",
+        "Vulnerability management lifecycle",
+        "Penetration testing basics",
+        "Red team vs blue team vs purple team",
+        "Bug bounty programs",
+        "Security metrics and KPIs",
+        "Risk registers",
+        "Security awareness training",
+        "Continuous security monitoring"
+      ]
+    }
+  ],
+  "postgresql": [
+    {
+      "order": 1,
+      "title": "1. Relational Database Fundamentals",
+      "subtopics": [
+        "What is a relational database?",
+        "ACID properties",
+        "Relational model and set theory",
+        "Database design principles",
+        "Normalization (1NF, 2NF, 3NF, BCNF)",
+        "Denormalization when appropriate",
+        "ER diagrams",
+        "Primary keys, foreign keys, unique constraints",
+        "PostgreSQL vs MySQL vs Oracle vs SQLite comparison"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. PostgreSQL Installation & Setup",
+      "subtopics": [
+        "Installation (Linux, Mac, Windows, Docker)",
+        "PostgreSQL architecture (postmaster, shared buffers, WAL)",
+        "psql command-line client",
+        "pgAdmin GUI",
+        "Configuration files (postgresql.conf, pg_hba.conf)",
+        "Roles and authentication",
+        "Creating databases, schemas, users",
+        "pg_dump and pg_restore basics"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. SQL Fundamentals",
+      "subtopics": [
+        "SELECT, INSERT, UPDATE, DELETE",
+        "WHERE clauses and operators",
+        "ORDER BY and LIMIT",
+        "NULL handling",
+        "Aliases",
+        "Arithmetic operations",
+        "String functions",
+        "Date/time functions",
+        "Aggregate functions (COUNT, SUM, AVG, MIN, MAX)",
+        "GROUP BY and HAVING"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Advanced SQL",
+      "subtopics": [
+        "JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF)",
+        "Subqueries (correlated and non-correlated)",
+        "CTEs (WITH clause)",
+        "Window functions (ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, PARTITION BY)",
+        "CASE expressions",
+        "COALESCE and NULLIF",
+        "DISTINCT and DISTINCT ON",
+        "Set operations (UNION, INTERSECT, EXCEPT)",
+        "Lateral joins",
+        "Recursive CTEs"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. PostgreSQL-specific Features",
+      "subtopics": [
+        "Arrays",
+        "JSONB and JSON operations",
+        "HSTORE",
+        "UUID data type",
+        "Range types",
+        "Composite types",
+        "Enum types",
+        "Full-text search (tsvector, tsquery)",
+        "Regular expressions in queries",
+        "Row-level security (RLS)",
+        "Generated columns",
+        "Table partitioning (range, list, hash)"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. Indexes & Performance",
+      "subtopics": [
+        "Index types (B-tree, Hash, GIN, GiST, BRIN, SP-GiST)",
+        "Creating and managing indexes",
+        "Composite indexes",
+        "Partial indexes",
+        "Index-only scans",
+        "EXPLAIN and EXPLAIN ANALYZE",
+        "Query planner and optimizer",
+        "Statistics (ANALYZE, pg_statistic)",
+        "Table bloat and VACUUM",
+        "AUTOVACUUM configuration",
+        "pg_stat_statements"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. Transactions & Concurrency",
+      "subtopics": [
+        "Transaction basics (BEGIN, COMMIT, ROLLBACK)",
+        "Savepoints",
+        "Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE)",
+        "MVCC (Multi-Version Concurrency Control)",
+        "Row-level locking",
+        "Table-level locking",
+        "Deadlocks and how to avoid them",
+        "Advisory locks",
+        "SELECT FOR UPDATE"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Stored Procedures & Functions",
+      "subtopics": [
+        "PL/pgSQL basics",
+        "Creating functions",
+        "Creating stored procedures (PostgreSQL 11+)",
+        "Triggers",
+        "Trigger functions",
+        "Exception handling in PL/pgSQL",
+        "Cursors",
+        "DO blocks (anonymous blocks)",
+        "User-defined aggregate functions"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Replication & High Availability",
+      "subtopics": [
+        "Streaming replication (primary-replica)",
+        "Logical replication",
+        "Replication slots",
+        "Synchronous vs asynchronous replication",
+        "Hot standby and read replicas",
+        "Failover and switchover",
+        "Patroni for HA",
+        "Connection pooling (PgBouncer, pgpool-II)",
+        "pg_basebackup"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Backup & Recovery",
+      "subtopics": [
+        "pg_dump (logical backups)",
+        "pg_dumpall",
+        "pg_restore",
+        "Point-in-Time Recovery (PITR)",
+        "WAL archiving",
+        "Continuous archiving (WAL-G, pgBackRest)",
+        "Base backups",
+        "Testing backups and restores",
+        "RTO and RPO planning"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Extensions & Ecosystem",
+      "subtopics": [
+        "PostGIS (geospatial)",
+        "TimescaleDB (time-series)",
+        "pg_partman (partition management)",
+        "pgvector (vector embeddings for AI)",
+        "pg_cron (scheduled jobs)",
+        "Citus (distributed PostgreSQL)",
+        "FDW (Foreign Data Wrappers)",
+        "pg_audit",
+        "hypopg (hypothetical indexes)",
+        "pg_trgm (fuzzy matching)"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. PostgreSQL in Production",
+      "subtopics": [
+        "Connection pooling strategies",
+        "Monitoring (pg_stat_activity, pg_stat_user_tables, pg_stat_bgwriter)",
+        "Alerting on slow queries",
+        "Cloud PostgreSQL (AWS RDS, AWS Aurora, GCP CloudSQL, Supabase)",
+        "Schema migrations (Flyway, Liquibase, Alembic)",
+        "Zero-downtime migrations",
+        "Database security hardening",
+        "Multi-tenant database patterns",
+        "PostgreSQL upgrade strategies"
+      ]
+    }
+  ],
+  "network-engineer": [
+    {
+      "order": 1,
+      "title": "1. Networking Fundamentals",
+      "subtopics": [
+        "What is a network?",
+        "Types of networks (LAN, WAN, MAN, PAN)",
+        "Network topologies (star, ring, bus, mesh, hybrid)",
+        "OSI model (7 layers)",
+        "TCP/IP model (4 layers)",
+        "Physical media (copper, fiber, wireless)",
+        "Bandwidth, latency, jitter, throughput",
+        "Packets and frames",
+        "Encapsulation and decapsulation"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "2. Physical & Data Link Layer",
+      "subtopics": [
+        "Network cables (Cat5e, Cat6, fiber)",
+        "Ethernet fundamentals",
+        "MAC addresses",
+        "Switches and switching",
+        "VLANs (Virtual LANs)",
+        "Spanning Tree Protocol (STP)",
+        "ARP (Address Resolution Protocol)",
+        "Network Interface Cards (NICs)",
+        "Half-duplex vs full-duplex"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "3. Network Layer & IP Addressing",
+      "subtopics": [
+        "IPv4 addressing",
+        "Subnetting and CIDR notation",
+        "IPv6 addressing",
+        "Public vs private IP ranges",
+        "NAT (Network Address Translation)",
+        "PAT (Port Address Translation)",
+        "ICMP (ping, traceroute)",
+        "Routing basics",
+        "Default gateway"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "4. Routing Protocols",
+      "subtopics": [
+        "Static routing",
+        "Dynamic routing overview",
+        "RIP (Routing Information Protocol)",
+        "OSPF (Open Shortest Path First)",
+        "EIGRP (Cisco-specific)",
+        "BGP (Border Gateway Protocol) basics",
+        "Routing tables",
+        "Route metrics and administrative distance",
+        "Inter-VLAN routing"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "5. Transport Layer",
+      "subtopics": [
+        "TCP (Transmission Control Protocol)",
+        "TCP handshake (3-way handshake)",
+        "TCP connection termination",
+        "TCP flow control and congestion control",
+        "UDP (User Datagram Protocol)",
+        "Ports and sockets",
+        "Common ports (HTTP-80, HTTPS-443, SSH-22, DNS-53, SMTP-25)",
+        "Firewalls and port filtering"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "6. DNS & DHCP",
+      "subtopics": [
+        "DNS fundamentals",
+        "DNS resolution process (recursive, iterative)",
+        "DNS record types (A, AAAA, CNAME, MX, TXT, NS, SOA, PTR)",
+        "DNS caching and TTL",
+        "DHCP allocation cycle (DORA)",
+        "DHCP lease management",
+        "DHCP relay agents"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "7. IP Routing & Subnetting",
+      "subtopics": [
+        "VLSM (Variable Length Subnet Masking)",
+        "Subnet calculations and partitions",
+        "Static routing vs Dynamic routing",
+        "Administrative distance and metrics",
+        "Inter-VLAN routing (Router-on-a-Stick)"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "8. Dynamic Routing Protocols",
+      "subtopics": [
+        "OSPF (Open Shortest Path First) link-state routing",
+        "BGP (Border Gateway Protocol) path-vector routing",
+        "EIGRP hybrid routing basics",
+        "Route redistribution and summarization"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "9. Network Security & Firewalls",
+      "subtopics": [
+        "Access Control Lists (ACLs) standard and extended",
+        "Firewall security policies & zones",
+        "IPsec VPN tunnels setup",
+        "NAT/PAT configurations",
+        "Port security and 802.1X"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "10. Wireless & WAN Technologies",
+      "subtopics": [
+        "Wireless LAN standards (802.11a/b/g/n/ac/ax)",
+        "WPA2/WPA3 wireless security",
+        "WAN connectivity (MPLS, SD-WAN)",
+        "Fiber optics basics"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "11. Network Automation & Monitoring",
+      "subtopics": [
+        "Network monitoring (SNMP, Syslog)",
+        "Traffic analysis with Wireshark",
+        "Python scripting for network configs (Netmiko, Scapy)",
+        "Ansible for network devices automation"
+      ]
+    },
+    {
+      "order": 12,
+      "title": "12. Network Troubleshooting & Career",
+      "subtopics": [
+        "Ping, Traceroute, and Pathping diagnostics",
+        "IP SLA network tracking",
+        "Cisco iOS configuration backup",
+        "Resume JD scoring optimization",
+        "CCNA mock exam loops"
+      ]
+    }
+  ]
+}

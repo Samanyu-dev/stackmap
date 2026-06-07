@@ -2,6 +2,7 @@
   "id": "roadmap-qa",
   "title": "QA Testing Engineer",
   "slug": "qa",
+  "description": "Master QA Testing Engineer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "BEGINNER",
   "estimatedTime": "3 Months",
@@ -10,9 +11,9 @@
   "nodes": [
     {
       "id": "roadmap-qa-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "software-testing-fundamentals",
+      "title": "1. Software Testing Fundamentals",
+      "description": "Master core capabilities of Software Testing Fundamentals: What is software testing?, Importance of QA in SDLC, Testing types overview (manual vs automated), SDLC models (Waterfall, Agile, Scrum), STLC (Software Testing Life Cycle).",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -20,517 +21,824 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-qa-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-qa-1-1",
+          "title": "What is software testing? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20software%20testing%3F%20documentation"
         },
         {
-          "id": "res-qa-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-qa-1-2",
+          "title": "Importance of QA in SDLC Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Importance%20of%20QA%20in%20SDLC%20tutorial"
+        },
+        {
+          "id": "res-qa-1-3",
+          "title": "Practice Testing types overview (manual vs automated) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Testing%20types%20overview%20(manual%20vs%20automated)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is software testing?, Importance of QA in SDLC, Testing types overview (manual vs automated)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is software testing? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Importance of QA in SDLC."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the software-testing-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Software Testing Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is software testing?, Importance of QA in SDLC, Testing types overview (manual vs automated)."
       ]
     },
     {
       "id": "roadmap-qa-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "test-planning-documentation",
+      "title": "2. Test Planning & Documentation",
+      "description": "Master core capabilities of Test Planning & Documentation: Test plan creation, Test strategy vs test plan, Test scenarios and test cases, Test case design techniques (BVA, equivalence partitioning, decision table, state transition), Test data management.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "software-testing-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-qa-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-qa-2-1",
+          "title": "Test plan creation Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Test%20plan%20creation%20documentation"
         },
         {
-          "id": "res-qa-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-qa-2-2",
+          "title": "Test strategy vs test plan Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Test%20strategy%20vs%20test%20plan%20tutorial"
+        },
+        {
+          "id": "res-qa-2-3",
+          "title": "Practice Test scenarios and test cases Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Test%20scenarios%20and%20test%20cases%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Test plan creation, Test strategy vs test plan, Test scenarios and test cases."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Test plan creation and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Test strategy vs test plan."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the test-planning-documentation milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Test Planning & Documentation Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Test plan creation, Test strategy vs test plan, Test scenarios and test cases."
       ]
     },
     {
       "id": "roadmap-qa-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Selenium & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Selenium, Playwright, Postman, Jira, JMeter.",
+      "slug": "manual-testing",
+      "title": "3. Manual Testing",
+      "description": "Master core capabilities of Manual Testing: Exploratory testing, Ad hoc testing, Regression testing, Smoke and sanity testing, UAT (User Acceptance Testing).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "test-planning-documentation"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-qa-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-qa-3-1",
+          "title": "Exploratory testing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Exploratory%20testing%20documentation"
+        },
+        {
+          "id": "res-qa-3-2",
+          "title": "Ad hoc testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Ad%20hoc%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-3-3",
+          "title": "Practice Regression testing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Regression%20testing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Exploratory testing, Ad hoc testing, Regression testing."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is Exploratory testing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Ad hoc testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the manual-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Selenium & More Core Theories",
+        "3. Manual Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Exploratory testing, Ad hoc testing, Regression testing."
       ]
     },
     {
       "id": "roadmap-qa-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: JavaScript / Python / Java",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in JavaScript, Python, Java.",
+      "slug": "bug-tracking-project-management-tools",
+      "title": "4. Bug Tracking & Project Management Tools",
+      "description": "Master core capabilities of Bug Tracking & Project Management Tools: Bug tracking concepts, JIRA, Trello, Azure DevOps, Bugzilla.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "manual-testing"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-qa-lang-1",
-          "title": "JavaScript Official Guides",
+          "id": "res-qa-4-1",
+          "title": "Bug tracking concepts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Bug%20tracking%20concepts%20documentation"
+        },
+        {
+          "id": "res-qa-4-2",
+          "title": "JIRA Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=JIRA%20tutorial"
+        },
+        {
+          "id": "res-qa-4-3",
+          "title": "Practice Trello Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Trello%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Bug tracking concepts, JIRA, Trello."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in JavaScript?",
-        "How does asynchronous logic work in JavaScript?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Bug tracking concepts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of JIRA."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the bug-tracking-project-management-tools milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: JavaScript / Python / Java Core Theories",
+        "4. Bug Tracking & Project Management Tools Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Bug tracking concepts, JIRA, Trello."
       ]
     },
     {
       "id": "roadmap-qa-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Cypress & PyTest & TestNG & Cucumber (BDD)",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Cypress, PyTest, TestNG, Cucumber (BDD).",
+      "slug": "api-testing",
+      "title": "5. API Testing",
+      "description": "Master core capabilities of API Testing: What is an API?, REST API concepts, Postman basics, Creating and running collections, Environment variables in Postman.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "bug-tracking-project-management-tools"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-qa-fw-1",
-          "title": "Cypress Reference Docs",
+          "id": "res-qa-5-1",
+          "title": "What is an API? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=What%20is%20an%20API%3F%20documentation"
+        },
+        {
+          "id": "res-qa-5-2",
+          "title": "REST API concepts Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=REST%20API%20concepts%20tutorial"
+        },
+        {
+          "id": "res-qa-5-3",
+          "title": "Practice Postman basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Postman%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Cypress."
+        "Build a prototype integrating What is an API?, REST API concepts, Postman basics."
       ],
       "interviewQuestions": [
-        "When does a Cypress component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Cypress."
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is an API? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of REST API concepts."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the api-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Cypress & PyTest & TestNG & Cucumber (BDD) Core Theories",
+        "5. API Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Cypress."
+        "Build a prototype integrating What is an API?, REST API concepts, Postman basics."
       ]
     },
     {
       "id": "roadmap-qa-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: SQL query basics",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQL query basics.",
+      "slug": "test-automation-fundamentals",
+      "title": "6. Test Automation Fundamentals",
+      "description": "Master core capabilities of Test Automation Fundamentals: Why automate?, Programming basics (Python or JavaScript), Selenium WebDriver, Locators (XPath, CSS selectors, ID, name), Playwright basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "api-testing"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-qa-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-qa-6-1",
+          "title": "Why automate? Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Why%20automate%3F%20documentation"
+        },
+        {
+          "id": "res-qa-6-2",
+          "title": "Programming basics (Python or JavaScript) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Programming%20basics%20(Python%20or%20JavaScript)%20tutorial"
+        },
+        {
+          "id": "res-qa-6-3",
+          "title": "Practice Selenium WebDriver Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Selenium%20WebDriver%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating Why automate?, Programming basics (Python or JavaScript), Selenium WebDriver."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Why automate? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Programming basics (Python or JavaScript)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the test-automation-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: SQL query basics Core Theories",
+        "6. Test Automation Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating Why automate?, Programming basics (Python or JavaScript), Selenium WebDriver."
       ]
     },
     {
       "id": "roadmap-qa-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Unit testing / Integration testing / E2E testing / Load testing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Unit testing, Integration testing, E2E testing, Load testing.",
+      "slug": "performance-testing",
+      "title": "7. Performance Testing",
+      "description": "Master core capabilities of Performance Testing: What is performance testing?, Load testing, stress testing, spike testing, JMeter basics, k6 basics, Key metrics (response time, throughput, error rate).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "test-automation-fundamentals"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-qa-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-qa-7-1",
+          "title": "What is performance testing? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=What%20is%20performance%20testing%3F%20documentation"
+        },
+        {
+          "id": "res-qa-7-2",
+          "title": "Load testing, stress testing, spike testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Load%20testing%2C%20stress%20testing%2C%20spike%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-7-3",
+          "title": "Practice JMeter basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=JMeter%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating What is performance testing?, Load testing, stress testing, spike testing, JMeter basics."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is performance testing? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Load testing, stress testing, spike testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the performance-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Unit testing / Integration testing / E2E testing / Load testing Core Theories",
+        "7. Performance Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating What is performance testing?, Load testing, stress testing, spike testing, JMeter basics."
       ]
     },
     {
       "id": "roadmap-qa-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: GitHub Actions pipelines / Jenkins build automation",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on GitHub Actions pipelines, Jenkins build automation.",
+      "slug": "mobile-testing",
+      "title": "8. Mobile Testing",
+      "description": "Master core capabilities of Mobile Testing: Mobile testing challenges, Android testing basics, iOS testing basics, Emulators vs real devices, Appium basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "performance-testing"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-qa-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-qa-8-1",
+          "title": "Mobile testing challenges Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Mobile%20testing%20challenges%20documentation"
+        },
+        {
+          "id": "res-qa-8-2",
+          "title": "Android testing basics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Android%20testing%20basics%20tutorial"
+        },
+        {
+          "id": "res-qa-8-3",
+          "title": "Practice iOS testing basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=iOS%20testing%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Mobile testing challenges, Android testing basics, iOS testing basics."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Mobile testing challenges and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Android testing basics."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the mobile-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: GitHub Actions pipelines / Jenkins build automation Core Theories",
+        "8. Mobile Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Mobile testing challenges, Android testing basics, iOS testing basics."
       ]
     },
     {
       "id": "roadmap-qa-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Visual Regression Testing, Chaos engineering assertions, API load benchmarking.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "cicd-for-qa",
+      "title": "9. CI/CD for QA",
+      "description": "Master core capabilities of CI/CD for QA: What is CI/CD?, Integrating tests in pipelines, GitHub Actions basics, Running automated tests on push/PR, Test reporting in CI.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "mobile-testing"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-qa-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-qa-9-1",
+          "title": "What is CI/CD? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=What%20is%20CI%2FCD%3F%20documentation"
+        },
+        {
+          "id": "res-qa-9-2",
+          "title": "Integrating tests in pipelines Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Integrating%20tests%20in%20pipelines%20tutorial"
+        },
+        {
+          "id": "res-qa-9-3",
+          "title": "Practice GitHub Actions basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=GitHub%20Actions%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating What is CI/CD?, Integrating tests in pipelines, GitHub Actions basics."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Visual Regression Testing to solve scalability bottlenecks.",
-        "What security vulnerabilities does API load benchmarking protect against?"
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is CI/CD? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Integrating tests in pipelines."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the cicd-for-qa milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. CI/CD for QA Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating What is CI/CD?, Integrating tests in pipelines, GitHub Actions basics."
       ]
     },
     {
       "id": "roadmap-qa-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "advanced-testing-concepts",
+      "title": "10. Advanced Testing Concepts",
+      "description": "Master core capabilities of Advanced Testing Concepts: Security testing basics (OWASP), Accessibility testing (WCAG), Visual regression testing, Contract testing (Pact), Chaos engineering basics.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "cicd-for-qa"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-qa-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-qa-10-1",
+          "title": "Security testing basics (OWASP) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Security%20testing%20basics%20(OWASP)%20documentation"
+        },
+        {
+          "id": "res-qa-10-2",
+          "title": "Accessibility testing (WCAG) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Accessibility%20testing%20(WCAG)%20tutorial"
+        },
+        {
+          "id": "res-qa-10-3",
+          "title": "Practice Visual regression testing Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Visual%20regression%20testing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Security testing basics (OWASP), Accessibility testing (WCAG), Visual regression testing."
       ],
       "interviewQuestions": [
-        "Explain the difference between black-box testing and white-box testing.",
-        "How do you design a robust locator selector strategy in Playwright/Selenium?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Security testing basics (OWASP) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Accessibility testing (WCAG)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the advanced-testing-concepts milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Advanced Testing Concepts Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Security testing basics (OWASP), Accessibility testing (WCAG), Visual regression testing."
       ]
     },
     {
       "id": "roadmap-qa-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Automated E2E Testing Suite for Shop or Load Benchmarking script for REST APIs. Set up deployment links and repository READMEs.",
+      "slug": "non-functional-testing",
+      "title": "11. Non-Functional Testing",
+      "description": "Master core capabilities of Non-Functional Testing: Usability testing, Compatibility testing, Reliability testing, Localization testing, Scalability testing basics.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "advanced-testing-concepts"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-qa-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-qa-11-1",
+          "title": "Usability testing Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Usability%20testing%20documentation"
+        },
+        {
+          "id": "res-qa-11-2",
+          "title": "Compatibility testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Compatibility%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-11-3",
+          "title": "Practice Reliability testing Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Reliability%20testing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Automated E2E Testing Suite for Shop with documentation.",
-        "Build complete deployable version of Load Benchmarking script for REST APIs with documentation."
+        "Build a prototype integrating Usability testing, Compatibility testing, Reliability testing."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Automated E2E Testing Suite for Shop project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is Usability testing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Compatibility testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the non-functional-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Non-Functional Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Automated E2E Testing Suite for Shop with documentation.",
-        "Build complete deployable version of Load Benchmarking script for REST APIs with documentation."
+        "Build a prototype integrating Usability testing, Compatibility testing, Reliability testing."
       ]
     },
     {
       "id": "roadmap-qa-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "qa-best-practices-career",
+      "title": "12. QA Best Practices & Career",
+      "description": "Master core capabilities of QA Best Practices & Career: Test pyramid concept, Shift-left and shift-right testing, QA in Agile teams, Writing effective bug reports, Communication with developers.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "non-functional-testing"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-qa-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-qa-12-1",
+          "title": "Test pyramid concept Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Test%20pyramid%20concept%20documentation"
+        },
+        {
+          "id": "res-qa-12-2",
+          "title": "Shift-left and shift-right testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Shift-left%20and%20shift-right%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-12-3",
+          "title": "Practice QA in Agile teams Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=QA%20in%20Agile%20teams%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Test pyramid concept, Shift-left and shift-right testing, QA in Agile teams."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Test pyramid concept and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Shift-left and shift-right testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the qa-best-practices-career milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. QA Best Practices & Career Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Test pyramid concept, Shift-left and shift-right testing, QA in Agile teams."
+      ]
+    },
+    {
+      "id": "roadmap-qa-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "qa-best-practices-career"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-qa-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-qa-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-qa-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-qa-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-qa-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-qa-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-qa-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Automated E2E Testing Suite for Shop"
+      ],
+      "interviewQuestions": [
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Automated E2E Testing Suite for Shop"
+      ]
+    },
+    {
+      "id": "roadmap-qa-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-qa-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-qa-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-qa-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Load Benchmarking script for REST APIs"
+      ],
+      "interviewQuestions": [
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Load Benchmarking script for REST APIs"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-qa-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "software-testing-fundamentals",
+      "title": "1. Software Testing Fundamentals",
+      "description": "Master core capabilities of Software Testing Fundamentals: What is software testing?, Importance of QA in SDLC, Testing types overview (manual vs automated), SDLC models (Waterfall, Agile, Scrum), STLC (Software Testing Life Cycle).",
       "difficulty": "BEGINNER",
       "estimatedTime": "8 hours",
       "prerequisites": [],
@@ -538,508 +846,815 @@
       "order": 1,
       "resources": [
         {
-          "id": "res-qa-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-qa-1-1",
+          "title": "What is software testing? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=What%20is%20software%20testing%3F%20documentation"
         },
         {
-          "id": "res-qa-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-qa-1-2",
+          "title": "Importance of QA in SDLC Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Importance%20of%20QA%20in%20SDLC%20tutorial"
+        },
+        {
+          "id": "res-qa-1-3",
+          "title": "Practice Testing types overview (manual vs automated) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Testing%20types%20overview%20(manual%20vs%20automated)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is software testing?, Importance of QA in SDLC, Testing types overview (manual vs automated)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is software testing? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Importance of QA in SDLC."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the software-testing-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Software Testing Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating What is software testing?, Importance of QA in SDLC, Testing types overview (manual vs automated)."
       ]
     },
     {
       "id": "roadmap-qa-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "test-planning-documentation",
+      "title": "2. Test Planning & Documentation",
+      "description": "Master core capabilities of Test Planning & Documentation: Test plan creation, Test strategy vs test plan, Test scenarios and test cases, Test case design techniques (BVA, equivalence partitioning, decision table, state transition), Test data management.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "software-testing-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-qa-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-qa-2-1",
+          "title": "Test plan creation Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Test%20plan%20creation%20documentation"
         },
         {
-          "id": "res-qa-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-qa-2-2",
+          "title": "Test strategy vs test plan Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Test%20strategy%20vs%20test%20plan%20tutorial"
+        },
+        {
+          "id": "res-qa-2-3",
+          "title": "Practice Test scenarios and test cases Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Test%20scenarios%20and%20test%20cases%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Test plan creation, Test strategy vs test plan, Test scenarios and test cases."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Test plan creation and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Test strategy vs test plan."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the test-planning-documentation milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. Test Planning & Documentation Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Test plan creation, Test strategy vs test plan, Test scenarios and test cases."
       ]
     },
     {
       "id": "roadmap-qa-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Selenium & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Selenium, Playwright, Postman, Jira, JMeter.",
+      "slug": "manual-testing",
+      "title": "3. Manual Testing",
+      "description": "Master core capabilities of Manual Testing: Exploratory testing, Ad hoc testing, Regression testing, Smoke and sanity testing, UAT (User Acceptance Testing).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "test-planning-documentation"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-qa-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-qa-3-1",
+          "title": "Exploratory testing Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=Exploratory%20testing%20documentation"
+        },
+        {
+          "id": "res-qa-3-2",
+          "title": "Ad hoc testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Ad%20hoc%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-3-3",
+          "title": "Practice Regression testing Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Regression%20testing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Exploratory testing, Ad hoc testing, Regression testing."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is Exploratory testing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Ad hoc testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the manual-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Selenium & More Core Theories",
+        "3. Manual Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating Exploratory testing, Ad hoc testing, Regression testing."
       ]
     },
     {
       "id": "roadmap-qa-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: JavaScript / Python / Java",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in JavaScript, Python, Java.",
+      "slug": "bug-tracking-project-management-tools",
+      "title": "4. Bug Tracking & Project Management Tools",
+      "description": "Master core capabilities of Bug Tracking & Project Management Tools: Bug tracking concepts, JIRA, Trello, Azure DevOps, Bugzilla.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "tools"
+        "manual-testing"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-qa-lang-1",
-          "title": "JavaScript Official Guides",
+          "id": "res-qa-4-1",
+          "title": "Bug tracking concepts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Bug%20tracking%20concepts%20documentation"
+        },
+        {
+          "id": "res-qa-4-2",
+          "title": "JIRA Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=JIRA%20tutorial"
+        },
+        {
+          "id": "res-qa-4-3",
+          "title": "Practice Trello Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Trello%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Bug tracking concepts, JIRA, Trello."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in JavaScript?",
-        "How does asynchronous logic work in JavaScript?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Bug tracking concepts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of JIRA."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the bug-tracking-project-management-tools milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: JavaScript / Python / Java Core Theories",
+        "4. Bug Tracking & Project Management Tools Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using JavaScript handling variable arrays."
+        "Build a prototype integrating Bug tracking concepts, JIRA, Trello."
       ]
     },
     {
       "id": "roadmap-qa-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Cypress & PyTest & TestNG & Cucumber (BDD)",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Cypress, PyTest, TestNG, Cucumber (BDD).",
+      "slug": "api-testing",
+      "title": "5. API Testing",
+      "description": "Master core capabilities of API Testing: What is an API?, REST API concepts, Postman basics, Creating and running collections, Environment variables in Postman.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "languages"
+        "bug-tracking-project-management-tools"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-qa-fw-1",
-          "title": "Cypress Reference Docs",
+          "id": "res-qa-5-1",
+          "title": "What is an API? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=What%20is%20an%20API%3F%20documentation"
+        },
+        {
+          "id": "res-qa-5-2",
+          "title": "REST API concepts Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=REST%20API%20concepts%20tutorial"
+        },
+        {
+          "id": "res-qa-5-3",
+          "title": "Practice Postman basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Postman%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Cypress."
+        "Build a prototype integrating What is an API?, REST API concepts, Postman basics."
       ],
       "interviewQuestions": [
-        "When does a Cypress component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Cypress."
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is an API? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of REST API concepts."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the api-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Cypress & PyTest & TestNG & Cucumber (BDD) Core Theories",
+        "5. API Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Cypress."
+        "Build a prototype integrating What is an API?, REST API concepts, Postman basics."
       ]
     },
     {
       "id": "roadmap-qa-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: SQL query basics",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using SQL query basics.",
+      "slug": "test-automation-fundamentals",
+      "title": "6. Test Automation Fundamentals",
+      "description": "Master core capabilities of Test Automation Fundamentals: Why automate?, Programming basics (Python or JavaScript), Selenium WebDriver, Locators (XPath, CSS selectors, ID, name), Playwright basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "api-testing"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-qa-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-qa-6-1",
+          "title": "Why automate? Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Why%20automate%3F%20documentation"
+        },
+        {
+          "id": "res-qa-6-2",
+          "title": "Programming basics (Python or JavaScript) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Programming%20basics%20(Python%20or%20JavaScript)%20tutorial"
+        },
+        {
+          "id": "res-qa-6-3",
+          "title": "Practice Selenium WebDriver Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Selenium%20WebDriver%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating Why automate?, Programming basics (Python or JavaScript), Selenium WebDriver."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Why automate? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Programming basics (Python or JavaScript)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the test-automation-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: SQL query basics Core Theories",
+        "6. Test Automation Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using SQL query basics."
+        "Build a prototype integrating Why automate?, Programming basics (Python or JavaScript), Selenium WebDriver."
       ]
     },
     {
       "id": "roadmap-qa-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Unit testing / Integration testing / E2E testing / Load testing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Unit testing, Integration testing, E2E testing, Load testing.",
+      "slug": "performance-testing",
+      "title": "7. Performance Testing",
+      "description": "Master core capabilities of Performance Testing: What is performance testing?, Load testing, stress testing, spike testing, JMeter basics, k6 basics, Key metrics (response time, throughput, error rate).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "frameworks"
+        "test-automation-fundamentals"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-qa-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-qa-7-1",
+          "title": "What is performance testing? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=What%20is%20performance%20testing%3F%20documentation"
+        },
+        {
+          "id": "res-qa-7-2",
+          "title": "Load testing, stress testing, spike testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Load%20testing%2C%20stress%20testing%2C%20spike%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-7-3",
+          "title": "Practice JMeter basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=JMeter%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating What is performance testing?, Load testing, stress testing, spike testing, JMeter basics."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is performance testing? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Load testing, stress testing, spike testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the performance-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Unit testing / Integration testing / E2E testing / Load testing Core Theories",
+        "7. Performance Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating What is performance testing?, Load testing, stress testing, spike testing, JMeter basics."
       ]
     },
     {
       "id": "roadmap-qa-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: GitHub Actions pipelines / Jenkins build automation",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on GitHub Actions pipelines, Jenkins build automation.",
+      "slug": "mobile-testing",
+      "title": "8. Mobile Testing",
+      "description": "Master core capabilities of Mobile Testing: Mobile testing challenges, Android testing basics, iOS testing basics, Emulators vs real devices, Appium basics.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "databases"
+        "performance-testing"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-qa-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-qa-8-1",
+          "title": "Mobile testing challenges Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Mobile%20testing%20challenges%20documentation"
+        },
+        {
+          "id": "res-qa-8-2",
+          "title": "Android testing basics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Android%20testing%20basics%20tutorial"
+        },
+        {
+          "id": "res-qa-8-3",
+          "title": "Practice iOS testing basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=iOS%20testing%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Mobile testing challenges, Android testing basics, iOS testing basics."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Mobile testing challenges and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Android testing basics."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the mobile-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: GitHub Actions pipelines / Jenkins build automation Core Theories",
+        "8. Mobile Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Mobile testing challenges, Android testing basics, iOS testing basics."
       ]
     },
     {
       "id": "roadmap-qa-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Visual Regression Testing, Chaos engineering assertions, API load benchmarking.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "cicd-for-qa",
+      "title": "9. CI/CD for QA",
+      "description": "Master core capabilities of CI/CD for QA: What is CI/CD?, Integrating tests in pipelines, GitHub Actions basics, Running automated tests on push/PR, Test reporting in CI.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "deployment"
+        "mobile-testing"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-qa-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-qa-9-1",
+          "title": "What is CI/CD? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=What%20is%20CI%2FCD%3F%20documentation"
+        },
+        {
+          "id": "res-qa-9-2",
+          "title": "Integrating tests in pipelines Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Integrating%20tests%20in%20pipelines%20tutorial"
+        },
+        {
+          "id": "res-qa-9-3",
+          "title": "Practice GitHub Actions basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=GitHub%20Actions%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating What is CI/CD?, Integrating tests in pipelines, GitHub Actions basics."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Visual Regression Testing to solve scalability bottlenecks.",
-        "What security vulnerabilities does API load benchmarking protect against?"
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is What is CI/CD? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Integrating tests in pipelines."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the cicd-for-qa milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. CI/CD for QA Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating What is CI/CD?, Integrating tests in pipelines, GitHub Actions basics."
       ]
     },
     {
       "id": "roadmap-qa-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "advanced-testing-concepts",
+      "title": "10. Advanced Testing Concepts",
+      "description": "Master core capabilities of Advanced Testing Concepts: Security testing basics (OWASP), Accessibility testing (WCAG), Visual regression testing, Contract testing (Pact), Chaos engineering basics.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "cicd-for-qa"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-qa-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-qa-10-1",
+          "title": "Security testing basics (OWASP) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Security%20testing%20basics%20(OWASP)%20documentation"
+        },
+        {
+          "id": "res-qa-10-2",
+          "title": "Accessibility testing (WCAG) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Accessibility%20testing%20(WCAG)%20tutorial"
+        },
+        {
+          "id": "res-qa-10-3",
+          "title": "Practice Visual regression testing Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Visual%20regression%20testing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Security testing basics (OWASP), Accessibility testing (WCAG), Visual regression testing."
       ],
       "interviewQuestions": [
-        "Explain the difference between black-box testing and white-box testing.",
-        "How do you design a robust locator selector strategy in Playwright/Selenium?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Security testing basics (OWASP) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Accessibility testing (WCAG)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the advanced-testing-concepts milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Advanced Testing Concepts Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Security testing basics (OWASP), Accessibility testing (WCAG), Visual regression testing."
       ]
     },
     {
       "id": "roadmap-qa-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Automated E2E Testing Suite for Shop or Load Benchmarking script for REST APIs. Set up deployment links and repository READMEs.",
+      "slug": "non-functional-testing",
+      "title": "11. Non-Functional Testing",
+      "description": "Master core capabilities of Non-Functional Testing: Usability testing, Compatibility testing, Reliability testing, Localization testing, Scalability testing basics.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "interview-prep"
+        "advanced-testing-concepts"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-qa-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-qa-11-1",
+          "title": "Usability testing Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Usability%20testing%20documentation"
+        },
+        {
+          "id": "res-qa-11-2",
+          "title": "Compatibility testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Compatibility%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-11-3",
+          "title": "Practice Reliability testing Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Reliability%20testing%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of Automated E2E Testing Suite for Shop with documentation.",
-        "Build complete deployable version of Load Benchmarking script for REST APIs with documentation."
+        "Build a prototype integrating Usability testing, Compatibility testing, Reliability testing."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Automated E2E Testing Suite for Shop project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is Usability testing and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Compatibility testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the non-functional-testing milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Non-Functional Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of Automated E2E Testing Suite for Shop with documentation.",
-        "Build complete deployable version of Load Benchmarking script for REST APIs with documentation."
+        "Build a prototype integrating Usability testing, Compatibility testing, Reliability testing."
       ]
     },
     {
       "id": "roadmap-qa-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "qa-best-practices-career",
+      "title": "12. QA Best Practices & Career",
+      "description": "Master core capabilities of QA Best Practices & Career: Test pyramid concept, Shift-left and shift-right testing, QA in Agile teams, Writing effective bug reports, Communication with developers.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "8 hours",
       "prerequisites": [
-        "resume-projects"
+        "non-functional-testing"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-qa-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-qa-12-1",
+          "title": "Test pyramid concept Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Test%20pyramid%20concept%20documentation"
+        },
+        {
+          "id": "res-qa-12-2",
+          "title": "Shift-left and shift-right testing Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Shift-left%20and%20shift-right%20testing%20tutorial"
+        },
+        {
+          "id": "res-qa-12-3",
+          "title": "Practice QA in Agile teams Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=QA%20in%20Agile%20teams%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Test pyramid concept, Shift-left and shift-right testing, QA in Agile teams."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Test pyramid concept and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Shift-left and shift-right testing."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the qa-best-practices-career milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. QA Best Practices & Career Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Test pyramid concept, Shift-left and shift-right testing, QA in Agile teams."
+      ]
+    },
+    {
+      "id": "roadmap-qa-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "qa-best-practices-career"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-qa-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-qa-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-qa-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-qa-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-qa-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-qa-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-qa-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Automated E2E Testing Suite for Shop"
+      ],
+      "interviewQuestions": [
+        "How do you design a robust locator selector strategy in Playwright/Selenium?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Automated E2E Testing Suite for Shop"
+      ]
+    },
+    {
+      "id": "roadmap-qa-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "8 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-qa-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-qa-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-qa-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Load Benchmarking script for REST APIs"
+      ],
+      "interviewQuestions": [
+        "Explain the difference between black-box testing and white-box testing.",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Load Benchmarking script for REST APIs"
       ]
     }
   ]

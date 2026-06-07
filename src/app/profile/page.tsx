@@ -10,21 +10,35 @@ import { useRoadmapStore } from "@/store/useRoadmapStore";
 import { User, Settings, Check, UploadCloud, Target, ShieldCheck, Mail } from "lucide-react";
 
 export default function StudentProfile() {
-  const { user } = useRoadmapStore();
+  const { user, updateUserProfile } = useRoadmapStore();
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
-  const [role, setRole] = useState("Frontend Developer");
-  const [weeklyGoal, setWeeklyGoal] = useState("5 Topics");
+  const [role, setRole] = useState(user.targetRole || "Frontend Developer");
+  const [weeklyGoal, setWeeklyGoal] = useState(user.weeklyGoal || "5 Topics");
   const [saved, setSaved] = useState(false);
+
+  // Sync state if user changes
+  React.useEffect(() => {
+    setName(user.name);
+    setEmail(user.email);
+    setRole(user.targetRole || "Frontend Developer");
+    setWeeklyGoal(user.weeklyGoal || "5 Topics");
+  }, [user]);
 
   // Resume states
   const [resumes, setResumes] = useState([
     { name: "v2_SWE_General.pdf", size: "1.2 MB", date: "2026-06-01" },
-    { name: "v2_Frontend_Special.pdf", size: "1.4 MB", date: "2026-05-24" }
+    { name: "v2_Frontend_Special.pdf", size: "2.4 MB", date: "2026-05-24" }
   ]);
 
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
+    updateUserProfile({
+      name,
+      email,
+      targetRole: role,
+      weeklyGoal: weeklyGoal
+    });
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   };

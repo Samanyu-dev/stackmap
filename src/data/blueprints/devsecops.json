@@ -2,6 +2,7 @@
   "id": "roadmap-devsecops",
   "title": "DevSecOps Engineer",
   "slug": "devsecops",
+  "description": "Master DevSecOps Engineer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "SYSTEMS",
   "difficulty": "ADVANCED",
   "estimatedTime": "5 Months",
@@ -12,1036 +13,1650 @@
   "nodes": [
     {
       "id": "roadmap-devsecops-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "security-fundamentals",
+      "title": "1. Security Fundamentals",
+      "description": "Master core capabilities of Security Fundamentals: CIA triad (Confidentiality, Integrity, Availability), Authentication and authorization, Cryptography basics (symmetric, asymmetric, hashing), PKI and certificates, OWASP Top 10.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-devsecops-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-devsecops-1-1",
+          "title": "CIA triad (Confidentiality, Integrity, Availability) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=CIA%20triad%20(Confidentiality%2C%20Integrity%2C%20Availability)%20documentation"
         },
         {
-          "id": "res-devsecops-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-devsecops-1-2",
+          "title": "Authentication and authorization Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Authentication%20and%20authorization%20tutorial"
+        },
+        {
+          "id": "res-devsecops-1-3",
+          "title": "Practice Cryptography basics (symmetric, asymmetric, hashing) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Cryptography%20basics%20(symmetric%2C%20asymmetric%2C%20hashing)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating CIA triad (Confidentiality, Integrity, Availability), Authentication and authorization, Cryptography basics (symmetric, asymmetric, hashing)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is CIA triad (Confidentiality, Integrity, Availability) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Authentication and authorization."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the security-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Security Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating CIA triad (Confidentiality, Integrity, Availability), Authentication and authorization, Cryptography basics (symmetric, asymmetric, hashing)."
       ]
     },
     {
       "id": "roadmap-devsecops-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "devops-foundation",
+      "title": "2. DevOps Foundation",
+      "description": "Master core capabilities of DevOps Foundation: Linux and command line, Docker and containers, Kubernetes fundamentals, CI/CD pipelines, Infrastructure as Code (Terraform).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "security-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-devsecops-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-devsecops-2-1",
+          "title": "Linux and command line Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Linux%20and%20command%20line%20documentation"
         },
         {
-          "id": "res-devsecops-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-devsecops-2-2",
+          "title": "Docker and containers Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Docker%20and%20containers%20tutorial"
+        },
+        {
+          "id": "res-devsecops-2-3",
+          "title": "Practice Kubernetes fundamentals Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Kubernetes%20fundamentals%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Linux and command line, Docker and containers, Kubernetes fundamentals."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Linux and command line and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Docker and containers."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the devops-foundation milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. DevOps Foundation Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Linux and command line, Docker and containers, Kubernetes fundamentals."
       ]
     },
     {
       "id": "roadmap-devsecops-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Trivy & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Trivy, SonarQube, HashiCorp Vault, OWASP ZAP, GitLab Secure.",
+      "slug": "shift-left-security",
+      "title": "3. Shift-Left Security",
+      "description": "Master core capabilities of Shift-Left Security: What is DevSecOps?, Shift-left security concept, Security requirements in planning, Threat modeling in design phase, Developer security education.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "devops-foundation"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-devsecops-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-devsecops-3-1",
+          "title": "What is DevSecOps? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=What%20is%20DevSecOps%3F%20documentation"
+        },
+        {
+          "id": "res-devsecops-3-2",
+          "title": "Shift-left security concept Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Shift-left%20security%20concept%20tutorial"
+        },
+        {
+          "id": "res-devsecops-3-3",
+          "title": "Practice Security requirements in planning Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Security%20requirements%20in%20planning%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating What is DevSecOps?, Shift-left security concept, Security requirements in planning."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is What is DevSecOps? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Shift-left security concept."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the shift-left-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Trivy & More Core Theories",
+        "3. Shift-Left Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating What is DevSecOps?, Shift-left security concept, Security requirements in planning."
       ]
     },
     {
       "id": "roadmap-devsecops-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Bash / Python / Go",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Bash, Python, Go.",
+      "slug": "static-application-security-testing-sast",
+      "title": "4. Static Application Security Testing (SAST)",
+      "description": "Master core capabilities of Static Application Security Testing (SAST): SAST concepts, SonarQube, Semgrep, Bandit (Python), ESLint security plugins.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "tools"
+        "shift-left-security"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-devsecops-lang-1",
-          "title": "Bash Official Guides",
+          "id": "res-devsecops-4-1",
+          "title": "SAST concepts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=SAST%20concepts%20documentation"
+        },
+        {
+          "id": "res-devsecops-4-2",
+          "title": "SonarQube Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=SonarQube%20tutorial"
+        },
+        {
+          "id": "res-devsecops-4-3",
+          "title": "Practice Semgrep Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Semgrep%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating SAST concepts, SonarQube, Semgrep."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Bash?",
-        "How does asynchronous logic work in Bash?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is SAST concepts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of SonarQube."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the static-application-security-testing-sast milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Bash / Python / Go Core Theories",
+        "4. Static Application Security Testing (SAST) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating SAST concepts, SonarQube, Semgrep."
       ]
     },
     {
       "id": "roadmap-devsecops-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Terraform (Secured)",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Terraform (Secured).",
+      "slug": "dynamic-application-security-testing-dast",
+      "title": "5. Dynamic Application Security Testing (DAST)",
+      "description": "Master core capabilities of Dynamic Application Security Testing (DAST): DAST concepts, OWASP ZAP, Burp Suite basics, API security testing, Fuzzing.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "languages"
+        "static-application-security-testing-sast"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-devsecops-fw-1",
-          "title": "Terraform (Secured) Reference Docs",
+          "id": "res-devsecops-5-1",
+          "title": "DAST concepts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=DAST%20concepts%20documentation"
+        },
+        {
+          "id": "res-devsecops-5-2",
+          "title": "OWASP ZAP Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=OWASP%20ZAP%20tutorial"
+        },
+        {
+          "id": "res-devsecops-5-3",
+          "title": "Practice Burp Suite basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Burp%20Suite%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Terraform (Secured)."
+        "Build a prototype integrating DAST concepts, OWASP ZAP, Burp Suite basics."
       ],
       "interviewQuestions": [
-        "When does a Terraform (Secured) component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Terraform (Secured)."
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is DAST concepts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of OWASP ZAP."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the dynamic-application-security-testing-dast milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Terraform (Secured) Core Theories",
+        "5. Dynamic Application Security Testing (DAST) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Terraform (Secured)."
+        "Build a prototype integrating DAST concepts, OWASP ZAP, Burp Suite basics."
       ]
     },
     {
       "id": "roadmap-devsecops-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL (Encrypted)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Encrypted).",
+      "slug": "container-infrastructure-security",
+      "title": "6. Container & Infrastructure Security",
+      "description": "Master core capabilities of Container & Infrastructure Security: Dockerfile security best practices, Container image scanning (Trivy, Clair, Snyk), Docker bench security, Kubernetes security (RBAC, Network Policies, Pod Security), Kubernetes security benchmarks (CIS).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "dynamic-application-security-testing-dast"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-devsecops-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-devsecops-6-1",
+          "title": "Dockerfile security best practices Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        },
+        {
+          "id": "res-devsecops-6-2",
+          "title": "Container image scanning (Trivy, Clair, Snyk) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Container%20image%20scanning%20(Trivy%2C%20Clair%2C%20Snyk)%20tutorial"
+        },
+        {
+          "id": "res-devsecops-6-3",
+          "title": "Practice Docker bench security Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Docker%20bench%20security%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL (Encrypted)."
+        "Build a prototype integrating Dockerfile security best practices, Container image scanning (Trivy, Clair, Snyk), Docker bench security."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Dockerfile security best practices and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Container image scanning (Trivy, Clair, Snyk)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the container-infrastructure-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL (Encrypted) Core Theories",
+        "6. Container & Infrastructure Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL (Encrypted)."
+        "Build a prototype integrating Dockerfile security best practices, Container image scanning (Trivy, Clair, Snyk), Docker bench security."
       ]
     },
     {
       "id": "roadmap-devsecops-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: SAST scanning / DAST scanning / SCA auditing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using SAST scanning, DAST scanning, SCA auditing.",
+      "slug": "secrets-management",
+      "title": "7. Secrets Management",
+      "description": "Master core capabilities of Secrets Management: Secrets in CI/CD (common mistakes), HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, GCP Secret Manager.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "container-infrastructure-security"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-devsecops-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-devsecops-7-1",
+          "title": "Secrets in CI/CD (common mistakes) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Secrets%20in%20CI%2FCD%20(common%20mistakes)%20documentation"
+        },
+        {
+          "id": "res-devsecops-7-2",
+          "title": "HashiCorp Vault Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=HashiCorp%20Vault%20tutorial"
+        },
+        {
+          "id": "res-devsecops-7-3",
+          "title": "Practice AWS Secrets Manager Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=AWS%20Secrets%20Manager%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Secrets in CI/CD (common mistakes), HashiCorp Vault, AWS Secrets Manager."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is Secrets in CI/CD (common mistakes) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of HashiCorp Vault."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the secrets-management milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: SAST scanning / DAST scanning / SCA auditing Core Theories",
+        "7. Secrets Management Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Secrets in CI/CD (common mistakes), HashiCorp Vault, AWS Secrets Manager."
       ]
     },
     {
       "id": "roadmap-devsecops-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: AWS / Kubernetes (Network Policies)",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS, Kubernetes (Network Policies).",
+      "slug": "supply-chain-security",
+      "title": "8. Supply Chain Security",
+      "description": "Master core capabilities of Supply Chain Security: Software supply chain attacks, SLSA framework, SBOM (Software Bill of Materials), Sigstore and container signing, Cosign.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "databases"
+        "secrets-management"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-devsecops-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-devsecops-8-1",
+          "title": "Software supply chain attacks Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Software%20supply%20chain%20attacks%20documentation"
+        },
+        {
+          "id": "res-devsecops-8-2",
+          "title": "SLSA framework Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=SLSA%20framework%20tutorial"
+        },
+        {
+          "id": "res-devsecops-8-3",
+          "title": "Practice SBOM (Software Bill of Materials) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=SBOM%20(Software%20Bill%20of%20Materials)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Software supply chain attacks, SLSA framework, SBOM (Software Bill of Materials)."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Software supply chain attacks and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of SLSA framework."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the supply-chain-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: AWS / Kubernetes (Network Policies) Core Theories",
+        "8. Supply Chain Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Software supply chain attacks, SLSA framework, SBOM (Software Bill of Materials)."
       ]
     },
     {
       "id": "roadmap-devsecops-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Secrets Management, Shift-Left security, Vulnerability management pipelines, Container Auditing.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "cloud-security",
+      "title": "9. Cloud Security",
+      "description": "Master core capabilities of Cloud Security: AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector), GCP Security Command Center, Azure Defender, Cloud IAM best practices, VPC security (security groups, NACLs, private endpoints).",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "deployment"
+        "supply-chain-security"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-devsecops-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-devsecops-9-1",
+          "title": "AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=AWS%20security%20services%20(GuardDuty%2C%20Security%20Hub%2C%20Config%2C%20Macie%2C%20Inspector)%20documentation"
+        },
+        {
+          "id": "res-devsecops-9-2",
+          "title": "GCP Security Command Center Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GCP%20Security%20Command%20Center%20tutorial"
+        },
+        {
+          "id": "res-devsecops-9-3",
+          "title": "Practice Azure Defender Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Azure%20Defender%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector), GCP Security Command Center, Azure Defender."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Secrets Management to solve scalability bottlenecks.",
-        "What security vulnerabilities does Container Auditing protect against?"
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GCP Security Command Center."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the cloud-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Cloud Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector), GCP Security Command Center, Azure Defender."
       ]
     },
     {
       "id": "roadmap-devsecops-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "compliance-as-code",
+      "title": "10. Compliance as Code",
+      "description": "Master core capabilities of Compliance as Code: Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR), Policy as Code (OPA, Rego), Compliance automation, Audit logging and trails, Configuration compliance (AWS Config, Azure Policy).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "cloud-security"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-devsecops-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-devsecops-10-1",
+          "title": "Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Compliance%20frameworks%20(SOC%202%2C%20PCI%20DSS%2C%20HIPAA%2C%20GDPR)%20documentation"
+        },
+        {
+          "id": "res-devsecops-10-2",
+          "title": "Policy as Code (OPA, Rego) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Policy%20as%20Code%20(OPA%2C%20Rego)%20tutorial"
+        },
+        {
+          "id": "res-devsecops-10-3",
+          "title": "Practice Compliance automation Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Compliance%20automation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR), Policy as Code (OPA, Rego), Compliance automation."
       ],
       "interviewQuestions": [
-        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
-        "How do you handle API credential injection inside containers without exposing secrets in Git?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Policy as Code (OPA, Rego)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the compliance-as-code milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Compliance as Code Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR), Policy as Code (OPA, Rego), Compliance automation."
       ]
     },
     {
       "id": "roadmap-devsecops-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: SonarQube & Trivy CI Pipeline Integration or HashiCorp Vault API integration project. Set up deployment links and repository READMEs.",
+      "slug": "incident-response",
+      "title": "11. Incident Response",
+      "description": "Master core capabilities of Incident Response: Incident response lifecycle, Security incident classification, Forensic basics (disk imaging, memory forensics), Log analysis for security incidents, SIEM basics (Splunk, Elastic SIEM).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "interview-prep"
+        "compliance-as-code"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-devsecops-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-devsecops-11-1",
+          "title": "Incident response lifecycle Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Incident%20response%20lifecycle%20documentation"
+        },
+        {
+          "id": "res-devsecops-11-2",
+          "title": "Security incident classification Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Security%20incident%20classification%20tutorial"
+        },
+        {
+          "id": "res-devsecops-11-3",
+          "title": "Practice Forensic basics (disk imaging, memory forensics) Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Forensic%20basics%20(disk%20imaging%2C%20memory%20forensics)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of SonarQube & Trivy CI Pipeline Integration with documentation.",
-        "Build complete deployable version of HashiCorp Vault API integration project with documentation."
+        "Build a prototype integrating Incident response lifecycle, Security incident classification, Forensic basics (disk imaging, memory forensics)."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your SonarQube & Trivy CI Pipeline Integration project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is Incident response lifecycle and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Security incident classification."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the incident-response milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Incident Response Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of SonarQube & Trivy CI Pipeline Integration with documentation.",
-        "Build complete deployable version of HashiCorp Vault API integration project with documentation."
+        "Build a prototype integrating Incident response lifecycle, Security incident classification, Forensic basics (disk imaging, memory forensics)."
       ]
     },
     {
       "id": "roadmap-devsecops-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "security-operations",
+      "title": "12. Security Operations",
+      "description": "Master core capabilities of Security Operations: Security Operations Center (SOC) overview, Vulnerability management lifecycle, Penetration testing basics, Red team vs blue team vs purple team, Bug bounty programs.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "resume-projects"
+        "incident-response"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-devsecops-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-devsecops-12-1",
+          "title": "Security Operations Center (SOC) overview Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Security%20Operations%20Center%20(SOC)%20overview%20documentation"
+        },
+        {
+          "id": "res-devsecops-12-2",
+          "title": "Vulnerability management lifecycle Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Vulnerability%20management%20lifecycle%20tutorial"
+        },
+        {
+          "id": "res-devsecops-12-3",
+          "title": "Practice Penetration testing basics Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Penetration%20testing%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Security Operations Center (SOC) overview, Vulnerability management lifecycle, Penetration testing basics."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Security Operations Center (SOC) overview and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Vulnerability management lifecycle."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the security-operations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Security Operations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Security Operations Center (SOC) overview, Vulnerability management lifecycle, Penetration testing basics."
+      ]
+    },
+    {
+      "id": "roadmap-devsecops-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "security-operations"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-devsecops-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-devsecops-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-devsecops-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-devsecops-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-devsecops-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-devsecops-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-devsecops-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: SonarQube & Trivy CI Pipeline Integration"
+      ],
+      "interviewQuestions": [
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: SonarQube & Trivy CI Pipeline Integration"
+      ]
+    },
+    {
+      "id": "roadmap-devsecops-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-devsecops-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-devsecops-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-devsecops-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: HashiCorp Vault API integration project"
+      ],
+      "interviewQuestions": [
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: HashiCorp Vault API integration project"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-devsecops-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "security-fundamentals",
+      "title": "1. Security Fundamentals",
+      "description": "Master core capabilities of Security Fundamentals: CIA triad (Confidentiality, Integrity, Availability), Authentication and authorization, Cryptography basics (symmetric, asymmetric, hashing), PKI and certificates, OWASP Top 10.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-devsecops-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-devsecops-1-1",
+          "title": "CIA triad (Confidentiality, Integrity, Availability) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=CIA%20triad%20(Confidentiality%2C%20Integrity%2C%20Availability)%20documentation"
         },
         {
-          "id": "res-devsecops-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-devsecops-1-2",
+          "title": "Authentication and authorization Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=Authentication%20and%20authorization%20tutorial"
+        },
+        {
+          "id": "res-devsecops-1-3",
+          "title": "Practice Cryptography basics (symmetric, asymmetric, hashing) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Cryptography%20basics%20(symmetric%2C%20asymmetric%2C%20hashing)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating CIA triad (Confidentiality, Integrity, Availability), Authentication and authorization, Cryptography basics (symmetric, asymmetric, hashing)."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is CIA triad (Confidentiality, Integrity, Availability) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Authentication and authorization."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the security-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Security Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating CIA triad (Confidentiality, Integrity, Availability), Authentication and authorization, Cryptography basics (symmetric, asymmetric, hashing)."
       ]
     },
     {
       "id": "roadmap-devsecops-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "devops-foundation",
+      "title": "2. DevOps Foundation",
+      "description": "Master core capabilities of DevOps Foundation: Linux and command line, Docker and containers, Kubernetes fundamentals, CI/CD pipelines, Infrastructure as Code (Terraform).",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "security-fundamentals"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-devsecops-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-devsecops-2-1",
+          "title": "Linux and command line Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Linux%20and%20command%20line%20documentation"
         },
         {
-          "id": "res-devsecops-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-devsecops-2-2",
+          "title": "Docker and containers Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Docker%20and%20containers%20tutorial"
+        },
+        {
+          "id": "res-devsecops-2-3",
+          "title": "Practice Kubernetes fundamentals Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Kubernetes%20fundamentals%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Linux and command line, Docker and containers, Kubernetes fundamentals."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Linux and command line and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Docker and containers."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the devops-foundation milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. DevOps Foundation Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating Linux and command line, Docker and containers, Kubernetes fundamentals."
       ]
     },
     {
       "id": "roadmap-devsecops-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Trivy & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Trivy, SonarQube, HashiCorp Vault, OWASP ZAP, GitLab Secure.",
+      "slug": "shift-left-security",
+      "title": "3. Shift-Left Security",
+      "description": "Master core capabilities of Shift-Left Security: What is DevSecOps?, Shift-left security concept, Security requirements in planning, Threat modeling in design phase, Developer security education.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "devops-foundation"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-devsecops-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-devsecops-3-1",
+          "title": "What is DevSecOps? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=What%20is%20DevSecOps%3F%20documentation"
+        },
+        {
+          "id": "res-devsecops-3-2",
+          "title": "Shift-left security concept Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Shift-left%20security%20concept%20tutorial"
+        },
+        {
+          "id": "res-devsecops-3-3",
+          "title": "Practice Security requirements in planning Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Security%20requirements%20in%20planning%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating What is DevSecOps?, Shift-left security concept, Security requirements in planning."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is What is DevSecOps? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Shift-left security concept."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the shift-left-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Trivy & More Core Theories",
+        "3. Shift-Left Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating What is DevSecOps?, Shift-left security concept, Security requirements in planning."
       ]
     },
     {
       "id": "roadmap-devsecops-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: Bash / Python / Go",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in Bash, Python, Go.",
+      "slug": "static-application-security-testing-sast",
+      "title": "4. Static Application Security Testing (SAST)",
+      "description": "Master core capabilities of Static Application Security Testing (SAST): SAST concepts, SonarQube, Semgrep, Bandit (Python), ESLint security plugins.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "tools"
+        "shift-left-security"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-devsecops-lang-1",
-          "title": "Bash Official Guides",
+          "id": "res-devsecops-4-1",
+          "title": "SAST concepts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=SAST%20concepts%20documentation"
+        },
+        {
+          "id": "res-devsecops-4-2",
+          "title": "SonarQube Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=SonarQube%20tutorial"
+        },
+        {
+          "id": "res-devsecops-4-3",
+          "title": "Practice Semgrep Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Semgrep%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating SAST concepts, SonarQube, Semgrep."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in Bash?",
-        "How does asynchronous logic work in Bash?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is SAST concepts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of SonarQube."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the static-application-security-testing-sast milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: Bash / Python / Go Core Theories",
+        "4. Static Application Security Testing (SAST) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using Bash handling variable arrays."
+        "Build a prototype integrating SAST concepts, SonarQube, Semgrep."
       ]
     },
     {
       "id": "roadmap-devsecops-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: Terraform (Secured)",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using Terraform (Secured).",
+      "slug": "dynamic-application-security-testing-dast",
+      "title": "5. Dynamic Application Security Testing (DAST)",
+      "description": "Master core capabilities of Dynamic Application Security Testing (DAST): DAST concepts, OWASP ZAP, Burp Suite basics, API security testing, Fuzzing.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "languages"
+        "static-application-security-testing-sast"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-devsecops-fw-1",
-          "title": "Terraform (Secured) Reference Docs",
+          "id": "res-devsecops-5-1",
+          "title": "DAST concepts Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://www.google.com/search?q=DAST%20concepts%20documentation"
+        },
+        {
+          "id": "res-devsecops-5-2",
+          "title": "OWASP ZAP Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=OWASP%20ZAP%20tutorial"
+        },
+        {
+          "id": "res-devsecops-5-3",
+          "title": "Practice Burp Suite basics Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Burp%20Suite%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using Terraform (Secured)."
+        "Build a prototype integrating DAST concepts, OWASP ZAP, Burp Suite basics."
       ],
       "interviewQuestions": [
-        "When does a Terraform (Secured) component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in Terraform (Secured)."
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is DAST concepts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of OWASP ZAP."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the dynamic-application-security-testing-dast milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: Terraform (Secured) Core Theories",
+        "5. Dynamic Application Security Testing (DAST) Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using Terraform (Secured)."
+        "Build a prototype integrating DAST concepts, OWASP ZAP, Burp Suite basics."
       ]
     },
     {
       "id": "roadmap-devsecops-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: PostgreSQL (Encrypted)",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using PostgreSQL (Encrypted).",
+      "slug": "container-infrastructure-security",
+      "title": "6. Container & Infrastructure Security",
+      "description": "Master core capabilities of Container & Infrastructure Security: Dockerfile security best practices, Container image scanning (Trivy, Clair, Snyk), Docker bench security, Kubernetes security (RBAC, Network Policies, Pod Security), Kubernetes security benchmarks (CIS).",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "dynamic-application-security-testing-dast"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-devsecops-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-devsecops-6-1",
+          "title": "Dockerfile security best practices Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://docs.docker.com"
+        },
+        {
+          "id": "res-devsecops-6-2",
+          "title": "Container image scanning (Trivy, Clair, Snyk) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Container%20image%20scanning%20(Trivy%2C%20Clair%2C%20Snyk)%20tutorial"
+        },
+        {
+          "id": "res-devsecops-6-3",
+          "title": "Practice Docker bench security Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=Docker%20bench%20security%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using PostgreSQL (Encrypted)."
+        "Build a prototype integrating Dockerfile security best practices, Container image scanning (Trivy, Clair, Snyk), Docker bench security."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Dockerfile security best practices and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Container image scanning (Trivy, Clair, Snyk)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the container-infrastructure-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: PostgreSQL (Encrypted) Core Theories",
+        "6. Container & Infrastructure Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using PostgreSQL (Encrypted)."
+        "Build a prototype integrating Dockerfile security best practices, Container image scanning (Trivy, Clair, Snyk), Docker bench security."
       ]
     },
     {
       "id": "roadmap-devsecops-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: SAST scanning / DAST scanning / SCA auditing",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using SAST scanning, DAST scanning, SCA auditing.",
+      "slug": "secrets-management",
+      "title": "7. Secrets Management",
+      "description": "Master core capabilities of Secrets Management: Secrets in CI/CD (common mistakes), HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, GCP Secret Manager.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "frameworks"
+        "container-infrastructure-security"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-devsecops-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-devsecops-7-1",
+          "title": "Secrets in CI/CD (common mistakes) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Secrets%20in%20CI%2FCD%20(common%20mistakes)%20documentation"
+        },
+        {
+          "id": "res-devsecops-7-2",
+          "title": "HashiCorp Vault Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=HashiCorp%20Vault%20tutorial"
+        },
+        {
+          "id": "res-devsecops-7-3",
+          "title": "Practice AWS Secrets Manager Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=AWS%20Secrets%20Manager%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Secrets in CI/CD (common mistakes), HashiCorp Vault, AWS Secrets Manager."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is Secrets in CI/CD (common mistakes) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of HashiCorp Vault."
       ],
       "learningObjectives": [
-        "Master key capabilities of the testing milestone.",
+        "Master key capabilities of the secrets-management milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: SAST scanning / DAST scanning / SCA auditing Core Theories",
+        "7. Secrets Management Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Secrets in CI/CD (common mistakes), HashiCorp Vault, AWS Secrets Manager."
       ]
     },
     {
       "id": "roadmap-devsecops-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: AWS / Kubernetes (Network Policies)",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on AWS, Kubernetes (Network Policies).",
+      "slug": "supply-chain-security",
+      "title": "8. Supply Chain Security",
+      "description": "Master core capabilities of Supply Chain Security: Software supply chain attacks, SLSA framework, SBOM (Software Bill of Materials), Sigstore and container signing, Cosign.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "databases"
+        "secrets-management"
       ],
       "parentNodeId": null,
       "order": 8,
       "resources": [
         {
-          "id": "res-devsecops-deploy-1",
-          "title": "Production hosting deployment guidelines",
+          "id": "res-devsecops-8-1",
+          "title": "Software supply chain attacks Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
+          "url": "https://www.google.com/search?q=Software%20supply%20chain%20attacks%20documentation"
+        },
+        {
+          "id": "res-devsecops-8-2",
+          "title": "SLSA framework Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=SLSA%20framework%20tutorial"
+        },
+        {
+          "id": "res-devsecops-8-3",
+          "title": "Practice SBOM (Software Bill of Materials) Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=SBOM%20(Software%20Bill%20of%20Materials)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Software supply chain attacks, SLSA framework, SBOM (Software Bill of Materials)."
       ],
       "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Software supply chain attacks and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of SLSA framework."
       ],
       "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
+        "Master key capabilities of the supply-chain-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "8. Production Deployment: AWS / Kubernetes (Network Policies) Core Theories",
+        "8. Supply Chain Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build production build folders, package configurations, and host online."
+        "Build a prototype integrating Software supply chain attacks, SLSA framework, SBOM (Software Bill of Materials)."
       ]
     },
     {
       "id": "roadmap-devsecops-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Secrets Management, Shift-Left security, Vulnerability management pipelines, Container Auditing.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
+      "slug": "cloud-security",
+      "title": "9. Cloud Security",
+      "description": "Master core capabilities of Cloud Security: AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector), GCP Security Command Center, Azure Defender, Cloud IAM best practices, VPC security (security groups, NACLs, private endpoints).",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "deployment"
+        "supply-chain-security"
       ],
       "parentNodeId": null,
       "order": 9,
       "resources": [
         {
-          "id": "res-devsecops-adv-1",
-          "title": "Advanced systems engineering layouts",
+          "id": "res-devsecops-9-1",
+          "title": "AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector) Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
+          "url": "https://www.google.com/search?q=AWS%20security%20services%20(GuardDuty%2C%20Security%20Hub%2C%20Config%2C%20Macie%2C%20Inspector)%20documentation"
+        },
+        {
+          "id": "res-devsecops-9-2",
+          "title": "GCP Security Command Center Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=GCP%20Security%20Command%20Center%20tutorial"
+        },
+        {
+          "id": "res-devsecops-9-3",
+          "title": "Practice Azure Defender Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Azure%20Defender%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector), GCP Security Command Center, Azure Defender."
       ],
       "interviewQuestions": [
-        "Explain how you would implement Secrets Management to solve scalability bottlenecks.",
-        "What security vulnerabilities does Container Auditing protect against?"
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of GCP Security Command Center."
       ],
       "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
+        "Master key capabilities of the cloud-security milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "9. Advanced Concepts Core Theories",
+        "9. Cloud Security Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
+        "Build a prototype integrating AWS security services (GuardDuty, Security Hub, Config, Macie, Inspector), GCP Security Command Center, Azure Defender."
       ]
     },
     {
       "id": "roadmap-devsecops-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
+      "slug": "compliance-as-code",
+      "title": "10. Compliance as Code",
+      "description": "Master core capabilities of Compliance as Code: Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR), Policy as Code (OPA, Rego), Compliance automation, Audit logging and trails, Configuration compliance (AWS Config, Azure Policy).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "advanced-concepts"
+        "cloud-security"
       ],
       "parentNodeId": null,
       "order": 10,
       "resources": [
         {
-          "id": "res-devsecops-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
+          "id": "res-devsecops-10-1",
+          "title": "Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Compliance%20frameworks%20(SOC%202%2C%20PCI%20DSS%2C%20HIPAA%2C%20GDPR)%20documentation"
+        },
+        {
+          "id": "res-devsecops-10-2",
+          "title": "Policy as Code (OPA, Rego) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Policy%20as%20Code%20(OPA%2C%20Rego)%20tutorial"
+        },
+        {
+          "id": "res-devsecops-10-3",
+          "title": "Practice Compliance automation Exercises",
           "type": "WEBSITE",
-          "url": "https://neetcode.io"
+          "url": "https://www.google.com/search?q=Compliance%20automation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR), Policy as Code (OPA, Rego), Compliance automation."
       ],
       "interviewQuestions": [
-        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
-        "How do you handle API credential injection inside containers without exposing secrets in Git?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Policy as Code (OPA, Rego)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
+        "Master key capabilities of the compliance-as-code milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
+        "10. Compliance as Code Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
+        "Build a prototype integrating Compliance frameworks (SOC 2, PCI DSS, HIPAA, GDPR), Policy as Code (OPA, Rego), Compliance automation."
       ]
     },
     {
       "id": "roadmap-devsecops-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: SonarQube & Trivy CI Pipeline Integration or HashiCorp Vault API integration project. Set up deployment links and repository READMEs.",
+      "slug": "incident-response",
+      "title": "11. Incident Response",
+      "description": "Master core capabilities of Incident Response: Incident response lifecycle, Security incident classification, Forensic basics (disk imaging, memory forensics), Log analysis for security incidents, SIEM basics (Splunk, Elastic SIEM).",
       "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "interview-prep"
+        "compliance-as-code"
       ],
       "parentNodeId": null,
       "order": 11,
       "resources": [
         {
-          "id": "res-devsecops-proj-1",
-          "title": "GitHub Readme templates design guidelines",
+          "id": "res-devsecops-11-1",
+          "title": "Incident response lifecycle Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Incident%20response%20lifecycle%20documentation"
+        },
+        {
+          "id": "res-devsecops-11-2",
+          "title": "Security incident classification Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Security%20incident%20classification%20tutorial"
+        },
+        {
+          "id": "res-devsecops-11-3",
+          "title": "Practice Forensic basics (disk imaging, memory forensics) Exercises",
           "type": "WEBSITE",
-          "url": "https://github.com"
+          "url": "https://www.google.com/search?q=Forensic%20basics%20(disk%20imaging%2C%20memory%20forensics)%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build complete deployable version of SonarQube & Trivy CI Pipeline Integration with documentation.",
-        "Build complete deployable version of HashiCorp Vault API integration project with documentation."
+        "Build a prototype integrating Incident response lifecycle, Security incident classification, Forensic basics (disk imaging, memory forensics)."
       ],
       "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your SonarQube & Trivy CI Pipeline Integration project.",
-        "How does your database sharding or state caching optimize loading speeds?"
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is Incident response lifecycle and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Security incident classification."
       ],
       "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
+        "Master key capabilities of the incident-response milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
+        "11. Incident Response Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build complete deployable version of SonarQube & Trivy CI Pipeline Integration with documentation.",
-        "Build complete deployable version of HashiCorp Vault API integration project with documentation."
+        "Build a prototype integrating Incident response lifecycle, Security incident classification, Forensic basics (disk imaging, memory forensics)."
       ]
     },
     {
       "id": "roadmap-devsecops-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "security-operations",
+      "title": "12. Security Operations",
+      "description": "Master core capabilities of Security Operations: Security Operations Center (SOC) overview, Vulnerability management lifecycle, Penetration testing basics, Red team vs blue team vs purple team, Bug bounty programs.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "14 hours",
       "prerequisites": [
-        "resume-projects"
+        "incident-response"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-devsecops-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-devsecops-12-1",
+          "title": "Security Operations Center (SOC) overview Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Security%20Operations%20Center%20(SOC)%20overview%20documentation"
+        },
+        {
+          "id": "res-devsecops-12-2",
+          "title": "Vulnerability management lifecycle Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Vulnerability%20management%20lifecycle%20tutorial"
+        },
+        {
+          "id": "res-devsecops-12-3",
+          "title": "Practice Penetration testing basics Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Penetration%20testing%20basics%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Security Operations Center (SOC) overview, Vulnerability management lifecycle, Penetration testing basics."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Security Operations Center (SOC) overview and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Vulnerability management lifecycle."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the security-operations milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Security Operations Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Security Operations Center (SOC) overview, Vulnerability management lifecycle, Penetration testing basics."
+      ]
+    },
+    {
+      "id": "roadmap-devsecops-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "security-operations"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-devsecops-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-devsecops-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-devsecops-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-devsecops-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-devsecops-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-devsecops-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-devsecops-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: SonarQube & Trivy CI Pipeline Integration"
+      ],
+      "interviewQuestions": [
+        "How do you handle API credential injection inside containers without exposing secrets in Git?",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: SonarQube & Trivy CI Pipeline Integration"
+      ]
+    },
+    {
+      "id": "roadmap-devsecops-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "14 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-devsecops-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-devsecops-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-devsecops-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: HashiCorp Vault API integration project"
+      ],
+      "interviewQuestions": [
+        "What is the difference between static (SAST) and dynamic (DAST) security analysis?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: HashiCorp Vault API integration project"
       ]
     }
   ]

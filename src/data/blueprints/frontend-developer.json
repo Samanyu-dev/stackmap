@@ -2,6 +2,7 @@
   "id": "roadmap-frontend",
   "title": "Frontend Developer",
   "slug": "frontend-developer",
+  "description": "Master Frontend Developer skills, standard tools, framework engineering, database design, and advanced deployment pipelines.",
   "category": "DEVELOPMENT",
   "difficulty": "BEGINNER",
   "estimatedTime": "4 Months",
@@ -10,292 +11,591 @@
   "nodes": [
     {
       "id": "roadmap-frontend-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "internet-web-basics",
+      "title": "1. Internet & Web Basics",
+      "description": "Master core capabilities of Internet & Web Basics: How does the internet work?, What is HTTP/HTTPS?, What is a domain name?, What is hosting?, DNS and how it works.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-frontend-developer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-frontend-developer-1-1",
+          "title": "How does the internet work? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=How%20does%20the%20internet%20work%3F%20documentation"
         },
         {
-          "id": "res-frontend-developer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-frontend-developer-1-2",
+          "title": "What is HTTP/HTTPS? Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=What%20is%20HTTP%2FHTTPS%3F%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-1-3",
+          "title": "Practice What is a domain name? Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=What%20is%20a%20domain%20name%3F%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating How does the internet work?, What is HTTP/HTTPS?, What is a domain name?."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is How does the internet work? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of What is HTTP/HTTPS?."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the internet-web-basics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Internet & Web Basics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating How does the internet work?, What is HTTP/HTTPS?, What is a domain name?."
       ]
     },
     {
       "id": "roadmap-frontend-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "html",
+      "title": "2. HTML",
+      "description": "Master core capabilities of HTML: HTML basics & syntax, Semantic HTML, Forms and validations, Accessibility (a11y) basics, SEO basics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "internet-web-basics"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-frontend-developer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-frontend-developer-2-1",
+          "title": "HTML basics & syntax Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=HTML%20basics%20%26%20syntax%20documentation"
         },
         {
-          "id": "res-frontend-developer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-frontend-developer-2-2",
+          "title": "Semantic HTML Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Semantic%20HTML%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-2-3",
+          "title": "Practice Forms and validations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Forms%20and%20validations%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating HTML basics & syntax, Semantic HTML, Forms and validations."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is HTML basics & syntax and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Semantic HTML."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the html milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. HTML Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating HTML basics & syntax, Semantic HTML, Forms and validations."
       ]
     },
     {
       "id": "roadmap-frontend-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Vite & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Vite, Webpack, npm/pnpm, Git & GitHub, Chrome DevTools.",
+      "slug": "css",
+      "title": "3. CSS",
+      "description": "Master core capabilities of CSS: CSS basics & syntax, Selectors and specificity, Box model, Flexbox, CSS Grid.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "html"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-frontend-developer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-frontend-developer-3-1",
+          "title": "CSS basics & syntax Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=CSS%20basics%20%26%20syntax%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-3-2",
+          "title": "Selectors and specificity Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Selectors%20and%20specificity%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-3-3",
+          "title": "Practice Box model Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Box%20model%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating CSS basics & syntax, Selectors and specificity, Box model."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is CSS basics & syntax and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Selectors and specificity."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the css milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Vite & More Core Theories",
+        "3. CSS Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating CSS basics & syntax, Selectors and specificity, Box model."
       ]
     },
     {
       "id": "roadmap-frontend-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: HTML5 / CSS3 / JavaScript (ES6+) / TypeScript",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in HTML5, CSS3, JavaScript (ES6+), TypeScript.",
+      "slug": "javascript-fundamentals",
+      "title": "4. JavaScript Fundamentals",
+      "description": "Master core capabilities of JavaScript Fundamentals: Variables, data types, operators, Functions and scope, DOM manipulation, Events and event listeners, Fetch API / AJAX.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "css"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-frontend-developer-lang-1",
-          "title": "HTML5 Official Guides",
+          "id": "res-frontend-developer-4-1",
+          "title": "Variables, data types, operators Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Variables%2C%20data%20types%2C%20operators%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-4-2",
+          "title": "Functions and scope Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Functions%20and%20scope%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-4-3",
+          "title": "Practice DOM manipulation Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=DOM%20manipulation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using HTML5 handling variable arrays."
+        "Build a prototype integrating Variables, data types, operators, Functions and scope, DOM manipulation."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in HTML5?",
-        "How does asynchronous logic work in HTML5?"
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is Variables, data types, operators and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Functions and scope."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the javascript-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: HTML5 / CSS3 / JavaScript (ES6+) / TypeScript Core Theories",
+        "4. JavaScript Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using HTML5 handling variable arrays."
+        "Build a prototype integrating Variables, data types, operators, Functions and scope, DOM manipulation."
       ]
     },
     {
       "id": "roadmap-frontend-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: React.js & Next.js App Router & Tailwind CSS & Zustand",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using React.js, Next.js App Router, Tailwind CSS, Zustand.",
+      "slug": "version-control",
+      "title": "5. Version Control",
+      "description": "Master core capabilities of Version Control: What is Git?, Basic Git commands (init, add, commit, push, pull), Branching and merging, GitHub / GitLab basics, Pull requests and code reviews.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "javascript-fundamentals"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-frontend-developer-fw-1",
-          "title": "React.js Reference Docs",
+          "id": "res-frontend-developer-5-1",
+          "title": "What is Git? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://git-scm.com/doc"
+        },
+        {
+          "id": "res-frontend-developer-5-2",
+          "title": "Basic Git commands (init, add, commit, push, pull) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Basic%20Git%20commands%20(init%2C%20add%2C%20commit%2C%20push%2C%20pull)%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-5-3",
+          "title": "Practice Branching and merging Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Branching%20and%20merging%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating What is Git?, Basic Git commands (init, add, commit, push, pull), Branching and merging."
       ],
       "interviewQuestions": [
-        "When does a React.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in React.js."
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is What is Git? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Basic Git commands (init, add, commit, push, pull)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the version-control milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: React.js & Next.js App Router & Tailwind CSS & Zustand Core Theories",
+        "5. Version Control Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating What is Git?, Basic Git commands (init, add, commit, push, pull), Branching and merging."
       ]
     },
     {
       "id": "roadmap-frontend-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: LocalStorage / IndexedDB / SessionStorage",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using LocalStorage, IndexedDB, SessionStorage.",
+      "slug": "package-managers-tooling",
+      "title": "6. Package Managers & Tooling",
+      "description": "Master core capabilities of Package Managers & Tooling: npm basics, yarn basics, npx, Webpack basics, Vite.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "version-control"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-frontend-developer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-frontend-developer-6-1",
+          "title": "npm basics Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=npm%20basics%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-6-2",
+          "title": "yarn basics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=yarn%20basics%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-6-3",
+          "title": "Practice npx Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=npx%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using LocalStorage."
+        "Build a prototype integrating npm basics, yarn basics, npx."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is npm basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of yarn basics."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the package-managers-tooling milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: LocalStorage / IndexedDB / SessionStorage Core Theories",
+        "6. Package Managers & Tooling Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using LocalStorage."
+        "Build a prototype integrating npm basics, yarn basics, npx."
       ]
     },
     {
       "id": "roadmap-frontend-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Jest / React Testing Library / Cypress E2E",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Jest, React Testing Library, Cypress E2E.",
+      "slug": "css-frameworks",
+      "title": "7. CSS Frameworks",
+      "description": "Master core capabilities of CSS Frameworks: Tailwind CSS, Bootstrap, CSS Modules, Styled Components.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "package-managers-tooling"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-frontend-developer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-frontend-developer-7-1",
+          "title": "Tailwind CSS Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Tailwind%20CSS%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-7-2",
+          "title": "Bootstrap Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Bootstrap%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-7-3",
+          "title": "Practice CSS Modules Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=CSS%20Modules%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Tailwind CSS, Bootstrap, CSS Modules."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Tailwind CSS and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Bootstrap."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the css-frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. CSS Frameworks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Tailwind CSS, Bootstrap, CSS Modules."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-8",
+      "slug": "javascript-frameworks-react",
+      "title": "8. JavaScript Frameworks — React",
+      "description": "Master core capabilities of JavaScript Frameworks — React: React fundamentals & JSX, Components (functional vs class), Props and state, useState and useEffect hooks, Component lifecycle.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "css-frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-frontend-developer-8-1",
+          "title": "React fundamentals & JSX Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        },
+        {
+          "id": "res-frontend-developer-8-2",
+          "title": "Components (functional vs class) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Components%20(functional%20vs%20class)%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-8-3",
+          "title": "Practice Props and state Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Props%20and%20state%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating React fundamentals & JSX, Components (functional vs class), Props and state."
+      ],
+      "interviewQuestions": [
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is React fundamentals & JSX and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Components (functional vs class)."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the javascript-frameworks-react milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. JavaScript Frameworks — React Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating React fundamentals & JSX, Components (functional vs class), Props and state."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-9",
+      "slug": "state-management",
+      "title": "9. State Management",
+      "description": "Master core capabilities of State Management: Local state vs global state, Redux / Redux Toolkit, Zustand, React Query / TanStack Query.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "javascript-frameworks-react"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-frontend-developer-9-1",
+          "title": "Local state vs global state Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Local%20state%20vs%20global%20state%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-9-2",
+          "title": "Redux / Redux Toolkit Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Redux%20%2F%20Redux%20Toolkit%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-9-3",
+          "title": "Practice Zustand Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Zustand%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Local state vs global state, Redux / Redux Toolkit, Zustand."
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Local state vs global state and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Redux / Redux Toolkit."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the state-management milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. State Management Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Local state vs global state, Redux / Redux Toolkit, Zustand."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-10",
+      "slug": "build-deploy",
+      "title": "10. Build & Deploy",
+      "description": "Master core capabilities of Build & Deploy: npm scripts, Environment variables, Build optimization, Code splitting and lazy loading, Deploying to Vercel / Netlify.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "state-management"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-frontend-developer-10-1",
+          "title": "npm scripts Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=npm%20scripts%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-10-2",
+          "title": "Environment variables Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Environment%20variables%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-10-3",
+          "title": "Practice Build optimization Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Build%20optimization%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating npm scripts, Environment variables, Build optimization."
+      ],
+      "interviewQuestions": [
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is npm scripts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Environment variables."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the build-deploy milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Build & Deploy Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating npm scripts, Environment variables, Build optimization."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-11",
+      "slug": "testing",
+      "title": "11. Testing",
+      "description": "Master core capabilities of Testing: Why testing?, Unit testing with Jest, Component testing with React Testing Library, End-to-end testing with Playwright / Cypress, Test coverage.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "build-deploy"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-frontend-developer-11-1",
+          "title": "Why testing? Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Why%20testing%3F%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-11-2",
+          "title": "Unit testing with Jest Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Unit%20testing%20with%20Jest%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-11-3",
+          "title": "Practice Component testing with React Testing Library Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Component%20testing%20with%20React%20Testing%20Library%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Why testing?, Unit testing with Jest, Component testing with React Testing Library."
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Why testing? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Unit testing with Jest."
       ],
       "learningObjectives": [
         "Master key capabilities of the testing milestone.",
@@ -303,519 +603,824 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Jest / React Testing Library / Cypress E2E Core Theories",
+        "11. Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Vercel / Netlify / GitHub Pages",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, Netlify, GitHub Pages.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
-      "prerequisites": [
-        "databases"
-      ],
-      "parentNodeId": null,
-      "order": 8,
-      "resources": [
-        {
-          "id": "res-frontend-developer-deploy-1",
-          "title": "Production hosting deployment guidelines",
-          "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
-        }
-      ],
-      "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
-      ],
-      "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "8. Production Deployment: Vercel / Netlify / GitHub Pages Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build production build folders, package configurations, and host online."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Web Workers, Micro-Frontends, WebAssembly (Wasm), Content Security Policy (CSP).",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
-      "prerequisites": [
-        "deployment"
-      ],
-      "parentNodeId": null,
-      "order": 9,
-      "resources": [
-        {
-          "id": "res-frontend-developer-adv-1",
-          "title": "Advanced systems engineering layouts",
-          "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
-        }
-      ],
-      "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ],
-      "interviewQuestions": [
-        "Explain how you would implement Web Workers to solve scalability bottlenecks.",
-        "What security vulnerabilities does Content Security Policy (CSP) protect against?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "9. Advanced Concepts Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
-      "prerequisites": [
-        "advanced-concepts"
-      ],
-      "parentNodeId": null,
-      "order": 10,
-      "resources": [
-        {
-          "id": "res-frontend-developer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
-          "type": "WEBSITE",
-          "url": "https://neetcode.io"
-        }
-      ],
-      "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
-      ],
-      "interviewQuestions": [
-        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
-        "Explain event delegation and event bubbling in the browser DOM."
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Sleek Dark Portfolio Website or Weather Dashboard or Task Kanban Board. Set up deployment links and repository READMEs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
-      "prerequisites": [
-        "interview-prep"
-      ],
-      "parentNodeId": null,
-      "order": 11,
-      "resources": [
-        {
-          "id": "res-frontend-developer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
-          "type": "WEBSITE",
-          "url": "https://github.com"
-        }
-      ],
-      "projectIdeas": [
-        "Build complete deployable version of Sleek Dark Portfolio Website with documentation.",
-        "Build complete deployable version of Weather Dashboard with documentation.",
-        "Build complete deployable version of Task Kanban Board with documentation."
-      ],
-      "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Sleek Dark Portfolio Website project.",
-        "How does your database sharding or state caching optimize loading speeds?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build complete deployable version of Sleek Dark Portfolio Website with documentation.",
-        "Build complete deployable version of Weather Dashboard with documentation.",
-        "Build complete deployable version of Task Kanban Board with documentation."
+        "Build a prototype integrating Why testing?, Unit testing with Jest, Component testing with React Testing Library."
       ]
     },
     {
       "id": "roadmap-frontend-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "web-performance-best-practices",
+      "title": "12. Web Performance & Best Practices",
+      "description": "Master core capabilities of Web Performance & Best Practices: Core Web Vitals (LCP, CLS, FID), Lighthouse audit, Image optimization, Lazy loading, Caching strategies.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "testing"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-frontend-developer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-frontend-developer-12-1",
+          "title": "Core Web Vitals (LCP, CLS, FID) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Core%20Web%20Vitals%20(LCP%2C%20CLS%2C%20FID)%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-12-2",
+          "title": "Lighthouse audit Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Lighthouse%20audit%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-12-3",
+          "title": "Practice Image optimization Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Image%20optimization%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Core Web Vitals (LCP, CLS, FID), Lighthouse audit, Image optimization."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is Core Web Vitals (LCP, CLS, FID) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Lighthouse audit."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the web-performance-best-practices milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Web Performance & Best Practices Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Core Web Vitals (LCP, CLS, FID), Lighthouse audit, Image optimization."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "web-performance-best-practices"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-frontend-developer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-frontend-developer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Sleek Dark Portfolio Website"
+      ],
+      "interviewQuestions": [
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Sleek Dark Portfolio Website"
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-frontend-developer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Weather Dashboard"
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Weather Dashboard"
       ]
     }
   ],
   "roadmapNodes": [
     {
       "id": "roadmap-frontend-node-1",
-      "slug": "internet-fundamentals",
-      "title": "1. Internet Fundamentals",
-      "description": "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
+      "slug": "internet-web-basics",
+      "title": "1. Internet & Web Basics",
+      "description": "Master core capabilities of Internet & Web Basics: How does the internet work?, What is HTTP/HTTPS?, What is a domain name?, What is hosting?, DNS and how it works.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "8 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [],
       "parentNodeId": null,
       "order": 1,
       "resources": [
         {
-          "id": "res-frontend-developer-internet-1",
-          "title": "How the Internet Works (MDN Docs)",
+          "id": "res-frontend-developer-1-1",
+          "title": "How does the internet work? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+          "url": "https://www.google.com/search?q=How%20does%20the%20internet%20work%3F%20documentation"
         },
         {
-          "id": "res-frontend-developer-internet-2",
-          "title": "HTTP Request Cycle Tutorial",
+          "id": "res-frontend-developer-1-2",
+          "title": "What is HTTP/HTTPS? Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+          "url": "https://www.youtube.com/results?search_query=What%20is%20HTTP%2FHTTPS%3F%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-1-3",
+          "title": "Practice What is a domain name? Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=What%20is%20a%20domain%20name%3F%20exercises"
         }
       ],
       "projectIdeas": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating How does the internet work?, What is HTTP/HTTPS?, What is a domain name?."
       ],
       "interviewQuestions": [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is How does the internet work? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of What is HTTP/HTTPS?."
       ],
       "learningObjectives": [
-        "Master key capabilities of the internet-fundamentals milestone.",
+        "Master key capabilities of the internet-web-basics milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "1. Internet Fundamentals Core Theories",
+        "1. Internet & Web Basics Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."
+        "Build a prototype integrating How does the internet work?, What is HTTP/HTTPS?, What is a domain name?."
       ]
     },
     {
       "id": "roadmap-frontend-node-2",
-      "slug": "computer-fundamentals",
-      "title": "2. Computer Fundamentals",
-      "description": "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
+      "slug": "html",
+      "title": "2. HTML",
+      "description": "Master core capabilities of HTML: HTML basics & syntax, Semantic HTML, Forms and validations, Accessibility (a11y) basics, SEO basics.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "12 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "internet-fundamentals"
+        "internet-web-basics"
       ],
       "parentNodeId": null,
       "order": 2,
       "resources": [
         {
-          "id": "res-frontend-developer-cs-1",
-          "title": "Operating Systems Internals Guide",
-          "type": "WEBSITE",
-          "url": "https://tldp.org"
+          "id": "res-frontend-developer-2-1",
+          "title": "HTML basics & syntax Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=HTML%20basics%20%26%20syntax%20documentation"
         },
         {
-          "id": "res-frontend-developer-cs-2",
-          "title": "Memory Stack vs Heap Allocation Tutorial",
+          "id": "res-frontend-developer-2-2",
+          "title": "Semantic HTML Crash Course",
           "type": "YOUTUBE",
-          "url": "https://www.youtube.com/watch?v=_8-ht2AKyT4"
+          "url": "https://www.youtube.com/results?search_query=Semantic%20HTML%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-2-3",
+          "title": "Practice Forms and validations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Forms%20and%20validations%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating HTML basics & syntax, Semantic HTML, Forms and validations."
       ],
       "interviewQuestions": [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is HTML basics & syntax and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Semantic HTML."
       ],
       "learningObjectives": [
-        "Master key capabilities of the computer-fundamentals milestone.",
+        "Master key capabilities of the html milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "2. Computer Fundamentals Core Theories",
+        "2. HTML Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write a memory allocation test program tracing stack and heap boundaries variables."
+        "Build a prototype integrating HTML basics & syntax, Semantic HTML, Forms and validations."
       ]
     },
     {
       "id": "roadmap-frontend-node-3",
-      "slug": "tools",
-      "title": "3. Standard Tools: Vite & More",
-      "description": "Master version control with Git & GitHub and construct development environments using Vite, Webpack, npm/pnpm, Git & GitHub, Chrome DevTools.",
+      "slug": "css",
+      "title": "3. CSS",
+      "description": "Master core capabilities of CSS: CSS basics & syntax, Selectors and specificity, Box model, Flexbox, CSS Grid.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "10 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "computer-fundamentals"
+        "html"
       ],
       "parentNodeId": null,
       "order": 3,
       "resources": [
         {
-          "id": "res-frontend-developer-tools-1",
-          "title": "Git Handbook Guidelines",
+          "id": "res-frontend-developer-3-1",
+          "title": "CSS basics & syntax Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://guides.github.com/introduction/git-handbook/"
+          "url": "https://www.google.com/search?q=CSS%20basics%20%26%20syntax%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-3-2",
+          "title": "Selectors and specificity Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Selectors%20and%20specificity%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-3-3",
+          "title": "Practice Box model Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Box%20model%20exercises"
         }
       ],
       "projectIdeas": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating CSS basics & syntax, Selectors and specificity, Box model."
       ],
       "interviewQuestions": [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is CSS basics & syntax and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Selectors and specificity."
       ],
       "learningObjectives": [
-        "Master key capabilities of the tools milestone.",
+        "Master key capabilities of the css milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "3. Standard Tools: Vite & More Core Theories",
+        "3. CSS Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."
+        "Build a prototype integrating CSS basics & syntax, Selectors and specificity, Box model."
       ]
     },
     {
       "id": "roadmap-frontend-node-4",
-      "slug": "languages",
-      "title": "4. Target Languages: HTML5 / CSS3 / JavaScript (ES6+) / TypeScript",
-      "description": "Master variables types, asynchronous functions logic, control structures, and concurrency patterns in HTML5, CSS3, JavaScript (ES6+), TypeScript.",
+      "slug": "javascript-fundamentals",
+      "title": "4. JavaScript Fundamentals",
+      "description": "Master core capabilities of JavaScript Fundamentals: Variables, data types, operators, Functions and scope, DOM manipulation, Events and event listeners, Fetch API / AJAX.",
       "difficulty": "BEGINNER",
-      "estimatedTime": "30 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "tools"
+        "css"
       ],
       "parentNodeId": null,
       "order": 4,
       "resources": [
         {
-          "id": "res-frontend-developer-lang-1",
-          "title": "HTML5 Official Guides",
+          "id": "res-frontend-developer-4-1",
+          "title": "Variables, data types, operators Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://developer.mozilla.org"
+          "url": "https://www.google.com/search?q=Variables%2C%20data%20types%2C%20operators%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-4-2",
+          "title": "Functions and scope Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Functions%20and%20scope%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-4-3",
+          "title": "Practice DOM manipulation Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=DOM%20manipulation%20exercises"
         }
       ],
       "projectIdeas": [
-        "Build a terminal console validator app using HTML5 handling variable arrays."
+        "Build a prototype integrating Variables, data types, operators, Functions and scope, DOM manipulation."
       ],
       "interviewQuestions": [
-        "What are the reference types vs value types in HTML5?",
-        "How does asynchronous logic work in HTML5?"
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is Variables, data types, operators and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Functions and scope."
       ],
       "learningObjectives": [
-        "Master key capabilities of the languages milestone.",
+        "Master key capabilities of the javascript-fundamentals milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "4. Target Languages: HTML5 / CSS3 / JavaScript (ES6+) / TypeScript Core Theories",
+        "4. JavaScript Fundamentals Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Build a terminal console validator app using HTML5 handling variable arrays."
+        "Build a prototype integrating Variables, data types, operators, Functions and scope, DOM manipulation."
       ]
     },
     {
       "id": "roadmap-frontend-node-5",
-      "slug": "frameworks",
-      "title": "5. Core Frameworks: React.js & Next.js App Router & Tailwind CSS & Zustand",
-      "description": "Build layouts, API endpoints routers, state managers, and view contexts using React.js, Next.js App Router, Tailwind CSS, Zustand.",
+      "slug": "version-control",
+      "title": "5. Version Control",
+      "description": "Master core capabilities of Version Control: What is Git?, Basic Git commands (init, add, commit, push, pull), Branching and merging, GitHub / GitLab basics, Pull requests and code reviews.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "40 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "languages"
+        "javascript-fundamentals"
       ],
       "parentNodeId": null,
       "order": 5,
       "resources": [
         {
-          "id": "res-frontend-developer-fw-1",
-          "title": "React.js Reference Docs",
+          "id": "res-frontend-developer-5-1",
+          "title": "What is Git? Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://react.dev"
+          "url": "https://git-scm.com/doc"
+        },
+        {
+          "id": "res-frontend-developer-5-2",
+          "title": "Basic Git commands (init, add, commit, push, pull) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Basic%20Git%20commands%20(init%2C%20add%2C%20commit%2C%20push%2C%20pull)%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-5-3",
+          "title": "Practice Branching and merging Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Branching%20and%20merging%20exercises"
         }
       ],
       "projectIdeas": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating What is Git?, Basic Git commands (init, add, commit, push, pull), Branching and merging."
       ],
       "interviewQuestions": [
-        "When does a React.js component lifecycle trigger a re-render?",
-        "Explain how dependency injection or state management is handled in React.js."
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is What is Git? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Basic Git commands (init, add, commit, push, pull)."
       ],
       "learningObjectives": [
-        "Master key capabilities of the frameworks milestone.",
+        "Master key capabilities of the version-control milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "5. Core Frameworks: React.js & Next.js App Router & Tailwind CSS & Zustand Core Theories",
+        "5. Version Control Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Develop an interactive dashboard UI layout mapping components using React.js."
+        "Build a prototype integrating What is Git?, Basic Git commands (init, add, commit, push, pull), Branching and merging."
       ]
     },
     {
       "id": "roadmap-frontend-node-6",
-      "slug": "databases",
-      "title": "6. Database Systems: LocalStorage / IndexedDB / SessionStorage",
-      "description": "Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using LocalStorage, IndexedDB, SessionStorage.",
+      "slug": "package-managers-tooling",
+      "title": "6. Package Managers & Tooling",
+      "description": "Master core capabilities of Package Managers & Tooling: npm basics, yarn basics, npx, Webpack basics, Vite.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "25 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "version-control"
       ],
       "parentNodeId": null,
       "order": 6,
       "resources": [
         {
-          "id": "res-frontend-developer-db-1",
-          "title": "Database Query Tuning and Indexes",
+          "id": "res-frontend-developer-6-1",
+          "title": "npm basics Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=npm%20basics%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-6-2",
+          "title": "yarn basics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=yarn%20basics%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-6-3",
+          "title": "Practice npx Exercises",
           "type": "WEBSITE",
-          "url": "https://www.postgresqltutorial.com/"
+          "url": "https://www.google.com/search?q=npx%20exercises"
         }
       ],
       "projectIdeas": [
-        "Create database tables mapping models schema using LocalStorage."
+        "Build a prototype integrating npm basics, yarn basics, npx."
       ],
       "interviewQuestions": [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is npm basics and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of yarn basics."
       ],
       "learningObjectives": [
-        "Master key capabilities of the databases milestone.",
+        "Master key capabilities of the package-managers-tooling milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "6. Database Systems: LocalStorage / IndexedDB / SessionStorage Core Theories",
+        "6. Package Managers & Tooling Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Create database tables mapping models schema using LocalStorage."
+        "Build a prototype integrating npm basics, yarn basics, npx."
       ]
     },
     {
       "id": "roadmap-frontend-node-7",
-      "slug": "testing",
-      "title": "7. Quality & Testing: Jest / React Testing Library / Cypress E2E",
-      "description": "Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using Jest, React Testing Library, Cypress E2E.",
+      "slug": "css-frameworks",
+      "title": "7. CSS Frameworks",
+      "description": "Master core capabilities of CSS Frameworks: Tailwind CSS, Bootstrap, CSS Modules, Styled Components.",
       "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "frameworks"
+        "package-managers-tooling"
       ],
       "parentNodeId": null,
       "order": 7,
       "resources": [
         {
-          "id": "res-frontend-developer-test-1",
-          "title": "Software testing methodologies",
+          "id": "res-frontend-developer-7-1",
+          "title": "Tailwind CSS Reference (MDN / Official)",
           "type": "DOCUMENTATION",
-          "url": "https://jestjs.io"
+          "url": "https://www.google.com/search?q=Tailwind%20CSS%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-7-2",
+          "title": "Bootstrap Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Bootstrap%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-7-3",
+          "title": "Practice CSS Modules Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=CSS%20Modules%20exercises"
         }
       ],
       "projectIdeas": [
-        "Write unit tests files mapping components logic asserting edge input values."
+        "Build a prototype integrating Tailwind CSS, Bootstrap, CSS Modules."
       ],
       "interviewQuestions": [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Tailwind CSS and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Bootstrap."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the css-frameworks milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "7. CSS Frameworks Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Tailwind CSS, Bootstrap, CSS Modules."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-8",
+      "slug": "javascript-frameworks-react",
+      "title": "8. JavaScript Frameworks — React",
+      "description": "Master core capabilities of JavaScript Frameworks — React: React fundamentals & JSX, Components (functional vs class), Props and state, useState and useEffect hooks, Component lifecycle.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "css-frameworks"
+      ],
+      "parentNodeId": null,
+      "order": 8,
+      "resources": [
+        {
+          "id": "res-frontend-developer-8-1",
+          "title": "React fundamentals & JSX Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://react.dev"
+        },
+        {
+          "id": "res-frontend-developer-8-2",
+          "title": "Components (functional vs class) Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Components%20(functional%20vs%20class)%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-8-3",
+          "title": "Practice Props and state Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Props%20and%20state%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating React fundamentals & JSX, Components (functional vs class), Props and state."
+      ],
+      "interviewQuestions": [
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is React fundamentals & JSX and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Components (functional vs class)."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the javascript-frameworks-react milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "8. JavaScript Frameworks — React Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating React fundamentals & JSX, Components (functional vs class), Props and state."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-9",
+      "slug": "state-management",
+      "title": "9. State Management",
+      "description": "Master core capabilities of State Management: Local state vs global state, Redux / Redux Toolkit, Zustand, React Query / TanStack Query.",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "javascript-frameworks-react"
+      ],
+      "parentNodeId": null,
+      "order": 9,
+      "resources": [
+        {
+          "id": "res-frontend-developer-9-1",
+          "title": "Local state vs global state Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Local%20state%20vs%20global%20state%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-9-2",
+          "title": "Redux / Redux Toolkit Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Redux%20%2F%20Redux%20Toolkit%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-9-3",
+          "title": "Practice Zustand Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Zustand%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Local state vs global state, Redux / Redux Toolkit, Zustand."
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Local state vs global state and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Redux / Redux Toolkit."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the state-management milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "9. State Management Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Local state vs global state, Redux / Redux Toolkit, Zustand."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-10",
+      "slug": "build-deploy",
+      "title": "10. Build & Deploy",
+      "description": "Master core capabilities of Build & Deploy: npm scripts, Environment variables, Build optimization, Code splitting and lazy loading, Deploying to Vercel / Netlify.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "state-management"
+      ],
+      "parentNodeId": null,
+      "order": 10,
+      "resources": [
+        {
+          "id": "res-frontend-developer-10-1",
+          "title": "npm scripts Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=npm%20scripts%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-10-2",
+          "title": "Environment variables Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Environment%20variables%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-10-3",
+          "title": "Practice Build optimization Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Build%20optimization%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating npm scripts, Environment variables, Build optimization."
+      ],
+      "interviewQuestions": [
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is npm scripts and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Environment variables."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the build-deploy milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "10. Build & Deploy Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating npm scripts, Environment variables, Build optimization."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-11",
+      "slug": "testing",
+      "title": "11. Testing",
+      "description": "Master core capabilities of Testing: Why testing?, Unit testing with Jest, Component testing with React Testing Library, End-to-end testing with Playwright / Cypress, Test coverage.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "build-deploy"
+      ],
+      "parentNodeId": null,
+      "order": 11,
+      "resources": [
+        {
+          "id": "res-frontend-developer-11-1",
+          "title": "Why testing? Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Why%20testing%3F%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-11-2",
+          "title": "Unit testing with Jest Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Unit%20testing%20with%20Jest%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-11-3",
+          "title": "Practice Component testing with React Testing Library Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Component%20testing%20with%20React%20Testing%20Library%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Why testing?, Unit testing with Jest, Component testing with React Testing Library."
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Why testing? and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Unit testing with Jest."
       ],
       "learningObjectives": [
         "Master key capabilities of the testing milestone.",
@@ -823,227 +1428,233 @@
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "7. Quality & Testing: Jest / React Testing Library / Cypress E2E Core Theories",
+        "11. Testing Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Write unit tests files mapping components logic asserting edge input values."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-8",
-      "slug": "deployment",
-      "title": "8. Production Deployment: Vercel / Netlify / GitHub Pages",
-      "description": "Package deployment builds, containerize codebases, map variables, and host services on Vercel, Netlify, GitHub Pages.",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTime": "15 hours",
-      "prerequisites": [
-        "databases"
-      ],
-      "parentNodeId": null,
-      "order": 8,
-      "resources": [
-        {
-          "id": "res-frontend-developer-deploy-1",
-          "title": "Production hosting deployment guidelines",
-          "type": "DOCUMENTATION",
-          "url": "https://docs.docker.com"
-        }
-      ],
-      "projectIdeas": [
-        "Build production build folders, package configurations, and host online."
-      ],
-      "interviewQuestions": [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the deployment milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "8. Production Deployment: Vercel / Netlify / GitHub Pages Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build production build folders, package configurations, and host online."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-9",
-      "slug": "advanced-concepts",
-      "title": "9. Advanced Concepts",
-      "description": "Master scaling paradigms, specialized integrations, security mitigations, and optimizations: Web Workers, Micro-Frontends, WebAssembly (Wasm), Content Security Policy (CSP).",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "35 hours",
-      "prerequisites": [
-        "deployment"
-      ],
-      "parentNodeId": null,
-      "order": 9,
-      "resources": [
-        {
-          "id": "res-frontend-developer-adv-1",
-          "title": "Advanced systems engineering layouts",
-          "type": "DOCUMENTATION",
-          "url": "https://github.com/donnemartin/system-design-primer"
-        }
-      ],
-      "projectIdeas": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ],
-      "interviewQuestions": [
-        "Explain how you would implement Web Workers to solve scalability bottlenecks.",
-        "What security vulnerabilities does Content Security Policy (CSP) protect against?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the advanced-concepts milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "9. Advanced Concepts Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build a scalable micro-architecture or complex optimization script."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-10",
-      "slug": "interview-prep",
-      "title": "10. Technical Interview Preparation",
-      "description": "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "25 hours",
-      "prerequisites": [
-        "advanced-concepts"
-      ],
-      "parentNodeId": null,
-      "order": 10,
-      "resources": [
-        {
-          "id": "res-frontend-developer-int-1",
-          "title": "NeetCode DSA Roadmap Practice",
-          "type": "WEBSITE",
-          "url": "https://neetcode.io"
-        }
-      ],
-      "projectIdeas": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
-      ],
-      "interviewQuestions": [
-        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
-        "Explain event delegation and event bubbling in the browser DOM."
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the interview-prep milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "10. Technical Interview Preparation Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Solve 50+ role-related challenges on practice platforms and log time tracking curves."
-      ]
-    },
-    {
-      "id": "roadmap-frontend-node-11",
-      "slug": "resume-projects",
-      "title": "11. High Impact Portfolio Projects",
-      "description": "Fulfill engineering requirements for target projects: Sleek Dark Portfolio Website or Weather Dashboard or Task Kanban Board. Set up deployment links and repository READMEs.",
-      "difficulty": "ADVANCED",
-      "estimatedTime": "40 hours",
-      "prerequisites": [
-        "interview-prep"
-      ],
-      "parentNodeId": null,
-      "order": 11,
-      "resources": [
-        {
-          "id": "res-frontend-developer-proj-1",
-          "title": "GitHub Readme templates design guidelines",
-          "type": "WEBSITE",
-          "url": "https://github.com"
-        }
-      ],
-      "projectIdeas": [
-        "Build complete deployable version of Sleek Dark Portfolio Website with documentation.",
-        "Build complete deployable version of Weather Dashboard with documentation.",
-        "Build complete deployable version of Task Kanban Board with documentation."
-      ],
-      "interviewQuestions": [
-        "Explain the core architecture bottlenecks of your Sleek Dark Portfolio Website project.",
-        "How does your database sharding or state caching optimize loading speeds?"
-      ],
-      "learningObjectives": [
-        "Master key capabilities of the resume-projects milestone.",
-        "Understand operational edge-cases and debugging logs.",
-        "Implement practical mock tasks utilizing official documentation."
-      ],
-      "subtopics": [
-        "11. High Impact Portfolio Projects Core Theories",
-        "Practical Configurations",
-        "Production Best Practices",
-        "Debugging & Testing Rules"
-      ],
-      "projects": [
-        "Build complete deployable version of Sleek Dark Portfolio Website with documentation.",
-        "Build complete deployable version of Weather Dashboard with documentation.",
-        "Build complete deployable version of Task Kanban Board with documentation."
+        "Build a prototype integrating Why testing?, Unit testing with Jest, Component testing with React Testing Library."
       ]
     },
     {
       "id": "roadmap-frontend-node-12",
-      "slug": "job-readiness",
-      "title": "12. Career Job Readiness",
-      "description": "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
+      "slug": "web-performance-best-practices",
+      "title": "12. Web Performance & Best Practices",
+      "description": "Master core capabilities of Web Performance & Best Practices: Core Web Vitals (LCP, CLS, FID), Lighthouse audit, Image optimization, Lazy loading, Caching strategies.",
       "difficulty": "ADVANCED",
-      "estimatedTime": "15 hours",
+      "estimatedTime": "11 hours",
       "prerequisites": [
-        "resume-projects"
+        "testing"
       ],
       "parentNodeId": null,
       "order": 12,
       "resources": [
         {
-          "id": "res-frontend-developer-jr-1",
-          "title": "StackMap Resume Readiness Analyzer Tool",
+          "id": "res-frontend-developer-12-1",
+          "title": "Core Web Vitals (LCP, CLS, FID) Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Core%20Web%20Vitals%20(LCP%2C%20CLS%2C%20FID)%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-12-2",
+          "title": "Lighthouse audit Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Lighthouse%20audit%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-12-3",
+          "title": "Practice Image optimization Exercises",
           "type": "WEBSITE",
-          "url": "/resume/readiness"
+          "url": "https://www.google.com/search?q=Image%20optimization%20exercises"
         }
       ],
       "projectIdeas": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Core Web Vitals (LCP, CLS, FID), Lighthouse audit, Image optimization."
       ],
       "interviewQuestions": [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is Core Web Vitals (LCP, CLS, FID) and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Lighthouse audit."
       ],
       "learningObjectives": [
-        "Master key capabilities of the job-readiness milestone.",
+        "Master key capabilities of the web-performance-best-practices milestone.",
         "Understand operational edge-cases and debugging logs.",
         "Implement practical mock tasks utilizing official documentation."
       ],
       "subtopics": [
-        "12. Career Job Readiness Core Theories",
+        "12. Web Performance & Best Practices Core Theories",
         "Practical Configurations",
         "Production Best Practices",
         "Debugging & Testing Rules"
       ],
       "projects": [
-        "Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."
+        "Build a prototype integrating Core Web Vitals (LCP, CLS, FID), Lighthouse audit, Image optimization."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-13",
+      "slug": "advanced-performance-optimization",
+      "title": "13. Advanced Performance & Optimization",
+      "description": "Master core capabilities of Advanced Performance & Optimization: Resource bundlers splitting, Asset caching, Performance profiling benchmarks, Latency tracing metrics.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "web-performance-best-practices"
+      ],
+      "parentNodeId": null,
+      "order": 13,
+      "resources": [
+        {
+          "id": "res-frontend-developer-13-1",
+          "title": "Resource bundlers splitting Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Resource%20bundlers%20splitting%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-13-2",
+          "title": "Asset caching Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Asset%20caching%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-13-3",
+          "title": "Practice Performance profiling benchmarks Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Performance%20profiling%20benchmarks%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is Resource bundlers splitting and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Asset caching."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the advanced-performance-optimization milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "13. Advanced Performance & Optimization Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a prototype integrating Resource bundlers splitting, Asset caching, Performance profiling benchmarks."
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-14",
+      "slug": "system-monitoring-observability",
+      "title": "14. System Monitoring & Observability",
+      "description": "Master core capabilities of System Monitoring & Observability: Sentry tracking integrations, APM dashboard metrics, Grafana visualizations, Logstash aggregations.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "advanced-performance-optimization"
+      ],
+      "parentNodeId": null,
+      "order": 14,
+      "resources": [
+        {
+          "id": "res-frontend-developer-14-1",
+          "title": "Sentry tracking integrations Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=Sentry%20tracking%20integrations%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-14-2",
+          "title": "APM dashboard metrics Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=APM%20dashboard%20metrics%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-14-3",
+          "title": "Practice Grafana visualizations Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Grafana%20visualizations%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Sleek Dark Portfolio Website"
+      ],
+      "interviewQuestions": [
+        "Explain event delegation and event bubbling in the browser DOM.",
+        "What is Sentry tracking integrations and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of APM dashboard metrics."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the system-monitoring-observability milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "14. System Monitoring & Observability Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Sleek Dark Portfolio Website"
+      ]
+    },
+    {
+      "id": "roadmap-frontend-node-15",
+      "slug": "ai-integration-machine-learning-basics",
+      "title": "15. AI Integration & Machine Learning Basics",
+      "description": "Master core capabilities of AI Integration & Machine Learning Basics: LLM API integration patterns, Gemini/OpenAI SDK configurations, Structured JSON model schemas, Vector databases & RAG.",
+      "difficulty": "ADVANCED",
+      "estimatedTime": "11 hours",
+      "prerequisites": [
+        "system-monitoring-observability"
+      ],
+      "parentNodeId": null,
+      "order": 15,
+      "resources": [
+        {
+          "id": "res-frontend-developer-15-1",
+          "title": "LLM API integration patterns Reference (MDN / Official)",
+          "type": "DOCUMENTATION",
+          "url": "https://www.google.com/search?q=LLM%20API%20integration%20patterns%20documentation"
+        },
+        {
+          "id": "res-frontend-developer-15-2",
+          "title": "Gemini/OpenAI SDK configurations Crash Course",
+          "type": "YOUTUBE",
+          "url": "https://www.youtube.com/results?search_query=Gemini%2FOpenAI%20SDK%20configurations%20tutorial"
+        },
+        {
+          "id": "res-frontend-developer-15-3",
+          "title": "Practice Structured JSON model schemas Exercises",
+          "type": "WEBSITE",
+          "url": "https://www.google.com/search?q=Structured%20JSON%20model%20schemas%20exercises"
+        }
+      ],
+      "projectIdeas": [
+        "Build a complete implementation of: Weather Dashboard"
+      ],
+      "interviewQuestions": [
+        "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "What is LLM API integration patterns and how does it optimize development/production lifecycle performance?",
+        "Explain the core operational principles and architectural tradeoffs of Gemini/OpenAI SDK configurations."
+      ],
+      "learningObjectives": [
+        "Master key capabilities of the ai-integration-machine-learning-basics milestone.",
+        "Understand operational edge-cases and debugging logs.",
+        "Implement practical mock tasks utilizing official documentation."
+      ],
+      "subtopics": [
+        "15. AI Integration & Machine Learning Basics Core Theories",
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ],
+      "projects": [
+        "Build a complete implementation of: Weather Dashboard"
       ]
     }
   ]

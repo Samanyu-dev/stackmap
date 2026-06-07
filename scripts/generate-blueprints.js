@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const userMilestones = require("./user_milestones.json");
 
 const blueprintsDir = path.join(__dirname, "../src/data/blueprints");
 
@@ -620,236 +621,238 @@ const roadmapsMeta = {
   }
 };
 
+
 function generateRoadmapFromMeta(meta) {
-  const nodes = [
-    {
-      id: `${meta.id}-node-1`,
-      slug: "internet-fundamentals",
-      title: "1. Internet Fundamentals",
-      description: "Learn how the internet operates, DNS servers resolution, HTTP request-response headers cycles, and web server browsers mechanics.",
-      difficulty: "BEGINNER",
-      estimatedTime: "8 hours",
-      prerequisites: [],
-      parentNodeId: null,
-      order: 1,
-      resources: [
-        { id: `res-${meta.slug}-internet-1`, title: "How the Internet Works (MDN Docs)", type: "DOCUMENTATION", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work" },
-        { id: `res-${meta.slug}-internet-2`, title: "HTTP Request Cycle Tutorial", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=7_LPdttKXPc" }
-      ],
-      projectIdeas: ["Deploy a basic index.html static site explaining the TCP/IP stack mapping using GitHub Pages."],
-      interviewQuestions: [
-        "What is the function of a DNS server and how does it map domains to IP addresses?",
-        "Explain the differences between HTTP GET and POST requests."
-      ]
-    },
-    {
-      id: `${meta.id}-node-2`,
-      slug: "computer-fundamentals",
-      title: "2. Computer Fundamentals",
-      description: "Master operating systems processes scheduling, memory stack and heap segments layouts, thread concurrency locks, and basic networks structures.",
-      difficulty: "BEGINNER",
-      estimatedTime: "12 hours",
-      prerequisites: ["internet-fundamentals"],
-      parentNodeId: null,
-      order: 2,
-      resources: [
-        { id: `res-${meta.slug}-cs-1`, title: "Operating Systems Internals Guide", type: "WEBSITE", url: "https://tldp.org" },
-        { id: `res-${meta.slug}-cs-2`, title: "Memory Stack vs Heap Allocation Tutorial", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=_8-ht2AKyT4" }
-      ],
-      projectIdeas: ["Write a memory allocation test program tracing stack and heap boundaries variables."],
-      interviewQuestions: [
-        "Explain stack vs heap memory layouts and how garbage collectors allocate spaces.",
-        "What is an operating system deadlock condition and how do you prevent it?"
-      ]
-    },
-    {
-      id: `${meta.id}-node-3`,
-      slug: "tools",
-      title: `3. Standard Tools: ${meta.tools[0]} & More`,
-      description: `Master version control with Git & GitHub and construct development environments using ${meta.tools.join(", ")}.`,
-      difficulty: "BEGINNER",
-      estimatedTime: "10 hours",
-      prerequisites: ["computer-fundamentals"],
-      parentNodeId: null,
-      order: 3,
-      resources: [
-        { id: `res-${meta.slug}-tools-1`, title: "Git Handbook Guidelines", type: "DOCUMENTATION", url: "https://guides.github.com/introduction/git-handbook/" }
-      ],
-      projectIdeas: ["Configure a GitHub repository with branches, push changes, and resolve a mock git merge conflict."],
-      interviewQuestions: [
-        "What is the difference between git merge and git rebase?",
-        "Explain git stash command usage."
-      ]
-    },
-    {
-      id: `${meta.id}-node-4`,
-      slug: "languages",
-      title: `4. Target Languages: ${meta.languages.join(" / ")}`,
-      description: `Master variables types, asynchronous functions logic, control structures, and concurrency patterns in ${meta.languages.join(", ")}.`,
-      difficulty: "BEGINNER",
-      estimatedTime: "30 hours",
-      prerequisites: ["tools"],
-      parentNodeId: null,
-      order: 4,
-      resources: [
-        { id: `res-${meta.slug}-lang-1`, title: `${meta.languages[0]} Official Guides`, type: "DOCUMENTATION", url: "https://developer.mozilla.org" }
-      ],
-      projectIdeas: [`Build a terminal console validator app using ${meta.languages[0]} handling variable arrays.`],
-      interviewQuestions: [
-        `What are the reference types vs value types in ${meta.languages[0]}?`,
-        `How does asynchronous logic work in ${meta.languages[0]}?`
-      ]
-    },
-    {
-      id: `${meta.id}-node-5`,
-      slug: "frameworks",
-      title: `5. Core Frameworks: ${meta.frameworks.join(" & ")}`,
-      description: `Build layouts, API endpoints routers, state managers, and view contexts using ${meta.frameworks.join(", ")}.`,
-      difficulty: "INTERMEDIATE",
-      estimatedTime: "40 hours",
-      prerequisites: ["languages"],
-      parentNodeId: null,
-      order: 5,
-      resources: [
-        { id: `res-${meta.slug}-fw-1`, title: `${meta.frameworks[0]} Reference Docs`, type: "DOCUMENTATION", url: "https://react.dev" }
-      ],
-      projectIdeas: [`Develop an interactive dashboard UI layout mapping components using ${meta.frameworks[0]}.`],
-      interviewQuestions: [
-        `When does a ${meta.frameworks[0]} component lifecycle trigger a re-render?`,
-        `Explain how dependency injection or state management is handled in ${meta.frameworks[0]}.`
-      ]
-    },
-    {
-      id: `${meta.id}-node-6`,
-      slug: "databases",
-      title: `6. Database Systems: ${meta.databases.join(" / ")}`,
-      description: `Configure schemas, database relationships, indexes constraints, query optimizations, and caching setups using ${meta.databases.join(", ")}.`,
-      difficulty: "INTERMEDIATE",
-      estimatedTime: "25 hours",
-      prerequisites: ["frameworks"],
-      parentNodeId: null,
-      order: 6,
-      resources: [
-        { id: `res-${meta.slug}-db-1`, title: "Database Query Tuning and Indexes", type: "WEBSITE", url: "https://www.postgresqltutorial.com/" }
-      ],
-      projectIdeas: [`Create database tables mapping models schema using ${meta.databases[0]}.`],
-      interviewQuestions: [
-        "What is database indexing and how does it speed up queries?",
-        "Explain transaction ACID guarantees under concurrent loads."
-      ]
-    },
-    {
-      id: `${meta.id}-node-7`,
-      slug: "testing",
-      title: `7. Quality & Testing: ${meta.testing.join(" / ")}`,
-      description: `Write automated tests suites including Unit tests, Integration checks, and End-to-End assertions using ${meta.testing.join(", ")}.`,
-      difficulty: "INTERMEDIATE",
-      estimatedTime: "15 hours",
-      prerequisites: ["frameworks"],
-      parentNodeId: null,
-      order: 7,
-      resources: [
-        { id: `res-${meta.slug}-test-1`, title: "Software testing methodologies", type: "DOCUMENTATION", url: "https://jestjs.io" }
-      ],
-      projectIdeas: ["Write unit tests files mapping components logic asserting edge input values."],
-      interviewQuestions: [
-        "Explain the differences between unit, integration, and E2E testing.",
-        "What is test mocking and why is it used for database layers?"
-      ]
-    },
-    {
-      id: `${meta.id}-node-8`,
-      slug: "deployment",
-      title: `8. Production Deployment: ${meta.deployment.join(" / ")}`,
-      description: `Package deployment builds, containerize codebases, map variables, and host services on ${meta.deployment.join(", ")}.`,
-      difficulty: "INTERMEDIATE",
-      estimatedTime: "15 hours",
-      prerequisites: ["databases"],
-      parentNodeId: null,
-      order: 8,
-      resources: [
-        { id: `res-${meta.slug}-deploy-1`, title: "Production hosting deployment guidelines", type: "DOCUMENTATION", url: "https://docs.docker.com" }
-      ],
-      projectIdeas: ["Build production build folders, package configurations, and host online."],
-      interviewQuestions: [
-        "How do you manage environment configuration secrets inside production hosts?",
-        "What is a Docker container image build layers?"
-      ]
-    },
-    {
-      id: `${meta.id}-node-9`,
-      slug: "advanced-concepts",
-      title: "9. Advanced Concepts",
-      description: `Master scaling paradigms, specialized integrations, security mitigations, and optimizations: ${meta.advancedConcepts.join(", ")}.`,
-      difficulty: "ADVANCED",
-      estimatedTime: "35 hours",
-      prerequisites: ["deployment"],
-      parentNodeId: null,
-      order: 9,
-      resources: [
-        { id: `res-${meta.slug}-adv-1`, title: "Advanced systems engineering layouts", type: "DOCUMENTATION", url: "https://github.com/donnemartin/system-design-primer" }
-      ],
-      projectIdeas: ["Build a scalable micro-architecture or complex optimization script."],
-      interviewQuestions: [
-        `Explain how you would implement ${meta.advancedConcepts[0]} to solve scalability bottlenecks.`,
-        `What security vulnerabilities does ${meta.advancedConcepts[meta.advancedConcepts.length - 1]} protect against?`
-      ]
-    },
-    {
-      id: `${meta.id}-node-10`,
-      slug: "interview-prep",
-      title: "10. Technical Interview Preparation",
-      description: "Drill algorithmic problem patterns, low-level design structures, system designs diagrams, and practice mock loops.",
-      difficulty: "ADVANCED",
-      estimatedTime: "25 hours",
-      prerequisites: ["advanced-concepts"],
-      parentNodeId: null,
-      order: 10,
-      resources: [
-        { id: `res-${meta.slug}-int-1`, title: "NeetCode DSA Roadmap Practice", type: "WEBSITE", url: "https://neetcode.io" }
-      ],
-      projectIdeas: ["Solve 50+ role-related challenges on practice platforms and log time tracking curves."],
-      interviewQuestions: meta.interviewQuestions
-    },
-    {
-      id: `${meta.id}-node-11`,
-      slug: "resume-projects",
-      title: "11. High Impact Portfolio Projects",
-      description: `Fulfill engineering requirements for target projects: ${meta.projects.join(" or ")}. Set up deployment links and repository READMEs.`,
-      difficulty: "ADVANCED",
-      estimatedTime: "40 hours",
-      prerequisites: ["interview-prep"],
-      parentNodeId: null,
-      order: 11,
-      resources: [
-        { id: `res-${meta.slug}-proj-1`, title: "GitHub Readme templates design guidelines", type: "WEBSITE", url: "https://github.com" }
-      ],
-      projectIdeas: meta.projects.map((p) => `Build complete deployable version of ${p} with documentation.`),
-      interviewQuestions: [
-        `Explain the core architecture bottlenecks of your ${meta.projects[0]} project.`,
-        "How does your database sharding or state caching optimize loading speeds?"
-      ]
-    },
-    {
-      id: `${meta.id}-node-12`,
-      slug: "job-readiness",
-      title: "12. Career Job Readiness",
-      description: "Verify resume match ratings, compile interview logs, execute speed mocks, configure networking references, and apply.",
-      difficulty: "ADVANCED",
-      estimatedTime: "15 hours",
-      prerequisites: ["resume-projects"],
-      parentNodeId: null,
-      order: 12,
-      resources: [
-        { id: `res-${meta.slug}-jr-1`, title: "StackMap Resume Readiness Analyzer Tool", type: "WEBSITE", url: "/resume/readiness" }
-      ],
-      projectIdeas: ["Analyze your resume using StackMap's JD readiness scanner, scoring 85%+ Match rating."],
-      interviewQuestions: [
-        "Describe a complex technical challenge you solved and how you structured the engineering decisions.",
-        "How do you manage deadlines tradeoffs when multiple team milestones conflict?"
-      ]
+  let nodes = [];
+
+  if (userMilestones[meta.slug]) {
+    // Deep clone the user milestones
+    let milestones = JSON.parse(JSON.stringify(userMilestones[meta.slug]));
+    
+    // Ensure all roadmaps have 15-25 nodes! Expand if fewer than 15 nodes
+    if (milestones.length < 15) {
+      const extras = [
+        { title: "Advanced Performance & Optimization", subtopics: ["Resource bundlers splitting", "Asset caching", "Performance profiling benchmarks", "Latency tracing metrics"] },
+        { title: "System Monitoring & Observability", subtopics: ["Sentry tracking integrations", "APM dashboard metrics", "Grafana visualizations", "Logstash aggregations"] },
+        { title: "AI Integration & Machine Learning Basics", subtopics: ["LLM API integration patterns", "Gemini/OpenAI SDK configurations", "Structured JSON model schemas", "Vector databases & RAG"] },
+        { title: "Security Auditing & Threat Protection", subtopics: ["OWASP threat protections", "SAST/DAST container scans", "Encryption protocols (SSL/TLS)", "Secrets vaulting policies"] },
+        { title: "Placement Readiness & Technical Mock Interviews", subtopics: ["Technical mock loops", "System Design blueprints", "Behavioral frameworks (STAR method)", "Salary negotiations logs"] }
+      ];
+      
+      while (milestones.length < 15 && extras.length > 0) {
+        const ext = extras.shift();
+        const newOrder = milestones.length + 1;
+        milestones.push({
+          order: newOrder,
+          title: `${newOrder}. ${ext.title}`,
+          subtopics: ext.subtopics
+        });
+      }
     }
-  ];
+
+    const totalMilestones = milestones.length;
+    let totalHours = 120;
+    const durMatch = meta.estimatedDuration.match(/(\d+)\s+Month/i);
+    if (durMatch) {
+      const months = parseInt(durMatch[1]);
+      totalHours = months * 4 * 10;
+    }
+    const hoursPerMilestone = Math.max(8, Math.ceil(totalHours / totalMilestones));
+
+    nodes = milestones.map((m) => {
+      const order = m.order;
+      const title = m.title;
+      const subtopics = m.subtopics || [
+        `${title} Fundamentals`,
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ];
+      
+      const nodeSlug = title.toLowerCase()
+        .replace(/^\d+\.\s+/, "")
+        .replace(/[^a-z0-9\s\-]/g, "")
+        .trim()
+        .replace(/\s+/g, "-");
+        
+      let difficulty = "BEGINNER";
+      if (order > totalMilestones * 0.66) {
+        difficulty = "ADVANCED";
+      } else if (order > totalMilestones * 0.33) {
+        difficulty = "INTERMEDIATE";
+      }
+      
+      const description = `Master core capabilities of ${title.replace(/^\d+\.\s+/, "")}: ${subtopics.slice(0, 5).join(", ")}.`;
+      
+      const prerequisites = [];
+      if (order > 1) {
+        const prevMilestone = milestones[order - 2];
+        const prevSlug = prevMilestone.title.toLowerCase()
+          .replace(/^\d+\.\s+/, "")
+          .replace(/[^a-z0-9\s\-]/g, "")
+          .trim()
+          .replace(/\s+/g, "-");
+        prerequisites.push(prevSlug);
+      }
+      
+      const resources = [];
+      if (subtopics.length > 0) {
+        resources.push({
+          id: `res-${meta.slug}-${order}-1`,
+          title: `${subtopics[0]} Reference (MDN / Official)`,
+          type: "DOCUMENTATION",
+          url: subtopics[0].toLowerCase().includes("git") 
+            ? "https://git-scm.com/doc" 
+            : subtopics[0].toLowerCase().includes("react")
+            ? "https://react.dev"
+            : subtopics[0].toLowerCase().includes("next")
+            ? "https://nextjs.org/docs"
+            : subtopics[0].toLowerCase().includes("docker")
+            ? "https://docs.docker.com"
+            : subtopics[0].toLowerCase().includes("kubernetes")
+            ? "https://kubernetes.io/docs/"
+            : `https://www.google.com/search?q=${encodeURIComponent(subtopics[0] + " documentation")}`
+        });
+      }
+      if (subtopics.length > 1) {
+        resources.push({
+          id: `res-${meta.slug}-${order}-2`,
+          title: `${subtopics[1]} Crash Course`,
+          type: "YOUTUBE",
+          url: `https://www.youtube.com/results?search_query=${encodeURIComponent(subtopics[1] + " tutorial")}`
+        });
+      }
+      if (subtopics.length > 2) {
+        resources.push({
+          id: `res-${meta.slug}-${order}-3`,
+          title: `Practice ${subtopics[2]} Exercises`,
+          type: "WEBSITE",
+          url: (subtopics[2].toLowerCase().includes("dsa") || subtopics[2].toLowerCase().includes("sql"))
+            ? "https://leetcode.com"
+            : `https://www.google.com/search?q=${encodeURIComponent(subtopics[2] + " exercises")}`
+        });
+      }
+      
+      const projectIdeas = [];
+      if (order === totalMilestones - 1 && meta.projects && meta.projects.length > 0) {
+        projectIdeas.push(`Build a complete implementation of: ${meta.projects[0]}`);
+      } else if (order === totalMilestones && meta.projects && meta.projects.length > 1) {
+        projectIdeas.push(`Build a complete implementation of: ${meta.projects[1]}`);
+      } else {
+        projectIdeas.push(`Build a prototype integrating ${subtopics.slice(0, Math.min(3, subtopics.length)).join(", ")}.`);
+      }
+      
+      const interviewQuestions = [];
+      if (meta.interviewQuestions && meta.interviewQuestions.length > 0) {
+        const questionIdx = (order - 1) % meta.interviewQuestions.length;
+        interviewQuestions.push(meta.interviewQuestions[questionIdx]);
+      }
+      if (subtopics.length > 0) {
+        interviewQuestions.push(`What is ${subtopics[0]} and how does it optimize development/production lifecycle performance?`);
+      }
+      if (subtopics.length > 1) {
+        interviewQuestions.push(`Explain the core operational principles and architectural tradeoffs of ${subtopics[1]}.`);
+      }
+
+      return {
+        id: `${meta.id}-node-${order}`,
+        slug: nodeSlug,
+        title: title,
+        description: description,
+        difficulty: difficulty,
+        estimatedTime: `${hoursPerMilestone} hours`,
+        prerequisites: prerequisites,
+        parentNodeId: null,
+        order: order,
+        resources: resources,
+        projectIdeas: projectIdeas,
+        interviewQuestions: interviewQuestions
+      };
+    });
+  } else {
+    // Dynamic generator for the remaining 13 roles! Expanded to 18 nodes!
+    const milestones = [
+      { order: 1, slug: "fundamentals", title: `1. Core ${meta.title} Fundamentals`, desc: `Understand the foundational principles of ${meta.title}, primary operational architectures, and basic lifecycle concepts.` },
+      { order: 2, slug: "cs-fundamentals", title: "2. Computer Science & Systems Theory", desc: "Master operating systems process cycles, memory segment layers, and data structure constraints relevant to engineering." },
+      { order: 3, slug: "tools", title: `3. Standard Tools: ${meta.tools[0] || 'VCS'} & CLI Environment`, desc: `Configure version control using Git & GitHub, and prepare local workspace instances using: ${meta.tools.slice(0, 3).join(", ") || 'Git'}.` },
+      { order: 4, slug: "languages", title: `4. Programming Languages: ${meta.languages.join(" / ")}`, desc: `Write typesafe, concurrent, and asynchronous code scripts using the target programming languages: ${meta.languages.join(", ")}.` },
+      { order: 5, slug: "syntax-adv", title: "5. Advanced Syntax: Concurrency & Threads", desc: "Master asynchronous code execution blocks, thread management, typesafety models, and error handling grids." },
+      { order: 6, slug: "frameworks", title: `6. Core Frameworks: ${meta.frameworks.slice(0, 2).join(" & ") || 'Core Interfaces'}`, desc: `Build routing layouts, custom controller components, and unified data flow structures using: ${meta.frameworks.join(", ")}.` },
+      { order: 7, slug: "databases", title: `7. Database Systems: ${meta.databases.slice(0, 2).join(" & ") || 'Local Storage'}`, desc: `Configure structured schemas, queries indexing, transactional logs mapping, and storage layouts using: ${meta.databases.join(", ")}.` },
+      { order: 8, slug: "db-queries-adv", title: "8. Advanced Queries & Index Optimization", desc: "Write complex query joins, configure database replication clusters, read execution plans, and set up caching." },
+      { order: 9, slug: "apis-routing-core", title: "9. API Engineering & Inter-service Communication", desc: "Build RESTful routes, map JSON inputs, validate request payloads, and handle gRPC/WebSocket streaming protocols." },
+      { order: 10, slug: "testing", title: `10. Testing & Code Quality: ${meta.testing[0] || 'Core Quality Rules'}`, desc: `Write automated validation logic, integration checking routes, and unit assertion conditions using: ${meta.testing.join(", ")}.` },
+      { order: 11, slug: "security-patterns", title: "11. OWASP Threat Protections & Security Patterns", desc: "Configure HTTPS protocols, sanitise input parameters, prevent SQL inject arrays, and design role-based policies." },
+      { order: 12, slug: "isolation-docker", title: "12. Containerization & Isolation using Docker", desc: "Write functional Dockerfiles, configure multi-container compositions, and handle container networks." },
+      { order: 13, slug: "deployment", title: `13. Deployment & Hosting: ${meta.deployment.slice(0, 2).join(" / ") || 'Static Hosting'}`, desc: `Package deployment bundles, map environment secret variables, and provision host execution instances on: ${meta.deployment.join(", ")}.` },
+      { order: 14, slug: "advanced-concepts", title: "14. Advanced Architectural Paradigms", desc: `Master high-concurrency systems scaling, security mitigations, and performance tuning: ${meta.advancedConcepts.join(", ")}.` },
+      { order: 15, slug: "performance-profiling", title: "15. System Performance & Latency Benchmarks", desc: "Profile execution bottlenecks, evaluate memory leaks, configure caching layers, and optimize bundle sizes." },
+      { order: 16, slug: "automation-cicd", title: "16. Automated Pipelines (CI/CD) & Automation", desc: "Implement automatic checking workflows, build testing hooks, and automate release distribution paths." },
+      { order: 17, slug: "resume-projects", title: "17. High Impact Portfolio Projects", desc: `Design, deploy, and document production-ready projects in your portfolio: ${meta.projects.join(" or ")}.` },
+      { order: 18, slug: "job-readiness", title: "18. Job Readiness & Placement Scan", desc: "Conduct mock technical interviews, customize resume formatting metrics, optimize LinkedIn/GitHub profiles, and begin career applications." }
+    ];
+
+    nodes = milestones.map((m) => {
+      const order = m.order;
+      const title = m.title;
+      const subtopics = [
+        `${title} Core Theories`,
+        "Practical Configurations",
+        "Production Best Practices",
+        "Debugging & Testing Rules"
+      ];
+      
+      let difficulty = "BEGINNER";
+      if (order > 12) difficulty = "ADVANCED";
+      else if (order > 6) difficulty = "INTERMEDIATE";
+      
+      const prerequisites = [];
+      if (order > 1) {
+        prerequisites.push(milestones[order - 2].slug);
+      }
+      
+      const resources = [
+        {
+          id: `res-${meta.slug}-${order}-1`,
+          title: `${m.title} Guide (MDN / Official Docs)`,
+          type: "DOCUMENTATION",
+          url: "https://developer.mozilla.org"
+        }
+      ];
+      
+      const projectIdeas = [];
+      if (order === 17 && meta.projects && meta.projects.length > 0) {
+        projectIdeas.push(`Build a complete implementation of: ${meta.projects[0]}`);
+      } else if (order === 18) {
+        projectIdeas.push("Scan your resume against target JDs using StackMap's scanner and optimize matching parameters to reach 85%+.");
+      } else {
+        projectIdeas.push(`Build a prototype demonstrating ${m.slug} core concepts.`);
+      }
+      
+      const interviewQuestions = [];
+      if (meta.interviewQuestions && meta.interviewQuestions.length > 0) {
+        const questionIdx = (order - 1) % meta.interviewQuestions.length;
+        interviewQuestions.push(meta.interviewQuestions[questionIdx]);
+      } else {
+        interviewQuestions.push(`Explain the core principles and tradeoffs associated with ${m.slug}.`);
+      }
+      
+      return {
+        id: `${meta.id}-node-${order}`,
+        slug: m.slug,
+        title: title,
+        description: m.desc,
+        difficulty: difficulty,
+        estimatedTime: "15 hours",
+        prerequisites: prerequisites,
+        parentNodeId: null,
+        order: order,
+        resources: resources,
+        projectIdeas: projectIdeas,
+        interviewQuestions: interviewQuestions
+      };
+    });
+  }
 
   const enrichedNodes = nodes.map(node => ({
     ...node,
@@ -871,6 +874,7 @@ function generateRoadmapFromMeta(meta) {
     id: meta.id,
     title: meta.title,
     slug: meta.slug,
+    description: `Master ${meta.title} skills, standard tools, framework engineering, database design, and advanced deployment pipelines.`,
     category: meta.category,
     difficulty: meta.difficulty,
     estimatedTime: meta.estimatedDuration,
