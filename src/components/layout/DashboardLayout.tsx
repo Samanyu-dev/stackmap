@@ -19,7 +19,11 @@ import {
   X,
   Sun,
   Moon,
-  ShieldCheck
+  ShieldCheck,
+  Trophy,
+  Sparkles,
+  Building2,
+  FileText
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -52,6 +56,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const navItems = [
     { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { name: "Career Roadmaps", href: "/roadmaps", icon: Map },
+    { name: "Skill Trees", href: "/skills", icon: Trophy },
+    { name: "Company Prep", href: "/companies", icon: Building2 },
+    { name: "Project Roadmaps", href: "/project-roadmaps", icon: FolderGit },
+    { name: "Resume Readiness", href: "/resume/readiness", icon: Sparkles },
+    { name: "Resume Builder", href: "/resume/builder", icon: FileText },
     { name: "Application Tracker", href: "/tracker/applications", icon: Briefcase },
     { name: "DSA Tracker", href: "/tracker/dsa", icon: Code2 },
     { name: "Resource Hub", href: "/resources", icon: BookOpen },

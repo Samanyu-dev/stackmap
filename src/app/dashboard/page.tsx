@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import MetricsGrid from "@/components/dashboard/MetricsGrid";
@@ -11,10 +11,54 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { useRoadmapStore } from "@/store/useRoadmapStore";
 import { roadmapBlueprints } from "@/lib/roadmapBlueprints";
-import { Sparkles, ArrowRight, PlayCircle, BookMarked, CheckSquare, BrainCircuit } from "lucide-react";
+import { companyRoadmaps } from "@/data/company-roadmaps";
+import { projectRoadmaps } from "@/data/project-roadmaps";
+import { Sparkles, ArrowRight, PlayCircle, BookMarked, CheckSquare, BrainCircuit, Building2, FolderGit2, Trophy } from "lucide-react";
 
 export default function UserDashboard() {
   const { activeRoadmaps, completedNodes, user } = useRoadmapStore();
+
+  const [activeCompany, setActiveCompany] = useState<string | null>(null);
+  const [activeProject, setActiveProject] = useState<string | null>(null);
+  const [projectProgress, setProjectProgress] = useState<number>(0);
+  const [companyProgress, setCompanyProgress] = useState<number>(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const companySlug = localStorage.getItem("stackmap_active_company");
+      const projectSlug = localStorage.getItem("stackmap_active_project");
+      setActiveCompany(companySlug);
+      setActiveProject(projectSlug);
+
+      if (projectSlug) {
+        const savedCompleted = localStorage.getItem(`stackmap_project_completed_${projectSlug}`);
+        const proj = projectRoadmaps[projectSlug];
+        if (proj && savedCompleted) {
+          try {
+            const completed = JSON.parse(savedCompleted);
+            const percent = Math.round(
+              (Object.values(completed).filter(Boolean).length / proj.steps.length) * 100
+            );
+            setProjectProgress(percent);
+          } catch (e) {}
+        }
+      }
+
+      if (companySlug) {
+        const savedCompleted = localStorage.getItem(`stackmap_company_completed_${companySlug}`);
+        const comp = companyRoadmaps[companySlug];
+        if (comp && savedCompleted) {
+          try {
+            const completed = JSON.parse(savedCompleted);
+            const percent = Math.round(
+              (Object.values(completed).filter(Boolean).length / comp.timeline.length) * 100
+            );
+            setCompanyProgress(percent);
+          } catch (e) {}
+        }
+      }
+    }
+  }, []);
 
   const getRoadmapProgress = (slug: string) => {
     const rm = roadmapBlueprints[slug];
@@ -85,27 +129,29 @@ export default function UserDashboard() {
         {/* Active Pathways Section */}
         <div className="space-y-4">
           <h2 className="text-xl font-bold tracking-tight">My Active Roadmaps</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* 1. Core Roadmaps */}
             {activeRoadmaps.map((slug) => {
               const rm = roadmapBlueprints[slug];
               if (!rm) return null;
               const progress = getRoadmapProgress(slug);
 
               return (
-                <Card key={slug} hoverGlow className="bg-card/30 border-border/80 flex flex-col justify-between">
+                <Card key={slug} hoverGlow className="bg-card/30 border-border/80 flex flex-col justify-between text-left">
                   <CardHeader className="pb-4">
                     <div className="flex items-center justify-between">
-                      <Badge variant="secondary" className="uppercase text-[9px] font-bold">
-                        {rm.category.toLowerCase()}
+                      <Badge variant="secondary" className="uppercase text-[9px] font-bold text-violet-400 border-violet-500/20 bg-violet-500/5 flex items-center space-x-1">
+                        <Trophy className="h-3 w-3" />
+                        <span>Core Pathway</span>
                       </Badge>
                       <span className="text-xs text-muted-foreground">Est: {rm.estimatedTime}</span>
                     </div>
                     <CardTitle className="text-lg font-bold mt-2">{rm.title}</CardTitle>
-                    <CardDescription className="line-clamp-2 text-xs leading-relaxed">
+                    <CardDescription className="line-clamp-2 text-xs leading-relaxed mt-1">
                       {rm.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-3.5">
+                  <CardContent className="space-y-3.5 flex-grow">
                     <div className="space-y-1">
                       <div className="flex justify-between text-xs font-semibold">
                         <span>Pathway Progress</span>
@@ -124,6 +170,109 @@ export default function UserDashboard() {
                 </Card>
               );
             })}
+
+            {/* 2. Active Company Roadmap */}
+            {activeCompany && companyRoadmaps[activeCompany] && (() => {
+              const comp = companyRoadmaps[activeCompany];
+              return (
+                <Card hoverGlow className="bg-card/30 border-border/80 flex flex-col justify-between text-left">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center justify-between">
+                      <Badge variant="outline" className="uppercase text-[9px] font-bold text-emerald-400 border-emerald-500/20 bg-emerald-500/5 flex items-center space-x-1">
+                        <Building2 className="h-3 w-3" />
+                        <span>Company Prep</span>
+                      </Badge>
+                      <span className="text-xs text-muted-foreground">{comp.difficulty}</span>
+                    </div>
+                    <CardTitle className="text-lg font-bold mt-2">{comp.name} Prep Roadmap</CardTitle>
+                    <CardDescription className="line-clamp-2 text-xs leading-relaxed mt-1">
+                      {comp.overview}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-3.5 flex-grow">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs font-semibold">
+                        <span>Prep Progress</span>
+                        <span>{companyProgress}%</span>
+                      </div>
+                      <Progress value={companyProgress} className="h-2" />
+                    </div>
+                  </CardContent>
+                  <CardFooter className="border-t border-border/40 pt-4 flex gap-2">
+                    <Link href={`/companies/${activeCompany}`} className="flex-1">
+                      <Button variant="default" size="sm" className="w-full text-xs font-semibold">
+                        Resume Prep <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
+                      </Button>
+                    </Link>
+                  </CardFooter>
+                </Card>
+              );
+            })()}
+
+            {/* 3. Active Project Roadmap */}
+            {activeProject && projectRoadmaps[activeProject] && (() => {
+              const proj = projectRoadmaps[activeProject];
+              return (
+                <Card hoverGlow className="bg-card/30 border-border/80 flex flex-col justify-between text-left">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center justify-between">
+                      <Badge variant="outline" className="uppercase text-[9px] font-bold text-blue-400 border-blue-500/20 bg-blue-500/5 flex items-center space-x-1">
+                        <FolderGit2 className="h-3 w-3" />
+                        <span>Project Build</span>
+                      </Badge>
+                      <span className="text-xs text-muted-foreground">{proj.difficulty}</span>
+                    </div>
+                    <CardTitle className="text-lg font-bold mt-2">{proj.title}</CardTitle>
+                    <CardDescription className="line-clamp-2 text-xs leading-relaxed mt-1">
+                      {proj.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-3.5 flex-grow">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs font-semibold">
+                        <span>Build Progress</span>
+                        <span>{projectProgress}%</span>
+                      </div>
+                      <Progress value={projectProgress} className="h-2" />
+                    </div>
+                  </CardContent>
+                  <CardFooter className="border-t border-border/40 pt-4 flex gap-2">
+                    <Link href={`/project-roadmaps/${activeProject}`} className="flex-1">
+                      <Button variant="default" size="sm" className="w-full text-xs font-semibold">
+                        Resume Build <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
+                      </Button>
+                    </Link>
+                  </CardFooter>
+                </Card>
+              );
+            })()}
+
+            {/* Optional placeholders if not active */}
+            {!activeCompany && (
+              <Card className="border border-dashed border-border bg-card/10 flex flex-col justify-between p-6 text-center text-muted-foreground h-full min-h-[220px]">
+                <div className="my-auto space-y-2">
+                  <Building2 className="h-8 w-8 mx-auto opacity-30 text-primary" />
+                  <h4 className="font-bold text-sm text-foreground">No Target Company Active</h4>
+                  <p className="text-xs max-w-[220px] mx-auto">Enroll in Google, Microsoft, Stripe prep timelines to track goals.</p>
+                </div>
+                <Link href="/companies">
+                  <Button variant="outline" size="sm" className="w-full text-xs font-semibold">Explore Company Prep</Button>
+                </Link>
+              </Card>
+            )}
+
+            {!activeProject && (
+              <Card className="border border-dashed border-border bg-card/10 flex flex-col justify-between p-6 text-center text-muted-foreground h-full min-h-[220px]">
+                <div className="my-auto space-y-2">
+                  <FolderGit2 className="h-8 w-8 mx-auto opacity-30 text-primary" />
+                  <h4 className="font-bold text-sm text-foreground">No Portfolio Build Active</h4>
+                  <p className="text-xs max-w-[220px] mx-auto">Track step-by-step builds for portfolio apps.</p>
+                </div>
+                <Link href="/project-roadmaps">
+                  <Button variant="outline" size="sm" className="w-full text-xs font-semibold">Explore Project Guides</Button>
+                </Link>
+              </Card>
+            )}
           </div>
         </div>
 

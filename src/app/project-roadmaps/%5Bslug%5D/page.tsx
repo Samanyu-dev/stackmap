@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import DashboardLayout from "@/components/layout/DashboardLayout";
@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projectRoadmaps, ProjectStep } from "@/data/project-roadmaps";
-import { ChevronRight, ArrowLeft, Clock, Award, FileCode, CheckSquare, Square, ExternalLink, HelpCircle, Terminal } from "lucide-react";
+import { ChevronRight, ArrowLeft, Clock, Award, FileCode, CheckSquare, Square, ExternalLink, HelpCircle, Terminal, ShieldCheck, FolderGit2 } from "lucide-react";
 
 export default function ProjectRoadmapPage() {
   const params = useParams();
@@ -20,6 +20,21 @@ export default function ProjectRoadmapPage() {
   const [completedSteps, setCompletedSteps] = useState<Record<number, boolean>>({});
   const [selectedStep, setSelectedStep] = useState<ProjectStep | null>(null);
   const [selectedIdx, setSelectedIdx] = useState<number>(0);
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const active = localStorage.getItem("stackmap_active_project");
+      setIsActive(active === slug);
+
+      const savedCompleted = localStorage.getItem(`stackmap_project_completed_${slug}`);
+      if (savedCompleted) {
+        try {
+          setCompletedSteps(JSON.parse(savedCompleted));
+        } catch (e) {}
+      }
+    }
+  }, [slug]);
 
   if (!project) {
     return (
@@ -37,12 +52,24 @@ export default function ProjectRoadmapPage() {
 
   const toggleStep = (idx: number, e: React.MouseEvent) => {
     e.stopPropagation();
-    setCompletedSteps(prev => ({ ...prev, [idx]: !prev[idx] }));
+    const updated = { ...completedSteps, [idx]: !completedSteps[idx] };
+    setCompletedSteps(updated);
+    localStorage.setItem(`stackmap_project_completed_${slug}`, JSON.stringify(updated));
   };
 
   const openStepDetails = (step: ProjectStep, idx: number) => {
     setSelectedStep(step);
     setSelectedIdx(idx);
+  };
+
+  const handleToggleActive = () => {
+    if (isActive) {
+      localStorage.removeItem("stackmap_active_project");
+      setIsActive(false);
+    } else {
+      localStorage.setItem("stackmap_active_project", slug);
+      setIsActive(true);
+    }
   };
 
   const progressPercent = Math.round(
@@ -80,7 +107,7 @@ export default function ProjectRoadmapPage() {
           </div>
 
           {/* Quick stats block */}
-          <div className="w-full md:w-72 border border-border bg-card/40 p-5 rounded-2xl space-y-2 flex-shrink-0">
+          <div className="w-full md:w-72 border border-border bg-card/40 p-5 rounded-2xl space-y-3 flex-shrink-0">
             <div className="flex justify-between items-center text-xs font-bold uppercase tracking-wider text-muted-foreground">
               <span>Build Progress</span>
               <span>{progressPercent}% Done</span>
@@ -88,10 +115,27 @@ export default function ProjectRoadmapPage() {
             <div className="w-full h-2 rounded-full bg-secondary overflow-hidden">
               <div className="h-full bg-primary transition-all duration-300" style={{ width: `${progressPercent}%` }} />
             </div>
-            <div className="flex items-center justify-between text-[10px] text-muted-foreground pt-1">
+            <div className="flex items-center justify-between text-[10px] text-muted-foreground pt-0.5">
               <span className="flex items-center"><Clock className="h-3.5 w-3.5 mr-1" /> Est: {project.duration}</span>
               <span>{project.steps.length} Steps</span>
             </div>
+            <Button
+              variant={isActive ? "default" : "outline"}
+              onClick={handleToggleActive}
+              className="w-full text-xs font-bold flex items-center justify-center space-x-1.5 h-9"
+            >
+              {isActive ? (
+                <>
+                  <ShieldCheck className="h-4 w-4 text-green-400" />
+                  <span>Tracking Progress</span>
+                </>
+              ) : (
+                <>
+                  <FolderGit2 className="h-4 w-4" />
+                  <span>Track Project Build</span>
+                </>
+              )}
+            </Button>
           </div>
         </div>
 

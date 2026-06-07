@@ -1,17 +1,43 @@
 "use client";
 
-import React from "react";
-import { Flame, CheckCircle, Code2, Briefcase, Calendar } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Flame, Star, Trophy, FileText, Code2, Sparkles, Award } from "lucide-react";
 import { useRoadmapStore } from "@/store/useRoadmapStore";
 import { useTrackerStore } from "@/store/useTrackerStore";
 
 export default function MetricsGrid() {
   const { user } = useRoadmapStore();
-  const { applications, dsaProblems } = useTrackerStore();
+  const { dsaProblems } = useTrackerStore();
+
+  const [mounted, setMounted] = useState(false);
+  const [skillXp, setSkillXp] = useState(300);
+  const [resumeScore, setResumeScore] = useState(85);
 
   const solvedDsaCount = dsaProblems.filter(p => p.status === "SOLVED").length;
-  const appliedCount = applications.filter(a => a.status === "APPLIED" || a.status === "OA" || a.status === "INTERVIEW").length;
-  const interviewsCount = applications.filter(a => a.status === "INTERVIEW" || a.status === "HR").length;
+
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== "undefined") {
+      const savedXp = localStorage.getItem("stackmap_skills_xp");
+      if (savedXp) {
+        setSkillXp(parseInt(savedXp) || 300);
+      }
+
+      const savedScore = localStorage.getItem("stackmap_resume_score");
+      if (savedScore) {
+        setResumeScore(parseInt(savedScore) || 85);
+      }
+    }
+  }, []);
+
+  // Developer level formula: Level = Math.floor(sqrt(XP / 100)) + 1
+  const level = Math.floor(Math.sqrt(skillXp / 100)) + 1;
+  const xpForNextLevel = Math.pow(level, 2) * 100;
+  const xpForCurrentLevel = Math.pow(level - 1, 2) * 100;
+  const levelProgress = Math.min(
+    Math.round(((skillXp - xpForCurrentLevel) / (xpForNextLevel - xpForCurrentLevel)) * 100),
+    100
+  );
 
   const metrics = [
     {
@@ -22,11 +48,25 @@ export default function MetricsGrid() {
       color: "text-orange-400 bg-orange-500/10 border-orange-500/20"
     },
     {
-      name: "Topics Completed",
-      value: user.completedTopics.toString(),
-      sub: "+3 new items this week",
-      icon: CheckCircle,
-      color: "text-green-400 bg-green-500/10 border-green-500/20"
+      name: "Career Level",
+      value: `Level ${level}`,
+      sub: `Next at ${xpForNextLevel} XP`,
+      icon: Trophy,
+      color: "text-yellow-400 bg-yellow-500/10 border-yellow-500/20"
+    },
+    {
+      name: "Skill XP",
+      value: `${skillXp} XP`,
+      sub: `Level progress: ${levelProgress}%`,
+      icon: Award,
+      color: "text-violet-400 bg-violet-500/10 border-violet-500/20"
+    },
+    {
+      name: "Resume Score",
+      value: `${resumeScore}%`,
+      sub: resumeScore >= 80 ? "ATS Optimization: Excellent" : "Needs optimization",
+      icon: FileText,
+      color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20"
     },
     {
       name: "DSA Problems Solved",
@@ -34,20 +74,6 @@ export default function MetricsGrid() {
       sub: "Confidence Level: Medium",
       icon: Code2,
       color: "text-blue-400 bg-blue-500/10 border-blue-500/20"
-    },
-    {
-      name: "Applications Active",
-      value: appliedCount.toString(),
-      sub: "Average package: $135k",
-      icon: Briefcase,
-      color: "text-purple-400 bg-purple-500/10 border-purple-500/20"
-    },
-    {
-      name: "Interviews Scheduled",
-      value: interviewsCount.toString(),
-      sub: "Next: Google (SWE Intern)",
-      icon: Calendar,
-      color: "text-pink-400 bg-pink-500/10 border-pink-500/20"
     }
   ];
 
@@ -56,7 +82,7 @@ export default function MetricsGrid() {
       {metrics.map((m) => (
         <div
           key={m.name}
-          className="p-5 rounded-2xl border border-border bg-card/40 backdrop-blur-md flex flex-col justify-between hover:border-primary/20 hover:shadow-lg hover:shadow-primary/[0.02] transition-all duration-300 group"
+          className="p-5 rounded-2xl border border-border bg-card/45 backdrop-blur-md flex flex-col justify-between hover:border-primary/20 hover:shadow-lg hover:shadow-primary/[0.02] transition-all duration-300 group text-left"
         >
           <div className="flex justify-between items-start">
             <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">

@@ -39,6 +39,9 @@ export default function ResumeReadinessPage() {
       });
       const data = await res.json();
       setResult(data);
+      if (data && typeof window !== "undefined" && data.overallScore !== undefined) {
+        localStorage.setItem("stackmap_resume_score", data.overallScore.toString());
+      }
     } catch (err) {
       console.error(err);
     } finally {

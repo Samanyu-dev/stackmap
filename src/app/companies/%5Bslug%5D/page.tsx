@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import DashboardLayout from "@/components/layout/DashboardLayout";
@@ -8,7 +8,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { companyRoadmaps } from "@/data/company-roadmaps";
-import { ChevronRight, ArrowLeft, Calendar, HelpCircle, FileCheck, Layers, BookOpen, ExternalLink, ShieldCheck } from "lucide-react";
+import { ChevronRight, ArrowLeft, Calendar, HelpCircle, FileCheck, Layers, BookOpen, ExternalLink, ShieldCheck, CheckSquare, Square } from "lucide-react";
 
 export default function CompanyRoadmapPage() {
   const params = useParams();
@@ -16,6 +16,22 @@ export default function CompanyRoadmapPage() {
   const company = companyRoadmaps[slug];
 
   const [faqOpen, setFaqOpen] = useState<Record<number, boolean>>({});
+  const [completedSteps, setCompletedSteps] = useState<Record<number, boolean>>({});
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const active = localStorage.getItem("stackmap_active_company");
+      setIsActive(active === slug);
+
+      const savedCompleted = localStorage.getItem(`stackmap_company_completed_${slug}`);
+      if (savedCompleted) {
+        try {
+          setCompletedSteps(JSON.parse(savedCompleted));
+        } catch (e) {}
+      }
+    }
+  }, [slug]);
 
   if (!company) {
     return (
@@ -34,6 +50,26 @@ export default function CompanyRoadmapPage() {
   const toggleFaq = (index: number) => {
     setFaqOpen(prev => ({ ...prev, [index]: !prev[index] }));
   };
+
+  const handleToggleActive = () => {
+    if (isActive) {
+      localStorage.removeItem("stackmap_active_company");
+      setIsActive(false);
+    } else {
+      localStorage.setItem("stackmap_active_company", slug);
+      setIsActive(true);
+    }
+  };
+
+  const toggleStep = (idx: number) => {
+    const updated = { ...completedSteps, [idx]: !completedSteps[idx] };
+    setCompletedSteps(updated);
+    localStorage.setItem(`stackmap_company_completed_${slug}`, JSON.stringify(updated));
+  };
+
+  const progressPercent = company.timeline.length > 0
+    ? Math.round((Object.values(completedSteps).filter(Boolean).length / company.timeline.length) * 100)
+    : 0;
 
   return (
     <DashboardLayout>
@@ -58,13 +94,32 @@ export default function CompanyRoadmapPage() {
               {company.overview}
             </p>
           </div>
-          <div className="flex flex-wrap gap-1 md:w-64 flex-shrink-0">
-            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider block mb-1">Target Roles</span>
-            <div className="flex flex-wrap gap-1">
-              {company.commonRoles.map(role => (
-                <Badge key={role} variant="secondary" className="text-[10px]">{role}</Badge>
-              ))}
+          <div className="flex flex-col sm:flex-row gap-4 items-start md:items-center">
+            <div className="flex flex-wrap gap-1 md:w-48 flex-shrink-0">
+              <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider block mb-1">Target Roles</span>
+              <div className="flex flex-wrap gap-1">
+                {company.commonRoles.map(role => (
+                  <Badge key={role} variant="secondary" className="text-[10px]">{role}</Badge>
+                ))}
+              </div>
             </div>
+            <Button
+              variant={isActive ? "default" : "outline"}
+              onClick={handleToggleActive}
+              className="font-bold flex items-center space-x-1.5 h-10 w-full sm:w-auto shadow-md"
+            >
+              {isActive ? (
+                <>
+                  <ShieldCheck className="h-4.5 w-4.5 text-green-400" />
+                  <span>Tracking Progress</span>
+                </>
+              ) : (
+                <>
+                  <Calendar className="h-4.5 w-4.5" />
+                  <span>Track Prep Progress</span>
+                </>
+              )}
+            </Button>
           </div>
         </div>
 
@@ -72,27 +127,41 @@ export default function CompanyRoadmapPage() {
           {/* Timeline & Steps */}
           <div className="lg:col-span-2 space-y-6 text-left">
             <div className="p-6 rounded-2xl border border-border bg-card/45 backdrop-blur-md space-y-4">
-              <h3 className="font-bold text-lg text-foreground flex items-center">
-                <Calendar className="h-5 w-5 mr-2 text-primary" /> Recommended Preparation Timeline
-              </h3>
+              <div className="flex justify-between items-center">
+                <h3 className="font-bold text-lg text-foreground flex items-center">
+                  <Calendar className="h-5 w-5 mr-2 text-primary" /> Recommended Preparation Timeline
+                </h3>
+                <span className="text-xs font-bold text-muted-foreground">{progressPercent}% Completed</span>
+              </div>
+              <div className="w-full h-2 rounded-full bg-secondary overflow-hidden mb-6">
+                <div className="h-full bg-primary transition-all duration-300" style={{ width: `${progressPercent}%` }} />
+              </div>
               
-              <div className="relative pl-6 border-l-2 border-primary/20 space-y-6">
-                {company.timeline.map((t, idx) => (
-                  <div key={idx} className="relative">
-                    <div className="absolute -left-[31px] top-0.5 h-4 w-4 rounded-full border-2 border-primary bg-background flex items-center justify-center">
-                      <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                    </div>
-                    <div>
-                      <div className="flex items-center space-x-2">
-                        <span className="text-xs font-bold text-primary uppercase tracking-wider">{t.duration}</span>
-                        <span className="text-sm font-bold text-foreground">{t.step}</span>
+              <div className="space-y-4">
+                {company.timeline.map((t, idx) => {
+                  const isCompleted = !!completedSteps[idx];
+                  return (
+                    <div key={idx} className="relative flex gap-3.5 p-4 rounded-xl border border-border/40 bg-background/30 hover:border-primary/20 transition-all items-start">
+                      <button
+                        onClick={() => toggleStep(idx)}
+                        className={`p-0.5 rounded text-muted-foreground flex-shrink-0 mt-0.5 transition-colors ${
+                          isCompleted && "text-green-500"
+                        }`}
+                      >
+                        {isCompleted ? <CheckSquare className="h-5 w-5" /> : <Square className="h-5 w-5" />}
+                      </button>
+                      <div className="flex-grow">
+                        <div className="flex items-center space-x-2">
+                          <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t.duration}</span>
+                          <span className={`text-sm font-bold ${isCompleted ? "text-muted-foreground line-through font-normal" : "text-foreground"}`}>{t.step}</span>
+                        </div>
+                        <p className="text-xs text-muted-foreground mt-1 font-light leading-relaxed">
+                          {t.details}
+                        </p>
                       </div>
-                      <p className="text-xs text-muted-foreground mt-1 font-light leading-relaxed">
-                        {t.details}
-                      </p>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
