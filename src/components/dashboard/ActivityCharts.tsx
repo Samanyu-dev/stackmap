@@ -53,7 +53,7 @@ export default function ActivityCharts() {
         </div>
 
         <div className="h-64 w-full mt-4">
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer width="100%" height={260}>
             <AreaChart data={mockActivityData}>
               <defs>
                 <linearGradient id="colorHours" x1="0" y1="0" x2="0" y2="1">
@@ -82,7 +82,7 @@ export default function ActivityCharts() {
         </div>
 
         <div className="h-64 w-full mt-4 flex items-center justify-center">
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer width="100%" height={260}>
             <RadarChart cx="50%" cy="50%" outerRadius="70%" data={mockSkillData}>
               <PolarGrid stroke="rgba(255,255,255,0.06)" />
               <PolarAngleAxis dataKey="subject" stroke="#a1a1aa" fontSize={10} />

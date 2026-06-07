@@ -44,6 +44,15 @@ export const skillTreeData: Record<string, SkillDomainData> = {
         recommendedProjects: [{ name: "Weather Dashboard", url: "/roadmaps/frontend-developer" }]
       },
       {
+        id: "fe-tailwind-ui",
+        name: "Tailwind CSS & Modern UI",
+        description: "Master utility-first styles, layout grids, transitions, theme variables, and shadcn components.",
+        xp: 100,
+        prerequisites: ["fe-html-css"],
+        recommendedRoadmaps: ["Frontend Developer"],
+        recommendedProjects: [{ name: "Sleek Dark Portfolio", url: "/project-roadmaps/portfolio-website" }]
+      },
+      {
         id: "fe-react-core",
         name: "React Library & Hooks",
         description: "Virtual DOM, state management, render optimizations (useMemo, useCallback), props, and context providers.",
@@ -53,6 +62,15 @@ export const skillTreeData: Record<string, SkillDomainData> = {
         recommendedProjects: [{ name: "Netflix Clone", url: "/project-roadmaps/netflix-clone" }]
       },
       {
+        id: "fe-state-mgmt",
+        name: "Zustand & State Management",
+        description: "Explore atomic state trees, client actions, persistence layers, and reactive bindings.",
+        xp: 200,
+        prerequisites: ["fe-react-core"],
+        recommendedRoadmaps: ["Frontend Developer"],
+        recommendedProjects: [{ name: "Dashboard Workspace", url: "/dashboard" }]
+      },
+      {
         id: "fe-nextjs-app",
         name: "Next.js Framework & SSR",
         description: "Server Component models, Hydration layouts, route pre-fetching, dynamic loading, and SEO indicators.",
@@ -60,6 +78,33 @@ export const skillTreeData: Record<string, SkillDomainData> = {
         prerequisites: ["fe-react-core"],
         recommendedRoadmaps: ["Frontend Developer", "Full Stack Developer"],
         recommendedProjects: [{ name: "AI Resume Analyzer", url: "/project-roadmaps/ai-resume-analyzer" }]
+      },
+      {
+        id: "fe-testing",
+        name: "Testing & Jest",
+        description: "Write unit tests with Jest and component tests using React Testing Library. Perform E2E tests.",
+        xp: 150,
+        prerequisites: ["fe-react-core"],
+        recommendedRoadmaps: ["Frontend Developer"],
+        recommendedProjects: []
+      },
+      {
+        id: "fe-perf-audit",
+        name: "Web Performance & CWV",
+        description: "Optimize Largest Contentful Paint (LCP), Interaction to Next Paint (INP), dynamic code splitting, and bundle sizes.",
+        xp: 250,
+        prerequisites: ["fe-nextjs-app"],
+        recommendedRoadmaps: ["Frontend Developer"],
+        recommendedProjects: []
+      },
+      {
+        id: "fe-security",
+        name: "Web Security & Headers",
+        description: "Mitigate Cross-Site Scripting (XSS), CSRF, verify Content Security Policies, and cookies security.",
+        xp: 200,
+        prerequisites: ["fe-nextjs-app"],
+        recommendedRoadmaps: ["Frontend Developer"],
+        recommendedProjects: []
       }
     ]
   },
@@ -125,11 +170,56 @@ export const skillTreeData: Record<string, SkillDomainData> = {
         recommendedProjects: []
       },
       {
+        id: "dsa-arrays-lists",
+        name: "Arrays & LinkedLists",
+        description: "Contiguous vs linked node allocations. Reverse lists, detect cycles, merge lists, and multi-pointer search.",
+        xp: 150,
+        prerequisites: ["dsa-big-o"],
+        recommendedRoadmaps: ["DSA"],
+        recommendedProjects: []
+      },
+      {
+        id: "dsa-stacks-queues",
+        name: "Stacks & Queues",
+        description: "LIFO/FIFO mechanisms. Monotonic stack logic, circular buffer queues, and queue implementations using stacks.",
+        xp: 150,
+        prerequisites: ["dsa-arrays-lists"],
+        recommendedRoadmaps: ["DSA"],
+        recommendedProjects: []
+      },
+      {
+        id: "dsa-search-sort",
+        name: "Searching & Sorting",
+        description: "Binary Search bounds, Merge Sort divide-and-conquer, Quick Sort partitioning, and topological ordering.",
+        xp: 200,
+        prerequisites: ["dsa-big-o"],
+        recommendedRoadmaps: ["DSA"],
+        recommendedProjects: []
+      },
+      {
         id: "dsa-trees-graphs",
         name: "Tree & Graph Traversals",
         description: "Solve BST paths, BFS/DFS sweeps, Dijkstra weights, topological ordering, and cycle checks.",
         xp: 300,
         prerequisites: ["dsa-big-o"],
+        recommendedRoadmaps: ["DSA"],
+        recommendedProjects: []
+      },
+      {
+        id: "dsa-heaps",
+        name: "Heaps & Priority Queues",
+        description: "Heap structures, heapify insertions, dynamic priority schedules, and heap sort complexity.",
+        xp: 250,
+        prerequisites: ["dsa-trees-graphs"],
+        recommendedRoadmaps: ["DSA"],
+        recommendedProjects: []
+      },
+      {
+        id: "dsa-greedy",
+        name: "Greedy Algorithms",
+        description: "Activity selections, Huffman Coding trees, and fractional knapsack constraints.",
+        xp: 200,
+        prerequisites: ["dsa-search-sort"],
         recommendedRoadmaps: ["DSA"],
         recommendedProjects: []
       },

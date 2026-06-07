@@ -433,7 +433,7 @@ export const roadmapBlueprints: Record<string, RoadmapData> = {
         parentNodeId: null,
         order: 1,
         resources: [
-          { id: "res-dsa-1", title: "Introduction to Big O", type: "WEBSITE", url: "https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/" },
+          { id: "res-dsa-1", title: "Introduction to Big O (GFG)", type: "WEBSITE", url: "https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/" },
           { id: "res-dsa-2", title: "Big O Notation Explained", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=V6mKRYt4c5U" }
         ],
         projectIdeas: ["Write equivalent code blocks for searching an array in O(N) vs O(log N) and plot the execution time difference for large arrays."],
@@ -458,6 +458,57 @@ export const roadmapBlueprints: Record<string, RoadmapData> = {
       },
       {
         id: "dsa-node-3",
+        slug: "stacks-queues",
+        title: "Stacks & Queues",
+        description: "Learn LIFO/FIFO principles. Implement stacks and queues using arrays and linked lists. Solve dynamic stack sizing and circular queue tasks.",
+        difficulty: "BEGINNER",
+        estimatedTime: "6 hours",
+        prerequisites: ["arrays-lists"],
+        parentNodeId: null,
+        order: 3,
+        resources: [
+          { id: "res-dsa-3a", title: "Stacks and Queues Guide", type: "DOCUMENTATION", url: "https://developer.mozilla.org/en-US/docs/Glossary/Stack" },
+          { id: "res-dsa-3b", title: "Stacks vs Queues Visualized", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=wjI1WNcIntg" }
+        ],
+        projectIdeas: ["Implement an undo/redo controller system using a double stack design in TypeScript."],
+        interviewQuestions: ["Explain how to implement a queue using two stacks.", "What is a circular queue buffer?"]
+      },
+      {
+        id: "dsa-node-4",
+        slug: "sorting-searching",
+        title: "Searching & Sorting",
+        description: "Master Binary Search, Quick Sort, Merge Sort, and Heap Sort. Learn partitioning strategies and stable vs unstable sorting.",
+        difficulty: "BEGINNER",
+        estimatedTime: "10 hours",
+        prerequisites: ["time-complexity"],
+        parentNodeId: null,
+        order: 4,
+        resources: [
+          { id: "res-dsa-4a", title: "Sorting Algorithms (GFG)", type: "WEBSITE", url: "https://www.geeksforgeeks.org/sorting-algorithms/" },
+          { id: "res-dsa-4b", title: "Merge Sort vs Quick Sort in 4 mins", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=es2T6KY14U0" }
+        ],
+        projectIdeas: ["Build an interactive sorting visualizer page demonstrating bubble, merge, and quick sort comparisons."],
+        interviewQuestions: ["Why is Quick Sort preferred over Merge Sort for arrays?", "What is the time complexity of Binary Search and what are its prerequisites?"]
+      },
+      {
+        id: "dsa-node-5",
+        slug: "recursion-backtracking",
+        title: "Recursion & Backtracking",
+        description: "Understand the execution stack, base cases, and state restoration. Solve N-Queens, Sudoku solver, and subset generation.",
+        difficulty: "INTERMEDIATE",
+        estimatedTime: "15 hours",
+        prerequisites: ["sorting-searching"],
+        parentNodeId: null,
+        order: 5,
+        resources: [
+          { id: "res-dsa-5a", title: "Backtracking Algorithms (GFG)", type: "WEBSITE", url: "https://www.geeksforgeeks.org/backtracking-algorithms/" },
+          { id: "res-dsa-5b", title: "Recursion and Backtracking Course", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=nO1Z258yvSI" }
+        ],
+        projectIdeas: ["Develop an automated maze generator and solver using recursive backtracking on a canvas component."],
+        interviewQuestions: ["What is a stack overflow and how do base cases prevent it?", "Explain the backtracking approach to solving the N-Queens problem."]
+      },
+      {
+        id: "dsa-node-6",
         slug: "trees-graphs",
         title: "Trees & Graphs",
         description: "Master Binary Trees, BST, Traversals (Pre/In/Post order, BFS, DFS), Dijkstra's, MST, and topological sort.",
@@ -465,7 +516,7 @@ export const roadmapBlueprints: Record<string, RoadmapData> = {
         estimatedTime: "20 hours",
         prerequisites: ["arrays-lists"],
         parentNodeId: null,
-        order: 3,
+        order: 6,
         resources: [
           { id: "res-dsa-5", title: "Trees and Graphs (GfG)", type: "WEBSITE", url: "https://www.geeksforgeeks.org/binary-tree-data-structure/" },
           { id: "res-dsa-6", title: "BFS and DFS Graph Traversals", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=pcKY4hjDrxk" }
@@ -474,7 +525,41 @@ export const roadmapBlueprints: Record<string, RoadmapData> = {
         interviewQuestions: ["What is the difference between BFS and DFS?", "How do you check if a binary tree is a Binary Search Tree?"]
       },
       {
-        id: "dsa-node-4",
+        id: "dsa-node-7",
+        slug: "heaps-queues",
+        title: "Heaps & Priority Queues",
+        description: "Master binary heaps, heapify operations, insertion/deletion runtime bounds, and dynamic priority tracking.",
+        difficulty: "INTERMEDIATE",
+        estimatedTime: "8 hours",
+        prerequisites: ["trees-graphs"],
+        parentNodeId: null,
+        order: 7,
+        resources: [
+          { id: "res-dsa-7a", title: "Heap Data Structures Guide", type: "WEBSITE", url: "https://www.geeksforgeeks.org/heap-data-structure/" },
+          { id: "res-dsa-7b", title: "Priority Queues Visualized", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=wptevk0bshY" }
+        ],
+        projectIdeas: ["Implement a task scheduling simulation that uses a custom min-heap to queue task execution priorities."],
+        interviewQuestions: ["What are min-heaps and max-heaps?", "Explain the heapify operation and its time complexity."]
+      },
+      {
+        id: "dsa-node-8",
+        slug: "greedy-algorithms",
+        title: "Greedy Algorithms",
+        description: "Learn global optimization from local choices. Study Huffman Coding, Fractional Knapsack, and Activity Selection problems.",
+        difficulty: "INTERMEDIATE",
+        estimatedTime: "10 hours",
+        prerequisites: ["sorting-searching"],
+        parentNodeId: null,
+        order: 8,
+        resources: [
+          { id: "res-dsa-8a", title: "Greedy Methodology (GFG)", type: "WEBSITE", url: "https://www.geeksforgeeks.org/greedy-algorithms/" },
+          { id: "res-dsa-8b", title: "Greedy Algorithms Explained", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=HzeK7g8cD0Y" }
+        ],
+        projectIdeas: ["Build a file compression utility using Huffman Coding mapping ASCII characters to binary pathways."],
+        interviewQuestions: ["What are the conditions for a problem to be solvable via a greedy approach?", "How does the Fractional Knapsack problem differ from the 0/1 version?"]
+      },
+      {
+        id: "dsa-node-9",
         slug: "dynamic-programming",
         title: "Dynamic Programming (DP)",
         description: "Understand Memoization vs Tabulation. Solve classic knapsack, subsequence, edit distance, and grid traversal problems.",
@@ -482,7 +567,7 @@ export const roadmapBlueprints: Record<string, RoadmapData> = {
         estimatedTime: "25 hours",
         prerequisites: ["trees-graphs"],
         parentNodeId: null,
-        order: 4,
+        order: 9,
         resources: [
           { id: "res-dsa-7", title: "Dynamic Programming Guide", type: "WEBSITE", url: "https://www.geeksforgeeks.org/dynamic-programming/" },
           { id: "res-dsa-8", title: "DP Course for Beginners", type: "YOUTUBE", url: "https://www.youtube.com/watch?v=oBt53YbR9K0" }
