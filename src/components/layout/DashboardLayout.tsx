@@ -94,7 +94,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       label: "CAREER",
       items: [
         { id: "resume-r", href: "/resume/readiness", icon: Sparkles, label: "Resume Readiness", accent: "#00E5CC" },
-        { id: "resume-b", href: "/resume/builder", icon: FileText, label: "Resume Builder", accent: "#6E54F7" }
+        { id: "resume-b", href: "/resume/builder", icon: FileText, label: "Resume Builder", accent: "#6E54F7" },
+        { id: "interview", href: "/interview", icon: MessageSquare, label: "AI Interview Hub", accent: "#FF3D9A" }
       ]
     },
     {
